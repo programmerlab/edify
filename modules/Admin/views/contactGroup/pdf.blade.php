@@ -14,7 +14,7 @@
                 <!-- BEGIN CONTENT BODY -->
                 <div class="page-content">
                     <!-- BEGIN PAGE HEAD-->
-                    <center><h3>Yellotasker</h3></center>
+                    <center><h3>Edify</h3></center>
                     <!-- END PAGE HEAD--> 
 
                     <!-- END PAGE BREADCRUMB -->

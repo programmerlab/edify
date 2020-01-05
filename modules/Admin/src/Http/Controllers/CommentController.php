@@ -95,7 +95,7 @@ class CommentController extends Controller {
             $comments = Comments::with('userDetail','taskDetail')->where('commentId',0)->orderBy('id','desc')->Paginate($this->record_per_page);
         }
          
-        return view('packages::comment.index', compact('comments','data', 'page_title', 'page_action','sub_page_title')); 
+        return view('packages::comment.index', compact('comments', 'page_title', 'page_action','sub_page_title')); 
     }
 
     /*
@@ -114,7 +114,7 @@ class CommentController extends Controller {
      * Save Group method
      * */
 
-    public function store(ContactRequest $request, Contact $contact) 
+    public function store(ContactRequest $request, Comments $comment) 
     {   
         
         $categoryName = $request->get('categoryName');
@@ -123,10 +123,10 @@ class CommentController extends Controller {
             $cn = ltrim($cn.','.$value,',');
         }
         
-        $table_cname = \Schema::getColumnListing('contacts');
+        $table_cname = \Schema::getColumnListing('comments');
         $except = ['id','create_at','updated_at','categoryName'];
         $input = $request->all();
-        $contact->categoryName = $cn;
+        $comment->categoryName = $cn;
         foreach ($table_cname as $key => $value) {
            
            if(in_array($value, $except )){
@@ -134,13 +134,13 @@ class CommentController extends Controller {
            }
 
            if(isset($input[$value])) {
-               $contact->$value = $request->get($value); 
+               $comment->$value = $request->get($value); 
            } 
         }
-        $contact->save();   
+        $comment->save();   
          
-        return Redirect::to(route('contact'))
-                            ->with('flash_alert_notice', 'New contact successfully created!');
+        return Redirect::to(route('comment'))
+                            ->with('flash_alert_notice', 'New comment successfully added!');
     }
     
     public function uploadFile($file)
@@ -164,66 +164,7 @@ class CommentController extends Controller {
         chmod($path.'/'.$file_name ,0777);
         return $path.'/'.$file_name;
     }
-
-    public function contactImport(Request $request)
-    {
-        try{
-            $file = $request->file('importContact');
-            
-            if($file==NULL){
-                echo json_encode(['status'=>0,'message'=>'Please select  csv file!']); 
-                exit(); 
-            }
-            $ext = $file->getClientOriginalExtension();
-            if($file==NULL || $ext!='csv'){
-                echo json_encode(['status'=>0,'message'=>'Please select valid csv file!']); 
-                exit(); 
-            }
-            $mime = $file->getMimeType();   
-           
-            $upload = $this->uploadFile($file);
-           
-            $rs =    \Excel::load($upload, function($reader)use($request) {
-
-            $data = $reader->all(); 
-              
-            $table_cname = \Schema::getColumnListing('contacts');
-            
-            $except = ['id','create_at','updated_at'];
-
-            $input = $request->all();
-           // $contact->categoryName = $cn;
-            $contact =  new Contact;
-            foreach ($data  as $key => $result) {
-                foreach ($table_cname as $key => $value) {
-                   if(in_array($value, $except )){
-                        continue;
-                   }
-                   if(isset($result->$value)) {
-                       $contact->$value = $result->$value; 
-                       $status = 1;
-                   } 
-                }
-                 if(isset($status)){
-                     $contact->save(); 
-                 }
-            } 
-           
-            if(isset($status)){
-                echo json_encode(['status'=>1,'message'=>'contact imported successfully!']);
-            }else{
-               echo json_encode(['status'=>0,'message'=>'Invalid file type or content.Please upload csv file only.']); 
-            }
-             
-            });
-
-        } catch (\Exception $e) {
-            echo json_encode(['status'=>0,'message'=>'Please select csv file!']); 
-            exit(); 
-        }
-        
-       
-    }
+ 
 
     /*
      * Edit Group method
@@ -231,18 +172,18 @@ class CommentController extends Controller {
      * object : $category
      * */
 
-    public function edit(Contact $contact) {
+    public function edit($id) {
+        $comment = Comments::find($id);
         $page_title     = 'contact';
         $page_action    = 'Edit contact'; 
         $categories  = Category::all();
-        $category_id  = explode(',',$contact->categoryName);
+        $category_id  = explode(',',$comment->categoryName);
         
-        return view('packages::contact.edit', compact('category_id','categories', 'url','contact', 'page_title', 'page_action'));
+        return view('packages::comment.edit', compact('category_id','categories','comment', 'page_title', 'page_action'));
     }
 
-    public function update(Request $request, Contact $contact) {
-        
-        $contact = Contact::find($contact->id); 
+    public function update(Request $request, $id ) {
+        $contact = Comments::find($id); 
         $categoryName = $request->get('categoryName');
         $cn= '';
         foreach ($categoryName as $key => $value) {
@@ -258,7 +199,7 @@ class CommentController extends Controller {
             $contact->$key = $value;
         }
         $contact->save();
-        return Redirect::to(route('contact'))
+        return Redirect::to(route('comment'))
                         ->with('flash_alert_notice', 'Contact  successfully updated.');
     }
     /*
@@ -266,18 +207,15 @@ class CommentController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Comments $comment) { 
+    public function destroy($comment) { 
 
-        Comments::where('id',$comment->id)->delete(); 
-
-
-
+        Comments::where('id',$comment)->delete(); 
         return Redirect::to(URL::previous())
                         ->with('flash_alert_notice', 'Comment successfully deleted.');
     }
 
-    public function show(Comments $comment) {
-        
+    public function show( $comment) {
+        $comment = Comments::find($comment);
         $page_title = 'comment Reply';
         $sub_page_title = 'View Comment';
         $page_action = 'View Comment'; 

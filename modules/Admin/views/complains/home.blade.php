@@ -35,7 +35,7 @@
                                 <div class="portlet-body">
                                     <div class="table-toolbar">
                                         <div class="row">
-                                            <form action="{{route('compaint')}}" method="get" id="filter_data">
+                                            <form action="{{route('complaint')}}" method="get" id="filter_data">
                                              <input type="hidden" name="reasonType" value="{{$_REQUEST['reasonType']}}">
                                             <div class="col-md-3">
                                                 <input value="{{ (isset($_REQUEST['search']))?$_REQUEST['search']:''}}" placeholder="Ticket Id" type="text" name="search" id="search" class="form-control" >
@@ -49,7 +49,7 @@
                                            
                                         </form>
                                          <div class="col-md-2">
-                                             <a href="{{ route('compaint') }}?reasonType={{$_REQUEST['reasonType']}}">   <input type="submit" value="Reset" class="btn btn-default form-control"> </a>
+                                             <a href="{{ route('complaint') }}?reasonType={{$_REQUEST['reasonType']}}">   <input type="submit" value="Reset" class="btn btn-default form-control"> </a>
                                         </div>
                                        
                                         </div>
@@ -82,7 +82,6 @@
                                                        <a class="btn-circle btn btn-success" href="{{url('admin/comment/showComment/'.$result->taskDetail->id)}}"> #{{ $result->compainId }}    </a>
 
                                                     </td>
-                                             <!--    <td> <a href="{{route('postTask.show',$result->taskDetail->id)}}"> {{ $result->taskDetail->title or 'na' }}</a></td> -->
                                                 <td>  
 
                                                 @if(isset($result->reportedUserDetail->first_name))
@@ -93,7 +92,7 @@
 
                                                </td>
                                                 <td>{{ $result->comment }}</td>
-                                                <td>{{ $result->reason->reasonDescription or 'NA'}}</td>
+                                                <td>{{ $result->reason->reasonDescription}}</td>
                                               <td>
                                                     {{ $result->status }}
                                                    </td>  

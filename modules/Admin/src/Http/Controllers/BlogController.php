@@ -160,20 +160,20 @@ class BlogController extends Controller {
      * object : $category
      * */
 
-    public function edit(Blogs $blog) {
-
+    public function edit($id) {
+        $blog = Blogs::find($id);
         $page_title     = 'Blog';
         $page_action    = 'Edit Blog'; 
         $categories     = Category::all();
         $type = ['Stories'=>'Stories','News'=>'News','Tips'=>'Tips'];  
         $category_id  = explode(',',$blog->blog_category);
          
-         return view('packages::blog.edit', compact( 'blog','banner' ,'page_title', 'page_action','categories','type','category_id'));
+         return view('packages::blog.edit', compact( 'blog' ,'page_title', 'page_action','categories','type','category_id'));
     }
 
-    public function update(BlogRequest $request, Blogs $blog) 
+    public function update(BlogRequest $request,  $id) 
     {
-        $blog = Blogs::find($blog->id); 
+        $blog = Blogs::find($id); 
         
         if ($request->file('blog_image')) {  
 
@@ -210,22 +210,22 @@ class BlogController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Blogs $blog) 
+    public function destroy( $blog) 
     {
-        Blogs::where('id',$blog->id)->delete();
+        Blogs::where('id',$blog)->delete();
         return Redirect::to('admin/blog')
                         ->with('flash_alert_notice', 'Blog was successfully deleted!');
     }
 
-    public function show(Blogs $blog) {
-        
+    public function show($id) {
+        $blog = Blogs::find($id);
         $page_title     = 'Blog';
         $page_action    = 'Show Blog'; 
         $categories     = Category::all();
         $type = ['Stories'=>'Stories','News'=>'News','Tips'=>'Tips'];  
         $category_id  = explode(',',$blog->blog_category);
 
-        return view('packages::blog.show', compact( 'blog','banner' ,'page_title', 'page_action','categories','type','category_id'));
+        return view('packages::blog.show', compact( 'blog' ,'page_title', 'page_action','categories','type','category_id'));
     }
 
 }

@@ -57,38 +57,38 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Email <span class="required"> * </span></label>
                                         <div class="col-md-8">
-                                            <input type="text"  class="form-control" name="email" readonly value="{{$result->email or 'NA'}}">  
+                                            <input type="text"  class="form-control" name="email" readonly value="{{$result->email ?? 'NA'}}">  
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Subject <span class="required"> * </span></label>
                                         <div class="col-md-8"> 
-                                            <input type="text" name="subject" class="form-control" readonly value="{{$result->subject or 'NA'}}">  
+                                            <input type="text" name="subject" class="form-control" readonly value="{{$result->subject ?? 'NA'}}">  
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Ticket ID <span class="required"> * </span></label>
                                         <div class="col-md-8"> 
-                                            <input type="text"   class="form-control" readonly name="ticket_id" value="{{$result->ticket_id or 'NA'}} ">
+                                            <input type="text"   class="form-control" readonly name="ticket_id" value="{{$result->ticket_id ?? 'NA'}} ">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Task Url <span class="required"> * </span></label>
                                         <div class="col-md-8"> 
-                                            <input type="text" name="taskUrl" class="form-control" readonly  value="{{$result->taskUrl or 'NA'}}">  
+                                            <input type="text" name="taskUrl" class="form-control" readonly  value="{{$result->taskUrl ?? 'NA'}}">  
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Attachment <span class="required"> * </span></label>
                                         <div class="col-md-8"> 
-                                            <input type="text"  class="form-control" readonly value="{{$result->attachment or 'NA'}}">  
+                                            <input type="text"  class="form-control" readonly value="{{$result->attachment ?? 'NA'}}">  
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Status <span class="required"> * </span></label>
                                         <div class="col-md-8"> 
-                                            <input type="text" name="status" class="form-control" readonly  value="{{$_REQUEST['status']  or $result->status}}">  
+                                            <input type="text" name="status" class="form-control" readonly  value="{{$_REQUEST['status']  ?? $result->status}}">  
                                         </div>
                                     </div>
                                     

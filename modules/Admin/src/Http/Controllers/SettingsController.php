@@ -83,13 +83,13 @@ class SettingsController extends Controller {
             return Redirect::to(route('setting.create'));
         }
         foreach ($web_setting as $key => $value) {
-            echo $key_name = $value->field_key;
+            $key_name = $value->field_key;
             
             $setting->$key_name = $value->field_value; 
            
         } 
 
-        return view('packages::setting.edit', compact('setting','website_title','website_email','website_url','contact_number','company_address','banner', 'page_title', 'page_action','helper'));
+        return view('packages::setting.edit', compact('setting','website_title','website_email','website_url','contact_number','company_address','banner', 'page_title', 'page_action'));
    
     }
 

@@ -91,7 +91,7 @@ class SubCategoryController extends Controller {
             $categories = Category::where('parent_id','!=',0)->Paginate($this->record_per_page);
         }
         
-        return view('packages::sub_category.index', compact('sub_page_title','result_set','categories','data', 'page_title', 'page_action','html'));
+        return view('packages::sub_category.index', compact('sub_page_title','categories', 'page_title', 'page_action'));
     }
 
     /*
@@ -108,9 +108,10 @@ class SubCategoryController extends Controller {
         $sub_category_name  = Category::all();
  
         $html = '';
+        $url = '';
         $categories = Category::where('parent_id',0)->get();
 
-        return view('packages::sub_category.create', compact('sub_page_title','categories', 'html','category','sub_category_name', 'page_title', 'page_action'))->withInput(Input::all());
+        return view('packages::sub_category.create', compact('url','sub_page_title','categories','category','sub_category_name', 'page_title', 'page_action'))->withInput(Input::all());
     }
 
     /*
@@ -163,8 +164,9 @@ class SubCategoryController extends Controller {
      * object : $category
      * */
 
-    public function edit(Category $category) {
+    public function edit($id) {
 
+        $category = Category::find($id);
         $page_title = 'Category';
         $sub_page_title = 'Sub Category';
         $categories = Category::where('parent_id',0)->get();
@@ -175,8 +177,9 @@ class SubCategoryController extends Controller {
         return view('packages::sub_category.edit', compact('sub_page_title','categories','url','category', 'page_title', 'page_action'));
     }
 
-    public function update(Request $request, Category $category) {
+    public function update(Request $request,  $id) {
        
+        $category   =   Category::find($id);
         $name = $request->get('category_group_name');
         $slug = str_slug($request->get('category_group_name'));
         $parent_id = 0;
@@ -227,19 +230,19 @@ class SubCategoryController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Category $category) {
+    public function destroy($category) {
         
-        $d = Category::where('id',$category->id)->delete(); 
+        Category::where('id',$category)->delete(); 
         return Redirect::to(URL::previous())
-                        ->with('flash_alert_notice', 'Category  successfully deleted.');
+                        ->with('flash_alert_notice', 'Sub Category  successfully deleted.');
     }
 
-    public function show(Category $category) {
+    public function show($id) {
         
-        $result = $category;
+        $result = Category::find($id);
         $page_title  = 'Category';
         $page_action  = 'Show Category';
-        return view('packages::sub_category.show', compact('result_set','result','data', 'page_title', 'page_action','html'));
+        return view('packages::sub_category.show', compact('result', 'page_title', 'page_action','html'));
 
     }
 

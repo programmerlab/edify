@@ -55,21 +55,21 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Reason Type <span class="required"> * </span></label>
                                         <div class="col-md-6"> 
-                                            <input type="text"  class="form-control" readonly name="reason_type" value="{{$comments->reason->reasonType or ''}}">
+                                            <input type="text"  class="form-control" readonly name="reason_type" value="{{$comments->reason->reasonType ?? ''}}">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Reason <span class="required"> * </span></label>
                                         <div class="col-md-6"> 
-                                            <input type="text"  class="form-control" readonly name="subject" value="{{$comments->reason->reasonDescription or ''}}">
+                                            <input type="text"  class="form-control" readonly name="subject" value="{{$comments->reason->reasonDescription ?? ''}}">
                                         </div>
                                     </div>
                                     
                                     <div class="form-group">
                                         <label class="control-label col-md-3">Email <span class="required"> * </span></label>
                                         <div class="col-md-6">
-                                            <input type="text"  class="form-control" name="email" readonly value="{{$comments->reportedUserDetail->email or ''}}">  
+                                            <input type="text"  class="form-control" name="email" readonly value="{{$comments->reportedUserDetail->email ?? ''}}">  
                                         </div>
                                     </div>
 
@@ -108,7 +108,7 @@
                                     <div class="form-group {{ $errors->first('description', ' has-error') }}">
                                         <label class="control-label col-md-3">Comment<span class="required"> </span></label>
                                         <div class="col-md-6"> 
-                                         <input type="text"  class="form-control" name="user_comments" readonly value="{{$comments->comment or ''}}"> 
+                                         <input type="text"  class="form-control" name="user_comments" readonly value="{{$comments->comment ?? ''}}"> 
                                         </div>
                                     </div> 
 

@@ -47,7 +47,7 @@
                                     <table class="table table-striped table-hover table-bordered" id="">
                                         <thead>
                                          <tr>
-                                                <td colspan="5"> <h4>Task Title : <b>{{ $comments[0]->taskDetail->title or 'NA'}} </b> </h4></td>
+                                                <td colspan="5"> <h4>Task Title : <b>{{ $comments[0]->taskDetail->title ?? 'NA'}} </b> </h4></td>
                                            </tr>
                                             <tr>
                                              <th> Sno. </th>

@@ -9,6 +9,7 @@
     Route::post('admin/blog/ajax', 'Modules\Admin\Http\Controllers\BlogController@ajax');
 
     Route::post('admin/login', function (App\Admin $user) {
+
         $credentials = ['email' => Input::get('email'), 'password' => Input::get('password')];
 
         // $credentials = ['email' => 'kundan@gmail.com', 'password' => 123456];
@@ -35,7 +36,7 @@
     Route::post('admin/supportTicket', 'Modules\Admin\Http\Controllers\ArticleTypeController@supportTicketAddreply')->name('supportTicket');
 
 
-    Route::group(['middleware' => ['admin','userpermission']], function () {
+    Route::group(['middleware' => ['admin']], function () {
         Route::get('admin', 'Modules\Admin\Http\Controllers\AdminController@index');
 
         /*------------User Model and controller---------*/
@@ -188,11 +189,11 @@
         Route::get('admin/comment/showComment/{id}', 'Modules\Admin\Http\Controllers\CommentController@showComment');
 
         Route::resource(
-            'admin/compaint',
+            'admin/complaint',
             'Modules\Admin\Http\Controllers\CompaintController',
             [
             'names' => [
-                'index' => 'compaint',
+                'index' => 'complaint',
             ]
                 ]
         );
@@ -379,7 +380,7 @@
 
 
         Route::bind('role', function ($value, $route) {
-            return App\Role::find($value);
+            return Modules\Admin\Models\Role::find($value);
         });
 
         Route::resource(

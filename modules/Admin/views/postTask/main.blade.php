@@ -28,14 +28,14 @@
                       @else
                        <img src="{{url('storage/image/poster-big.png')}}" alt="">
                       @endif
-                      <h4>{{$postTasks->user->first_name or 'NA'}} 
+                      <h4>{!! $postTasks->user->first_name  !!} 
 
                     </div>
                       
                       <div class="col-md-8">
                       
                       </h4>
-                      <p>Email :{{$postTasks->user->email or 'NA'}} <br>
+                      <p>Email : {{$postTasks->user->email}} <br>
                         Post Date : <b>{{$taskPostDate}}</b> <br>
                         Due  Date : <b>{{$taskdueDate}}</b> <br>
                       
@@ -99,11 +99,11 @@
                              @endif 
                               <tr>
                                
-                                  <th>{{ ucfirst(str_replace('_',' ',snake_case($result))) }}</th>
+                                  <th>{{ ucfirst(str_replace('_',' ',Str::snake($result))) }}</th>
                                   <th>{{ $postTasks->$result}}
                                     @if($result=='totalAmount' ||
                                         $result=='hourlyRate')
-                                      {!! $currency->field_value or 'MYR' !!}
+                                      {!! $currency->field_value ?? 'INR' !!}
                                     @endif
                                    </th>
                                 
@@ -140,7 +140,7 @@
                              @if($key=="id" || $key=='updated_at')
                              <?php continue; ?>
                              @endif
-                                <th>{{ ucfirst(str_replace('_',' ',snake_case($key))) }}</th>
+                                <th>{{ ucfirst(str_replace('_',' ',Str::snake($key))) }}</th>
                                   <th>{{ $result}} </th>
                               </tr>
                               @endforeach

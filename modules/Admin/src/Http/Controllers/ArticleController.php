@@ -85,7 +85,7 @@ class ArticleController extends Controller {
                             $query->Where('article_type', 'LIKE', "%$search%")
                                     ->OrWhere('resolution_department', 'LIKE', "%$search%");
                         }
-                    })->lists('id');
+                    })->pluck('id');
 
             
             $results = Article::with('articleCategory')
@@ -99,7 +99,9 @@ class ArticleController extends Controller {
         } else {
             $results = Article::with('articleCategory')->Paginate($this->record_per_page);
         }
-        return view('packages::article.index', compact('results','Article','page_title', 'page_action'));
+
+
+        return view('packages::article.index', compact('results','page_title', 'page_action'));
     }
 
     /*
@@ -108,12 +110,11 @@ class ArticleController extends Controller {
 
     public function create(Article $result,Request $request) 
     {
-        $id =  $request->get('id');
         $page_title = 'Article';
         $page_action = 'Create Article'; 
         $article_types = ArticleType::all();
          
-        return view('packages::article.create', compact('id','article_types','result','page_title', 'page_action'))->withInput(Input::all());
+        return view('packages::article.create', compact('result','article_types','page_title', 'page_action'))->withInput(Input::all());
     }
 
     /*
@@ -134,8 +135,8 @@ class ArticleController extends Controller {
      * object : $category
      * */
 
-    public function edit(Article $result,Request $request) {
-
+    public function edit($id) {
+         $result = Article::find($id);
         $page_title = 'Article';  
         $page_action = 'Edit Article'; 
         $article_types = ArticleType::all();
@@ -144,8 +145,8 @@ class ArticleController extends Controller {
         return view('packages::article.edit', compact('article_types','result', 'page_title', 'page_action'));
     }
 
-    public function update(Request $request, Article $result) {
-         
+    public function update(Request $request, $id) {
+        $result = Article::find($id);
         $result->fill(Input::all()); 
         $result->save();    
         return Redirect::to(route('article'))
@@ -156,20 +157,19 @@ class ArticleController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Article $article) {
+    public function destroy($article) {
         
-        $del = Article::where('id',$article->id)->delete(); 
+        $del = Article::where('id',$article)->delete(); 
         return Redirect::to(URL::previous())
                         ->with('flash_alert_notice', 'Article successfully deleted.');
     }
 
-    public function show(Article $article) {
-        
+    public function show($id) {
         //Article::with('articleCategory')->Paginate($this->record_per_page);
-        $result = $article->with('articleCategory')->first();
+        $result = Article::with('articleCategory')->where('id',$id)->first();
         $page_title  = 'Article';
         $page_action  = 'Show Article';
-        return view('packages::article.show', compact('result','data', 'page_title', 'page_action','html'));
+        return view('packages::article.show', compact('result', 'page_title', 'page_action'));
 
     }
 

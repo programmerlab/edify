@@ -25,8 +25,8 @@
                 <h4 class="modal-title">Update Contact Group</h4>
             </div>
             <div class="modal-body" style="overflow-y:scroll">
-                <?php $data = $helper->contactName($result->id);  ?>
-                {!! $data  !!} 
+                <?php // $data = $helper->contactName($result->id);  ?>
+             <?php // $data  ?> 
             </div>
             <div class="modal-footer">
                  <button type="button" data-dismiss="modal" class="btn dark btn-outline">Close</button>

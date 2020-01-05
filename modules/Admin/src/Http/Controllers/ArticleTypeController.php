@@ -162,7 +162,7 @@ class ArticleTypeController extends Controller {
                             $query->Where('article_type', 'LIKE', "%$search%")
                                     ->OrWhere('resolution_department', 'LIKE', "%$search%");
                         }
-                    })->lists('id');
+                    })->pluck('id');
 
             $results = SupportTicket::with('supportType')->where(function($query) use($search,$article_type) {
                         if (!empty($search)) {
@@ -215,8 +215,8 @@ class ArticleTypeController extends Controller {
      * object : $category
      * */
 
-    public function edit(ArticleType $result) {
-
+    public function edit($id) {
+        $result = ArticleType::find($id);
         $page_title = 'Article Type';  
         $page_action = 'Edit Article Type';  
         $support =  ['sales team','billing team','technical team','support team','admin team'];
@@ -224,8 +224,9 @@ class ArticleTypeController extends Controller {
         return view('packages::articleType.edit', compact('support','result', 'page_title', 'page_action'));
     }
 
-    public function update(Request $request, ArticleType $result) {
+    public function update(Request $request, $id) {
          
+        $result     =   ArticleType::find($id);
         $result->article_type          =  $request->get('article_type');
         $result->resolution_department =  $request->get('resolution_department'); 
         $result->save();    
@@ -237,23 +238,23 @@ class ArticleTypeController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(ArticleType $articleType) {
+    public function destroy( $articleType) {
         
-        $del = ArticleType::where('id',$articleType->id)->delete(); 
+        ArticleType::where('id',$articleType)->delete(); 
         return Redirect::to(URL::previous())
                         ->with('flash_alert_notice', 'Article Type  successfully deleted.');
     }
 
-    public function show(ArticleType $articleType) {
+    public function show( $articleType) {
         
         try{
-            $result = $articleType;
+            $result = ArticleType::find($articleType);
             $page_title  = 'articleType';
             $page_action  = 'Show articleType';
-            return view('packages::articleType.show', compact('result_set','result','data', 'page_title', 'page_action','html'));
+            return view('packages::articleType.show', compact('result','page_title', 'page_action'));
 
         }catch(\ModelNotFoundException  $e){
-            dd($e->getMessage());
+             $e->getMessage();
         }
             
     }

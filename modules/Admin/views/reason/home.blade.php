@@ -24,11 +24,10 @@
                                      <div class="col-md-2 pull-right">
                                             <div style="width: 150px;" class="input-group"> 
                                                 <a href="{{ route('reason.create')}}">
-                                                    <button  class="btn btn-success"><i class="fa fa-plus-circle"></i> Create Reason</button> 
+                                                    <button  class="btn btn-success"><i class="fa fa-plus-circle"></i> Create Issues</button> 
                                                 </a>
                                             </div>
                                         </div> 
-                                     
                                 </div>
                                   
                                     @if(Session::has('flash_alert_notice'))
@@ -62,9 +61,9 @@
                                         <thead>
                                             <tr>
                                                  <th>Sno.</th>
-                                                <th> Reason Type </th>
-                                                <th> ReasonDescription </th>  
-                                                 <th>  Reason ID </th> 
+                                                <th> Issues Type </th>
+                                                <th> Issues Description </th>  
+                                                 <th>  Issues ID </th> 
                                                 <th>Created date</th> 
                                                 <th>Action</th> 
                                             </tr>

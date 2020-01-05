@@ -75,7 +75,7 @@
                                              <tr>
                                                  <td>{{$route}}</td>
                                                @foreach($roles as $role )
-                                               <?php $permission =json_decode($role->permission); 
+                                               <?php $permission =json_decode($role->permission);
                                                $canRead = isset($permission->{$route}->read)?true:false;
                                                $canWrite = isset($permission->{$route}->write)?true:false;
                                                $canDelete = isset($permission->{$route}->delete)?true:false;

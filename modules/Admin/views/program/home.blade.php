@@ -24,7 +24,7 @@
                                      <div class="col-md-2 pull-right">
                                             <div style="width: 150px;" class="input-group"> 
                                                 <a href="{{ route('program.create')}}">
-                                                    <button  class="btn btn-success"><i class="fa fa-plus-circle"></i> Create Program</button> 
+                                                    <button  class="btn btn-success"><i class="fa fa-plus-circle"></i> Create Promotion</button> 
                                                 </a>
                                             </div>
                                         </div> 
@@ -62,7 +62,7 @@
                                         <thead>
                                             <tr>
                                                  <th>Sno.</th>
-                                                <th> Program Name </th>
+                                                <th> Promotion Name </th>
                                                 <th> Start Date </th> 
                                                 <th> End Date </th> 
                                                  <th> View Details  </th> 

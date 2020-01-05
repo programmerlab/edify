@@ -51,11 +51,11 @@
                     </div>
                     <div class="pic-name-right"> 
 
-                        <h4>{{$postTasks->user->first_name or 'NA'}}<span class="follow-ico"><a href="#">
+                        <h4>{{$postTasks->user->first_name ?? 'NA'}}<span class="follow-ico"><a href="#">
                         <img src="{{url('storage/image/follow.png')}}"></a></span>
 
                         </h4>
-                        <p>{{$postTasks->user->email or 'NA'}} {{$postTasks->user->phone or ''}}</p>
+                        <p>{{$postTasks->user->email ?? 'NA'}} {{$postTasks->user->phone ?? ''}}</p>
                         <p><a href="#">
                             <img src="{{url('storage/image/open.png')}}">
 
@@ -96,7 +96,7 @@
                                         <i class="fa fa-location-arrow"></i>
                                     </div>
                                     <div class="pop-location-desc">
-                                        <h5>{{$postTasks->address or 'NA'}}</h5>
+                                        <h5>{{$postTasks->address ?? 'NA'}}</h5>
                                         <p>
                                             
                                             {{$postTasks->zipcode}}

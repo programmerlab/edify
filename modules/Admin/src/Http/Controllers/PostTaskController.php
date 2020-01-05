@@ -88,7 +88,6 @@ class PostTaskController extends Controller {
     /*
      * Dashboard
      * */
-
     public function index(Contact $contact, Request $request) 
     { 
         $page_title = 'Post Task';
@@ -124,7 +123,7 @@ class PostTaskController extends Controller {
             $postTasks = PostTask::with('user')->orderBy('id','desc')->Paginate($this->record_per_page);
         }
            
-        return view('packages::postTask.index', compact('postTasks','data', 'page_title', 'page_action','sub_page_title','currency'));
+        return view('packages::postTask.index', compact('postTasks', 'page_title', 'page_action','sub_page_title','currency'));
     }
 
     /*
@@ -336,13 +335,14 @@ class PostTaskController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(PostTask $postTask) { 
-        PostTask::where('id',$postTask->id)->delete(); 
+    public function destroy($id) { 
+        PostTask::where('id',$id)->delete(); 
         return Redirect::to(route('postTask'))
                         ->with('flash_alert_notice', 'Post Task  successfully deleted.');
     }
 
-    public function show(PostTask $postTask) {
+    public function show( $id) {
+        $postTask = PostTask::find($id);
         $page_title = 'Post Task Detail';
         $sub_page_title = 'View Post Task Detail';
         $page_action = 'View Post Task Detail'; 

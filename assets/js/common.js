@@ -49,7 +49,6 @@ $('button[name="remove_levels"]').on('click', function(e){
 	if(result)
 	{
          var id = self.attr('id');
-         
 	    $('#deleteForm_'+id).submit();
 	}   
  	

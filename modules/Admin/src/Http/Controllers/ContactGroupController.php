@@ -108,12 +108,12 @@ class ContactGroupController extends Controller {
 
             }])->where('parent_id',0)->get();
             //dd($contactGroup );
-           $pdf = PDF::loadView('packages::contactGroup.pdf', compact('contactGroupPag','contactGroup','data', 'page_title', 'page_action','sub_page_title','contacts','html'));
+           $pdf = PDF::loadView('packages::contactGroup.pdf', compact('contactGroupPag','contactGroup', 'page_title', 'page_action','sub_page_title'));
            return ($pdf->download('contact-group.pdf'));
         }
        
-
-        return view('packages::contactGroup.index', compact('contactGroupPag','contactGroup','data', 'page_title', 'page_action','sub_page_title','contacts','html'));
+         
+        return view('packages::contactGroup.index', compact('contactGroupPag','contactGroup', 'page_title', 'page_action','sub_page_title'));
     }
 
     // updateGroup
@@ -201,16 +201,16 @@ class ContactGroupController extends Controller {
      * object : $category
      * */
 
-    public function edit(Category $category) {
-
+    public function edit(Category $id) {
+        $category = Category::find($id);
         $page_title = 'Category';
         $page_action = 'Edit Group category'; 
         $url = url::asset('storage/uploads/category/'.$category->category_group_image)  ;
         return view('packages::category.edit', compact( 'url','category', 'page_title', 'page_action'));
     }
 
-    public function update(CategoryRequest $request, Category $category) {
-       
+    public function update(CategoryRequest $request,  $id) {
+        $category = Category::find($id);
         $name = $request->get('category_group_name');
         $slug = str_slug($request->get('category_group_name'));
         $parent_id = 0;
@@ -256,9 +256,9 @@ class ContactGroupController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(ContactGroup $cg) 
+    public function destroy($id) 
     {
-        ContactGroup::whereIdOrParentId($cg->id,$cg->id)->delete();
+        ContactGroup::whereIdOrParentId($id,$id)->delete();
         return Redirect::to(route('contactGroup'))
                         ->with('flash_alert_notice', 'Contact Group successfully deleted.');
     }

@@ -27,7 +27,7 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-settings font-red"></i>
-                                        <span class="caption-subject font-red sbold uppercase">{{ $heading or 'Article Type' }}</span>
+                                        <span class="caption-subject font-red sbold uppercase">{{ $heading??'Article Type' }}</span>
                                     </div>
                                     
                                 </div>

@@ -93,7 +93,7 @@ class CategoryController extends Controller {
         }
          
         
-        return view('packages::category.index', compact('result_set','categories','data', 'page_title', 'page_action','sub_page_title'));
+        return view('packages::category.index', compact('categories', 'page_title', 'page_action','sub_page_title'));
     }
 
     /*
@@ -108,10 +108,10 @@ class CategoryController extends Controller {
         $category  = Category::all();
         $sub_category_name  = Category::all();
  
-        $html = '';
+        $url = '';
         $categories = '';
 
-        return view('packages::category.create', compact('categories', 'html','category','sub_category_name', 'page_title', 'page_action'));
+        return view('packages::category.create', compact('categories', 'url','category','sub_category_name', 'page_title', 'page_action'));
     }
 
     /*
@@ -152,16 +152,16 @@ class CategoryController extends Controller {
      * object : $category
      * */
 
-    public function edit(Category $category) {
-
+    public function edit($id) {
+        $category = Category::find($id);
         $page_title = 'Category';
         $page_action = 'Edit Group category'; 
         $url = url::asset('storage/uploads/category/'.$category->category_group_image)  ;
         return view('packages::category.edit', compact( 'url','category', 'page_title', 'page_action'));
     }
 
-    public function update(CategoryRequest $request, Category $category) {
-       
+    public function update(CategoryRequest $request,  $id) {
+        $category = Category::find($id);
         $name = $request->get('category_group_name');
         $slug = str_slug($request->get('category_group_name'));
         $parent_id = 0;
@@ -210,10 +210,10 @@ class CategoryController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Category $category) {
+    public function destroy($category) {
         
-        Category::where('id',$category->id)->delete(); 
-        Category::where('parent_id',$category->id)->delete();
+        Category::where('id',$category)->delete(); 
+        Category::where('parent_id',$category)->delete();
         return Redirect::to(route('category'))
                         ->with('flash_alert_notice', 'Group Category  successfully deleted.');
     }

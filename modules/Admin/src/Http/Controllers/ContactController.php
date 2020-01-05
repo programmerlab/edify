@@ -21,7 +21,7 @@ use Lang;
 use Session; 
 use Route;
 use Crypt; 
-use App\Http\Controllers\Controller;
+use Modules\Admin\Http\Controllers\Controller;
 use Illuminate\Http\Dispatcher; 
 use App\Helpers\Helper;
 use Modules\Admin\Models\Contact; 
@@ -103,7 +103,7 @@ class ContactController extends Controller {
         }
          
         
-        return view('packages::contact.index', compact('result_set','contacts','data', 'page_title', 'page_action','sub_page_title'));
+        return view('packages::contact.index', compact('contacts', 'page_title', 'page_action','sub_page_title'));
     }
 
     /*
@@ -118,7 +118,7 @@ class ContactController extends Controller {
         $category  = Category::all();
         $categories  = Category::all();
   
-        return view('packages::contact.create', compact('categories','contact', 'html','category','sub_category_name', 'page_title', 'page_action'));
+        return view('packages::contact.create', compact('categories','contact','category', 'page_title', 'page_action'));
     }
 
     public function createGroup(Request $request)
@@ -285,18 +285,18 @@ class ContactController extends Controller {
      * object : $category
      * */
 
-    public function edit(Contact $contact) {
+    public function edit($id) {
+        $contact =Contact::find($id);
         $page_title     = 'contact';
         $page_action    = 'Edit contact'; 
         $categories  = Category::all();
         $category_id  = explode(',',$contact->categoryName);
         
-        return view('packages::contact.edit', compact('category_id','categories','contact' ,'url','contact', 'page_title', 'page_action'));
+        return view('packages::contact.edit', compact('category_id','categories','contact' ,'contact', 'page_title', 'page_action'));
     }
 
-    public function update(Request $request, Contact $contact) {
-        
-        $contact = Contact::find($contact->id); 
+    public function update(Request $request, $id ) {
+         $contact = Contact::find($id); 
         $categoryName = $request->get('categoryName');
         
         $cn= '';
@@ -324,8 +324,8 @@ class ContactController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Contact $contact) { 
-        Contact::where('id',$contact->id)->delete(); 
+    public function destroy($id) { 
+        Contact::where('id',$id)->delete(); 
         return Redirect::to(route('contact'))
                         ->with('flash_alert_notice', 'contact  successfully deleted.');
     }

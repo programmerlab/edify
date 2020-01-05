@@ -76,9 +76,9 @@
                                                 <td>{{ $result->title}}</td>
                                                 <td>{{ substr($result->description,0,20)   }}</td>
                                                 <td>{{ $result->totalAmount}}
-                                                    {{$currency->field_value or ''}}
+                                                    {{$currency->field_value ?? ''}}
                                                 </td>
-                                                <td>{{ $result->hourlyRate}} {{$currency->field_value or ''}}</td>
+                                                <td>{{ $result->hourlyRate}} {{$currency->field_value ?? ''}}</td>
                                                 <td>{{ $result->status}}</td>
                                                 <td>{{ $result->created_at}}</td>
                                                 <td><a href="{{route('postTask.show',$result->id)}}"> View Details </a></td>

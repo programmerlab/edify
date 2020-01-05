@@ -2,24 +2,14 @@
 namespace Modules\Admin\Http\Controllers; 
 
 use Modules\Admin\Http\Requests\LoginRequest;
-use App\Http\Controllers\Controller;  
+use Modules\Admin\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Dispatcher; 
 use Illuminate\Contracts\Encryption\DecryptException;
 use App\Http\Requests\UserRequest;
-use Auth;
-use Input;
-use Redirect; 
-use Response;   
-use Crypt; 
-use View;
-use Cookie;
-use Closure; 
-use Hash;
-use URL;
-use Lang;
-use Validator;
+use Auth,Input,Redirect,Response,Crypt,View,Session;
+use Cookie,Closure,Hash,URL,Lang,Validator;
 use App\Http\Requests;
 use App\Helpers\Helper as Helper;
 //use Modules\Admin\Models\User; 
@@ -27,12 +17,8 @@ use Modules\Admin\Models\Category;
 use Modules\Admin\Models\CategoryDashboard;
 use App\Admin;
 use Illuminate\Http\Request;
-use Session;
-
 use App\User;
-use App\ProfessorProfile;
-use App\StudentProfile;
- 
+
 /**
  * Class : AdminController
  */
@@ -51,6 +37,7 @@ class AdminController extends Controller {
         $this->middleware('admin');  
         View::share('heading','dashboard');
         View::share('route_url','admin');
+        View::share('WebsiteTitle','Edify');
     }
     /*
     * Dashboard

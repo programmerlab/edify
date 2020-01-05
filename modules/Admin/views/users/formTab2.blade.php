@@ -7,7 +7,6 @@
                 </span>
             </div> 
         </div>
-<!--  {!! Form::model($user, ['method' => 'PATCH', 'route' => ['user.update', $user->id],'enctype'=>'multipart/form-data']) !!} -->
 <input type="hidden" name="tab" value="avtar">
     <div class="form-group">
         <div class="clearfix margin-top-10">

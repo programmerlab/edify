@@ -109,12 +109,14 @@ class UsersController extends Controller {
 
     public function create(User $user) 
     {
+
         $page_title = 'Admin User';
         $page_action = 'Create User';
         $roles = Roles::all();
         $role_id = null;
         $js_file = ['common.js','bootbox.js','formValidate.js'];
-        return view('packages::users.create', compact('js_file','role_id','roles', 'user', 'page_title', 'page_action', 'groups'));
+
+        return view('packages::users.create', compact('js_file','role_id','roles', 'user', 'page_title', 'page_action'));
     }
 
     /*
@@ -148,8 +150,8 @@ class UsersController extends Controller {
      * object : $user
      * */
 
-    public function edit(User $user) {
-
+    public function edit($id) {
+        $user = User::find($id);
         $page_title = 'Admin User';
         $page_action = 'Show Users';
         $role_id = $user->role_type;
@@ -158,8 +160,8 @@ class UsersController extends Controller {
         return view('packages::users.edit', compact('js_file','role_id','roles','user', 'page_title', 'page_action'));
     }
 
-    public function update(Request $request, User $user) {
-        
+    public function update(Request $request, $id) {
+        $user = User::find($id);
         $user->fill(Input::all());
         if(!empty($request->get('password')))
         {
@@ -218,9 +220,9 @@ class UsersController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(User $user) {
+    public function destroy($id) {
         
-        User::where('id',$user->id)->delete();
+        User::where('id',$id)->delete();
 
         return Redirect::to(route('user'))
                         ->with('flash_alert_notice', 'User  successfully deleted.');

@@ -39,10 +39,7 @@
 
     <body class=" login">
         <!-- BEGIN LOGO -->
-        <div class="logo">
-            
-               <img src="{{ URL::asset('assets/global/logo.png') }}"> 
-        </div>
+     
 
         <!-- END LOGO -->
         <!-- BEGIN LOGIN -->

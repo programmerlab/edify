@@ -9,7 +9,7 @@ use Modules\Admin\Models\User;
 use Modules\Admin\Models\Settings;
 use Modules\Admin\Http\Requests\RoleRequest;
 use Modules\Admin\Models\Permission;
-use App\Role;
+use Modules\Admin\Models\Role;
 use Input;
 use Validator;
 use Auth;
@@ -24,7 +24,7 @@ use Lang;
 use Session;
 use Route;
 use Crypt;
-use App\Http\Controllers\Controller;
+use Modules\Admin\Http\Controllers\Controller;
 use Illuminate\Http\Dispatcher; 
 use Modules\Admin\Helpers\Helper as Helper;
 use Response;
@@ -43,6 +43,7 @@ class RoleController extends Controller {
      * @return \Illuminate\View\View
      */
     public function __construct() {
+        parent::__construct();
 
         $this->middleware('admin');
         View::share('viewPage', 'role');
@@ -108,8 +109,7 @@ class RoleController extends Controller {
 
           $validator = Validator::make($request->all(), [
            'name' => 'required',
-           'role_type' => 'required|unique:roles,name',
-           'permission' => 'required'
+           'role_type' => 'required|unique:roles,name' 
         ]);
         /** Return Error Message **/
         if ($validator->fails()) {
@@ -136,16 +136,17 @@ class RoleController extends Controller {
      * object : $category
      * */
 
-    public function edit(Role $role) {
-
+    public function edit($role) {
+        $role = Role::find($role);
         $page_title = 'Role';
         $page_action = 'Edit Role'; 
          
-         return view('packages::role.edit', compact( 'role','page_title', 'page_action'));
+        return view('packages::role.edit', compact( 'role','page_title', 'page_action'));
     }
 
-    public function update(Request $request, Role $role) 
+    public function update(Request $request, $id) 
     {
+        $role = Role::find($id);
         $role->name         =   $request->get('role_type');
         $role->display_name =   $request->get('name');
         $role->permission   =   json_encode($request->get('permission'));
@@ -162,9 +163,9 @@ class RoleController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Role $role) 
+    public function destroy($id) 
     {
-        Role::where('id',$role->id)->delete();
+        Role::where('id',$id)->delete();
         return Redirect::to('admin/role')
                         ->with('flash_alert_notice', 'Role was successfully deleted!');
     }
@@ -178,21 +179,21 @@ class RoleController extends Controller {
 		$page_action = 'Update Permission'; 
 		if($request->method()=="GET"){
                     
-		 $roles = Role::all();
-                 return view('packages::role.permission', compact( 'roles','page_title', 'page_action'));
+            $roles = Role::all();
+            return view('packages::role.permission', compact( 'roles','page_title', 'page_action'));
 		}
 		if($request->method()=="POST"){
-                   
-                    $permission = $request->get('permission');
-                    foreach($permission as $role_id=>$controllers){
-                    $role = Role::find($role_id);
-                    $role->permission = json_encode($controllers);
-                    $role->modules = NULL;
-                    $role->save();
-                    }
-                    
-                    return Redirect::to('admin/permission')
-                        ->with('flash_alert_notice', 'Permission was successfully changed!');
+           
+            $permission = $request->get('permission');
+            foreach($permission as $role_id=>$controllers){
+                $role = Role::find($role_id);
+                $role->permission = json_encode($controllers);
+                $role->modules = NULL;
+                $role->save();
+            }
+            
+            return Redirect::to('admin/permission')
+                ->with('flash_alert_notice', 'Permission was successfully changed!');
 		}
 		
 		

@@ -5,7 +5,7 @@
                         <h4>Group Name</h4>
                         
                          <div class="form-group {{ $errors->first('categoryName', ' has-error') }}">
-                            <input type="text" class="form-control" name="contact_group" id="contact_group" value="{{ $gname or ''}}"> 
+                            <input type="text" class="form-control" name="contact_group" id="contact_group" value="{{ $gname ?? ''}}"> 
                              <h4>Select contact from list</h4>
                              <span id="error_msg"></span>
                             <div class="portlet-body" >   

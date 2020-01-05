@@ -40,8 +40,7 @@
     <body class=" login">
         <!-- BEGIN LOGO -->
         <div class="logo">
-            
-                <p style="font-size: 30px; font-family: inherit; color:#fff; margin: 0px; padding: 0px"> <b style="color:yellow">edifyartist </b> CMS</p>
+            <p style="font-size: 30px; font-family: inherit; color:#fff; margin: 0px; padding: 0px"> <b style="color:yellow">Edifyartist </b> CMS</p>
         </div>
 
         <!-- END LOGO -->

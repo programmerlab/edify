@@ -16,8 +16,8 @@ class CompaintController extends Controller
     
     public function __construct(Request $request,Complains $complains) { 
         $this->middleware('admin');
-        View::share('viewPage', 'Compaint Managment');
-        View::share('sub_page_title', 'Compaint');
+        View::share('viewPage', 'Complaint Management');
+        View::share('sub_page_title', 'Complaint');
         View::share('helper',new Helper);
 
         $heading = $request->get('reasonType');
@@ -29,22 +29,21 @@ class CompaintController extends Controller
         }
 
         View::share('heading',$heading);
-        View::share('route_url',route('compaint')); 
+        View::share('route_url',route('complaint')); 
         $this->record_per_page = Config::get('app.record_per_page'); 
     }
     
     public function index(Complains $complains, Request $request) 
     {
-        $page_title = 'Complaint';
+        $page_title = 'Complaint ';
         $sub_page_title = 'View Complaint';
         $page_action = 'View Complaint'; 
 
         $reason = $request->get('reasonType');
         if($request->get('reasonType')){
-            $reason = Reason::where('reasonType','LIKE','%'.$request->get('reasonType').'%')->lists('id');
+            $reason = Reason::where('reasonType','LIKE','%'.$request->get('reasonType').'%')->pluck('id');
 
         }
-        
         $search = trim($request->get('search'));
         $taskdate = $request->get('taskdate');  
         if ((isset($search) && !empty($search)) || (isset($taskdate) && !empty($taskdate)) ) { 
@@ -89,7 +88,7 @@ class CompaintController extends Controller
         $ticketId = $request->get('ticketId');
         $reason = $request->get('reasonType');
         if($request->get('reasonType')){
-            $reason = Reason::where('reasonType','LIKE','%'.$request->get('reasonType').'%')->lists('id');
+            $reason = Reason::where('reasonType','LIKE','%'.$request->get('reasonType').'%')->pluck('id');
 
         }
         
@@ -109,10 +108,10 @@ class CompaintController extends Controller
             })->with('userDetail','taskDetail','reportedUserDetail','reason')->first();
 
         }   
-        //dd($comments);
         $status = $request->get('status');
         $allReply = \DB::table('support_conversation')->where('parent_id',$comments->id)->whereNotNull('reason_type')->get();
         $result = $complains;
+
         return view('packages::support.suportform', compact('comments', 'page_title', 'page_action','reason','ticketId','result','allReply','status'));
       }
   

@@ -3,13 +3,11 @@
 namespace Modules\Admin\Models;
 
 use Illuminate\Database\Eloquent\Model as Eloquent; 
-
-use Nestable\NestableTrait;
+ 
 
 class Category extends Eloquent {
 
-    use NestableTrait;
-
+     
      protected $parent = 'parent_id';
 
     /**

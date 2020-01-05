@@ -93,7 +93,7 @@ class ReasonController extends Controller {
         }
          
         
-        return view('packages::reason.index', compact('result_set','reasons','data', 'page_title', 'page_action','sub_page_title'));
+        return view('packages::reason.index', compact('reasons', 'page_title', 'page_action','sub_page_title'));
     }
 
     /*

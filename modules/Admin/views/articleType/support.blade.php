@@ -94,7 +94,7 @@
                                                  <td> <a class="btn-circle btn btn-success" href="{{url('admin/supportTicket?view=true&ticketId='.$result->ticket_id)}}"> #{{$result->ticket_id}} </a> </td> 
                                                 <td>  
                                                     <a href="{{url('admin/articleType?search='.$dept)}}" style="text-transform: capitalize;"> 
-                                                    {{$result->supportType->resolution_department or 'NA'}} 
+                                                    {{$result->supportType->resolution_department ?? 'NA'}} 
                                                     </a>
                                                  </td>
                                                  <td>

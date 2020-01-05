@@ -40,7 +40,7 @@
                                             <tr>
                                                 <th> Press title </th>  <td> {{ ucfirst($result->pressName)}} </td></tr>
                                              <tr>
-                                                <th> Url</th>  <td> {!!$result->link or 'NA'!!}  </td>
+                                                <th> Url</th>  <td> {!!$result->link ?? 'NA'!!}  </td>
                                             </tr> 
                                             
                                             <tr>

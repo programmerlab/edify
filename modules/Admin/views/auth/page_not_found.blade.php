@@ -48,7 +48,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="btn-group">
-                                                {{ $error_msg or 'Something went wrong!'}}
+                                                {{ $error_msg ?? 'Something went wrong!'}}
                                             </div>
                                             
                                         </div>

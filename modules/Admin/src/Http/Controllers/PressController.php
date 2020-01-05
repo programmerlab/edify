@@ -83,7 +83,7 @@ class PressController extends Controller {
         } else {
             $results = press::Paginate($this->record_per_page);
         }
-        return view('packages::press.index', compact('results','Press','page_title', 'page_action'));
+        return view('packages::press.index', compact('results','page_title', 'page_action'));
     }
 
     /*
@@ -117,16 +117,17 @@ class PressController extends Controller {
      * object : $category
      * */
 
-    public function edit(Press $press,Request $request) {
+    public function edit($id) {
 
+        $press    =   Press::find($id);
         $page_title = 'Press';  
         $page_action = 'Edit Press';  
     
         return view('packages::press.edit', compact('press', 'page_title', 'page_action'));
     }
 
-    public function update(Request $request, Press $result) {
-         
+    public function update(Request $request, $id) {
+        $result    =   Press::find($id); 
         $result->fill(Input::all()); 
         $result->save(); 
         
@@ -138,20 +139,20 @@ class PressController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Press $press) {
+    public function destroy($press) {
         
-        $del = Press::where('id',$press->id)->delete(); 
+        $del = Press::where('id',$press)->delete(); 
         return Redirect::to(URL::previous())
                         ->with('flash_alert_notice', 'Press item successfully deleted.');
     }
 
-    public function show(Press $result) {
-        
+    public function show($id) {
+         $result    =   Press::find($id);   
         //Press::with('pressCategory')->Paginate($this->record_per_page);
        // $result = $press->first();
         $page_title  = 'Press';
         $page_action  = 'Show Press';  
-        return view('packages::press.show', compact('result','data', 'page_title', 'page_action','html'));
+        return view('packages::press.show', compact('result', 'page_title', 'page_action'));
 
     }
 

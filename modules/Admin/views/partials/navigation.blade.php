@@ -6,7 +6,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="{{url('admin')}}" >
-                       <img src="{{ URL::asset('assets/global/logo.png') }}" alt="logo" class="logo"  style="width: 170px" />
+                       <img src="{{ URL::asset('assets/global/logo.png') }}" alt="logo" class="logo"  style="width: 100px" />
                        </a>
                     <div class="menu-toggler sidebar-toggler">
                         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->

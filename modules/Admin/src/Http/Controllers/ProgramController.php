@@ -44,10 +44,10 @@ class ProgramController extends Controller {
      */
     public function __construct(Contact $contact) { 
         $this->middleware('admin');
-        View::share('viewPage', 'Program');
-        View::share('sub_page_title', 'Program');
+        View::share('viewPage', 'Promotion');
+        View::share('sub_page_title', 'Promotion');
         View::share('helper',new Helper);
-        View::share('heading','Program');
+        View::share('heading','Promotion');
         View::share('route_url',route('program')); 
         $this->record_per_page = Config::get('app.record_per_page'); 
     }
@@ -59,9 +59,9 @@ class ProgramController extends Controller {
 
     public function index(Contact $contact, Request $request) 
     { 
-        $page_title = 'Program';
-        $sub_page_title = 'View Program';
-        $page_action = 'View Program'; 
+        $page_title = 'Promotion';
+        $sub_page_title = 'View Promotion';
+        $page_action = 'View Promotion'; 
 
 
         if ($request->ajax()) {
@@ -91,7 +91,7 @@ class ProgramController extends Controller {
         }
          
         
-        return view('packages::program.index', compact('result_set','programs','data', 'page_title', 'page_action','sub_page_title'));
+        return view('packages::program.index', compact('programs','page_title', 'page_action','sub_page_title'));
     }
 
     /*
@@ -100,8 +100,8 @@ class ProgramController extends Controller {
 
     public function create(Program $program) 
     {
-        $page_title     = 'Program';
-        $page_action    = 'Create Program';
+        $page_title     = 'Promotion';
+        $page_action    = 'Create Promotion';
         $program       = Program::all(); 
         $status         = [
                             'last_15_days'=>'inactive from last 15 days',
@@ -133,19 +133,20 @@ class ProgramController extends Controller {
      * object : $category
      * */
 
-    public function edit(Program $program) {
-        $page_title     = 'Program';
-        $page_action    = 'Edit Program'; 
+    public function edit($id) {
+        $program = Program::find($id);
+        $page_title     = 'Promotion';
+        $page_action    = 'Edit Promotion'; 
         $status         = [
                             'last_15_days'=>'inactive from last 15 days',
                             'last_30_days'=>'inactive from last 30 days',
                             'last_45_days'=>'inactive from last 45 days'
                         ];
-        return view('packages::program.edit', compact( 'url','program','status', 'page_title', 'page_action'));
+        return view('packages::program.edit', compact('program','status', 'page_title', 'page_action'));
     }
 
-    public function update(Request $request, Program $program) {
-        
+    public function update(Request $request, $id) {
+        $program = Program::find($id);
         $program->fill(Input::all()); 
         $program->save();  
         return Redirect::to(route('program'))
@@ -156,21 +157,21 @@ class ProgramController extends Controller {
      * @param ID
      * 
      */
-    public function destroy(Program $program) { 
+    public function destroy($program) { 
         
-        Program::where('id',$program->id)->delete();
+        Program::where('id',$program)->delete();
         return Redirect::to(route('program'))
                         ->with('flash_alert_notice', 'program  successfully deleted.');
     }
 
-    public function show(Program $program) {
-
-        $page_title     = 'Program';
-        $page_action    = 'Show Program'; 
+    public function show($id) {
+        $program = Program::find($id);
+        $page_title     = 'Promotion';
+        $page_action    = 'Show Promotion'; 
         $result = $program;
         $program = Program::where('id',$program->id)->select(['program_name','description','start_date','end_date','target_users','complete_task','reward_point','created_at'])->first()->toArray();
         
-        return view('packages::program.show', compact( 'result','program','status','page_title', 'page_action'));
+        return view('packages::program.show', compact( 'result','program','page_title', 'page_action'));
 
     }
 

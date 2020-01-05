@@ -40,7 +40,7 @@
                                             <tr>
                                                 <th> Article title </th>  <td> {{ ucfirst($result->article_title)}} </td></tr>
                                              <tr>
-                                                <th> Article type</th>  <td> {!!$result->articleCategory->article_type or 'NA'!!}  </td>
+                                                <th> Article type</th>  <td> {!!$result->articleCategory->article_type ?? 'NA'!!}  </td>
                                             </tr> 
                                             
                                             <tr>

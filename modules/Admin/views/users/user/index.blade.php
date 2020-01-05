@@ -27,7 +27,7 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-settings font-red"></i>
-                                        <span class="caption-subject font-red sbold uppercase">{{$heading or ''}}</span>
+                                        <span class="caption-subject font-red sbold uppercase">{{$heading ?? ''}}</span>
                                     </div>
                                      
                                 </div>
