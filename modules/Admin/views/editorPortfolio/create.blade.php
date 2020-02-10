@@ -28,16 +28,16 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-settings font-red"></i>
-                                        <span class="caption-subject font-red sbold uppercase">Create   Category</span>
+                                        <span class="caption-subject font-red sbold uppercase">Create Editor Portfolio</span>
                                     </div>
                                     
                                 </div>
                                 <div class="portlet-body">
                                     <!-- BEGIN FORM-->
                                 
-                                  {!! Form::model($category, ['route' => ['category.store'],'class'=>'form-horizontal user-form','id'=>'user-form','enctype'=>'multipart/form-data']) !!}
+                                  {!! Form::model($editorPortfolio, ['route' => ['editorPortfolio.store'],'class'=>'form-horizontal user-form','id'=>'user-form','enctype'=>'multipart/form-data']) !!}
                                   
-                                  @include('packages::category.form')
+                                  @include('packages::editorPortfolio.form')
                                   
                                   {!! Form::close() !!}   
                                     <!-- END FORM-->

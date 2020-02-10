@@ -28,18 +28,17 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-settings font-red"></i>
-                                        <span class="caption-subject font-red sbold uppercase">Create   Category</span>
+                                        <span class="caption-subject font-dark sbold uppercase">Edit Software Editor</span>
                                     </div>
                                     
                                 </div>
                                 <div class="portlet-body">
-                                    <!-- BEGIN FORM-->
-                                
-                                  {!! Form::model($category, ['route' => ['category.store'],'class'=>'form-horizontal user-form','id'=>'user-form','enctype'=>'multipart/form-data']) !!}
-                                  
-                                  @include('packages::category.form')
-                                  
-                                  {!! Form::close() !!}   
+                                    <!-- BEGIN FORM--> 
+
+
+                                {!! Form::model($softwareEditor, ['method' => 'PATCH', 'route' => ['softwareEditor.update', $softwareEditor->id],'class'=>'form-horizontal user-form','id'=>'form_sample_3','enctype'=>'multipart/form-data']) !!}
+                                    @include('packages::softwareEditor.form', compact('softwareEditor'))
+                                {!! Form::close() !!} 
                                     <!-- END FORM-->
                                 </div>
                                 <!-- END VALIDATION STATES-->

@@ -130,77 +130,94 @@
                             </ul>
                         </li>
 
-                         <li class="nav-item  start active {{ (isset($page_title) && $page_title=='Category')?'open':'' }}">
-                            <a href="javascript:;" class="nav-link nav-toggle">
-                                <i class="fa fa-folder-open-o"></i>
-                                <span class="title">Manage Category</span>
-                                <span class="arrow {{ (isset($page_title) && $page_title=='Category')?'open':'' }}"></span>
-                            </a>
-                            <ul class="sub-menu" style="display: {{ (isset($page_title) && $page_title=='Category')?'block':'none' }}">
+    <li class="nav-item  start active {{ (isset($page_title) && $page_title=='Category')?'open':'' }}">
+    <a href="javascript:;" class="nav-link nav-toggle">
+        <i class="fa fa-folder-open-o"></i>
+        <span class="title">Manage Category</span>
+        <span class="arrow {{ (isset($page_title) && $page_title=='Category')?'open':'' }}"></span>
+    </a>
+    <ul class="sub-menu" style="display: {{ (isset($page_title) && $page_title=='Category')?'block':'none' }}">
+       
+        <li class="nav-item  {{ (isset($sub_page_title) && $sub_page_title=='Sub Category')?'open':'' }}">
 
-                                <li class="nav-item  {{ (isset($sub_page_title) && $sub_page_title=='Group Category')?'open':'' }}">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="fa fa-folder-o"></i>
+                <span class="title">Category</span>
+                <span class="arrow {{ (isset($sub_page_title) && $sub_page_title=='Sub Category')?'open':'' }}"></span>
+            </a>
+            <ul class="sub-menu"  style="display: {{ (isset($sub_page_title) && $sub_page_title=='Category')?'block':'' }}">
+                <li class="nav-item {{ (isset($page_action) && $page_action=='Create  Category')?'open':'' }}">
+                    <a href="{{ route('category.create') }}" class="nav-link " > Create Category</a>
+                </li>
+                <li class="nav-item {{ (isset($page_action) && $page_action=='View  Category')?'open':'' }}">
+                    <a href="{{ route('category') }}" class="nav-link "  >View Category</a>
+                </li>
 
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="fa fa-folder-o"></i>
-                                        <span class="title">Group Category</span>
-                                        <span class="arrow {{ (isset($sub_page_title) && $sub_page_title=='Group Category')?'open':'' }}"></span>
-                                    </a>
-                                    <ul class="sub-menu" style="display: {{ (isset($sub_page_title) && $sub_page_title=='Group Category')?'block':'' }}">
-                                        <li class="nav-item {{ (isset($page_action) && $page_action=='Create Group Category')?'open':'' }}">
-                                            <a href="{{ route('category.create') }}" class="nav-link "  >
+            </ul>
+        </li>
+    </ul>
+    </li>
 
-                                            <i class="glyphicon glyphicon-plus-sign"></i>
-                                                <span class="title">
-                                                  Create Group
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item {{ (isset($page_action) && $page_action=='View Group Category')?'open':'' }}">
-                                            <a href="{{ route('category') }}" class="nav-link " >
-                                                <i class="glyphicon glyphicon-eye-open"></i>
-                                                <span class="title">
-                                                 View Group
-                                                </span>
-                                            </a>
-                                        </li>
+    <li class="nav-item  start active {{ (isset($page_title) && $page_title=='Software Editor')?'open':'' }}">
+         
+        <a href="javascript:;" class="nav-link nav-toggle">
+        <i class="fa fa-folder-open-o"></i>
+        <span class="title">Software Editor</span>
+        <span class="arrow {{ (isset($page_title) && $page_title=='Software Editor')?'open':'' }}"></span>
+    </a>
+        <ul class="sub-menu" style="display: {{ (isset($page_title) && $page_title=='Software Editor')?'block':'none' }}">
+           
+            <li class="nav-item  {{ (isset($sub_page_title) && $sub_page_title=='Sub Software Editor')?'open':'' }}">
 
-                                    </ul>
-                                </li>
-                                <li class="nav-item  {{ (isset($sub_page_title) && $sub_page_title=='Sub Category')?'open':'' }}">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="fa fa-folder-o"></i>
+                    <span class="title">Software Editor</span>
+                    <span class="arrow {{ (isset($sub_page_title) && $sub_page_title=='Software Editor')?'open':'' }}"></span>
+                </a>
+                <ul class="sub-menu"  style="display: {{ (isset($sub_page_title) && $sub_page_title=='Software Editor')?'block':'' }}">
+                    <li class="nav-item {{ (isset($page_action) && $page_action=='Create  Software Editor')?'open':'' }}">
+                        <a href="{{ route('softwareEditor.create') }}" class="nav-link " > Create Software Editor</a>
+                    </li>
+                    <li class="nav-item {{ (isset($page_action) && $page_action=='View  Software Editor')?'open':'' }}">
+                        <a href="{{ route('softwareEditor') }}" class="nav-link "  >View Software Editor</a>
+                    </li>
 
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="fa fa-folder-o"></i>
-                                        <span class="title">Category</span>
-                                        <span class="arrow {{ (isset($sub_page_title) && $sub_page_title=='Sub Category')?'open':'' }}"></span>
-                                    </a>
-                                    <ul class="sub-menu"  style="display: {{ (isset($sub_page_title) && $sub_page_title=='Sub Category')?'block':'' }}">
-                                        <li class="nav-item {{ (isset($page_action) && $page_action=='Create Sub Category')?'open':'' }}">
-                                            <a href="{{ route('sub-category.create') }}" class="nav-link " > Create Category</a>
-                                        </li>
-                                        <li class="nav-item {{ (isset($page_action) && $page_action=='View Sub Category')?'open':'' }}">
-                                            <a href="{{ route('sub-category') }}" class="nav-link "  >View Category</a>
-                                        </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
 
-                                    </ul>
-                                </li>
 
-                                <li class="nav-item  {{ (isset($sub_page_title) && $sub_page_title=='Category Dashboard')?'open':'' }}">
+    <li class="nav-item  start active {{ (isset($page_title) && $page_title=='Software Editor')?'open':'' }}">
+         
+        <a href="javascript:;" class="nav-link nav-toggle">
+        <i class="fa fa-folder-open-o"></i>
+        <span class="title">  Editor </span>
+        <span class="arrow {{ (isset($page_title) && $page_title=='Editor Portfolio')?'open':'' }}"></span>
+    </a>
+        <ul class="sub-menu" style="display: {{ (isset($page_title) && $page_title=='Editor Portfolio')?'block':'none' }}">
+           
+            <li class="nav-item  {{ (isset($sub_page_title) && $sub_page_title=='Editor Portfolio')?'open':'' }}">
 
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="fa fa-folder-o"></i>
-                                        <span class="title">Category Dashboard</span>
-                                        <span class="arrow {{ (isset($sub_page_title) && $sub_page_title=='Category Dashboard')?'open':'' }}"></span>
-                                    </a>
-                                    <ul class="sub-menu"  style="display: {{ (isset($sub_page_title) && $sub_page_title=='Category Dashboard')?'block':'' }}">
-                                        <li class="nav-item {{ (isset($page_action) && $page_action=='Category Dashboard')?'open':'' }}">
-                                            <a href="{{ route('category-dashboard') }}" class="nav-link "  >Category Dashboard</a>
-                                        </li>
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="fa fa-folder-o"></i>
+                    <span class="title">Editor Portfolio</span>
+                    <span class="arrow {{ (isset($sub_page_title) && $sub_page_title=='Editor Portfolio')?'open':'' }}"></span>
+                </a>
+                <ul class="sub-menu"  style="display: {{ (isset($sub_page_title) && $sub_page_title=='Editor Portfolio')?'block':'' }}">
+                    <li class="nav-item {{ (isset($page_action) && $page_action=='Create  Editor Portfolio')?'open':'' }}">
+                        <a href="{{ route('editorPortfolio.create') }}" class="nav-link " > Create Editor Portfolio </a>
+                    </li>
+                    <li class="nav-item {{ (isset($page_action) && $page_action=='View  Software Editor')?'open':'' }}">
+                        <a href="{{ route('editorPortfolio') }}" class="nav-link "  >View Editor Portfolio</a>
+                    </li>
 
-                                    </ul>
-                                </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
 
-                            </ul>
-                        </li>
+
                         <li class="nav-item start active">
                             <a href="javascript:;" class="nav-link nav-toggle">
                                 <i class="glyphicon glyphicon-globe"></i>

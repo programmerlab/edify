@@ -101,6 +101,46 @@
         );
         /*---------End---------*/
 
+        Route::bind('softwareEditor', function ($value, $route) {
+            return Modules\Admin\Models\SoftwareEditor::find($value);
+        });
+
+        Route::resource(
+            'admin/softwareEditor',
+            'Modules\Admin\Http\Controllers\SoftwareEditorController',
+            [
+                'names' => [
+                    'edit'      => 'softwareEditor.edit',
+                    'show'      => 'softwareEditor.show',
+                    'destroy'   => 'softwareEditor.destroy',
+                    'update'    => 'softwareEditor.update',
+                    'store'     => 'softwareEditor.store',
+                    'index'     => 'softwareEditor',
+                    'create'    => 'softwareEditor.create',
+                ]
+                    ]
+        );
+
+        Route::bind('editorPortfolio', function ($value, $route) {
+            return Modules\Admin\Models\EditorPortfolio::find($value);
+        });
+
+        Route::resource(
+            'admin/editorPortfolio',
+            'Modules\Admin\Http\Controllers\EditorPortfolioController',
+            [
+                'names' => [
+                    'edit'      => 'editorPortfolio.edit',
+                    'show'      => 'editorPortfolio.show',
+                    'destroy'   => 'editorPortfolio.destroy',
+                    'update'    => 'editorPortfolio.update',
+                    'store'     => 'editorPortfolio.store',
+                    'index'     => 'editorPortfolio',
+                    'create'    => 'editorPortfolio.create',
+                ]
+                    ]
+        );
+
 
         /*------------User Category and controller---------*/
 

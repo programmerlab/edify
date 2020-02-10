@@ -23,8 +23,8 @@
                                     </div>
                                      <div class="col-md-2 pull-right">
                                             <div style="width: 150px;" class="input-group"> 
-                                                <a href="{{ route('category.create')}}">
-                                                    <button class="btn btn-success"><i class="fa fa-plus-circle"></i> Add Category</button> 
+                                                <a href="{{ route('editorPortfolio.create')}}">
+                                                    <button class="btn btn-success"><i class="fa fa-plus-circle"></i> Add editorPortfolio</button> 
                                                 </a>
                                             </div>
                                         </div> 
@@ -41,7 +41,7 @@
                                 <div class="portlet-body">
                                     <div class="table-toolbar">
                                         <div class="row">
-                                            <form action="{{route('category')}}" method="get" id="filter_data">
+                                            <form action="{{route('editorPortfolio')}}" method="get" id="filter_data">
                                              
                                             <div class="col-md-3">
                                                 <input value="{{ (isset($_REQUEST['search']))?$_REQUEST['search']:''}}" placeholder="Search by  name" type="text" name="search" id="search" class="form-control" >
@@ -52,7 +52,7 @@
                                            
                                         </form>
                                          <div class="col-md-2">
-                                             <a href="{{ route('category') }}">   <input type="submit" value="Reset" class="btn btn-default form-control"> </a>
+                                             <a href="{{ route('editorPortfolio') }}">   <input type="submit" value="Reset" class="btn btn-default form-control"> </a>
                                         </div>
                                        
                                         </div>
@@ -61,30 +61,38 @@
                                     <table class="table table-striped table-hover table-bordered" id="">
                                         <thead>
                                             <tr>
-                                                <th> Category Name </th>
+                                                <th> Sno. </th>
+                                                <th> Title </th>
                                                 <th> Image </th> 
+                                                <th> Category Name </th> 
+                                                <th> Software Editor Name </th>
+                                                <th> Description </th> 
                                                 <th>Created date</th> 
                                                 <th>Action</th> 
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($categories as $key => $result)
+                                        @foreach($editorPortfolio as $key => $result)
                                             <tr>
-                                                <td> {{$result->category_name}} </td>
+                                                 <td>   {{ (($editorPortfolio->currentpage()-1)*15)+(++$key) }} 
+                                                </td>
+                                                <td> {{$result->title}} </td>
                                                 <td>
-                                                <a href="{{ url::asset('storage/uploads/category/'.$result->category_image)  }}" target="_blank" >
-                                                <img src="{{ url::asset('storage/uploads/category/'.$result->category_image)  }}" width="100px"> </a>  </td>
-                                                
-                                                     <td>
+                                                <a href="{{ url::asset('storage/uploads/editorPortfolio/'.$result->image_name)  }}" target="_blank" >
+                                                <img src="{{ url::asset('storage/uploads/editorPortfolio/'.$result->image_name)  }}" width="100px" height="50px;"> </a>  </td>
+                                                <td> {{$result->category->category_name}} </td>
+                                                <td> {{$result->softwareEditor->software_name}} </td>
+                                                <td> {{$result->description}} </td>
+                                                <td>
                                                         {!! Carbon\Carbon::parse($result->created_at)->format('d-m-Y'); !!}
-                                                    </td>
+                                                </td>
                                                     
-                                                    <td> 
-                                                        <a href="{{ route('category.edit',$result->id)}}">
+                                                <td> 
+                                                        <a href="{{ route('editorPortfolio.edit',$result->id)}}">
                                                             <i class="fa fa-edit" title="edit"></i> 
                                                         </a>
 
-                                                        {!! Form::open(array('class' => 'form-inline pull-left deletion-form', 'method' => 'DELETE',  'id'=>'deleteForm_'.$result->id, 'route' => array('category.destroy', $result->id))) !!}
+                                                        {!! Form::open(array('class' => 'form-inline pull-left deletion-form', 'method' => 'DELETE',  'id'=>'deleteForm_'.$result->id, 'route' => array('editorPortfolio.destroy', $result->id))) !!}
                                                         <button class='delbtn btn btn-danger btn-xs' type="submit" name="remove_levels" value="delete" id="{{$result->id}}"><i class="fa fa-fw fa-trash" title="Delete"></i></button>
                                                         
                                                          {!! Form::close() !!}
@@ -96,7 +104,7 @@
                                             
                                         </tbody>
                                     </table>
-                                     <div class="center" align="center">  {!! $categories->appends(['search' => isset($_GET['search'])?$_GET['search']:''])->render() !!}</div>
+                                     <div class="center" align="center">  {!! $editorPortfolio->appends(['search' => isset($_GET['search'])?$_GET['search']:''])->render() !!}</div>
                                 </div>
                             </div>
                             <!-- END EXAMPLE TABLE PORTLET-->

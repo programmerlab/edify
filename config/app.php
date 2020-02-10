@@ -2,6 +2,8 @@
 
 return [
 
+    'record_per_page' => env('record_per_page', 15),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

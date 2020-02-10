@@ -43,4 +43,19 @@ class PostTask extends Eloquent {
         return $this->hasOne('Modules\Admin\Models\User','id','userId');
     }
 
+    public function customer()
+    {
+        return $this->hasOne('Modules\Admin\Models\User', 'taskOwnerId','id');
+    }
+
+     public function category()
+    {
+        return $this->hasOne('Modules\Admin\Models\Category', 'categoryId','id');
+    }
+
+   public function editor()
+    {
+        return $this->hasOne('Modules\Admin\Models\User', 'taskDoerId','id');
+    }
+
 }

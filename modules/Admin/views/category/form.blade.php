@@ -6,18 +6,18 @@
                                           <!--   <div class="alert alert-success display-hide">
                                                 <button class="close" data-close="alert"></button> Your form validation is successful! </div>
   -->
-										 	<div class="form-group {{ $errors->first('category_group_name', ' has-error') }}  @if(session('field_errors')) {{ 'has-error' }} @endif">
-										        <label class="control-label col-md-3">Group Category Name <span class="required"> * </span></label>
+										 	<div class="form-group {{ $errors->first('category_name', ' has-error') }}  @if(session('field_errors')) {{ 'has-error' }} @endif">
+										        <label class="control-label col-md-3">  Category Name <span class="required"> * </span></label>
 										        <div class="col-md-4"> 
-										            {!! Form::text('category_group_name',null, ['class' => 'form-control','data-required'=>1])  !!} 
+										            {!! Form::text('category_name',null, ['class' => 'form-control','data-required'=>1])  !!} 
 										            
-										            <span class="help-block" style="color:red">{{ $errors->first('category_group_name', ':message') }} @if(session('field_errors')) {{ 'The Group Category name already been taken!' }} @endif</span>
+										            <span class="help-block" style="color:red">{{ $errors->first('category_name', ':message') }} @if(session('field_errors')) {{ 'The  Category name already been taken!' }} @endif</span>
 										        </div>
 										    </div> 
                                             
 
 
-                                        <div class="form-group  {{ $errors->first('category_group_image', ' has-error') }}">
+                                        <div class="form-group  {{ $errors->first('category_image', ' has-error') }}">
                                                 <label class="control-label col-md-3"> Image Upload <span class="required"> * </span></label>
                                                 <div class="col-md-9">
                                                     <div class="fileinput fileinput-new" data-provides="fileinput">
@@ -29,11 +29,11 @@
                                                                 <span class="fileinput-new"> Select image </span>
                                                                 <span class="fileinput-exists"> Change </span>
                                                                
-                                            {!! Form::file('category_group_image',null,['class' => 'form-control form-cascade-control input-small'])  !!}
+                                            {!! Form::file('category_image',null,['class' => 'form-control form-cascade-control input-small'])  !!}
  
 
                                                                  </span>
-                                                                  <span class="help-block" style="color:#e73d4a">{{ $errors->first('category_group_image', ':message') }}</span>
+                                                                  <span class="help-block" style="color:#e73d4a">{{ $errors->first('category_image', ':message') }}</span>
                                                             <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
                                                         </div>
                                                     </div>

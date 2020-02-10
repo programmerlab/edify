@@ -5,32 +5,31 @@ namespace Modules\Admin\Http\Requests;
 use App\Http\Requests\Request;
 use Input;
 
-class CategoryRequest extends Request
-{
+class SoftwareEditorRequest  extends Request {
 
     /**
      * The metric validation rules.
      *
-     * @return array
+     * @return array    
      */
-    public function rules()
-    {
-        switch ($this->method()) {
+    public function rules() { 
+            switch ( $this->method() ) {
                 case 'GET':
                 case 'DELETE': {
                         return [ ];
                     }
                 case 'POST': {
                         return [
-                            'category_name' => 'required|unique:categories,category_name',
-                             'category_image'             => 'required|mimes:jpeg,bmp,png,gif'
+                            'software_name' => 'required|unique:software_editors,software_name', 
+                             'image_name'   => 'required|mimes:jpeg,bmp,png,gif'
                         ];
                     }
                 case 'PUT':
                 case 'PATCH': {
-                    if ($category = $this->category) {
+                    if ( $softwareEditor = $this->softwareEditor) {
+
                         return [
-                            'category_name'   => "required" ,
+                            'software_name'   => "required" , 
                             
                         ];
                     }
@@ -45,8 +44,8 @@ class CategoryRequest extends Request
      *
      * @return bool
      */
-    public function authorize()
-    {
+    public function authorize() {
         return true;
     }
+
 }
