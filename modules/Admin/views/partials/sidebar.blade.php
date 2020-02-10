@@ -218,64 +218,7 @@
     </li>
 
 
-                        <li class="nav-item start active">
-                            <a href="javascript:;" class="nav-link nav-toggle">
-                                <i class="glyphicon glyphicon-globe"></i>
-                                <span class="title"> Manage Contact </span>
-                                <span class=""></span>
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="sub-menu" style="display: {{ (isset($page_title) && $page_title=='Contact')?'block':'none' }}">
-                                 <li class="nav-item  {{ (isset($page_title) && $page_title=='Contact')?'open':'' }}">
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="icon-user"></i>
-                                        <span class="title">Contacts</span>
-                                        <span class="arrow {{ (isset($page_title) && $page_title=='User')?'open':'' }}"></span>
-                                    </a>
-                                    <ul class="sub-menu" style="display: {{ (isset($page_title) && $page_title=='Contact')?'block':'none' }}">
-                                        <li class="nav-item  {{ (isset($page_title) && $page_action=='Create Contact')?'active':'' }}">
-                                            <a href="{{ route('contact.create') }}" class="nav-link ">
-                                                 <i class="glyphicon glyphicon-plus-sign"></i>
-                                                <span class="title">
-                                                    Create Contact
-                                                </span>
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item  {{ (isset($page_title) && $page_action=='View Contact')?'active':'' }}">
-                                            <a href="{{ route('contact') }}" class="nav-link ">
-                                              <i class="glyphicon glyphicon-eye-open"></i>
-                                                <span class="title">
-                                                    View Contacts
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item  {{ (isset($page_title) && $page_title=='contactGroup')?'open':'' }}">
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="glyphicon glyphicon-th"></i>
-                                        <span class="title">Group Contact</span>
-                                        <span class="arrow {{ (isset($page_title) && $page_title=='contactGroup')?'open':'' }}"></span>
-                                    </a>
-                                    <ul class="sub-menu" style="display: {{ (isset($sub_page_title) && $sub_page_title=='contactGroup')?'block':'none' }}">
-                                        <li class="nav-item  {{ (isset($page_title) && $page_action=='View contactGroup')?'active':'' }}">
-                                            <a href="{{ route('contactGroup') }}" class="nav-link ">
-                                               <i class="glyphicon glyphicon-eye-open"></i>
-                                                <span class="title">
-                                                    View Group
-                                                </span>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-
-
-
-                            </ul>
-
-                        </li>
+                        
                          <li class="nav-item  start active  {{ (isset($viewPage) && $viewPage=='Post Task')?'open':'' }}">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                      <i class="glyphicon glyphicon-user"></i>
@@ -409,7 +352,7 @@
                         </li>
 
 
-                         <li class="nav-item start active {{ (isset($page_title) && $page_title=='Program')?'open':'' }}">
+                  <!--    <li class="nav-item start active {{ (isset($page_title) && $page_title=='Program')?'open':'' }}">
                                     <a href="javascript:;" class="nav-link nav-toggle">
                                         <i class="glyphicon glyphicon-th"></i>
                                         <span class="title">Promotions</span>
@@ -435,11 +378,11 @@
 
                                     </ul>
 
-                            </li>
+                            </li> -->
 
 
 
-                            <li class="nav-item start active {{ (isset($page_title) && $page_title=='Blog')?'open':'' }}">
+                           <!--  <li class="nav-item start active {{ (isset($page_title) && $page_title=='Blog')?'open':'' }}">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="glyphicon glyphicon-th"></i>
                                     <span class="title">Blogs</span>
@@ -467,7 +410,7 @@
                             </li>
 
 
-                                <li class="nav-item start active {{ (isset($page_title) && $page_title=='Article Type')?'open':'' }}">
+                            <li class="nav-item start active {{ (isset($page_title) && $page_title=='Article Type')?'open':'' }}">
                                     <a href="javascript:;" class="nav-link nav-toggle">
                                         <i class="glyphicon glyphicon-th"></i>
                                         <span class="title">Article Category</span>
@@ -492,11 +435,11 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </li>
+                            </li>
+ -->
 
 
-
-                                <li class="nav-item start active {{ (isset($page_title) && $page_title=='Article')?'open':'' }}">
+                            <!-- <li class="nav-item start active {{ (isset($page_title) && $page_title=='Article')?'open':'' }}">
                                     <a href="javascript:;" class="nav-link nav-toggle">
                                         <i class="glyphicon glyphicon-th"></i>
                                         <span class="title">Article</span>
@@ -521,7 +464,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </li>
+                            </li> -->
 
                                 <!-- <li class="nav-item start active {{ (isset($page_title) && $page_title=='Support Ticket')?'open':'' }}">
                                     <a href="javascript:;" class="nav-link nav-toggle">

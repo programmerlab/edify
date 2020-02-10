@@ -54,29 +54,7 @@
                             </div>
                         </div>
     
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
-                                    <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="567">{{ $category_grp_count }}</span>
-                                        </h3> 
-                                        <small>Group Category  </small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
-                                </div>
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">45% grow</span>
-                                        </span>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
+                        
 
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="dashboard-stat2 bordered">
@@ -85,7 +63,7 @@
                                         <h3 class="font-blue-sharp">
                                             <span data-counter="counterup" data-value="567">{{$category_count}}</span>
                                         </h3>
-                                        <small> Manage Category</small>
+                                        <small> Editor Portfolio </small>
                                     </div>
                                     <div class="icon">
                                         <i class="fa fa-folder-open-o"></i>
@@ -109,7 +87,7 @@
                                         <h3 class="font-blue-sharp">
                                             <span data-counter="counterup" data-value="567">{{$category_dashboard_count or 0 }}</span>
                                         </h3>
-                                        <small> Category Dashboard</small>
+                                        <small> Category  </small>
                                     </div>
                                     <div class="icon">
                                         <i class="fa fa-folder-open-o"></i>
