@@ -28,4 +28,8 @@ Route::middleware('auth:api')->group( function () {
  
 Route::post('register', 'Api\ApiController@register');
 Route::post('login', 'Api\ApiController@login');
+
+// Ayush
+Route::get('test', 'Api\ApiController@test');
+Route::get('editor-portfolio', 'Api\ApiController@editor_portfolio');
      

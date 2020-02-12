@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Api;
 
+use Modules\Admin\Models\EditorPortfolio;
+use Modules\Admin\Models\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Api\BaseController as BaseController;
@@ -66,5 +68,32 @@ class ApiController extends BaseController
     {
         $users = User::all();
         return $this->sendResponse($users, 'Products retrieved successfully.');
+    }
+
+    // public function editor_portfolio()
+    // {
+    //    $data = EditorPortfolio::all();
+    //     foreach($data as $cat)
+    //     {
+    //         $cat_id = $cat['category_name'];
+    //         $cat_name = Category::where('id',$cat_id)->get();   
+    //         $data['new_name'] = $cat_name[0]['category_name'];
+    //     }
+       
+    //    return $this->sendResponse($data, 'Products retrieved successfully.');
+    // }
+
+    public function editor_portfolio()
+    {
+       $data = EditorPortfolio::all();
+        $data->transform(function($item,$key){
+
+        $category = Category::where('id',$item['category_name'])->get();
+        $item['cat_name'] = $category[0]['category_name'];
+
+         return $item;
+        });
+       
+       return $this->sendResponse($data, 'Products retrieved successfully.');
     }
 }
