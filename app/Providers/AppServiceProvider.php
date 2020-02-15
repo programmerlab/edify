@@ -31,7 +31,7 @@ class AppServiceProvider extends ServiceProvider
                     $step2 = str_replace("@index", '', $step1);
                     $step3 = str_replace("Controller", '', $step2);
                     
-                    $notArr = ['Auth','Admin','Role','CategoryDashboard','Compaint','ContactGroup','ArticleType','Article','Press','MonthlyReport',
+                    $notArr = ['Auth','Admin','Role','Compaint','ContactGroup','ArticleType','Article','Press','MonthlyReport',
                         'Program','Reason','Settings'];
                     if(in_array(ltrim($step3,'"\"'), $notArr))
                     {

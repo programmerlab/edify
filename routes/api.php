@@ -18,14 +18,49 @@ Route::middleware('auth:api')->get('app', function (Request $request) {
 
 });
 
-Route::middleware('auth:api')->group( function () {
+// 
+// Route::middleware('auth:api')->group( function () {
+// 
+//     Route::get('user', 'Api\ApiController@index');
+// });
+// 
+// 
+// 
+//  
+// Route::post('register', 'Api\ApiController@register');
+// Route::post('login', 'Api\ApiController@login($request)');
+// 
+// // Ayush
+// Route::get('test', 'Api\ApiController@test');
+// Route::get('editor-portfolio', 'Api\ApiController@editor_portfolio');
+// Route::get('get-banners', 'Api\ApiController@get_banners');
+// Route::post('update', 'Api\ApiController@update');
+// Route::get('active-editors', 'Api\ApiController@active_editors');
+// Route::post('like-counts', 'Api\ApiController@like_counts');
 
-    Route::get('user', 'Api\ApiController@index');
+// 
+Route::group([
+	    'prefix' => 'v2'
+	], function()
+    {
+
+        //Apis used in customer application  
+        Route::match(['post','get'],'member/customerLogin', 'Api\ApiController@customerLogin');
+        Route::match(['post','get'],'member/getActiveEditors', 'Api\ApiController@getActiveEditors');
+        Route::match(['post','get'],'member/getBanners', 'Api\ApiController@getBanners');
+        Route::match(['post','get'],'member/getAllPosts', 'Api\ApiController@getAllPosts');
+		
+		 // if route not found
+	    Route::any('{any}', function(){ 
+				$data = [
+							'status'=>0,
+							'code'=>400,
+							'message' => 'Bad request'
+						];
+				return \Response::json($data);
+
+		});
+       
 });
-
-
-
- 
-Route::post('register', 'Api\ApiController@register');
-Route::post('login', 'Api\ApiController@login');
+     
      
