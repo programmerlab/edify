@@ -32,4 +32,8 @@ Route::post('login', 'Api\ApiController@login');
 // Ayush
 Route::get('test', 'Api\ApiController@test');
 Route::get('editor-portfolio', 'Api\ApiController@editor_portfolio');
+Route::get('get-banners', 'Api\ApiController@get_banners');
+Route::post('update', 'Api\ApiController@update');
+Route::get('active-editors', 'Api\ApiController@active_editors');
+Route::post('like-counts', 'Api\ApiController@like_counts');
      
