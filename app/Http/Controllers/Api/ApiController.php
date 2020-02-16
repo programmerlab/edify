@@ -746,6 +746,7 @@ public function getMyOrders(Request $request)
         
             $portfolio =  EditorPortfolio::with('editor','softwareEditor','category')
                         ->whereIn('id',$portfolio_id)
+                        ->orderBy('created_at','desc')
                         ->get();
         }
         
