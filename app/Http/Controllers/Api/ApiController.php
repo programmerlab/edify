@@ -435,7 +435,7 @@ class ApiController extends BaseController
             }
             if ($error_msg) {
                 return array(
-                    'app_status' => false,
+                    'status' => false,
                     'code' => 201,
                     'msg' => $error_msg[0],
                     'user_data' => $request->all()
@@ -455,9 +455,9 @@ class ApiController extends BaseController
                     $editorsList[] = array('id' => $editors->id,'avatar' => $editors->profile_image,'first_name' => $editors->first_name,'last_name' => $editors->last_name); 
              }
             
-            return response()->json(["app_status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
+            return response()->json(["status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
         }else{   
-            return response()->json(["app_status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
+            return response()->json(["status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
         }
     }
 
@@ -480,7 +480,7 @@ class ApiController extends BaseController
             }
             if ($error_msg) {
                 return array(
-                    'app_status' => false,
+                    'status' => false,
                     'code' => 201,
                     'msg' => $error_msg[0],
                     'user_data' => $request->all()
@@ -500,9 +500,9 @@ class ApiController extends BaseController
                     $editorsList[] = array('id' => $editors->id,'avatar' => $editors->photo,'banner_title' => $editors->title); 
              }
             
-            return response()->json(["app_status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
+            return response()->json(["status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
         }else{   
-            return response()->json(["app_status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
+            return response()->json(["status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
         }
     }
 
@@ -585,7 +585,7 @@ public function getAllLikes(Request $request)
             }
             if ($error_msg) {
                 return array(
-                    'app_status' => false,
+                    'status' => false,
                     'code' => 201,
                     'msg' => $error_msg[0],
                     'user_data' => $request->all()
@@ -609,9 +609,9 @@ public function getAllLikes(Request $request)
                     $editorsList[] = array('id' => $editors->id,'avatar' =>  $imageUrl,'post_title' => $editors->title,'total_likes' => $editors->total_likes,"auther_name"=>$autherName,"sub_title"=>$subTitle,"profile_image"=>$editorImage ); 
              }
             
-            return response()->json(["app_status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
+            return response()->json(["status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
         }else{   
-            return response()->json(["app_status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
+            return response()->json(["status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
         }
     }
 
@@ -633,7 +633,7 @@ public function getMyOrders(Request $request)
             }
             if ($error_msg) {
                 return array(
-                    'app_status' => false,
+                    'status' => false,
                     'code' => 201,
                     'msg' => $error_msg[0],
                     'user_data' => $request->all()
@@ -657,9 +657,9 @@ public function getMyOrders(Request $request)
                     $editorsList[] = array('id' => $editors->id,'avatar' =>  $imageUrl,'post_title' => $editors->title,'total_likes' => $editors->total_likes,"auther_name"=>$autherName,"sub_title"=>$subTitle,"profile_image"=>$editorImage ); 
              }
             
-            return response()->json(["app_status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
+            return response()->json(["status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
         }else{   
-            return response()->json(["app_status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
+            return response()->json(["status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
         }
     }
 
@@ -712,6 +712,77 @@ public function getMyOrders(Request $request)
                 'status' => 'Could not Updated',
             ]);
         }
+    }
+
+
+    public function postLikes(Request $request){
+
+        $input = $request->all();
+        //print_r ($input);
+        $validator = Validator::make($request->all(), [
+                    'user_id' => 'required',
+                    'portfolio_id' => 'required',
+                    'like_count' => 'required'
+                ]);
+        if ($validator->fails()) {
+            $error_msg = [];
+            foreach ($validator->messages()->all() as $key => $value) {
+                array_push($error_msg, $value);
+            }
+            if ($error_msg) {
+                return array(
+                    'status' => false,
+                    'code' => 201,
+                    'message' => $error_msg[0],
+                    'data' => $request->all()
+                );
+            }
+        }
+
+        if(!User::find($request->user_id)){
+           return array(
+                    'status' => false,
+                    'code' => 201,
+                    'message' => 'Invalid user ID',
+                    'data' => $request->all()
+                ); 
+        }
+        if(!EditorPortfolio::find($request->portfolio_id)){
+                return array(
+                    'status' => false,
+                    'code' => 201,
+                    'message' => 'Invalid portfolio id',
+                    'data' => $request->all()
+                );
+        }
+
+        \DB::beginTransaction();
+
+        $data['user_id'] = $request->user_id;
+        $data['portfolio_id'] = $request->portfolio_id;
+
+        $portfolio = EditorPortfolio::find($request->portfolio_id);
+      
+        if($request->like_count==1){
+            $result = \DB::table('portfolio_likes_count')->insert($data);
+            $portfolio->total_likes = (int)$portfolio->total_likes+1;    
+        }else{
+            $result = \DB::table('portfolio_likes_count')->where($data)->delete();
+
+            $portfolio->total_likes = (int)$portfolio->total_likes-1;
+        }
+        
+        $portfolio->save();
+
+        \DB::commit();
+         return array(
+                    'status' => true,
+                    'code' => 200,
+                    'message' => 'Likes updated',
+                    'data' => $request->all()
+                );
+
+
     }
 
     public function active_editors()
