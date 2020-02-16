@@ -69,7 +69,7 @@ class EditorPortfolioController extends Controller
         if ((isset($search) && !empty($search))) {
             $search = isset($search) ? Input::get('search') : '';
                
-            $editorPortfolio = EditorPortfolio::where(function ($query) use ($search,$status) {
+            $editorPortfolio = EditorPortfolio::with('category','softwareEditor')->where(function ($query) use ($search,$status) {
                 if (!empty($search)) {
                     $query->Where('title', 'LIKE', "%$search%");
                 }

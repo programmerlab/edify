@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('app', function (Request $request) {
 
 });
 
+
 // 
 // Route::middleware('auth:api')->group( function () {
 // 
@@ -46,6 +47,8 @@ Route::group([
 
         //Apis used in customer application  
         Route::match(['post','get'],'member/customerLogin', 'Api\ApiController@customerLogin');
+        Route::match(['post','get'],'member/registration', 'Api\ApiController@registration');
+        
         Route::match(['post','get'],'member/getActiveEditors', 'Api\ApiController@getActiveEditors');
         Route::match(['post','get'],'member/getBanners', 'Api\ApiController@getBanners');
         Route::match(['post','get'],'member/getAllPosts', 'Api\ApiController@getAllPosts');
