@@ -52,7 +52,7 @@ Route::group([
         Route::match(['post','get'],'member/getActiveEditors', 'Api\ApiController@getActiveEditors');
         Route::match(['post','get'],'member/getBanners', 'Api\ApiController@getBanners');
         Route::match(['post','get'],'member/getAllPosts', 'Api\ApiController@getAllPosts');
-        Route::match(['post','get'],'member/getAllLikes', 'Api\ApiController@getAllLikes');
+        Route::match(['post','get'],'member/getAllMyLikes', 'Api\ApiController@getAllMyLikes');
         Route::match(['post','get'],'member/postLikes', 'Api\ApiController@postLikes');
         
         Route::match(['post','get'],'member/getMyOrders', 'Api\ApiController@getMyOrders');

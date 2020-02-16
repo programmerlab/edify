@@ -552,7 +552,7 @@ class ApiController extends BaseController
               $offset = 0;
         }  
 
-        $allPosts =  $editorsList->orderBy('id', 'desc')
+        $allPosts =  $editorsList->orderBy('created_at', 'desc')
                         ->skip($offset)
                         ->take($page_size)
                         ->get()
@@ -714,10 +714,53 @@ public function getMyOrders(Request $request)
         }
     }
 
+    public function getAllMyLikes(Request $request){
+
+         $validator = Validator::make($request->all(), [
+                    'user_id' => 'required' 
+                ]);
+        if ($validator->fails()) {
+            $error_msg = [];
+            foreach ($validator->messages()->all() as $key => $value) {
+                array_push($error_msg, $value);
+            }
+            if ($error_msg) {
+                return array(
+                    'status' => false,
+                    'code' => 201,
+                    'message' => $error_msg[0],
+                    'data' => $request->all()
+                );
+            }
+        }
+
+
+        $portfolio_id = \DB::table('portfolio_likes_count')
+                    ->where('user_id',$request->user_id) 
+                   
+                    ->pluck('portfolio_id');
+
+                    
+        $portfolio = [];
+        if(count($portfolio_id)){ 
+        
+            $portfolio =  EditorPortfolio::with('editor','softwareEditor','category')
+                        ->whereIn('id',$portfolio_id)
+                        ->get();
+        }
+        
+        return response()
+            ->json([
+                'status' => true,
+                'code' => 200,
+                'message' => 'My likes portfolio',
+                'data' => $portfolio
+            ]);
+
+    }
 
     public function postLikes(Request $request){
 
-        $input = $request->all();
         //print_r ($input);
         $validator = Validator::make($request->all(), [
                     'user_id' => 'required',
@@ -762,7 +805,7 @@ public function getMyOrders(Request $request)
         $data['portfolio_id'] = $request->portfolio_id;
 
         $portfolio = EditorPortfolio::find($request->portfolio_id);
-      
+
         if($request->like_count==1){
             $result = \DB::table('portfolio_likes_count')->insert($data);
             $portfolio->total_likes = (int)$portfolio->total_likes+1;    
