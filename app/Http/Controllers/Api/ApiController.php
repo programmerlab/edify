@@ -539,9 +539,11 @@ class ApiController extends BaseController
     
             foreach($usermodel as $editors){
                    $imageUrl = "https://edifyartist.com/storage/uploads/editorPortfolio/".$editors->image_name;
-                   $autherName = "Manoj Prasad";
-                    $subTitle = "Best Kalpanic image 4ever";
-                    $editorsList[] = array('id' => $editors->id,'avatar' =>  $imageUrl,'post_title' => $editors->title,'total_likes' => $editors->total_likes,"auther_name"=>$autherName,"sub_title"=>$subTitle ); 
+                   $autherName = "Photoshop"; //SoftName
+                    $subTitle = "Best Kalpanic image 4ever";  // Category Name 
+                    $editorImage = "https://edifyartist.com/storage/uploads/banners/manoj_profile.png";  //Editor Image 
+                    
+                    $editorsList[] = array('id' => $editors->id,'avatar' =>  $imageUrl,'post_title' => $editors->title,'total_likes' => $editors->total_likes,"auther_name"=>$autherName,"sub_title"=>$subTitle,"profile_image"=>$editorImage ); 
              }
             
             return response()->json(["app_status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
@@ -550,6 +552,100 @@ class ApiController extends BaseController
         }
     }
 
+public function getAllLikes(Request $request)
+    {
+      
+       // echo "Email:".$request->email;
+        $input = $request->all();
+        //print_r ($input);
+        $validator = Validator::make($request->all(), [
+                    'per_page' => 'required',
+                     'page' => 'required'
+                ]);
+        if ($validator->fails()) {
+            $error_msg = [];
+            foreach ($validator->messages()->all() as $key => $value) {
+                array_push($error_msg, $value);
+            }
+            if ($error_msg) {
+                return array(
+                    'app_status' => false,
+                    'code' => 201,
+                    'msg' => $error_msg[0],
+                    'user_data' => $request->all()
+                );
+            }
+        }
+      
+             $usermodel  = \DB::table('editor_profiles')
+                            ->get();
+         
+      
+        if($usermodel){
+            $editorsList =  array();
+    
+             foreach($usermodel as $editors){
+                   $imageUrl = "https://edifyartist.com/storage/uploads/editorPortfolio/".$editors->image_name;
+                   $autherName = "Photoshop"; //SoftName
+                    $subTitle = "Best Kalpanic image 4ever";  // Category Name 
+                    $editorImage = "https://edifyartist.com/storage/uploads/banners/manoj_profile.png";  //Editor Image 
+                    
+                    $editorsList[] = array('id' => $editors->id,'avatar' =>  $imageUrl,'post_title' => $editors->title,'total_likes' => $editors->total_likes,"auther_name"=>$autherName,"sub_title"=>$subTitle,"profile_image"=>$editorImage ); 
+             }
+            
+            return response()->json(["app_status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
+        }else{   
+            return response()->json(["app_status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
+        }
+    }
+
+
+public function getMyOrders(Request $request)
+    {
+      
+       // echo "Email:".$request->email;
+        $input = $request->all();
+        //print_r ($input);
+        $validator = Validator::make($request->all(), [
+                    'per_page' => 'required',
+                     'page' => 'required'
+                ]);
+        if ($validator->fails()) {
+            $error_msg = [];
+            foreach ($validator->messages()->all() as $key => $value) {
+                array_push($error_msg, $value);
+            }
+            if ($error_msg) {
+                return array(
+                    'app_status' => false,
+                    'code' => 201,
+                    'msg' => $error_msg[0],
+                    'user_data' => $request->all()
+                );
+            }
+        }
+      
+             $usermodel  = \DB::table('editor_profiles')
+                            ->get();
+         
+      
+        if($usermodel){
+            $editorsList =  array();
+    
+             foreach($usermodel as $editors){
+                   $imageUrl = "https://edifyartist.com/storage/uploads/editorPortfolio/".$editors->image_name;
+                   $autherName = "Photoshop"; //SoftName
+                    $subTitle = "Best Kalpanic image 4ever";  // Category Name 
+                    $editorImage = "https://edifyartist.com/storage/uploads/banners/manoj_profile.png";  //Editor Image 
+                    
+                    $editorsList[] = array('id' => $editors->id,'avatar' =>  $imageUrl,'post_title' => $editors->title,'total_likes' => $editors->total_likes,"auther_name"=>$autherName,"sub_title"=>$subTitle,"profile_image"=>$editorImage ); 
+             }
+            
+            return response()->json(["app_status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
+        }else{   
+            return response()->json(["app_status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
+        }
+    }
 
     public function editor_portfolio( Request $request)
     {
