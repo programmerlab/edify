@@ -541,8 +541,9 @@ class ApiController extends BaseController
             }
         }
       
-        $editorsList  = EditorPortfolio::with('editor','softwareEditor','category');
-        
+        $editorsList  = EditorPortfolio::with('editor','softwareEditor','category')
+                        ->select('id','title','price','description',\DB::raw('CONCAT(image_base_url, "",image_name) AS image_path'),'category_name','software_editor','image_name','image_base_url','editor_id','total_likes','updated_at') ;
+                        
         $toal_record = $editorsList->count();
         
 
@@ -746,7 +747,9 @@ public function getMyOrders(Request $request)
         
             $portfolio =  EditorPortfolio::with('editor','softwareEditor','category')
                         ->whereIn('id',$portfolio_id)
-                        ->orderBy('created_at','desc')
+                         
+                        ->select('id','title','price','description',\DB::raw('CONCAT(image_base_url, "",image_name) AS image_path'),'category_name','software_editor','image_name','image_base_url','editor_id','total_likes','updated_at') 
+                        ->orderBy('updated_at','desc')
                         ->get();
         }
         

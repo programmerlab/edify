@@ -36,12 +36,12 @@ class EditorPortfolio extends Eloquent {
 
     public function category()
     {
-        return $this->hasOne('Modules\Admin\Models\Category', 'id' ,'category_name')->select('id','category_name','category_image','description');
+        return $this->hasOne('Modules\Admin\Models\Category', 'id' ,'category_name')->select('id','category_name','category_image','description',\DB::raw('CONCAT("https://edifyartist.com/storage/uploads/category/", "",category_image ) AS category_image_path'));
     }
 
    public function softwareEditor()
     {
-        return $this->hasOne('Modules\Admin\Models\SoftwareEditor','id' , 'software_editor')->select('id','software_name','description','image_name');
+        return $this->hasOne('Modules\Admin\Models\SoftwareEditor','id' , 'software_editor')->select('id','software_name','description','image_name',\DB::raw('CONCAT("https://edifyartist.com/storage/uploads/softwareEditor/", "",image_name ) AS image_path'));
     }
 
     public function editor()
