@@ -43,5 +43,10 @@ class EditorPortfolio extends Eloquent {
     {
         return $this->hasOne('Modules\Admin\Models\SoftwareEditor','id' , 'software_editor');
     }
+
+    public function editor()
+    {
+        return $this->hasOne('Modules\Admin\Models\User','id' , 'editor_id');
+    }
   
 }
