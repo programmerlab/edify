@@ -36,17 +36,18 @@ class EditorPortfolio extends Eloquent {
 
     public function category()
     {
-        return $this->hasOne('Modules\Admin\Models\Category', 'id' ,'category_name');
+        return $this->hasOne('Modules\Admin\Models\Category', 'id' ,'category_name')->select('id','category_name','category_image','description');
     }
 
    public function softwareEditor()
     {
-        return $this->hasOne('Modules\Admin\Models\SoftwareEditor','id' , 'software_editor');
+        return $this->hasOne('Modules\Admin\Models\SoftwareEditor','id' , 'software_editor')->select('id','software_name','description','image_name');
     }
 
     public function editor()
     {
-        return $this->hasOne('Modules\Admin\Models\User','id' , 'editor_id');
+        return $this->hasOne('Modules\Admin\Models\User','id' , 'editor_id')->select('id','first_name','last_name','profile_image','phone');
     }
   
 }
+
