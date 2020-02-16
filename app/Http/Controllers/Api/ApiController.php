@@ -507,9 +507,18 @@ class ApiController extends BaseController
     }
 
 
- public function getAllPosts(Request $request)
+    public function getAllPosts(Request $request)
     {
-      
+        $page_number    =   $request->get('page_num');
+
+        if($page_number){
+            $page_num   =   ($request->get('page_num'))?$request->get('page_num'):1;
+            $page_size  =   ($request->get('page_size'))?$request->get('page_size'):10; 
+        }else{
+            $page_num = 1;
+            $page_size = 10;
+        }
+
        // echo "Email:".$request->email;
         $input = $request->all();
         //print_r ($input);
@@ -532,25 +541,30 @@ class ApiController extends BaseController
             }
         }
       
-        $editorsList  = EditorPortfolio::with('editor','softwareEditor','category')->get();
+        $editorsList  = EditorPortfolio::with('editor','softwareEditor','category');
         
+        $toal_record = $editorsList->count();
+        
+
+       if($page_number>1){
+                  $offset = $page_size*($page_num-1);
+        }else{
+              $offset = 0;
+        }  
+
+        $allPosts =  $editorsList->orderBy('id', 'desc')
+                        ->skip($offset)
+                        ->take($page_size)
+                        ->get()
+                        ->toArray();
+
          // order by desc
       
-        if($editorsList){
-            // $editorsList =  array();
-    
-            // foreach($usermodel as $editors){
-            //        $imageUrl = "https://edifyartist.com/storage/uploads/editorPortfolio/".$editors->image_name;
-            //        $autherName = "Photoshop"; //SoftName
-            //         $subTitle = "Best Kalpanic image 4ever";  // Category Name 
-            //         $editorImage = "https://edifyartist.com/storage/uploads/banners/manoj_profile.png";  //Editor Image 
-                    
-            //         $editorsList[] = array('id' => $editors->id,'avatar' =>  $imageUrl,'post_title' => $editors->title,'total_likes' => $editors->total_likes,"auther_name"=>$autherName,"sub_title"=>$subTitle,"profile_image"=>$editorImage ); 
-            //  }
+        if($allPosts){ 
             
-            return response()->json(["app_status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
+            return response()->json(['toal_record'=>$toal_record,"status" => true, "code" => 200, "message" => "record found", 'data' => $allPosts]);
         }else{   
-            return response()->json(["app_status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
+            return response()->json(['toal_record'=>0,"status" => false, "code" => 404, "message" => "Record not found", 'data' => $input]);  
         }
     }
 
