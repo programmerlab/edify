@@ -533,13 +533,46 @@
                                                 View Settings
                                             </span>
                                         </a>
-                                    </li> 
-                                         
-                                </ul>
+                                        </li> 
+                                            
+                                    </ul>
                             </li>
+
+                            <!-- <li class="nav-item start active {{ (isset($page_title) && $page_title=='Editor Test')?'open':'' }}">
+                                   <a href="{{ url('admin/editor-test') }}" class="nav-link nav-toggle">
+                                       <i class="glyphicon glyphicon-th"></i>
+                                       <span class="title">Editor test</span>
+                                   
+                                   </a>
+                             </li> -->
+                               <li class="nav-item start active {{ (isset($page_title) && $page_title=='Reason')?'open':'' }}">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <i class="glyphicon glyphicon-th"></i>
+                                        <span class="title">Editor Test</span>
+                                        <span class="arrow {{ (isset($page_title) && $page_title=='Reason')?'open':'' }}"></span>
+                                    </a>
+                                    <ul class="sub-menu" style="display: {{ (isset($page_title) && $page_title=='Reason')?'block':'none' }}">
+                                        <li class="nav-item  {{ (isset($page_title) && $page_action=='View Reason')?'active':'' }}">
+                                            <a href="{{ url('admin/test-images') }}" class="nav-link ">
+                                               <i class="glyphicon glyphicon-eye-open"></i>
+                                                <span class="title">
+                                                    Add test Images
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  {{ (isset($page_title) && $page_action=='Create Reason')?'active':'' }}">
+                                            <a href="{{ url('admin/editor-test') }}" class="nav-link ">
+                                               <i class="glyphicon glyphicon-eye-open"></i>
+                                                <span class="title">
+                                                    Test Results
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li> 
                         
-                                   </ul>
-                               </li> 
+                        </ul>
+                    </li> 
 
 
                         <!-- posttask end-->

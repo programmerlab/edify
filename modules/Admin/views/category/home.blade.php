@@ -30,14 +30,7 @@
                                         </div> 
                                      
                                 </div>
-                                  
-                                    @if(Session::has('flash_alert_notice'))
-                                         <div class="alert alert-success alert-dismissable" style="margin:10px">
-                                            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-                                          <i class="icon fa fa-check"></i>  
-                                         {{ Session::get('flash_alert_notice') }} 
-                                         </div>
-                                    @endif
+                            
                                 <div class="portlet-body">
                                     <div class="table-toolbar">
                                         <div class="row">
