@@ -15,6 +15,7 @@ use App\Helpers\Helper as Helper;
 //use Modules\Admin\Models\User; 
 use Modules\Admin\Models\Category;
 use Modules\Admin\Models\CategoryDashboard;
+use Modules\Admin\Models\EditorTest;
 use App\Admin;
 use Illuminate\Http\Request;
 use App\User;
@@ -107,4 +108,44 @@ class AdminController extends Controller {
         return view('packages::auth.page_not_found',compact('page_title','page_action','viewPage'))->with('flash_alert_notice', $msg);
 
    }  
+
+   public function ShowEditorTest()
+   {
+    $test_result = \DB::table('editor_test')->get();
+    // $test_result = EditorTest::all();
+    // print_r($test_result); exit;
+        $page_title = "Editor Test";
+        $page_action = "Editor Test";
+        $viewPage = "Editor Test";
+       return view('packages::EditorTest.ShowEditorTest',compact('test_result','page_title','page_action','viewPage'));
+   }
+
+   public function changeteststatus(Request $request)
+   {
+     $id = $request->input('id');
+     $flag = $request->input('flag');
+     $update = \DB::table('editor_test')->where('eid', $id)->update([$flag => 'approved']);
+     return redirect()->back();
+   }
+
+   public function testImages(Request $request)
+   {
+        if ($request->hasfile('myfile')){
+            $id = $request->input('hidden_id');
+            $photo = $request->file('myfile');
+            $destinationPath = storage_path('uploads/editor_test_imgs');
+            $photo->move($destinationPath, time().$photo->getClientOriginalName());
+            $photo_name = time().$photo->getClientOriginalName();
+            $update_img = \DB::table('editor_test_images')->where('id',$id)->update(['images' => $photo_name]);
+            return redirect()->back();
+        }
+        else{
+            $page_title = "Editor Test";
+            $page_action = "Editor Test";
+            $viewPage = "Editor Test";
+            $test_images = \DB::table('editor_test_images')->get();
+        return view('packages::EditorTest.EditorTestImages',compact('test_images','page_title','page_action','viewPage'));
+        }
+    }
+
 }

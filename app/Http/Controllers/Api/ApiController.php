@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Http\Controllers\Api;
+
+use Modules\Admin\Models\EditorPortfolio;
+use Modules\Admin\Models\SoftwareEditor;
+use Modules\Admin\Models\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Api\BaseController as BaseController;
@@ -213,6 +217,13 @@ class ApiController extends BaseController
                         array_push($error_msg, $value);     
                     }
 
+        $input = $request->all();
+    //    print_r($input);exit;
+        $input['password'] = bcrypt($input['password']);
+        $user = User::create($input);
+        // $success['token'] =  $user->createToken('MyApp')->accessToken;
+        $success['first_name'] =  $user->name;
+
             if($error_msg){
                return array(
                     'status' => 0,
@@ -417,8 +428,7 @@ class ApiController extends BaseController
         return $this->sendResponse($users, 'Products retrieved successfully.');
     }
 
-
- public function getActiveEditors(Request $request)
+    public function getActiveEditors(Request $request)
     {
       
        // echo "Email:".$request->email;
@@ -463,7 +473,7 @@ class ApiController extends BaseController
 
 
 
- public function getBanners(Request $request)
+    public function getBanners(Request $request)
     {
       
        // echo "Email:".$request->email;
@@ -569,7 +579,7 @@ class ApiController extends BaseController
         }
     }
 
-public function getAllLikes(Request $request)
+    public function getAllLikes(Request $request)
     {
       
        // echo "Email:".$request->email;
@@ -617,7 +627,7 @@ public function getAllLikes(Request $request)
     }
 
 
-public function getMyOrders(Request $request)
+    public function getMyOrders(Request $request)
     {
       
        // echo "Email:".$request->email;
@@ -676,6 +686,31 @@ public function getMyOrders(Request $request)
 //         $item['price'] = '80';
 //          return $item;
 //         });
+=======
+    // public function editor_portfolio()
+    // {
+    //    $data = EditorPortfolio::all();
+    //     foreach($data as $cat)
+    //     {
+    //         $cat_id = $cat['category_name'];
+    //         $cat_name = Category::where('id',$cat_id)->get();   
+    //         $data['new_name'] = $cat_name[0]['category_name'];
+    //     }
+       
+    //    return $this->sendResponse($data, 'Products retrieved successfully.');
+    // }
+
+    public function editor_portfolio()
+    {
+        $data = EditorPortfolio::all();
+        $data->transform(function($item,$key){
+            $category = Category::where('id',$item->category_name)->get();
+            $software_editor = SoftwareEditor::where('id', $item->software_editor)->get();
+            $item->cat_name = $category[0]['category_name'];
+            $item->software_name = $software_editor[0]['software_name'];
+            $item['price'] = '80';
+         return $item;
+        });
         
        return $this->sendResponse($data, 'Products retrieved successfully.');
     }
@@ -849,7 +884,6 @@ public function getMyOrders(Request $request)
         ]);
     }
 
-
     public function like_counts(Request $request)
     {
          $id = $request->portfolio_id;
@@ -887,6 +921,4 @@ public function getMyOrders(Request $request)
 
 
     }
-
-
 }

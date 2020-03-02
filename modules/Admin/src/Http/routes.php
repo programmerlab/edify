@@ -8,8 +8,10 @@
 
     Route::post('admin/blog/ajax', 'Modules\Admin\Http\Controllers\BlogController@ajax');
 
-    Route::post('admin/login', function (App\Admin $user) {
+      
 
+    Route::post('admin/login', function (App\Admin $user) {
+      
         $credentials = ['email' => Input::get('email'), 'password' => Input::get('password')];
 
         // $credentials = ['email' => 'kundan@gmail.com', 'password' => 123456];
@@ -38,6 +40,12 @@
 
     Route::group(['middleware' => ['admin']], function () {
         Route::get('admin', 'Modules\Admin\Http\Controllers\AdminController@index');
+        // Editor image test 
+        Route::get('admin/editor-test', 'Modules\Admin\Http\Controllers\AdminController@ShowEditorTest');
+        Route::get('admin/changeteststatus', 'Modules\Admin\Http\Controllers\AdminController@changeteststatus');
+        Route::get('admin/test-images', 'Modules\Admin\Http\Controllers\AdminController@testImages');
+        Route::post('admin/test-images', 'Modules\Admin\Http\Controllers\AdminController@testImages');
+        // Route::get('admin/edit-test-images', 'Modules\Admin\Http\Controllers\AdminController@editTestImages');
 
         /*------------User Model and controller---------*/
 
@@ -500,6 +508,7 @@
                 ]
         );
 
+        
         Route::get('admin/payment/release-fund', 'Modules\Admin\Http\Controllers\PaymentController@index');
         Route::get('admin/payment/user-report', 'Modules\Admin\Http\Controllers\PaymentController@userReport');
         Route::get('admin/payment/edifyartist-report', 'Modules\Admin\Http\Controllers\PaymentController@edifyartistReport');

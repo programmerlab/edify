@@ -15,6 +15,8 @@ use Modules\Admin\Models\Roles;
 use Modules\Admin\Models\EditorPortfolio;
 use Modules\Admin\Models\Category;
 use Modules\Admin\Models\SoftwareEditor;
+use Illuminate\Support\Facades\Cache;
+
 
 /**
  * Class AdminController
@@ -133,8 +135,9 @@ class EditorPortfolioController extends Controller
      * object : $editorPortfolio
      * */
 
-    public function edit($id)
+    public function edit( Request $request ,$id)
     {
+
         $editorPortfolio = EditorPortfolio::find($id);
         $page_title = '  Editor Portfolio';
         $page_action = 'Edit   Editor Portfolio';
