@@ -42,7 +42,7 @@
                 <div class="abouttxt">
                     <h2 class="sectiontitle">About Edify</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    
+                   
                 </div>
                 <div class="mobi">
                     <img src="assets/img/6.jpg" alt="">
@@ -135,25 +135,28 @@
                     <li><a data-toggle="tab" href="#becomeEditor">Sign Up</a></li>
                     <li class="active"><a data-toggle="tab" href="#signin">Login</a></li>
                   </ul>
+                    
+                       
+                  <div class="tab-content">
+                    <div id="signin" class="tab-pane fade in active">
                     <?php
-                        if(isset($msg))
-                        { ?>
+                        if(Session::has('message'))
+                        {
+                            ?>
+                            <p class="text-danger">
+                                  <?php 
+                           echo Session::get('message');
+                           Session::pull('message');
+                           ?>
+                            </p>
+                          
                         <script>
                         $('#signup .nav-tabs li:nth-child(0) a').tab('show');
                         $('#signup').modal('show');   
                         </script>
                         <?php
-                        }
-                    ?>
-            
-                  <div class="tab-content">
-                    <div id="signin" class="tab-pane fade in active">
-                    <?php
-                        if(isset($msg))
-                        {
-                            echo $msg; 
-                        }
-                    ?>
+                         }
+                         ?>
                         <form method="POST" action="{{ url('login') }}">
                         {{csrf_field()}}
                         <div class="form-group">
@@ -168,6 +171,22 @@
                     </div>
                     <div id="becomeEditor" class="tab-pane fade">
                        
+                    <?php
+                        if(Session::has('signup_msg'))
+                        {   ?>
+                            <p class="text-success">
+                                  <?php 
+                           echo Session::get('signup_msg');
+                           Session::pull('signup_msg');
+                           ?>
+                           </p>
+                        <script>
+                        $('#signup .nav-tabs li:nth-child(1) a').tab('show');
+                        $('#signup').modal('show');   
+                        </script>
+                        <?php
+                         }
+                         ?>
                         <form method="POST" action="{{ route('custom.register') }}">
                             {{csrf_field()}}
                             <div class="form-group">
