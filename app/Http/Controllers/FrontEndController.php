@@ -22,7 +22,7 @@ class FrontEndController extends Controller
         $request['password'] = Hash::make($request['password']);
         User::create($request->all())->id;
         Session::put('signup_msg', 'Thank you for registration. Login to Continue');
-        return redirect('http://localhost/edify-master/');
+        return redirect(URL::to('/'));
         // return view('pages.home',['msg' =>"success Thank you for registration. Login to Continue"]);
     }
 
@@ -34,7 +34,7 @@ class FrontEndController extends Controller
             $cc = Hash::check($request['password'], $check_user->password);
             if(!$cc){
                 Session::put('message', 'Login Fail, pls check Password');
-                return redirect('http://localhost/edify-master/');
+                return redirect('/');
                 // return response()->json(['success'=>false, 'message' => 'Login Fail, pls check password']);
             }else{
                 Session::put('editor_id', $check_user->id);
@@ -49,14 +49,14 @@ class FrontEndController extends Controller
                         }
                         else{
                             Session::put('test_status_msg', 'Please wait !! Your test result is under process.');
-                            return redirect('http://localhost/edify-master/');
+                            return redirect('/');
                         }
                     }
             }
         }
         else{
             Session::put('message', 'Login Fail, pls check Email id');
-                return redirect('http://localhost/edify-master/');
+                return redirect('/');
             return response()->json(['success'=>false, 'message' => 'Login Fail, pls check Email id']);
         }
     }
@@ -104,7 +104,7 @@ class FrontEndController extends Controller
         $insert = EditorTest::insert($data);
         
         Session::put('test_status_msg', 'Thank you!! Your test has been submitted. please wait for the approval !!');
-        return redirect('http://localhost/edify-master/');
+        return redirect('/');
 
         }
 }
