@@ -19,3 +19,4 @@ Route::post('login', 'FrontEndController@login');
 Route::get('login', 'FrontEndController@login');
 Route::get('/', 'FrontEndController@index');
 Route::post('signup', 'FrontEndController@signup')->name('custom.register');
+Route::post('uploadtestimage', 'FrontEndController@UploadTestImages');

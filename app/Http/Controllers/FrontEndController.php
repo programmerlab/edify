@@ -37,6 +37,7 @@ class FrontEndController extends Controller
                 return redirect('http://localhost/edify-master/');
                 // return response()->json(['success'=>false, 'message' => 'Login Fail, pls check password']);
             }else{
+                Session::put('editor_id', $check_user->id);
                 $check_eid = EditorTest::where('eid',$check_user->id)->first();
                     if ($check_eid == null) {
                         $test_imgs = \DB::table('editor_test_images')->get();
@@ -64,4 +65,38 @@ class FrontEndController extends Controller
             'password'=>'required',
          ]);
     }
+
+    public function UploadTestImages(Request $request)
+    {
+        $eid = Session::get('editor_id');
+        if($request->hasFile('img1'))
+        {
+            $img1 = $request->file('img1');
+            $destinationPath = storage_path('uploads/editor_test_imgs');
+            $img1->move($destinationPath, time().$img1->getClientOriginalName());
+            $img1_name = time().$img1->getClientOriginalName();
+
+        }
+        if($request->hasFile('img2'))
+        {
+            $img2 = $request->file('img2');
+            $destinationPath = storage_path('uploads/editor_test_imgs');
+            $img2->move($destinationPath, time().$img2->getClientOriginalName());
+            $img2_name = time().$img2->getClientOriginalName();
+
+        }
+        if($request->hasFile('img3'))
+        {
+            $img3 = $request->file('img3');
+            $destinationPath = storage_path('uploads/editor_test_imgs');
+            $img3->move($destinationPath, time().$img3->getClientOriginalName());
+            $img3_name = time().$img3->getClientOriginalName();
+
+        }
+        $data = array('eid'=>$eid, 'img1' => $img1_name, 'img2' => $img2_name, 'img3'=>$img3_name, 'img1_status'=>'pending', 'img2_status'=>'pending', 'img3_status'=>'pending' , 'insta_id'=>$request->get('insta_id') , 'fb_id'=>$request->get('fb_id') , 'other_id'=>$request->get('other_id'));
+        $insert = EditorTest::insert($data);
+        
+        return redirect('/');
+
+        }
 }

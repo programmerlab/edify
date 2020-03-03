@@ -25,7 +25,8 @@
                 </div>
             </div>
         </header>
-        <form action="#">
+        <form method="POST" action="{{ url('uploadtestimage') }}" enctype="multipart/form-data">
+        {{csrf_field()}}
         <div class="welcomeSection">
             <div class="container">
                 <div class="row">
@@ -66,13 +67,13 @@
                     <div class="col-sm-6">
                     <div class="testOp">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder='Instagram ID' required>
+                            <input type="text" class="form-control" placeholder='Instagram ID' name="fb_id" id="fb_id" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder='Facebook ID' required>
+                            <input type="text" class="form-control" name="insta_id" id="insta_id" placeholder='Facebook ID' required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder='Other ID' required>
+                            <input type="text" class="form-control" name="other_id" id="other_id" placeholder='Other ID'  required>
                         </div>
                     </div>
                     </div>
@@ -100,7 +101,7 @@
                     </div>
                     <div class="col-sm-7">
                         <div class="previewBox">
-                            <input type="file" class="form-upload" id='t1'>
+                            <input type="file" name="img1" class="form-upload" id='t1'>
                             <div class="preview">
                                 
                             </div>
@@ -132,7 +133,7 @@
                     </div>
                     <div class="col-sm-7">
                         <div class="previewBox">
-                            <input type="file" class="form-upload" id='t2'>
+                            <input type="file" name="img2" class="form-upload" id='t2'>
                             <div class="preview"></div>
                             <div class="previewBefore" style="background-image: url(storage/uploads/editor_test_imgs/<?php echo $test_imgs[1]->images?>);"></div>
                             
@@ -162,9 +163,10 @@
                     </div>
                     <div class="col-sm-7">
                         <div class="previewBox">
-                            <input type="file" class="form-upload" id='t3'>
-                            <div class="previewBefore" style="background-image: url(storage/uploads/editor_test_imgs/<?php echo $test_imgs[2]->images?>);"></div>
+                            <input type="file" name="img3" class="form-upload" id='t3'>
                             <div class="preview"></div>
+                            <div class="previewBefore" style="background-image: url(storage/uploads/editor_test_imgs/<?php echo $test_imgs[2]->images?>);"></div>
+                           
                             
                         </div>
                     </div>
