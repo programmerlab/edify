@@ -43,7 +43,14 @@ class FrontEndController extends Controller
                         $test_imgs = \DB::table('editor_test_images')->get();
                         return view('pages.editortest',['test_imgs'=>$test_imgs]);
                     } else {
-                        return view('pages.editordashboard');
+                        if($check_eid['img1_status'] == 'approved' && $check_eid['img2_status'] == 'approved' && $check_eid['img3_status'] == 'approved')
+                        {
+                            return view('pages.editordashboard');
+                        }
+                        else{
+                            Session::put('test_status_msg', 'Please wait !! Your test result is under process.');
+                            return redirect('http://localhost/edify-master/');
+                        }
                     }
             }
         }
@@ -96,7 +103,8 @@ class FrontEndController extends Controller
         $data = array('eid'=>$eid, 'img1' => $img1_name, 'img2' => $img2_name, 'img3'=>$img3_name, 'img1_status'=>'pending', 'img2_status'=>'pending', 'img3_status'=>'pending' , 'insta_id'=>$request->get('insta_id') , 'fb_id'=>$request->get('fb_id') , 'other_id'=>$request->get('other_id'));
         $insert = EditorTest::insert($data);
         
-        return redirect('/');
+        Session::put('test_status_msg', 'Thank you!! Your test has been submitted. please wait for the approval !!');
+        return redirect('http://localhost/edify-master/');
 
         }
 }

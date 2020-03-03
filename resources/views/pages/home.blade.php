@@ -224,5 +224,36 @@
 
 @include('partials.footer')
 
+<div class="modal fade" id="msg_modal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header alert-success">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Note</h4>
+        </div>
+        <div class="modal-body">
+        <?php
+            if(Session::has('test_status_msg'))
+            {
+                ?>
+                <h4 class="text-success">
+                        <?php 
+                echo Session::get('test_status_msg');
+                Session::pull('test_status_msg');
+                ?>
+                </h4>
+                
+            <script>
+            $('#msg_modal').modal('show');   
+            </script>
+            <?php
+                }
+                ?>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

@@ -61,9 +61,12 @@
                                                         <div class="modal-body">
                                                         <form action="{{ url('admin/test-images') }}" method="POST" role="form" enctype="multipart/form-data">
                                                         <input type="hidden" name="hidden_id" value="{{$images->id}}">
+                                                            <div class="form-group">
                                                             <label for="myfile">Select a file:</label>
-                                                            <input type="file" id="myfile" name="myfile">
-                                                            <input type="submit" value="submit">    
+                                                            <input type="file" class="form-control" id="myfile" name="myfile">
+                                                            </div>
+                                                            
+                                                            <input type="submit" value="submit" class="btn btn-primary">    
                                                         </form>
                                                         </div>
                                                         <div class="modal-footer">
