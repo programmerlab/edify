@@ -1,8 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Controller;
+use Auth,Input,Redirect,Response,Crypt,View,Session;
+use Cookie,Closure,Hash,URL,Lang,Validator;
+use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\User;
+use Modules\Admin\Models\EditorTest;
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
 
 class DashboardController extends Controller
 {

@@ -5,7 +5,7 @@
                     <img src="assets/images_dashboard/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ print_r(editor_details) }}</div>
                     <div class="email">john.doe@example.com</div>
                 </div>
             </div>
@@ -14,6 +14,7 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">Menu</li>
+                    
                     <li class="active">
                         <a href="{{url('myaccount')}}">
                             <i class="material-icons">home</i>
