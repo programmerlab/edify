@@ -160,15 +160,27 @@
                         <form method="POST" action="{{ url('login') }}">
                         {{csrf_field()}}
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Username" name="email" id="email">
+                            <input type="text" class="form-control" placeholder="Username" name="email" id="login-email">
                         </div>
                         <div class="form-group passField">
                             <span tabindex="0">Show</span>
-                            <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+                            <input type="password" class="form-control" placeholder="Password" name="password" id="login-password">
                         </div>
+                        
                         <button class="btn btn-success btn-block" type='submit'>Submit</button>
                     </form>
-                    </div>
+                    <form method="POST" action="{{ url('forgotpassword') }}">
+                    {{csrf_field()}}
+
+                        <div class="form-group">
+                            <a href="#" class="pointer forgot-password" id="forgotpassword"> forgot Password ? </a>
+                            </div>
+                            <div class="form-group forgot-password-div" id="forgot_password_div" style="display:none;">
+                                <input type="text" class="form-control" placeholder="Email" name="forgot-email" id="forgot-email">
+                                <input type="submit" value="submit" class="btn btn-success btn-block">
+                            </div>
+                        </div>
+                    </form>
                     <div id="becomeEditor" class="tab-pane fade">
                        
                     <?php

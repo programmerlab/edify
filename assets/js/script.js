@@ -88,3 +88,12 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+$(document).ready(function(){
+    $("#forgotpassword").on('click',function(e){
+        e.preventDefault();
+        $('#forgot_password_div').toggle();
+    // $(".popupcontent").animate({opacity:1});
+  
+  });
+  });

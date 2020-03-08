@@ -16,9 +16,6 @@ use Config,Mail,View,Redirect,Validator,Response;
 use Crypt,okie,Hash,Lang,JWTAuth,Input,Closure,URL; 
 use App\Helpers\Helper as Helper;
 
-use Modules\Admin\Models\EditorPortfolio;
-
-
 
 class ApiController extends BaseController
 {
@@ -674,8 +671,8 @@ class ApiController extends BaseController
         }
     }
 
-    public function editor_portfolio( Request $request)
-    {
+//     public function editor_portfolio( Request $request)
+//     {
        
 //        $data = EditorPortfolio::all();
 //         $data->transform(function($item,$key){
@@ -686,19 +683,19 @@ class ApiController extends BaseController
 //         $item['price'] = '80';
 //          return $item;
 //         });
-=======
-    // public function editor_portfolio()
-    // {
-    //    $data = EditorPortfolio::all();
-    //     foreach($data as $cat)
-    //     {
-    //         $cat_id = $cat['category_name'];
-    //         $cat_name = Category::where('id',$cat_id)->get();   
-    //         $data['new_name'] = $cat_name[0]['category_name'];
-    //     }
+// =======
+//     public function editor_portfolio()
+//     {
+//        $data = EditorPortfolio::all();
+//         foreach($data as $cat)
+//         {
+//             $cat_id = $cat['category_name'];
+//             $cat_name = Category::where('id',$cat_id)->get();   
+//             $data['new_name'] = $cat_name[0]['category_name'];
+//         }
        
-    //    return $this->sendResponse($data, 'Products retrieved successfully.');
-    // }
+//        return $this->sendResponse($data, 'Products retrieved successfully.');
+//      }
 
     public function editor_portfolio()
     {

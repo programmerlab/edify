@@ -8,7 +8,8 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\User;
 use Modules\Admin\Models\EditorTest;
-
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
 
 class FrontEndController extends Controller
 {
@@ -19,8 +20,15 @@ class FrontEndController extends Controller
 
     public function signup(Request $request)
     {
+        $user[] = [
+            'name' => $request->input('first_name'),
+            'email' => $request->input('email'),
+        ];
         $request['password'] = Hash::make($request['password']);
         User::create($request->all())->id;
+
+        // Mail::to('ayush.pwalab@gmail.com')->send(new WelcomeMail($user));
+
         Session::put('signup_msg', 'Thank you for registration. Login to Continue');
         return redirect(URL::to('/'));
         // return view('pages.home',['msg' =>"success Thank you for registration. Login to Continue"]);
@@ -43,9 +51,9 @@ class FrontEndController extends Controller
                         $test_imgs = \DB::table('editor_test_images')->get();
                         return view('pages.editortest',['test_imgs'=>$test_imgs]);
                     } else {
-                        if($check_eid['img1_status'] == 'approved' && $check_eid['img2_status'] == 'approved' && $check_eid['img3_status'] == 'approved')
+                        if($check_eid['img1_status'] == 1 && $check_eid['img2_status'] == 1 && $check_eid['img3_status'] == 1)
                         {
-                            return view('pages.editordashboard');
+                            return redirect('editordashboard');
                         }
                         else{
                             Session::put('test_status_msg', 'Please wait !! Your test result is under process.');
@@ -55,7 +63,7 @@ class FrontEndController extends Controller
             }
         }
         else{
-            Session::put('message', 'Login Fail, pls check Email id');
+            Session::put('message', 'Login Fail, please check Email id');
                 return redirect('/');
             return response()->json(['success'=>false, 'message' => 'Login Fail, pls check Email id']);
         }
@@ -100,11 +108,26 @@ class FrontEndController extends Controller
             $img3_name = time().$img3->getClientOriginalName();
 
         }
-        $data = array('eid'=>$eid, 'img1' => $img1_name, 'img2' => $img2_name, 'img3'=>$img3_name, 'img1_status'=>'pending', 'img2_status'=>'pending', 'img3_status'=>'pending' , 'insta_id'=>$request->get('insta_id') , 'fb_id'=>$request->get('fb_id') , 'other_id'=>$request->get('other_id'));
+        $data = array('eid'=>$eid, 'img1' => $img1_name, 'img2' => $img2_name, 'img3'=>$img3_name, 'img1_status'=>0, 'img2_status'=>0, 'img3_status'=>0 , 'insta_id'=>$request->get('insta_id') , 'fb_id'=>$request->get('fb_id') , 'other_id'=>$request->get('other_id'));
         $insert = EditorTest::insert($data);
         
         Session::put('test_status_msg', 'Thank you!! Your test has been submitted. please wait for the approval !!');
         return redirect('/');
 
+        }
+
+        public function ForgotPassword(Request $request)
+        {
+            $email = $request['forgot-email'];
+            $check_user = User::where('email',$email)->first();
+            // print_r($check_user);exit;
+            if($check_user)
+            {
+                    return view('pages.forgotpassword');
+            }
+            else{
+                Session::put('message', 'Email Does not exist !! Please check and try again later');
+                return redirect('/');
+            }
         }
 }

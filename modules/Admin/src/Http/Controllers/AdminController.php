@@ -112,7 +112,13 @@ class AdminController extends Controller {
    public function ShowEditorTest()
    {
     $test_result = \DB::table('editor_test')->get();
-    // $test_result = EditorTest::all();
+   
+    $test_result->transform(function($item,$key){
+        $editor_data = User::where('id',$item->eid)->get();
+        $item->fname = $editor_data[0]->first_name;
+        $item->email = $editor_data[0]->email;
+        return $item;
+    });
     // print_r($test_result); exit;
         $page_title = "Editor Test";
         $page_action = "Editor Test";
@@ -126,6 +132,24 @@ class AdminController extends Controller {
      $flag = $request->input('flag');
      $update = \DB::table('editor_test')->where('eid', $id)->update([$flag => 'approved']);
      return redirect()->back();
+   }
+
+   public function ChangeSKillTestStatus(Request $request)
+   {
+       $eid = $request->input('eid');
+       $status = $request->input('status');
+       $col_name = $request->input('col_name');
+
+       if($status == 0)
+       {
+         $update = \DB::table('editor_test')->where('eid', $eid)->update([$col_name => 1]);
+         return 1;
+       }
+       else{
+         $update = \DB::table('editor_test')->where('eid', $eid)->update([$col_name => 0]);
+         return 0;
+       
+        }
    }
 
    public function testImages(Request $request)

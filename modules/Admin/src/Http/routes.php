@@ -45,6 +45,7 @@
         Route::get('admin/changeteststatus', 'Modules\Admin\Http\Controllers\AdminController@changeteststatus');
         Route::get('admin/test-images', 'Modules\Admin\Http\Controllers\AdminController@testImages');
         Route::post('admin/test-images', 'Modules\Admin\Http\Controllers\AdminController@testImages');
+        Route::get('admin/change-test-status', 'Modules\Admin\Http\Controllers\AdminController@ChangeSKillTestStatus');
         // Route::get('admin/edit-test-images', 'Modules\Admin\Http\Controllers\AdminController@editTestImages');
 
         /*------------User Model and controller---------*/

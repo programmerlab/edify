@@ -103,7 +103,6 @@ function changeStatus(id,method)
            $('#'+id).html('Processing');
         },
         success: function(response) {
-            
 	  //bootbox.alert('Activated');            
 		if(response==1)
             {
@@ -129,6 +128,40 @@ Method : changeAllStatus
 Author : Kundan Roy
 Description : Change the status of all record to activate or deactivate
 */
+
+function changeTestStatus(eid,col_name,id)
+{
+    var status = $('#'+id).attr("data");
+    $.ajax({
+        type: "GET",
+        // url:"{{url('admin/change-test-status')}}?eid="+eid+"&col_name="+col_name+"&status="+status,
+        url:"change-test-status",
+        data: {eid:eid,status:status,col_name:col_name},
+        datatype:"json",
+        beforeSend: function() {
+            $('#'+id).html('Processing');
+         },
+         success: function(response) {
+            //  alert(response);
+       //bootbox.alert('Activated');            
+         if(response==1)
+             {
+                 $('#'+id).html('Approved'); 
+                 $('#'+id).attr('data',response);
+                 $('#'+id).removeClass('label label-warning status').addClass('label label-success status');
+                 
+                  console.log(response);
+                  $('#btn'+id).removeAttr('disabled');
+             }else
+             {
+                 $('#'+id).html('Pending'); 
+                 $('#'+id).attr('data',response);
+                 $('#'+id).removeClass('label label-success status').addClass('label label-warning status');
+                 $('#btn'+id).attr('disabled','disabled');
+             }
+         }
+    });
+}
 
 function changeAllStatus(id,method,status)
 {
@@ -638,6 +671,8 @@ function updateGroup(Url,id) {
      }
  }
  // datepicker  and validation
+
+ 
  $( function() {
     $( "#taskdate" ).datepicker();
      var regExp = /[a-z]/i;

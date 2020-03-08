@@ -45,35 +45,56 @@
                                         <thead>
                                             <tr>
                                                 <th> Sno. </th>
-                                                <th> Editor </th>
+                                                <th> Name</th>
+                                                <th> Email</th>
                                                 <th> Image 1 </th>
                                                 <th> Image 2 </th> 
                                                 <th> Image 3 </th> 
+                                                <th> Instagram ID </th> 
+                                                <th> Faccebook ID </th> 
+                                                <th> Other ID </th> 
                                                 <th>Created date</th> 
                                                
                                             </tr>
                                         </thead>
                                         <tbody>
                                         <?php $i=1;?>
+                                        
                                         @foreach($test_result as $key => $result)
+                                       
                                             <tr>
                                                 <td> <?php echo $i; ?> </td>
-                                                <td> <?php echo $result->eid; ?> </td>
-                                                <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img1)}}" alt="" width="100px">
-                                                    <?php if($result->img1_status == 'pending') {?>
-                                                    <a href="changeteststatus?id=<?= $result->eid?>&flag=img1_status" class="btn btn-info">Approve</a> <?php } else { ?> <a class="btn btn-info" style="pointer-events: none;">Done</a>  <?php }  ?> 
+                                                <td> <?php echo $result->fname; ?> </td>
+                                                <td> <?php echo $result->email; ?> </td>
+                                                <td>
+                                                <img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img1)}}" alt="" width="100px">
+                                                <span class="label label-{{ ($result->img1_status==1)?'success':'warning'}} status" id="{{$result->eid}}_img1_status"  data="{{$result->img1_status}}"  onclick="changeTestStatus( {{ $result->eid}},'img1_status',this.id)" >
+                                                            {{ ($result->img1_status==1)?'approved':'pending'}}
+                                                        </span> 
+                                                </td>
+
+                                                <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img2)}}" alt="" width="100px">
+                                                <span class="label label-{{ ($result->img2_status==1)?'success':'warning'}} status" id="{{$result->eid}}_img2_status"  data="{{$result->img2_status}}"  onclick="changeTestStatus( {{ $result->eid}},'img2_status',this.id)" >
+                                                            {{ ($result->img2_status==1)?'approved':'pending'}}
+                                                        </span> 
                                                 </td>
                                                
-                                                <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img2)}}" alt="" width="100px">
+                                                <!-- <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img2)}}" alt="" width="100px">
                                                 <?php if($result->img2_status == 'pending') {?>
                                                 <a href="changeteststatus?id=<?= $result->eid?>&flag=img2_status" class="btn btn-info">Approve</a>
                                                  <?php } else { ?> <a class="btn btn-info" style="pointer-events: none;">Done</a>  <?php }  ?> 
-                                                </td>
+                                                </td> -->
+
+
                                                 <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img3)}}" alt="" width="100px">
-                                                <?php if($result->img3_status == 'pending') {?>
-                                                <a href="changeteststatus?id=<?= $result->eid?>&flag=img3_status" class="btn btn-info">Approve</a>
-                                                <?php } else { ?> <a class="btn btn-info" style="pointer-events: none;">Done</a>  <?php }  ?> 
+                                                <span class="label label-{{ ($result->img3_status==1)?'success':'warning'}} status" id="{{$result->eid}}_img3_status"  data="{{$result->img3_status}}"  onclick="changeTestStatus( {{ $result->eid}},'img3_status',this.id)" >
+                                                            {{ ($result->img3_status==1)?'approved':'pending'}}
+                                                        </span> 
                                                 </td>
+                                                <td> <?php echo $result->fb_id; ?> </td>
+                                                <td> <?php echo $result->insta_id; ?> </td>
+                                                <td> <?php echo $result->other_id; ?> </td>
+
                                                 <td>
                                                         {!! Carbon\Carbon::parse($result->created_at)->format('d-m-Y'); !!}
                                                 </td>
