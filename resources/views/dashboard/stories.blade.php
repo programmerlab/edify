@@ -53,18 +53,35 @@
         <div class="card">
                 <div class="header">
                     <h2>Stories</h2>
+                   
                 </div>
                 <div class="body">
                     <div class="storiesWrap">
                         <div class="story addBtn" data-toggle="modal" data-target="#uploadStory">
                             <i class="material-icons">library_add</i>
                         </div>
-                        <div class="story" style="background-image: url(https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);">
+                        <!-- <div class="story" style="background-image: url(https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);">
+                        </div> -->
+                        <?php
+                        foreach($stories as $story) {
+                        ?>
+                        <div class="story" style="background-image: url(storage/uploads/editor_stories_imgs/<?php echo $story->story_img; ?>);">
                         </div>
-                        <div class="story">
-                        </div>
+                        <?php }?>
+                      
                    
                     </div>
+                    <?php
+                    if(Session::has('storyuploadmsg'))
+                    {
+                        ?>
+                        <p class="text-success">
+                                <?php 
+                        echo Session::get('storyuploadmsg');
+                        Session::pull('storyuploadmsg');
+                        ?>
+                        </p>
+                    <?php }?>
                 </div>
             </div>
 
@@ -75,18 +92,19 @@
 <div class="modal fade" id="uploadStory" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <form action="#">
+                <form action="{{ url('uploadstories') }}" method="POST" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                     <div class="modal-body">
                         <div class="form-group form-float">
                             <div class="form-line">
                                 <label for="storyUpload">Upload</label>
-                                <input type="file" id="storyUpload" class="form-control">
+                                <input type="file" id="storyUpload" name="storyUpload" class="form-control">
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-link waves-effect">SAVE CHANGES</button>
-                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-link waves-effect">Submit</button>
+                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>

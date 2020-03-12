@@ -82,6 +82,17 @@
                 <div class="header">
                     <h2>Post</h2>
                 </div>
+                <?php
+                    if(Session::has('postuploadmsg'))
+                    {
+                        ?>
+                        <p class="text-success">
+                                <?php 
+                        echo Session::get('postuploadmsg');
+                        Session::pull('postuploadmsg');
+                        ?>
+                        </p>
+                    <?php }?>
                 <div class="body">
                     <div class="alert alert-success">
                         <ol>
@@ -98,10 +109,11 @@
 
                         </label>
                     </div>
-                    <form action="#">
+                    <form action="{{ url('uploadpost') }}" method="POST" enctype="multipart/form-data">
+                        {{csrf_field()}}
                         <div class="col-xs-6">
-                        <input type="file" id="postbefore" class="fileUploadControl">
-                        <input type="file" id="postafter" class="fileUploadControl">
+                        <input type="file" id="postbefore" name="postbefore" class="fileUploadControl">
+                        <input type="file" id="postafter" name="postafter" class="fileUploadControl">
                         <div class="form-group m-t-20">
                             <div class="form-line">
                                 <select name="sw" id="sw" class="form-control">
@@ -122,6 +134,7 @@
                         <button class="btn btn-success btn-lg m-t-20">Submit</button>
                     </form>
                 </div>
+                
             </div>
 
         </div>

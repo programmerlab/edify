@@ -49,6 +49,7 @@
         <div class="card">
                 <div class="header">
                     <h2>Account Details</h2>
+                    <!-- {{print_r($acc_details)}} -->
                 </div>
                 <div class="body">
 
@@ -63,44 +64,50 @@
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active in" id="edit">
                             <div class="container-fluid m-t-15 p-l-20 p-r-20">
-                                <form action="#">
+                                <form action="{{ url('update_editor_info')}}" method="post">
+                                {{csrf_field()}}
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" id="name" class="form-control">
-                                            <label class="form-label">Name</label>
+                                            <input type="text" id="first_name" name="first_name" class="form-control" value="{{ isset($acc_details['first_name']) ? $acc_details['first_name'] : '' }}">
+                                            <label class="form-label">First Name</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" id="email_address" class="form-control">
+                                            <input type="text" id="last_name" name="last_name" class="form-control" value="{{ isset($acc_details['last_name']) ? $acc_details['last_name'] : '' }}">
+                                            <label class="form-label">Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="text" id="email_address" name="email_address" class="form-control" value="{{ isset($acc_details['email']) ? $acc_details['email'] : '' }}">
                                             <label class="form-label">Email Address</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" id="aadhar" class="form-control">
-                                            <label class="form-label">Aadhar</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" id="pan" class="form-control">
-                                            <label class="form-label">PAN</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" id="mob" class="form-control">
+                                            <input type="text" id="mob" name="mob" class="form-control" value="{{ isset($acc_details['phone']) ? $acc_details['phone'] : '' }}">
                                             <label class="form-label">Mobile</label>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">Save</button>
+                                    <button type="submit" class="btn btn-primary waves-effect">Save</button>
                                 </form>
-                            </div>
+                            </div></br>
+                            <?php
+                        if(Session::has('update_msg'))
+                        {
+                            ?>
+                            <p class="text-danger">
+                                <?php 
+                                echo Session::get('update_msg');
+                                Session::pull('update_msg');
+                                ?>
+                            </p>
+                        <?php }?>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="certificate">
                             <div class="certificate">
-                                <span class="certiName">Mr Editor</span> after verification of his works under our review team. <img src="assets/images_dashbaord/logo.png" />
+                                <span class="certiName">Mr {{ $acc_details['first_name']}}</span> after verification of his works under our review team. <img src="assets/images_dashbaord/logo.png" />
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="followers">
