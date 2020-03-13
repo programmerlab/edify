@@ -56,7 +56,19 @@
 
                     <div class="container-fluid">
                         <div class="postWrap">
+                        <?php
+                            foreach($editor_posts as $post) {
+                                // print_r($post);
+                            ?>
                             <div class="col-xs-6 col-sm-4 col-md-3 postUnit">
+                           
+                                <div style="background-image: url(storage/uploads/editor_test_imgs/<?php  echo $post->after_img; ?>)" class="postimg" > </div>
+                                <label class="material-icons switchIcon">switch_camera</label>
+                                <div style="background-image: url(storage/uploads/editor_test_imgs/<?php  echo $post->before_img; ?>)"class="postimg postimgAfter" > </div>
+                            </div>
+                            <?php }?>
+
+                            <!-- <div class="col-xs-6 col-sm-4 col-md-3 postUnit">
                                 <div style="background-image: url(https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg?r=1a0fc22192d0c808b8bb2b9bcfbf4a45b1793687)" class="postimg" > </div>
                                 <label class="material-icons switchIcon">switch_camera</label>
                                 <div style="background-image: url(https://lh3.googleusercontent.com/proxy/60qxBqw-2bfsYPdJGdtXobDhK5ONPcWbBpjo7zHz2avbyCOKQDpY01GuktFaeHrdgfx00ihUysde4RQezgQfzss-Pgwr2Du5UQ91Vg5B_1ujRCSeZ_VsGx2fxSzs7lr2vBm_HSfix10)"class="postimg postimgAfter" > </div>
@@ -65,12 +77,7 @@
                                 <div style="background-image: url(https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg?r=1a0fc22192d0c808b8bb2b9bcfbf4a45b1793687)" class="postimg" > </div>
                                 <label class="material-icons switchIcon">switch_camera</label>
                                 <div style="background-image: url(https://lh3.googleusercontent.com/proxy/60qxBqw-2bfsYPdJGdtXobDhK5ONPcWbBpjo7zHz2avbyCOKQDpY01GuktFaeHrdgfx00ihUysde4RQezgQfzss-Pgwr2Du5UQ91Vg5B_1ujRCSeZ_VsGx2fxSzs7lr2vBm_HSfix10)"class="postimg postimgAfter" > </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 postUnit">
-                                <div style="background-image: url(https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg?r=1a0fc22192d0c808b8bb2b9bcfbf4a45b1793687)" class="postimg" > </div>
-                                <label class="material-icons switchIcon">switch_camera</label>
-                                <div style="background-image: url(https://lh3.googleusercontent.com/proxy/60qxBqw-2bfsYPdJGdtXobDhK5ONPcWbBpjo7zHz2avbyCOKQDpY01GuktFaeHrdgfx00ihUysde4RQezgQfzss-Pgwr2Du5UQ91Vg5B_1ujRCSeZ_VsGx2fxSzs7lr2vBm_HSfix10)"class="postimg postimgAfter" > </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

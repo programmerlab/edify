@@ -8,10 +8,10 @@
                     <h3>Social</h3>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+                            <a href="https://m.facebook.com/EdifyArtist-103896571231717/"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-instagram"></i> <span>Instagram</span></a>
+                            <a href="https://instagram.com/edifyartist?igshid=mgia7x0oei2z"><i class="fa fa-instagram"></i> <span>Instagram</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-linkedin"></i> <span>linkedin</span></a>
@@ -22,7 +22,7 @@
                     <h3>Contact</h3>
                     <ul class="text-left list-inline">
                         <li>
-                            <a href="#"> <i class="fa fa-phone"></i> <span>+91 9999 9999 99</span></a>
+                            <a href="#"> <i class="fa fa-phone"></i> <span>+91 7471 1191 810</span></a>
                         </li>
                         <li>
                             <a href="#"> <i class="fa fa-envelope"></i> <span>info@edify.in</span> </a>

@@ -112,7 +112,6 @@ class AdminController extends Controller {
    public function ShowEditorTest()
    {
     $test_result = \DB::table('editor_test')->get();
-   
     $test_result->transform(function($item,$key){
         $editor_data = User::where('id',$item->eid)->get();
         $item->fname = $editor_data[0]->first_name;

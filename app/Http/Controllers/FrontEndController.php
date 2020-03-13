@@ -53,11 +53,8 @@ class FrontEndController extends Controller
                     } else {
                         if($check_eid['img1_status'] == 1 && $check_eid['img2_status'] == 1 && $check_eid['img3_status'] == 1)
                         {
-                            $editor_details = [
-                                'name' => $check_user->first_name,
-                                'email' => $check_user->email
-                            ];
-                            Session::put('editor_id', $editor_details);
+                            Session::put('name', $check_user->first_name);                        
+                            Session::put('email', $check_user->email);                        
                             return redirect('editordashboard');
                         }
                         else{

@@ -67,13 +67,13 @@
                                                 <td> <?php echo $result->fname; ?> </td>
                                                 <td> <?php echo $result->email; ?> </td>
                                                 <td>
-                                                <img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img1)}}" alt="" width="100px">
+                                                <img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img1)}}" alt="" width="100px"></br>
                                                 <span class="label label-{{ ($result->img1_status==1)?'success':'warning'}} status" id="{{$result->eid}}_img1_status"  data="{{$result->img1_status}}"  onclick="changeTestStatus( {{ $result->eid}},'img1_status',this.id)" >
                                                             {{ ($result->img1_status==1)?'approved':'pending'}}
                                                         </span> 
                                                 </td>
 
-                                                <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img2)}}" alt="" width="100px">
+                                                <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img2)}}" alt="" width="100px"> </br>
                                                 <span class="label label-{{ ($result->img2_status==1)?'success':'warning'}} status" id="{{$result->eid}}_img2_status"  data="{{$result->img2_status}}"  onclick="changeTestStatus( {{ $result->eid}},'img2_status',this.id)" >
                                                             {{ ($result->img2_status==1)?'approved':'pending'}}
                                                         </span> 
@@ -86,7 +86,7 @@
                                                 </td> -->
 
 
-                                                <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img3)}}" alt="" width="100px">
+                                                <td><img src="{{ asset('storage/uploads/editor_test_imgs/'.$result->img3)}}" alt="" width="100px"> </br>
                                                 <span class="label label-{{ ($result->img3_status==1)?'success':'warning'}} status" id="{{$result->eid}}_img3_status"  data="{{$result->img3_status}}"  onclick="changeTestStatus( {{ $result->eid}},'img3_status',this.id)" >
                                                             {{ ($result->img3_status==1)?'approved':'pending'}}
                                                         </span> 

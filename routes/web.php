@@ -31,3 +31,6 @@ Route::get('myorders', 'DashboardController@MyOrders');
 Route::get('howitworks', 'DashboardController@HowItWorks');
 Route::get('faq', 'DashboardController@Faq');
 Route::get('termscondition', 'DashboardController@Tnc');
+Route::post('update_editor_info', 'DashboardController@UpdateEditorInfo');
+Route::post('uploadpost', 'DashboardController@UploadPost');
+Route::post('uploadstories', 'DashboardController@UploadStories');

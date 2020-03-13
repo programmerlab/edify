@@ -12,14 +12,14 @@
               <div class="item active">
                   <div class="slide">
                     <div class="container">
-                        <h2>The photo editor for every idea</h2>
+                        <h2>The Creative artist join Edify</h2>
                     </div>
                 </div>
               </div>
               <div class="item">
                 <div class="slide">
                     <div class="container">
-                        <h2>everything you need for <br> online photo editing <br> we've got it covered</h2>
+                        <h2>We provide Job for photo editor, if you make a Money quickly</h2>
                     </div>
                 </div>
               </div>
@@ -41,7 +41,7 @@
             <div class="">
                 <div class="abouttxt">
                     <h2 class="sectiontitle">About Edify</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>The edifyartist.com is India's biggest photo editing website, for mobile editor and Photoshop editor.PHOTOSHOP EDITING SERVICES | IMAGE RETOUCHING COMPANY ,We have provide a Photo editing services for Professional editor. And we provide you take bulk orders of photo editing, Or Upload a your creative design on website and view on my Mobile application *edify* Or customer need for reference photo based edify there photo.</p>
                    
                 </div>
                 <div class="mobi">
@@ -61,15 +61,22 @@
                 <div class="carousel-inner">
                   <div class="item active">
                       <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente obcaecati non, maxime recusandae officiis, tenetur fugit pariatur temporibus optio illum atque voluptate dolorum? Ad nemo eligendi illo temporibus enim?</p>
-                        <h4>John Doe</h4>
+                        <p>Edifyartist.com  is wonderful!!! They do an AMAZING job with all the photos I send & all the quirky requests I have for the photos. The photos are always edify just the way I wanted. Thank you, thank you, thank you!!</p>
+                        <h4>Ravi Kumar</h4>
                       </div>
                   </div>
               
                   <div class="item">
                     <div class="content">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente obcaecati non, maxime recusandae officiis, tenetur fugit pariatur temporibus optio illum atque voluptate dolorum? Ad nemo eligendi illo temporibus enim?</p>
-                      <h4>John Doe</h4>
+                      <p>I am happy work with edify, they have provide 24 hours payout on my bank accounts.And i have completed daily 30 photos editing orders.</p>
+                      <h4>Cesur</h4>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="content">
+                      <p>edify take orders by using reference photo based editing are easily understanding for every editor what to want customer.</p>
+                      <h4>Tejas</h4>
                     </div>
                   </div>
                 </div>
