@@ -130,4 +130,10 @@ class DashboardController extends Controller
             return redirect('mystories');
         }
     }
+
+    public function logout(Request $request)
+    {
+        Session::flush();
+        return redirect('/');
+    }
 }

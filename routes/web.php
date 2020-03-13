@@ -34,3 +34,4 @@ Route::get('termscondition', 'DashboardController@Tnc');
 Route::post('update_editor_info', 'DashboardController@UpdateEditorInfo');
 Route::post('uploadpost', 'DashboardController@UploadPost');
 Route::post('uploadstories', 'DashboardController@UploadStories');
+Route::post('logout', 'DashboardController@Logout');
