@@ -1,0 +1,691 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2451:"Inkscape does come with a plug-in that will generate G-code for machines that are 2D-cutters or plotters. Scalable Vector Graphics. HTML code is parsed Web browser and usually not visible to the user. For an image format that features infinite scalability, SVG can be a surprisingly difficult format to make responsive: vector images do not adjust themselves to the size of the viewport by default. Scalable Vector Graphics can look crisp at all screen resolutions, can have super small file sizes, and can be easily edited and modified. This means that they can be searched, indexed, scripted, and compressed, now WikiPedia.org's graphic is SVG format. LiveCode Lessons LiveCode Releases LiveCode 8 Articles Getting SVG path data for SVG Icon extension Getting SVG path data for SVG Icon extension This article will show you how to get the appropriate SVG path data for a vector shape created in Adobe Illustrator. SVG files use an XML-based text format to describe how an image should appear and can be opened with a web browser. But for this course let's go ahead and create our first pen so we can look at the text editor. SVG Editor. Enter file name: Code: View: SVG file viewer & editor online. When you have the time I would recommend exploring the site more. The advantage of the format is that it defined in XML text files. Convertio — advanced online tool that solving any problems with any files. An alternative is to drag your svg image into Chrome, then view the page source to see the svg code. by Surbhi Oberoi How to Design, Code, and Animate SVGs You can think of Scalable Vector Graphics (SVG’s) as responsive graphics. CodePen calls the place where you put your code to be saved a Pen. SVG files use an XML-based text format to describe how an image should appear and can be opened with a web browser. You can find code for just about anything, from code art to useful UI. Try-it Yourself Examples. The third suggestion on why to … Our new algorithm vectorize path and Find all lines of the picture to draw it with a pencil. Best way to convert your SVG to HTML file in seconds. Unfortunately, Internet Explorer does not support raw SVG code in background attribute, so this is the only one reason why to encode SVG code, I think (maybe I am wrong). There are many ways to use SVG, but that always starts with getting the SVG to work with in the first place. The examples below embed the SVG code directly into the HTML code. ";s:7:"keyword";s:19:"how to get svg code";s:5:"links";s:4855:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=closing-date-for-uew-sandwich-forms'>Closing Date For Uew Sandwich Forms</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=car-wheel-and-tire-packages'>Car Wheel And Tire Packages</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pubg-premium-avatar-images-hd'>Pubg Premium Avatar Images Hd</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-a-rocker-arm-control-valve'>What Is A Rocker Arm Control Valve</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=20-inch-bike-frame-suitable-for-what-height'>20 Inch Bike Frame Suitable For What Height</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=carver-37-sport-coupe-for-sale'>Carver 37 Sport Coupe For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=types-of-switches-used-in-homes'>Types Of Switches Used In Homes</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mr-dusty-garbage-truck-instructions'>Mr Dusty Garbage Truck Instructions</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fluorine-state-at-room-temperature'>Fluorine State At Room Temperature</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=campervans-for-sale-under-%C2%A35000-scotland'>Campervans For Sale Under £5000 Scotland</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sentences-exercises-for-class-8-with-answers'>Sentences Exercises For Class 8 With Answers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kiss-n-tell-lyrics-skepta'>Kiss N Tell Lyrics Skepta</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=free-activities-in-singapore-2019'>Free Activities In Singapore 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hard-truck-18-wheels-of-steel-download-full-game-free'>Hard Truck 18 Wheels Of Steel Download Full Game Free</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pontoon-boat-seat-covers-with-snaps'>Pontoon Boat Seat Covers With Snaps</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bus-conversions-for-sale-by-owner'>Bus Conversions For Sale By Owner</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=why-was-gang-related-cancelled'>Why Was Gang Related Cancelled</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=aprilia-tuono-125-2017-top-speed'>Aprilia Tuono 125 2017 Top Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=harley-trikes-for-sale-on-craigslist'>Harley Trikes For Sale On Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=snorkeling-and-scuba-diving-in-andaman'>Snorkeling And Scuba Diving In Andaman</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=nuclear-power-advantages-and-disadvantages'>Nuclear Power Advantages And Disadvantages</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-toyota-tundra-platinum-for-sale'>2018 Toyota Tundra Platinum For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cat-793-haul-truck-price'>Cat 793 Haul Truck Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1964-impala-for-sale-craigslist-texas'>1964 Impala For Sale Craigslist Texas</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=customer-service-jobs-in-abu-dhabi'>Customer Service Jobs In Abu Dhabi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hmas-choules-%26-mv-sycamore'>Hmas Choules & Mv Sycamore</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=when-were-diapers-introduced-in-india'>When Were Diapers Introduced In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=euro-truck-simulator-2-steam-key'>Euro Truck Simulator 2 Steam Key</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=I-Love-the-Way-You-Love-Me'>I Love The Way You Love Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ditch-witch-for-sale-on-ebay'>Ditch Witch For Sale On Ebay</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=You-can%27t-have-your-cake-an...'>You Can't Have Your Cake An...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mahindra-scorpio-s9-price-on-road'>Mahindra Scorpio S9 Price On Road</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mv-agusta-f3-800-rc-2020'>Mv Agusta F3 800 Rc 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kijiji-classic-cars-for-sale-in-barrie'>Kijiji Classic Cars For Sale In Barrie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-are-actavis-drugs-manufactured'>Where Are Actavis Drugs Manufactured</a>,
+";s:7:"expired";i:-1;}

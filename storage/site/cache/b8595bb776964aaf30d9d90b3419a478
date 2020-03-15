@@ -1,0 +1,707 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4376:"To truly gain lofty speeds, the design must account for weight, aerodynamics and power. The more air and fuel you can get to your engine, the more power it can give back. The biggest question about upgrading your car’s speed is where to start. A car with a 100 horsepower engine still has to have the energy from the engine transferred to the mechanical axle to turn the wheels. How to Make a Pinewood Derby Racing Car. Reduction of friction and resistance throughout the power train will make more energy available to turn the wheels, and thereby increase speed. Since the second automobile, designers have attempted to make the basic four-wheeled vehicle better than the previous model. However, luck and the style of the track also play a factor in how fast … Turning in a car is simple when you take it slowly, but you might be nervous to try a turn at a higher speed. The same thing applies to co2 cars. For more detailed discussions of the physics behind these techniques, please visit: AWANA GRAND PRIX RACE CARS. Remove the tube connecting the air box to the air intake manifold. Don't let the AWANA title put you off. Remember, the single most important factor in your dragster's speed is the weight of your car. You should change your oil and rotate your tires, but that's only half the battle. At 300 mph, it … There are some tricks that you can employ to make a car go faster. You Don't Need a Ton of Money to Make an Obscenely Fast Car. The drive wheels represent the only point where the engine's power can actually propel the car forward. For more detailed discussions of the physics behind these techniques, please visit: AWANA GRAND PRIX RACE CARS. We think our speed products are the best. One event that Awana hosts every year is a pinewood Grand Prix race similar to the races done by the Boy Scouts. They also handle the logistics of renting out your car so you don’t have to deal with scheduling and handing over the keys. It's also a fun activity where you can bond with your children or get in touch with your inner child. This is the most important step. How To Be Fast With Front-Wheel Drive: An Expert Explains. You may also like. All of the styling in the world won't matter if your car isn't fast, nothing is worse than a car that looks fast that isn't. The cars that didn't get first place were designs the grandchildren liked because of their appearance rather than speed. How fast you can make with Getaround depends on the market rental rate for your car and how many hours you can rent it per week. The Root. Each participant is responsible for building their own car. Considering these factors in the process of constructing a dragster should prove to be useful. This page focuses on the nuts and bolts of making a fast pinewood derby car. Let use an example -- Your car that you use everyday to drive to work; I'm sure you've noticed that your car lags more when you have your car filled to capacity with passengers then it done when it is only you in your car. We think our speed products are the best. All of the styling in the world won't matter if your car isn't fast, nothing is worse than a car that looks fast that isn't. Have you ever wanted to make a pinewood derby race car? From that point on, your mission becomes clear… its time to make your car faster. Remove the stock air box and filter using a screwdriver, a wrench and a utility knife. As lenders are making car loans accessible to more borrowers, the terms of the loan can stretch as long as eighty-four months, which can stick borrowers with a car payment for up to seven years. A car's tires are often a limiting factor in trying to achieve top speed. Seven Steps for Making the Fastest Pinewood Derby Car. The instructions to make a fast CO2 dragster are presented in the following paragraphs. The two most important things you can provide to your car to increase its speed is air and fuel. A car's tires are often a limiting factor in trying to achieve top speed. Factors which affect the aerodynamic drag are explained above. How to Make a Toy Car. This 6 step guide shows the fundamentals for creating a fast pinewood derby car. Some of the things that slow balloon cars down, that you have to overcome, are their own weight, air resistance, friction, and inefficient use of the air escaping the balloon. === Making Your Own Pinewood Derby Racing Car === ";s:7:"keyword";s:22:"how to make a fast car";s:5:"links";s:6965:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=stability-of-negative-feedback-amplifier'>Stability Of Negative Feedback Amplifier</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=How-to-start-an-evaluati...'>How To Start An Evaluati...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=associates-in-mechanical-engineering-technology-reddit'>Associates In Mechanical Engineering Technology Reddit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pitbull-we-are-one-mp3-download-320kbps'>Pitbull We Are One Mp3 Download 320kbps</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=airstream-25-ft-for-sale'>Airstream 25 Ft For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-2018-ford-explorer-sport-for-sale'>Used 2018 Ford Explorer Sport For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=luxury-leather-car-seat-covers'>Luxury Leather Car Seat Covers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fanfare-for-the-common-man-lyrics'>Fanfare For The Common Man Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=top-100-heavy-equipment-manufacturers'>Top 100 Heavy Equipment Manufacturers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pitbull-we-are-one-mp3-download-320kbps'>Pitbull We Are One Mp3 Download 320kbps</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=craigslist-montreal-tv-for-sale'>Craigslist Montreal Tv For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cast-of-call-my-agent-season-2'>Cast Of Call My Agent Season 2</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=nashbar-27.5-disc-mountain-bike'>Nashbar 27.5 Disc Mountain Bike</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=achilles-inflatable-boat-carry-bag'>Achilles Inflatable Boat Carry Bag</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=How-to-draw-with-charcoal'>How To Draw With Charcoal</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-long-does-it-take-to-get-a-carfax-report'>How Long Does It Take To Get A Carfax Report</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=true-lies-full-movie-youtube'>True Lies Full Movie Youtube</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Al-Unser-Jr.-Arcade-Racing'>Al Unser Jr. Arcade Racing</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=did-you-have-lunch-meaning-in-tamil'>Did You Have Lunch Meaning In Tamil</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-chrysler-pacifica-touring-l-plus-standard-features'>2019 Chrysler Pacifica Touring L Plus Standard Features</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=coast-guard-cutter-for-sale'>Coast Guard Cutter For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-harley-davidson-street-500-review'>2019 Harley Davidson Street 500 Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=harley-davidson-pilot-2-helmet'>Harley Davidson Pilot 2 Helmet</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=craigslist-michigan-boats-port-huron'>Craigslist Michigan Boats Port Huron</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=How-to-make-a-Pirate-ship'>How To Make A Pirate Ship</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-r1-2019-price-philippines'>Yamaha R1 2019 Price Philippines</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-alan-parsons-project-sirius'>The Alan Parsons Project Sirius</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fun-facts-about-early-sailing-ships'>Fun Facts About Early Sailing Ships</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-don%27t-like-to-ski-in-spanish'>I Don't Like To Ski In Spanish</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Micro-Machines-1-and-2...'>Micro Machines 1 And 2...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=locking-gun-rack-for-truck'>Locking Gun Rack For Truck</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=biking-in-poor-air-quality'>Biking In Poor Air Quality</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-the-best-selling-motorcycle-model-in-the-world'>What Is The Best Selling Motorcycle Model In The World</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-write-a-will-in-texas'>How To Write A Will In Texas</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=parado-alloy-wheels-for-classic-350-price'>Parado Alloy Wheels For Classic 350 Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-do-you-mean-lyrics-mp3-song-download'>What Do You Mean Lyrics Mp3 Song Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-are-hybrid-bikes-like-mountain-bikes'>How Are Hybrid Bikes Like Mountain Bikes</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-kawasaki-ninja-for-sale'>Used Kawasaki Ninja For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=smokin%27-aces-2%3A-assassins%27-ball-cast'>Smokin' Aces 2: Assassins' Ball Cast</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Time-for-Me-to-Fly'>Time For Me To Fly</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-volvo-v90-cross-country'>2019 Volvo V90 Cross Country</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-navi-for-sale-in-olx'>Honda Navi For Sale In Olx</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=chain-bucket-elevator-design-pdf'>Chain Bucket Elevator Design Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jeep-cherokee-3-inch-lift'>Jeep Cherokee 3 Inch Lift</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=welcome-to-the-jungle-song-mp3-download'>Welcome To The Jungle Song Mp3 Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-flocking-made-of'>What Is Flocking Made Of</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vintage-airstream-for-sale-california'>Vintage Airstream For Sale California</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hard-dance-style-jumpstyle-shuffle'>Hard Dance Style Jumpstyle Shuffle</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pole-position-raceway-grimes-iowa'>Pole Position Raceway Grimes Iowa</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-suv-for-big-guys'>Best Suv For Big Guys</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ice-boat-kits-for-sale'>Ice Boat Kits For Sale</a>,
+";s:7:"expired";i:-1;}

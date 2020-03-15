@@ -1,0 +1,698 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4452:"This boat was sailed daily on Barnegat Bay NJ from April 1 through Thanksgiving weekend every year till … The West Wight Potter 19 is an American trailerable sailboat that was designed by Herb Stewart as a cruiser and first built in 1971.. Stewart developed the boat from the West Wight Potter 14, a British design he had bought the US rights to. View 257 photos, features and a good description. 2000 West Wight Potter 19 $6,900 Boat located in Eugene, Oregon and is in very good condition and ready to sail. In early July, while looking at my West Wight Potter 19 "Chubby" sitting jauntily at her berth at the Berkeley Marina, tugging at her dock lines and proudly showing off her new bottom paint, it dawned on me that I could use her to commute to my next job. West Wight Potter 19, 2007 Bought boat directly from International Marine in California in February of 2009, having been sailed once by the original owner and then returned to the factory. These world famous pocket cruisers store and sail easily, offer features not seen in boats of this size, and come in the most affordable package on the market. It might not have the catchiest of names, but I found everything else about the West Wight Potter 19 delightful. In Plains Montana, about 2 hours east of Spokane WA. The world famous West Wight Potter 15 sloop is one of the best known and oldest sailboats in the cruising fraternity. Engineering a device to drop the anchor on my West Wight Potter 15 from the cockpit without having to attend to the holder when in need of anchoring. Hull and gelcoat are excellent with no major dings or grounding marks. I purchased this boat a year ago practically brand new from the first owner. I purchased this boat a year ago practically brand new from the first owner. West Wight Potter sailboats, the Potter 15 and Potter 19, are a fantastic buy for the trailerable sailboat seeker. A mast-raising system allows for one-person rigging if desired. The West Wight Potter 19 is a terrific boat for those long weekends! They may appear tiny compared to modern thin-water pocket cruisers, but their hard-chined hulls, simple sailplans, and economical accommodations are just as fun, safe, and effective as they were 40 years ago. This boat has a 370# drop keel which makes it very stable under sail. The West Wight Potter 19, like its smaller sister the 15, has been a popular pocket cruiser sailboat for over three decades.  Second-hand West Wight Potter 19 in Florida (United States). Second-hand West Wight Potter 19 in Florida (United States). Her sister ship, the West Wight Potter 15, dates back to 1949 and the WWP19 was first launched in 1971. View 83 photos, features and a good description. Technical data sheet of the second-hand Sailing cruisers for sale. Dark navy blue hull with red trim Custom rudder/mast crutch, along with original factory mast crutch WWP Mast Raising System Cockpit cushions This boat is in good condition and has all of the features that are standard equipment including a good running 5-HP Nissan OB. 53 likes. I recently towed my modified WWP19 up to Puget Sound behind my Toyota Highlander SUV for 10 days of single handed cruising and had a great time. The bottom line price is $21,900, you arrange transportationIncludes: P-19 Premium Blue Water Lay-up Blue Hull and White DeckComposite High Performance Kick-up Beaching RudderPorta-Potti15 Gal. Fresh Water System with Deck FillBuilt-in 36 Qt. "Jitterbug" (A West Wight Potter-19) Takes a Cruise by John Depa This is a summation of the 6 month sailing cruise I recently made in a West Wight Potter-19’, “Jitterbug”. The design was originally marketed by the manufacturer as the HMS 18. West Wight Potter sailboats, the Potter 15 and Potter 19, represent tradition, style, and proven quality for the trailer sailor. Inspired by an original design in the U.K., it is now built by International Marine in California. West Wight Potter 19. Boat Review Date: November 2009 Author: Mike Brown Overview. This boat was sailed daily on Barnegat Bay NJ from April 1 through Thanksgiving weekend every year till September of 2012. Technical data sheet of the second-hand Sailing cruisers for sale. Over 2,600 of these attractive compact cruisers currently sail all over the world. Most Potter 19s can be rigged and launched in 45 minutes or less with no special skill or strength. A fun Potter for sailing and camping on, that has been trailered to Alaska twice. ";s:7:"keyword";s:27:"west wight potter 19 anchor";s:5:"links";s:5642:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=all-systems-go-urban-dictionary'>All Systems Go Urban Dictionary</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cycling-for-fitness-over-50'>Cycling For Fitness Over 50</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=simple-english-sentences-for-students'>Simple English Sentences For Students</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=red-bull-hare-scramble-2018'>Red Bull Hare Scramble 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-little-drummer-girl-cancelled'>The Little Drummer Girl Cancelled</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=star-trek-constitution-class-length'>Star Trek Constitution Class Length</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-to-tell-your-manager-to-improve-on'>What To Tell Your Manager To Improve On</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mechanical-engineering-unit-conversion-table-pdf'>Mechanical Engineering Unit Conversion Table Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=electrical-and-electronics-engineering-subjects'>Electrical And Electronics Engineering Subjects</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=boy-erased-awards-and-nominations'>Boy Erased Awards And Nominations</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rc-turbine-helicopter-for-sale'>Rc Turbine Helicopter For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=audi-q7-interior-7-seats'>Audi Q7 Interior 7 Seats</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-ex-sport-for-sale-near-me'>Yamaha Ex Sport For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=alice-in-chains-new-singer'>Alice In Chains New Singer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2016-toyota-highlander-xle-for-sale'>2016 Toyota Highlander Xle For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-learn-how-to-fix-cars-reddit'>How To Learn How To Fix Cars Reddit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=wriggle-room-meaning-in-english'>Wriggle Room Meaning In English</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-toyota-avalon-xle-plus'>2018 Toyota Avalon Xle Plus</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=nissan-auto-repair-shop-near-me'>Nissan Auto Repair Shop Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=chevy-express-3500-parts-diagram'>Chevy Express 3500 Parts Diagram</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=toyota-hiace-price-in-bangalore'>Toyota Hiace Price In Bangalore</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hard-to-kill-full-movie'>Hard To Kill Full Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1979-ford-trucks-for-sale'>1979 Ford Trucks For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=far-away-far-away-song'>Far Away Far Away Song</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=columbia-womens-shorts-omni-shield'>Columbia Womens Shorts Omni Shield</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Balls-Out%3A-Gary-The-Tennis-C...'>Balls Out: Gary The Tennis C...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-yamaha-r3-top-speed'>2018 Yamaha R3 Top Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=aston-martin-motorcycle-amb-001'>Aston Martin Motorcycle Amb 001</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kid-movies-2019-in-theaters-now-near-me'>Kid Movies 2019 In Theaters Now Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2008-yamaha-fz1-for-sale'>2008 Yamaha Fz1 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=black-and-white-portrait-singapore'>Black And White Portrait Singapore</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=uwharrie-national-forest-ohv-map'>Uwharrie National Forest Ohv Map</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Amame-Hasta-con-los-Dient...'>Amame Hasta Con Los Dient...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kijiji-hot-rods-for-sale-ontario-st-catharines'>Kijiji Hot Rods For Sale Ontario St Catharines</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=explorer-of-the-seas-rooms'>Explorer Of The Seas Rooms</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hoosier-national-forest-hunting-map'>Hoosier National Forest Hunting Map</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=modified-bullet-classic-350-images'>Modified Bullet Classic 350 Images</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-r1-for-sale-singapore'>Yamaha R1 For Sale Singapore</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=old-sailing-vessel-crossword-clue'>Old Sailing Vessel Crossword Clue</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sonic-adventure-2-pc-mods'>Sonic Adventure 2 Pc Mods</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=camping-and-caravan-club-forum'>Camping And Caravan Club Forum</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sunny-beach-weather-september-2018'>Sunny Beach Weather September 2018</a>,
+";s:7:"expired";i:-1;}

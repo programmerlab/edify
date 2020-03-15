@@ -1,0 +1,679 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4762:"I miss all of y'all All of you girls standin' together like that I can't take it Pharrell Williams Buy This Song. See more ideas about Memes, Relationship memes and Funny. Pharrell Williams - Come Get It Bae (Clean Version) Lyrics. Come Get It Bae by Pharrell Williams song meaning, lyric interpretation, video and chart position Pharrell Williams - Come Get It Bae Lyrics. Come get it bae Come get it bae Come get it bae Come get it bae You wanna ride it, my motorcycle You've got a license, have you got the right to Gonna pop a wheelie, don't try too high too Take it easy on the clutch, 'cause girl I like you There comes a time, when bravery will … The clean version should be listed there (along with the explicit version) if the artist released a clean version of the album to Spotify. Schon in der Werbung ist mir dieser Song sofort aufgefallen und ich hörte sofort die Pharrell Note im Song. Pharrell Williams - Come Get It Bae Lyrics. If that doesn't work, please visit our help page. Ich finds cool. Pharrell Williams (born April 5, 1973), professionally known as Pharrell, is an American rapper, singer, record producer, composer, Leader of the Volturi and fashion designer. You miss me? Come get it bae (hey) Come get it bae (hey, c'mon) Come get it bae (hey) You wanna ride it, my motorcycle You've got a license, but you got the right to Gonna pop a wheelie, don't try too high too Take it easy on the clutch, cause girl I like you (hey, heeey) There comes a time (comes a … Come Get It Bae lyrics performed by Pharrell Williams: You miss me? Flirting vs cheating 101 ways to flirt people lyrics clean When a girl goes to hug bae See more. Happy Pop Songs [21 Titel/Tracks]: G.R.L. Try disabling any ad blockers and refreshing this page. Miley Cyrus looks “Happy” to be alive in the music video for Pharrell Williams‘ “Come Get It Bae.”. "Come Get It Bae" is a funk song, and discusses sex through the metaphor of a motorcycle. Jan 15, 2019 - Explore gabriellearment's board "when bae memes" on Pinterest. You miss me? Ugly Heart, Paloma Faith Only Love Can Hurt Like This, AJR I'm Ready, Pharrell Williams Come Get It Bae [Clean Version], Dami Im Gladiator, Tove Lo Feat. Check out Come Get It Bae [Explicit] by Pharrell Williams on Amazon Music. Pharrell Williams - Pandora. Stream ad-free or purchase CD's and MP3s now on Amazon.com. Artists usually don't release that many clean versions to Spotify like they do for Apple Music. Mir gefällts nicht so, dass er so durcheinander ist zum Teil und auch dieses gestöhne einer Frau im Hintergrund find ich kacke. Lyrics for Come Get It Bae by Pharrell Williams. I miss all of y'all All of you girls standin' together like that, I can't take it (uhn) (Hey, hey, hey, hey, hey, hey, hey, he Come get it bae, come get it bae Come get it bae, come get it bae You wanna ride it, my motorcycle You’ve got a license, but you got the right to Gonna pop a wheelie, don’t try too high to Take it easy on the clutch, cause girl I like you, hey I miss all of y'all All of you girls standin' together like that, I can't take it (uhn) (Hey, hey, hey, hey, hey, hey, hey, he Try disabling any ad blockers and refreshing this page. Me Too Lyrics: Rock Boy Beats / That nigga Ladd got the juice, boy / Heard you want a nigga that's gon' please you / Suck your toes, dick you down, please you / She say, "Bae, I'm nasty", I say FAVORITE. Jan 15, 2019 - Explore gabriellearment's board "when bae memes" on Pinterest. Come get it bae Come get it bae Come get it bae Come get it bae Come get it bae Come get it bae Come get it bae Come get it bae You wanna ride it, my motorcycle You've got a license, have you got the right to Gonna pop a wheelie, don't try too high too Take it easy on the clutch, 'cause girl I like you Come get it bae Come get it bae Come get it bae Come get it bae You wanna ride it, my motorcycle You've got a license, but you got the right to Gonna pop a wheelie, don't try too high too Take it easy on the clutch Cause girl I like you … If that doesn't work, please visit our help page.  I miss all of y'all All of you girls standin' together like that, I can't take it Women, I can do anything you like I can do a Pharrell Williams - Pandora. You miss me? Come get it, bae Come get it, bae Come get it, bae Come get it, bae You wanna ride it, my motorcycle You've got a license, but you got the right to Gonna pop a wheelie, don't try too high too Take it easy on the clutch, 'cause, girl, I like you. You miss me? Williams and Chad Hugo make up the record production duo The Neptunes, producing hip hop and R&B music. Come Get It Bae. Lyrics to Come Get It Bae by Pharrell Williams from the G I R L album - including song video, artist biography, translations and more! ";s:7:"keyword";s:21:"come get it bae clean";s:5:"links";s:3197:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mx-vs-atv-all-out-mods'>Mx Vs Atv All Out Mods</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-are-husqvarna-chainsaws-made-2018'>Where Are Husqvarna Chainsaws Made 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=archeage-unchained-fishing-boat-achievement'>Archeage Unchained Fishing Boat Achievement</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=renault-5-turbo-2-for-sale'>Renault 5 Turbo 2 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=humber-college-international-students-requirements'>Humber College International Students Requirements</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=book-of-mormon-reviews-2019'>Book Of Mormon Reviews 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-fourtrax-for-sale-near-me'>Honda Fourtrax For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=buying-a-boat-in-germany'>Buying A Boat In Germany</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Mary-Anne-With-the-Shak...'>Mary Anne With The Shak...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Where-Have-All-the-Flow...'>Where Have All The Flow...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=half-of-all-victims-of-canoeing-and-kayak-related-fatalities-were-doing-what-at-the-time'>Half Of All Victims Of Canoeing And Kayak Related Fatalities Were Doing What At The Time</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=car-maintenance-app-for-mac'>Car Maintenance App For Mac</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1971-datsun-240z-for-sale-%241500'>1971 Datsun 240z For Sale $1500</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sheep-clipart-black-and-white'>Sheep Clipart Black And White</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ford-manufacturing-plant-in-pune'>Ford Manufacturing Plant In Pune</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=frankfurt-airport-train-station-map'>Frankfurt Airport Train Station Map</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=motorcycle-gear-shift-lever-price'>Motorcycle Gear Shift Lever Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dangerous-oliver-remix-mp3-download'>Dangerous Oliver Remix Mp3 Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=horses-for-sale-northern-ireland'>Horses For Sale Northern Ireland</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=optimist-sailing-dinghy-for-sale'>Optimist Sailing Dinghy For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Omni-car-price-in-India-2019'>Omni Car Price In India 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=places-to-rent-mountain-bikes-near-me'>Places To Rent Mountain Bikes Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=is-delilah-back-on-the-radio'>Is Delilah Back On The Radio</a>,
+";s:7:"expired";i:-1;}

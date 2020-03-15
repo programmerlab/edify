@@ -1,0 +1,701 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4291:"Over 1500 yachts for sale and superyachts for sale, including sailing yachts, motoryachts & mega yachts for sale. Three Six Metre Yachts For Sale - All Sold I have three 6 mtr yachts for sale. With her almost new Sitka Spruce mast and up to date sails, SVANEVIT would be ready to enter any classic yacht race or to participate in the next 8mR Championships. A fraction of the full price. ... International One Metre (IOM) model yacht rig. Alexander Stephens & Sons was a famous Clyde shipyard already 200 years in existence when this yacht was built and Stephens senior had had considerable success with his racing yacht designs. Thousands of yachts to discover & save. All information on yacht sales. From securing private viewings to sourcing the best luxury yachts for sale from around the world, our expertise is your guarantee. There are some 1,500 6 Metre boats around the world today, and the UK has one of the largest fleets. Try us. This is a wooden boat and at some point someone covered the boat with fiberglass. We have access to a broad selection of the finest yachts for sale internationally, including new boats, refit yachts and used boats for sale plus a range of sizes and vessels such as sailing yachts, motor yachts, cruisers, powerboats, catamarans and pre-owned charter yachts. Boats Other 4443 PSN . Welcome to the online home of the British International 6mR Association. Market Intelligence. If you are in the market for an express cruiser, look no further than this 1990 Trojan 8.6 Meter, priced right at $27,800 (offers encouraged).  Motivated seller. Fleetwood MY&PBC are holding an open meeting for Radio Six Metre Yachts on the 25th Aug 2019. If you have a six metre that basically complies with the current class rules, then we... Continue reading For someone wanting a beautiful, strong and potentially fast 6 meter she is on her trailer under cover at Plymouth waiting to go to sea. Find a model yachts for sale on Gumtree , the #1 site for classifieds ads in the UK. The boat has undergone a complete refurbishment with new teak decks, new rudder and tiller, and a complete paint and varnish. Introduction to the The Six Metre – 100 Years of Racing, written by Olin Stephens “As a retired yacht designer I hope readers will find me justified in outlining technical developments as they affected the Six Metre class throughout its acceptance and growth, as those were the considerations that seemed important to me at the time. News; ... March 6, 2020 2:30pm The 60-80-metre market in review March 6, 2020 12:00pm In build: First Swan 98 nearing completion in Finland Yachts for Sale. Fully ready to fit to yacht. From securing private viewings to sourcing the best luxury yachts for sale from around the world, our expertise is your guarantee. The mast has never been used yet and there is a selection of used sails. Stock #153202 A Beautiful wide Beam Express Cruiser that has Many New Upgrades! SuperYacht Times offers the largest fleet of yachts for sale. I know very little about them but have had a lot of help from Shaun, who runs this site regarding what they are and what would be a fair price. Early Fife boats built in 1907 are still racing - often against new Moderns. View our full range of 6 METRE Boats online at boatsales.com.au Find a model yachts for sale on Gumtree , the #1 site for classifieds ads in the UK. With a wide range of new boats and used boats, power boats and sailboats, YachtWorld has the largest selection of boats and yachts in the world.Boat listings on YachtWorld are provided by subscribing member yacht brokers and new boat dealers from North America and the rest of the world. Find Sunseeker 40m Yacht for sale in your area & across the world on YachtWorld. Alexander Robertson & Sons produced a total of five 6-Metre yachts between 1921 and 1953. At Burgess, we always go the extra mile to find your perfect yacht. Our data analysts gather valuable information on the market and every superyacht larger than 24-metres currently for sale. Fraser offers a range of displacement and semi-displacement motor yachts, as well as a variety of sloop and ketch rigged sailing yachts for sale. 4Yacht is the worldwide leader in luxury yacht sales, Mega Yachts and Superyachts. Buy a yacht Discover the Burgess difference. ";s:7:"keyword";s:22:"6 metre yacht for sale";s:5:"links";s:6157:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=back-in-the-ussr-album'>Back In The Ussr Album</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-city-accessories-price-list-2019'>Honda City Accessories Price List 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-is-the-zumwalt-docked'>Where Is The Zumwalt Docked</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=summit-racing-phone-number-ohio'>Summit Racing Phone Number Ohio</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=shine-on-you-crazy-diamond-chords'>Shine On You Crazy Diamond Chords</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=done-deal-dealer-hub-login'>Done Deal Dealer Hub Login</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vw-caddy-2007-for-sale'>Vw Caddy 2007 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=we-are-human-after-all'>We Are Human After All</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mv-agusta-dragster-800-rr'>Mv Agusta Dragster 800 Rr</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=royal-enfield-continental-gt-650-price-in-india'>Royal Enfield Continental Gt 650 Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mini-tower-crane-for-sale'>Mini Tower Crane For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=my-body-is-a-temple-bible-verse'>My Body Is A Temple Bible Verse</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=harley-davidson-sportster-1200-price-in-india'>Harley Davidson Sportster 1200 Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-married-a-monster-from-outer-space-blu-ray'>I Married A Monster From Outer Space Blu Ray</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=The-Story-of-the-Glittering...'>The Story Of The Glittering...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=braxton-creek-bushwacker-for-sale'>Braxton Creek Bushwacker For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=least-bothered-meaning-in-hindi'>Least Bothered Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Ten-Feet-Tall-and-Not-Quit...'>Ten Feet Tall And Not Quit...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=%2B-18moreAuto-parts-storesPartSource%2C-AutoZone-Auto-Parts%2C-and-more'>+ 18moreAuto Parts StoresPartSource, AutoZone Auto Parts, And More</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=morning-joe-emailing-the-show'>Morning Joe Emailing The Show</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=forest-river-rv-reviews-bbb'>Forest River Rv Reviews Bbb</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=owner-operator-2.50-per-mile'>Owner Operator 2.50 Per Mile</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=razor-folding-s-scooter-with-lighted-wheels'>Razor Folding S Scooter With Lighted Wheels</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-xsr-900-for-sale'>Yamaha Xsr 900 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-bikes-150cc-to-180cc'>Honda Bikes 150cc To 180cc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1965-ford-thunderbird-special-landau'>1965 Ford Thunderbird Special Landau</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-chevy-colorado-for-sale-by-owner-near-me'>Used Chevy Colorado For Sale By Owner Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=donna-summer-last-dance-mp3'>Donna Summer Last Dance Mp3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=boys-don%27t-cry-full-movie'>Boys Don't Cry Full Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=total-eclipse-of-the-heart-trolls'>Total Eclipse Of The Heart Trolls</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-mountain-bike-forks-for-sale'>Used Mountain Bike Forks For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kawasaki-kz1000-for-sale-near-me'>Kawasaki Kz1000 For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2001-enfield-lightning-500-price-in-india'>2001 Enfield Lightning 500 Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=barnes-and-noble-union-square'>Barnes And Noble Union Square</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-reply-to-constructive-criticism-email'>How To Reply To Constructive Criticism Email</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=New-Ford-Bronco-The-Rock'>New Ford Bronco The Rock</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-mountain-bike-frames-for-sale'>Used Mountain Bike Frames For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=street-fighter-video-game-platforms'>Street Fighter Video Game Platforms</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vitus-energie-crx-cyclocross-bike'>Vitus Energie Crx Cyclocross Bike</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=skeeter-boats-for-sale-in-louisiana'>Skeeter Boats For Sale In Louisiana</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-does-sae-stand-for-school'>What Does Sae Stand For School</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=wheel-of-fortune-schedule-2020'>Wheel Of Fortune Schedule 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=types-of-chemical-tankers-as-per-ibc-code'>Types Of Chemical Tankers As Per Ibc Code</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=horizons-marijuana-life-sciences-index-etf-us'>Horizons Marijuana Life Sciences Index Etf Us</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=toy-story-3-full-movie'>Toy Story 3 Full Movie</a>,
+";s:7:"expired";i:-1;}

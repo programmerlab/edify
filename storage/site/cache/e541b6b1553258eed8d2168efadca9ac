@@ -1,0 +1,689 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2635:"The title is very fitting for the story. *FREE* shipping on qualifying offers. The Story of Us by Dani Atkins is a skillfully written story about deep friendships, tragic loss, and finding your true happily-ever-after. The Story of Us - Kindle edition by Brittney Sahin. When Eli went overseas, he did what he had to do and left behind the woman he loved, Shelby Eubanks. Download it once and read it on your Kindle device, PC, phones or tablets. The Book of Us: The Journal of Your Love Story in 150 Questions [David Marshall, Kate Marshall] on Amazon.com. With The Book of Us , you can cherish both the transformative and everyday moments of your love story forever. Use features like bookmarks, note taking and highlighting while reading The Story of Us.  The book is about Emma, who is about to get married to her childhood and family friend, Richard. Created by romantic and creative partners Kate Marshall and David Marshall … I would recommend this book to freshmen and up, because they are more likely to understand this book. The Story of Us is an emotional second chance romance about a solider and the girl he left behind. America The Story of Us is a groundbreaking series that brings to life the epic story of our nation in a new way for a new generation. The Book of Us: The Journal of Your Love Story in 150 Questions [David Marshall, Kate Marshall] on Amazon.com. Celebrate, preserve, and relive your most treasured love story! This attractively designed, user-friendly, and elegant volume invites readers to record the stories and moments of the romance of … The companion book, America The Story of Us is a history that is at once penetrating and lively, elegant and authoritative; great for serious reading as it is for casual skimming. This book is the perfect example of a writer that gives us infuriating characters that make It was gritty and raw and hard to read at times. LoveBook is the perfect personalized gift for someone you love. When Eli went overseas, he did what he had to do and left behind the woman he loved, Shelby Eubanks. This is book #11 in the Sweetbriar Cove series you can read as a standalone or part of the series, I highly recommend starting at book 1 and reading all of them so you meet all of the other characters and they are all captivating. "The Story of Us" is about Cricket who has to figure out what exactly she wants from her relationship with Janssen, which she somewhat ruined. *FREE* shipping on qualifying offers. I wanted to yell and throw my iPad at the wall for the stupid things that the characters did, but I loved them so much that I just kept having to read more. ";s:7:"keyword";s:20:"the story of us book";s:5:"links";s:4435:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vans-old-skool-womens-platform'>Vans Old Skool Womens Platform</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hertz-full-size-vs-premium'>Hertz Full Size Vs Premium</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=patchy-the-pirate-potty-the-parrot'>Patchy The Pirate Potty The Parrot</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=second-hand-truck-for-sale-philippines'>Second Hand Truck For Sale Philippines</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=toyota-mr2-for-sale-ohio'>Toyota Mr2 For Sale Ohio</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-much-is-a-1969-suburban-worth'>How Much Is A 1969 Suburban Worth</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2017-zx14-top-speed-unrestricted'>2017 Zx14 Top Speed Unrestricted</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=range-rover-velar-price-used'>Range Rover Velar Price Used</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=restaurants-on-route-40-uniontown-pa'>Restaurants On Route 40 Uniontown Pa</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i%27ll-be-there-for-you-friends-lyrics'>I'll Be There For You Friends Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ebay-cars-for-sale-under-1000'>Ebay Cars For Sale Under 1000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=who-makes-indian-motorcycle-helmets'>Who Makes Indian Motorcycle Helmets</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kia-picanto-2019-price-philippines-monthly'>Kia Picanto 2019 Price Philippines Monthly</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bus-line-mod-cities-skylines'>Bus Line Mod Cities Skylines</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-wire-two-switches-to-one-light'>How To Wire Two Switches To One Light</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=planning-a-trip-to-france'>Planning A Trip To France</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lego-imperial-troop-transport-moc'>Lego Imperial Troop Transport Moc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-determine-number-of-clusters-in-k-means-python'>How To Determine Number Of Clusters In K-means Python</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=harley-davidson-pilot-2-helmet'>Harley Davidson Pilot 2 Helmet</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=on-the-turning-away-live'>On The Turning Away Live</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-outing-club-davenport-ia-52803'>The Outing Club Davenport Ia 52803</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-cb350-cafe-racer-kit'>Honda Cb350 Cafe Racer Kit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-drive-on-sand-with-trailer'>How To Drive On Sand With Trailer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1998-semi-truck-for-sale'>1998 Semi Truck For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=craigslist-rvs-for-sale-by-owner-bc'>Craigslist Rvs For Sale By Owner Bc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yacht-meme-the-c-is-silent'>Yacht Meme The C Is Silent</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=quad-repair-shops-near-me'>Quad Repair Shops Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=shipping-bill-meaning-in-tamil'>Shipping Bill Meaning In Tamil</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=entry-level-jobs-for-finance-majors'>Entry Level Jobs For Finance Majors</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=both-at-the-beginning-of-a-sentence'>Both At The Beginning Of A Sentence</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1966-pontiac-gto-for-sale-craigslist'>1966 Pontiac Gto For Sale Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cheap-rv-rentals-san-diego'>Cheap Rv Rentals San Diego</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-f6c-valkyrie-for-sale'>Honda F6c Valkyrie For Sale</a>,
+";s:7:"expired";i:-1;}

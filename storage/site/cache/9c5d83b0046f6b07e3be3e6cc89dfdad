@@ -1,0 +1,692 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3592:"This includes the Official website, phone number, location map, reviews and photos. Find local businesses, view maps and get driving directions in Google Maps. The direct and official information for Isle of Iberia RV Resort in New Iberia, Louisiana. Find local businesses, view maps and get driving directions in Google Maps. The direct and official information for Isle of Iberia RV Resort in New Iberia, Louisiana. Contact Us Cajun RVera, New Iberia: See 10 traveler reviews, 3 candid photos, and great deals for Cajun RVera, ranked #2 of 4 specialty lodging in New Iberia and rated 3.5 of 5 at Tripadvisor. Isle of Iberia RV Resort (formerly Cajun RVera) in New Iberia Louisiana offers full hookup RV camping adjacent to the SugArena. With industry leading information on private and public RV parks and campgrounds in the United States you are sure to find a place to stay in a tent or RV no matter where you are heading. Making Camping Easier. Check the offers of cheap flights from the United States to more than 300 Iberia destinations in Spain, Europe, America and Asia, and reserve it at the best price Iberia Parish has a wealth of information you can download to enhance your visit. You have to go to Avery Island and the Tabasco Factory. The Isle of Iberia with an interactive map and directions. Call us at 337-256-868 or email us at rv@iberiarecreation.com Shadows-on-the-Teche, a 19th-century plantation, is only three miles away in downtown New Iberia. Isle of Iberia RV Resort Pull through and back in camp sites available, check-in at 2PM with check-out at 11AM. The peninsula is principally divided between Spain and Portugal, comprising most of their territory, as well as a small area of France (the French Cerdagne), Andorra and the British overseas territory of Gibraltar. The Isle of Iberia from Mapcarta, the free map. Cajun RVera, New Iberia: See 10 traveler reviews, 3 candid photos, and great deals for Cajun RVera, ranked #2 of 4 specialty lodging in New Iberia and rated 3.5 of 5 at Tripadvisor. Pull thru and back-in sites. Travel guide to Nantes, all maps for visiting monuments and museums, shopping, recreation or gastronomy and outdoor activities. In July 2019, we stayed in our at Isle of Iberia RV Resort (formerly Cajun RVera) in New Iberia, LA. SugaHouse clubhouse includes a concession area, game room and laundry room. The Port of Iberia and Tabasco within easy reach. - Isle of Nantes and HAB Galerie in the leading guide to Nantes Open your browser and the Iberia page will open, offering you news and useful information about Iberia free of charge. If you are using a tablet or smartphone you can activate WiFi in aeroplane mode. Open your browser and the Iberia page will open, offering you news and useful information about Iberia free of charge. If you are using a tablet or smartphone you can activate WiFi in aeroplane mode. in addition we also have thousands of photos and reviews... but what makes us so special are our videos. The Iberian Peninsula / aɪ ˈ b ɪər i ə n /, also known as Iberia, is located in the southwest corner of the European continent. [Please note that LEVEL's aircraft reside on our site with Iberia until LEVEL receives their own AOC and their own IATA code. When you have eliminated the JavaScript , whatever remains must be an empty page. Cloud-based software features online reservations, website builder, website hosting, Point of Sale, interactive campground maps, email and text … Save 10% on Good Sam Resorts. At CampgroundViews.com we are the best campground directory and RV park directory available. ";s:7:"keyword";s:23:"isle of iberia site map";s:5:"links";s:4838:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-rascals-come-on-up'>The Rascals Come On Up</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=driving-school-for-16-year-olds-near-me'>Driving School For 16 Year Olds Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-was-the-titanic-going'>Where Was The Titanic Going</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=plate-compactor-for-sale-used'>Plate Compactor For Sale Used</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=phantom-of-the-opera-erik-character-analysis'>Phantom Of The Opera Erik Character Analysis</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ridge-racer-unbounded-system-requirements'>Ridge Racer Unbounded System Requirements</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=literally-right-before-aaron-soundtrack'>Literally Right Before Aaron Soundtrack</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-are-suzuki-dirt-bikes-made'>Where Are Suzuki Dirt Bikes Made</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-is-my-train-app'>Where Is My Train App</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-many-mcdonald%27s-are-there-in-the-us-2018'>How Many Mcdonald's Are There In The Us 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Convertible-sports-cars-for-s...'>Convertible Sports Cars For S...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pros-and-cons-of-natural-gas-generators'>Pros And Cons Of Natural Gas Generators</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=The-Origin-of-the-Universe'>The Origin Of The Universe</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-rascals-come-on-up'>The Rascals Come On Up</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-little-book-of-mindful-travel'>The Little Book Of Mindful Travel</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tesla-model-3-uk-price-2019'>Tesla Model 3 Uk Price 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=4g63-head-on-4g69-block'>4g63 Head On 4g69 Block</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mariah-carey-shake-it-off-remix'>Mariah Carey Shake It Off Remix</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bmw-r18-price-in-india'>Bmw R18 Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-rv-camping-in-october'>Best Rv Camping In October</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dosti-friends-forever-full-movie-hd'>Dosti Friends Forever Full Movie Hd</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=transformers-the-last-knight-videos'>Transformers The Last Knight Videos</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1977-airstream-sovereign-31-weight'>1977 Airstream Sovereign 31 Weight</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vans-old-skool-pro-oak-buff-oil-blue'>Vans Old Skool Pro Oak Buff Oil Blue</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=custom-royal-enfield-for-sale'>Custom Royal Enfield For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=specialized-tarmac-expert-2018-review'>Specialized Tarmac Expert 2018 Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-draw-large-letters'>How To Draw Large Letters</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bmw-motorcycle-certified-mechanic-near-me'>Bmw Motorcycle Certified Mechanic Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=source-code-full-movie-download'>Source Code Full Movie Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=spin-master-monster-jam-2020'>Spin Master Monster Jam 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=The-Best-Years-of-Our-Lives'>The Best Years Of Our Lives</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=venus-fly-trap-care-food'>Venus Fly Trap Care Food</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-bridge-car-show-2019'>The Bridge Car Show 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=salary-hike-meaning-in-hindi'>Salary Hike Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=carolina-skiff-for-sale-nc'>Carolina Skiff For Sale Nc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=electrical-engineer-responsibilities-construction-project-pdf'>Electrical Engineer Responsibilities Construction Project Pdf</a>,
+";s:7:"expired";i:-1;}

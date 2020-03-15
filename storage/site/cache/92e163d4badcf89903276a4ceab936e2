@@ -1,0 +1,681 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4411:"USS Little Rock - LCS 9. The Association offers men who served on board LITTLE ROCK an opportunity 11 hours ago . The team is on track to complete sea trials for USS Little Rock (LCS-9) and USS Sioux City (LCS-11) this year and deliver each ship shortly thereafter. The ship's estimated construction costs are between $300 million and $350 million. The new USS Little Rock is one of the Navy’s newest warships. His awards include the Navy and Marine Corps Commendation Medal (2), Navy Achievement Medal (6), Navy Good Conduct Medal (5), and various unit and campaign awards. The vessel also has a helicopter pad, a ramp for small boats and can be used by small assault forces. The Freedom-class littoral combat ship (LCS) USS Little Rock (LCS-9) will get a new laser weapon system during an upcoming deployment some time later this … She is the only person who will be officially associated with the ship throughout its life. USS Little Rock (LCS 9) USS LITTLE ROCK is the fifth FREEDOM - class Littoral Combat Ship and the second ship in the Navy named after the city of Little Rock in Arkansas. of the U.S. Navy Cruiser USS Little Rock CL 92 / CLG 4 / CG 4 / LCS 9 . Another, Congratulations to IT1 Garcia, GSM1 Hartmann and EN2 Day on earning a Navy-Marine Corps Acheivement Medal for their hardwork and contribution to the ship! Commissioning of the USS Little Rock LCS-9. USS Little Rock LCS 9 Opens the Ship’s First Barber Shop. 135 likes. Little Rock is the second ship to bear the name of the capital city in Arkansas. Little Rock has been divided into time segments. Congratulations to newly frocked GM2 Hermanson and CS1 Rhodes!! USS Little Rock (LCS 9) Commissioning Committee Post Office Box 955 Williamsville, New York 14231-0955 The commissioning of the USS Little Rock LCS 9 took place on December 16th, 2017 at Canalside Buffalo adjacent to the Buffalo & Erie County Naval & Military Park. She is currently crewed by LCS Crew 109. EM1 Walker was awarded his well deserved end of tour and retirement Navy … 135 likes. USS Little Rock history. June 27, 2013 The keel authentication ceremony for the LCS 9 was held at … MAYPORT, Fl. (Wikimedia Commons) According to the Navy League, the Navy has ten ships slated for commissioning through the end of next year. 200206-N-QI061-0099 MAYPORT, Fla. (Feb. 6, 2020) Sailors man the rails aboard the Freedom-variant littoral combat ship USS Little Rock (LCS 9), Feb. 6, 2020. NAVSHIPSO NAVSEA Shipbuilding Support Office Norfolk Naval Shipyard Code 284, Bldg 705 Portsmouth, VA 23709-1020 (757) 967-3484 (757) 967-2957 (FAX) USS Little Rock (LCS-9), the latest Freedom-variant littoral combat ship to join the fleet, is iced in on the St. Lawrence Seaway in Montreal and doesn’t plan to move until the Spring thaw. USS Little Rock Association Founded June 28, 1991 by: James Kays, Donald Schuld, John Sheppard & Ed Caggiano, the USS Little Rock Association is a not-for-profit corporation, incorporated in New York. BUFFALO, N.Y. (NNS) -- The Blue crew of Freedom-variant littoral combat ship, USS Little Rock (LCS 9) proudly delivered their ship to the fleet and brought her to life in front of a welcoming crowd of thousands at Canalside Buffalo, New York. (September 13, 2019) USS Little Rock (LCS 9), both Gold and Blue crew along with family and friends gathered together for the time honored tradition of the … NAVSHIPSO NAVSEA Shipbuilding Support Office Norfolk Naval Shipyard Code 284, Bldg 705 Portsmouth, VA 23709-1020 (757) 967-3484 (757) 967-2957 (FAX) She is the second ship named after Little Rock, the capital city of Arkansas. USS Little Rock LCS 9 to get new Laser Weapons System. Media is also invited to cover a media availability/tour on December 14. USS Little Rock (LCS-9) is a Freedom-class littoral combat ship (LCS) of the United States Navy. ... To provide for easier viewing, the chronology of the U.S.S. Thank you to everyone who attended the event at Canalside Buffalo as this larger than life ship officially joins the U.S. Navy fleet. General Characteristics: Awarded: December 29, 2010: (September 13, 2019) USS Little Rock (LCS 9), both Gold and Blue crew along with family and friends gathered together for the time honored tradition of the Chief Petty Officer Pinning ceremony. The littoral combat ship was commissioned next to the first USS Little Rock, a Galveston-class guided missile cruiser (CLG 4). ";s:7:"keyword";s:21:"uss little rock lcs 9";s:5:"links";s:3523:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=harrow-tv-series-season-2'>Harrow Tv Series Season 2</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=customer-relations-staff-toyota-salary'>Customer Relations Staff Toyota Salary</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=associates-in-mechanical-engineering-technology-reddit'>Associates In Mechanical Engineering Technology Reddit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-make-a-gaff-for-tucking'>How To Make A Gaff For Tucking</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=wooden-boats-for-sale-lake-tahoe'>Wooden Boats For Sale Lake Tahoe</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=crazy-little-thing-called-love-movie'>Crazy Little Thing Called Love Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-flying-spur-for-sale'>2019 Flying Spur For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=piston-helicopter-for-sale-canada'>Piston Helicopter For Sale Canada</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=student-feedback-survey-high-school'>Student Feedback Survey High School</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=facebook-marketplace-how-long-to-wait'>Facebook Marketplace How Long To Wait</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=wooden-fishing-boats-for-sale'>Wooden Fishing Boats For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-ducati-959-panigale-corse-review'>2019 Ducati 959 Panigale Corse Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=amex-annual-fee-waiver-hotline'>Amex Annual Fee Waiver Hotline</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=indian-motorcycles-of-metro-milwaukee-muskego-wi'>Indian Motorcycles Of Metro Milwaukee Muskego Wi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=26-inch-columbia-compax-folding-bike'>26 Inch Columbia Compax Folding Bike</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tata-telcoline-pickup-trucks-india'>Tata Telcoline Pickup Trucks India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Love-Is-A-Thousand-Times'>Love Is A Thousand Times</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rent-cycle-for-a-month'>Rent Cycle For A Month</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=craigslist-isuzu-npr-manual-transmission'>Craigslist Isuzu Npr Manual Transmission</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-was-st-trinians-filmed'>Where Was St Trinians Filmed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=old-car-names-and-pictures'>Old Car Names And Pictures</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-activa-5g-limited-edition-price'>Honda Activa 5g Limited Edition Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=air-conditioner-filters-near-me'>Air Conditioner Filters Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-husqvarna-85-big-wheelcafe-racer-for-tall-man'>2020 Husqvarna 85 Big Wheelcafe Racer For Tall Man</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-type-of-essay-is-french-and-english-by-gk-chesterton'>What Type Of Essay Is French And English By Gk Chesterton</a>,
+";s:7:"expired";i:-1;}

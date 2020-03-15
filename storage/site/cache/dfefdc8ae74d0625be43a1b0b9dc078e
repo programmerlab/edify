@@ -1,0 +1,691 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4176:"What's another word for What's the opposite of Find another word for rocking. I love rock music i just dont know how to put it into words. Start studying history of rock and roll quiz 1. This is the British English definition of rock and roll.View American English definition of rock and roll. Find descriptive alternatives for rocking. View the pronunciation for rock and roll. Some rock 'n' roll terms are so well-used that they have entered common parlance. Rock definition, a large mass of stone forming a hill, cliff, promontory, or the like. We hope that the following list of synonyms for the word rock-and-roll will help you to finish your crossword today. Antonyms for Rock and roll.. 5 synonyms for rock and roll: rock music, rock 'n' roll, rock-and-roll, rock'n'roll, rock. Verb . Find another word for rocking. A small chunk or lump of another substance. rock-and-roll synonyms - similar meaning - 62. Definition of Let's rock and roll! shake often carries a further implication of a particular purpose. Synonyms for Rock and roll. Synonyms for rock and roll at Thesaurus.com with free online thesaurus, antonyms, and definitions. Rocking definition, to move or sway to and fro or from side to side. What does Let's rock and roll! Change your default dictionary to American English. Synonyms for rock-and-roll in English including definitions, and related words. Find 197 synonyms for "rock and roll" and other similar words that you can use instead based on 2 separate contexts from our thesaurus. phrase. in the Idioms Dictionary. Lists. Rock-and-roll synonyms. shake, agitate, rock, convulse mean to move up and down or to and fro with some violence. Synonyms Antonyms Definitions Examples Parts of speech. See more. This broad lexicon of slang, abbreviations and metaphor was formed by the music, the musicians, the touring lifestyle and the tools of the music trade. Below you will find our collection of inspirational, wise, and humorous old rock and roll quotes, rock and roll sayings, and rock and roll proverbs, collected over the years from a variety of sources. Synonyms for rock-and-roll. Top synonyms for rock and roll (other words for rock and roll) are rock, rock-and-roll and rock music. Top synonyms for rock-and-roll (other words for rock-and-roll) are rock, rock and roll and rock music. shake well before using agitate suggests a violent and prolonged tossing or stirring. ROCK-AND-ROLL 'ROCK-AND-ROLL' is a 11 letter word starting with R and ending with L Synonyms, crossword answers and other related words for ROCK-AND-ROLL. rock and roll synonyms - similar meaning - 292 in Free Thesaurus. I have to do an essay on what rock music means to or what i think rock music is.. somewhere along those lines and i am completely stuck. rock-and-roll synonyms - similar meaning - 62 "rock is a generic term for the range of styles that evolved out of rock'n'roll." Find all the synonyms of the word rock n roll presented in a simple and clear manner. ! rock and roll. Rock 'n' roll is a cultural phenomenon and as such, it has developed its own vernacular. rock 'n' roll. We hope that the following list of synonyms for the word rock-and-roll will help you to finish your crossword today. sial matrix fieldstone igneous rock claystone road metal calc-tufa stone metamorphic rock stuff mineral material aphanite conglomerate pumice tufa limestone marble pudding stone dolomite greisen sedimentary rock quartzite crushed rock emery stone shingling magma pumice stone gravel emery rock … Let&#39;s rock and roll… ROCK-AND-ROLL 'ROCK-AND-ROLL' is a 11 letter word starting with R and ending with L Synonyms, crossword answers and other related words for ROCK-AND-ROLL. Synonyms for rocking at Thesaurus.com with free online thesaurus, antonyms, and definitions. expression mean? 20 synonyms and near synonyms of rocking from the Merriam-Webster Thesaurus. Related terms for 'rock and roll': acid house, acid jazz, ambient, background music, backing, backup, bebop, bhangra, bluegrass, blues, boogie Find descriptive alternatives for rock and roll. Definition and synonyms of rock and roll from the online English dictionary from Macmillan Education. ";s:7:"keyword";s:36:"another word for rocking and rolling";s:5:"links";s:4637:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Diary-of-a-Wimpy-Kid%3A-Old...'>Diary Of A Wimpy Kid: Old...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=The-systems-view-of-t...'>The Systems View Of T...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=uss-new-orleans-apollo-14-recovery'>Uss New Orleans Apollo 14 Recovery</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=indiana-auto-and-rv-publication'>Indiana Auto And Rv Publication</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=carbon-vs-aluminum-road-bike'>Carbon Vs Aluminum Road Bike</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=This-Used-to-Be-My-Playground'>This Used To Be My Playground</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ambulance-in-different-languages-meme'>Ambulance In Different Languages Meme</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-trucks-of-all-time'>Best Trucks Of All Time</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=air-conditioner-filters-near-me'>Air Conditioner Filters Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=triton-motorcycle-for-sale-usa'>Triton Motorcycle For Sale Usa</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vw-touareg-2016-for-sale'>Vw Touareg 2016 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=englishman-in-new-york-cover'>Englishman In New York Cover</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=reasons-not-to-wear-a-helmet-motorcycle'>Reasons Not To Wear A Helmet Motorcycle</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=types-of-fish-in-india'>Types Of Fish In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jennifer%27s-body-based-on-true-story'>Jennifer's Body Based On True Story</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-amazing-world-of-gumball-wiki'>The Amazing World Of Gumball Wiki</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mercedes-a-class-price-in-india'>Mercedes A Class Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-often-to-service-motorcycle'>How Often To Service Motorcycle</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-seat-for-royal-enfield'>Best Seat For Royal Enfield</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sixthreezero-around-the-block-3-speed'>Sixthreezero Around The Block 3 Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-civil-engineering-handbook-pdf'>Best Civil Engineering Handbook Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=black-friday-statistics-by-year'>Black Friday Statistics By Year</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-am-legend-2-full-movie-download-in-hindi'>I Am Legend 2 Full Movie Download In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jeep-cj7-for-sale-craigslist-indiana'>Jeep Cj7 For Sale Craigslist Indiana</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-open-bic-for-sale'>Used Open Bic For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=service-client-velib-metropole-mail'>Service Client Velib Metropole Mail</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-fz-10-top-speed'>Yamaha Fz 10 Top Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=coyote-boat-trailer-spare-tire'>Coyote Boat Trailer Spare Tire</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-bmw-x6-m50i-specs'>2020 Bmw X6 M50i Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=exotic-car-hacks-course-review'>Exotic Car Hacks Course Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=arizona-mountain-bike-races-2020'>Arizona Mountain Bike Races 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-draw-a-classic-car-step-by-step'>How To Draw A Classic Car Step By Step</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ace-hydra-12-ton-price-second-hand'>Ace Hydra 12 Ton Price Second Hand</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=zodiac-cadet-350-aero-review'>Zodiac Cadet 350 Aero Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mitsubishi-triton-best-pickup-truck'>Mitsubishi Triton Best Pickup Truck</a>,
+";s:7:"expired";i:-1;}

@@ -1,0 +1,689 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2943:"I want you to want me. Now it took time for me to know what you tried so not to show Now something in my soul just cries I see the want in your blue eyes. I want you to want me.  I'd love you to love me. Want to Want Me Lyrics: It's so hard to sleep / I got the sheets on the floor / Listen to me / And I can't take it no more / So hard I can't breath / I got one foot out the door / Where are my keys I want you to want me I need you to need me I'd love you to love me I'm begging you to beg me I want you to want me I need you to need me I'd love you to love me I'll shine up the old brown shoes Put on a brand new shirt I'll get home early from work If you say that you love me Didn't I, didn't I, didn't I … Want to Want Me Lyrics: Derulo / It's too hard to sleep / I got the sheets on the floor, nothing on me / And I can't take it no more, it's a hundred degrees / I got one foot out the door, where are my Read the complete Want To Want Me lyrics by Jason Derulo and watch the music video on Directlyrics. Derulo It's too hot to sleep I got the sheets on the floor Nothing on me And I can't take it no more It's a hundred degrees I got one foot Lyrics to 'I Want You To Want Me' by Cheap Trick. I'm beggin' you to beg me. Baby, I'd love you to want me The way that I want you The way that it should be Baby, you'd love me to want you The way that I want to If you'd only let it be. Want To Want Me Lyrics: It's too hard to sleep / I got the sheets on the floor, nothing on me / And I can't take it no more, it's a hundred degrees / I got one foot out the door, where are my keys It's too hard to sleep I got the sheets on the floor Nothing on me And I can't take it no more It's a hundred degrees I got one foot out the Jason Derulo - Want to Want Me Lyrics. Get me there fast I got your body on my mind I want it bad Ooh, just the thought of you gets me so high, so high Girl, you're the one I want to want me And if you want me, girl, you got me There's nothin' I, no, I wouldn't do, I wouldn't do Just to get up next to you Girl, you're the one I want to want me And if you want me, girl, you got me Want to Want Me Songtext von Jason Derulo mit Lyrics, deutscher Übersetzung, Musik-Videos und Liedtexten kostenlos auf Songtexte.com I need you to need me. Lyrics to 'Want To Want Me' by Jason DeRulo: Derulo It's too hot to sleep I got the sheets on the floor Nothing on me Lyrics to 'I'd Love You To Want Me' by Lobo: When I saw you standing there I'bout fell off my chair And when you moved your mouth to speak I felt the blood go to my feet Want to Want Me - Want to Want Me Lyrics. Get me there fast I got your body on my mind I want it bad Ooh, just the thought of you gets me so high, so high Girl, you're the one I want to want me And if you want me, girl, you got me There's nothin' I, no, I wouldn't do, I wouldn't do Just to get up next to you Girl, you're the one I want to want me And if you want me, girl, you got me ";s:7:"keyword";s:22:"want to want me lyrics";s:5:"links";s:4495:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ford-transit-minibuses-for-sale'>Ford Transit Minibuses For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=only-one-you-big-book'>Only One You Big Book</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=till-the-end-of-time-80s-song'>Till The End Of Time 80s Song</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bts-i-need-u-original'>Bts I Need U Original</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1969-morgan-4-4-for-sale'>1969 Morgan 4 4 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hero-glamour-new-model-2019-price'>Hero Glamour New Model 2019 Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bus-simulator-games-free-download-for-windows-8'>Bus Simulator Games Free Download For Windows 8</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tone-in-a-sentence-literature'>Tone In A Sentence Literature</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-canoe-for-sale-craigslist'>Used Canoe For Sale Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=en-route-meaning-in-kannada'>En Route Meaning In Kannada</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-toyota-rav4-xle-premium-features'>2019 Toyota Rav4 Xle Premium Features</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=deadliest-catch-boats-that-have-sunk'>Deadliest Catch Boats That Have Sunk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sheikh-khalifa-bin-zayed-al-nahyan'>Sheikh Khalifa Bin Zayed Al Nahyan</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=does-state-farm-umbrella-policy-cover-uninsured-motorist'>Does State Farm Umbrella Policy Cover Uninsured Motorist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-man-who-knew-infinity-amazon-prime'>The Man Who Knew Infinity Amazon Prime</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-vans-for-sale-near-me-under-2000'>Used Vans For Sale Near Me Under 2000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-build-a-desktop'>How To Build A Desktop</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Who-Is-Ready-to-Jump'>Who Is Ready To Jump</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-honda-crf250l-rally-for-sale'>Used Honda Crf250l Rally For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=911-964-for-sale-craigslist'>911 964 For Sale Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=baby-monkey-riding-on-a-pig'>Baby Monkey Riding On A Pig</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Wings-of-a-Dove-%28A-Celebrat...'>Wings Of A Dove (A Celebrat...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lamborghini-urus-interior-back-seat'>Lamborghini Urus Interior Back Seat</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=why-stimulated-emission-is-coherent'>Why Stimulated Emission Is Coherent</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Deck-boat-for-sale-Ontario'>Deck Boat For Sale Ontario</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=buffy-the-vampire-slayer-reboot-2020'>Buffy The Vampire Slayer Reboot 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=was-the-lindbergh-baby-disabled'>Was The Lindbergh Baby Disabled</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=girls-just-wanna-have-fun-meaning'>Girls Just Wanna Have Fun Meaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=flagship-credit-acceptance-3-christy-drive-chadds-ford-pa-19317'>Flagship Credit Acceptance 3 Christy Drive Chadds Ford Pa 19317</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-city-accessories-price-list-2019'>Honda City Accessories Price List 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-rvs-for-sale-by-owner-central-valley'>Used Rvs For Sale By Owner Central Valley</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=The-Animals-on-the-F...'>The Animals On The F...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-edge-of-darkness-book'>The Edge Of Darkness Book</a>,
+";s:7:"expired";i:-1;}

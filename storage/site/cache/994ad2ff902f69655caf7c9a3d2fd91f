@@ -1,0 +1,681 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4575:"The 4G63 turbo engine is well known for being used in the Mitsubishi Lancer Evolution series of cars up until 2006 when it was replaced by the new 4B11T turbo engine. It has a cast iron engine block and an aluminum SOHC cylinder head. I didn't know Manley made pistons for the 4G69. Did you do any work to the block besides opening it up a lil? It has a cast iron engine block and an aluminum SOHC cylinder head. About 3% of these are machinery engine parts. A wide variety of 4g63 engine block options are available to you, There are 36 4g63 engine block suppliers, mainly located in Asia. Stock 4G63 (EVO VIII) vs. 4B11 Flow. To start viewing messages, select the forum that you want to visit from the selection below. ... mitsubishi 2.4l engine 4g69 mivec 4g63 engine 4g64 engine 4g69 block 4g69 pistons. Page 1 of 2 - Difference Between 4G63 and 4G64 - posted in Advanced Virtual Mechanic: Hey guys I am trying to chase the difference between the 4G63 and 4G64 Pistons and Conrods. Unfamiliar with what terms like “stoker” and “de-stroker” mean? This video assumes you're aware that various iterations of the 4g series Mitsubishi engines are designated as Sirius I & II. ... 4g63 Block Oil Gallery Mod ... Hyundai Assembly 2 - … The 4G69 incorporates Mitsubishi's MIVEC Variable Valve Timing technology. The 4G63 Engine Building Basics 101 Confused by all of the options for your 4G63 based project? The 4G64 is essentially the same casting, but features a … The 4G69 incorporates Mitsubishi's MIVEC Variable Valve Timing technology. 4G69 Gasket or EVO? Note: No cam seals have been installed on overhead cam cylinder heads, as one comes in your gasket set. Looking forward to seeing some pics … 4G69 Block 4G63T head conversion!! Now that we've defined Mitsubishi naming, families and models, we can start to exploit the differences of each engine. The 4G69 is an interference motor like the 4G63. Did you have to do anything to the head gasket when you mated up the block and the head?  Alibaba.com offers 116 4g63 engine block products. The 4G63 engine is a member of the Mitsubishi Sirius 4G6 family firstly introduced in 1980. Refine. The Sirius Family of Engines (4G6x) ... Big Port DOHC Head) 4G69 - 2.4L (N/T, DOHC, 7 bolt, "backwards") Mix and Match. All measurements were taken at 50 inHg. It has a cast iron engine block (later switch to aluminum block) and an aluminum SOHC cylinder head. The 4G69 is an interference motor like the 4G63. Did you do any work to the block besides opening it up a lil? It uses multi-point fuel injection, has 4 valves per cylinder with roller followers, a one-piece cast camshaft, and a cast aluminum intake manifold. Mitsubishi Cylinder Heads Check the cylinder head gasket surface for warp using a straightedge and thickness gauge. Thing is 4b11's are still hella expensive have shite load of electrics all probably not compatible with the older cars. Enter The 4G64 Block The 4G64 block is nearly identical to the 4G63 used in today's EVOs. On the exhaust side, the 4B11 flowed close to the 4G63 at valve lifts above .300”. It uses multi-point fuel injection, has 4 valves per cylinder with roller followers and features forged steel connecting rods, a one-piece cast ... Mitsubishi Sirius engine on Facebook; References Fit Mitsubishi 4G63 4G63-T 4G64 4G69 Engine Cylinder Head Bolt Set motor kit NEW. Did you have to do anything to the head gasket when you mated up the block and the head? 4G69 Info: *The 4G69 is simply a 4G64 with 87mm bore and a deck height of a 4G63, interesting parts may be use to swap over such as lightened crank, rods, and crankshaft pulley, as well as use of the lower compression height pistons to use with a longer rod to increase the rod ratio thus allowing the 100mm stoke to rev higher. Looking forward to seeing some pics and reading a lil more about your build. someone on another forum "LWNSLW" has informed me that the 4G63T head from an evo 4-9 will drop right onto the 4G69 block. The EVO III-generation of the 4G63 cylinder head had about a 20-percent advantage in intake flow over the 4B11, in factory form. 4g63 head on 4g64 block; If this is your first visit, be sure to check out the FAQ by clicking the link above. 3. It uses multi-point fuel injection, has 4 valves per cylinder with roller followers, a one-piece cast camshaft, and a cast aluminum intake manifold. 4G69 In Grandis. I didn't know Manley made pistons for the 4G69. - posted in Mitsubishi Madness Technical: okay guys well im starting to buy bites for the turbo conversion on my 2006 2.4L lancer. ";s:7:"keyword";s:23:"4g63 head on 4g69 block";s:5:"links";s:3407:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cbs-morning-news-with-gayle'>Cbs Morning News With Gayle</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=darkness-van-der-graaf-generator-lyrics'>Darkness Van Der Graaf Generator Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ice-cream-bicycle-horn-ringtone'>Ice Cream Bicycle Horn Ringtone</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=power-tools-for-digging-soil'>Power Tools For Digging Soil</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pessimistic-person-meaning-in-hindi'>Pessimistic Person Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fastest-plane-used-in-ww2'>Fastest Plane Used In Ww2</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=U-47-%E2%80%93-Kapit%C3%A4nl...-Prien'>U 47 – Kapitänl... Prien</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=upcoming-light-commercial-vehicles-in-india-2020'>Upcoming Light Commercial Vehicles In India 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-toyota-corolla-for-sale-by-private-owner-near-me'>Used Toyota Corolla For Sale By Private Owner Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=black-magic-woman-peter-green'>Black Magic Woman Peter Green</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=suzuki-ignis-4x4-vs-fiat-panda-4x4'>Suzuki Ignis 4x4 Vs Fiat Panda 4x4</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-boats-for-sale-brunswick-ga'>Used Boats For Sale Brunswick Ga</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=4-wheel-alignment-near-me'>4 Wheel Alignment Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=klr-650-for-sale-augusta-ga'>Klr 650 For Sale Augusta Ga</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-does-minivan-app-work'>How Does Minivan App Work</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cary-state-forest-off-roading'>Cary State Forest Off Roading</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=18-wheels-of-steel-haulin'>18 Wheels Of Steel Haulin</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2006-lexus-es330-timing-belt-or-chain'>2006 Lexus Es330 Timing Belt Or Chain</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=when-i%27m-on-the-road-i-be-on-the-road'>When I'm On The Road I Be On The Road</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-subaru-wrx-premium-awd'>2018 Subaru Wrx Premium Awd</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ford-camshaft-position-sensor-resistance'>Ford Camshaft Position Sensor Resistance</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=chevy-express-3500-parts-diagram'>Chevy Express 3500 Parts Diagram</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=gator-efx-hard-fold-tonneau-cover'>Gator Efx Hard Fold Tonneau Cover</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=restaurants-in-cambridge-springs-pa'>Restaurants In Cambridge Springs Pa</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=wiggle-or-wriggle-room-meaning'>Wiggle Or Wriggle Room Meaning</a>,
+";s:7:"expired";i:-1;}

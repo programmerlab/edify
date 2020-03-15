@@ -1,0 +1,680 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2876:"The QuadSport Z400 is engineered to be the best all-around sport machine for any terrain - from woods to sand to the track. Find the latest used and new cars for sale on Gumtree. Let us help. View South African property 24/7 online at Private Property. – SA’s leading motorcycle dealership due to our ethos based on Integrity, trust and honesty. Browse through listings of cheap land for sale in the United States. . 2003 Suzuki Quadsport Z400 , New top end with hot cams timing chain, twist throttle, new tires, FULL HMF exhaust, and rejetted the carb. Stop by our dealership in Cookeville, TN today and check out our entire lineup of Kawasaki motorsports. Close the cookie policy warning. The vendor holds up to 400 products over its 12 selections. In 2020, there will be a lot of Nissan cars coming out such as 2020 Nissan Juke For Sale Near Me. Call for Price Can't find what you're looking for? And other 2020 Nissan Juke For Sale Near Me information can be read out here in nissan2020.com. Comfortable, balanced and capable, the new Z400 ABS offers a visceral riding experience that’s sure to turn heads. 2020 Kawasaki Ninja 400 SE ABS For Sale. Or looking to buy one — but prefer a car from a private seller? Research, compare and save listings, or contact sellers directly from 785 Z4 models nationwide. Call for Price 2019 Z421KW-54. I also have a RMZ … Suzuki QuadSport LTZ400 ATV: One ride on a QuadSport Z400 and you'll understand what heart-pounding performance is all about. And other 2020 Nissan Juke For Sale Near Me information can be read out here in nissan2020.com. A fiercely authentic supernaked, the Kawasaki Z400 ABS exudes fresh street style and is immediately recognizable in a crowd with its compact chassis and aggressive styling. The Fastcorp Z400 provides some of the latest robotic technology in the industry. Used Bike. Stop by our Plano, TX dealership located in … Find houses, flats and townhouses for sale & to rent by private sellers & estate agents. View our entire inventory of New Or Used Kawasaki Motorcycles. Start your search for 1-owner and accident-free cars to get a great deal. This quad is fast and powerful. Search 3,114 listings to find the best deals. If you're interested in selling a car yourself, you'll find it's quick and simple on Autotrader.com. Visit here to get updated on 2020 Nissan Juke For Sale Near Me and other Nissan news. Kijiji Alerts are an email notification service where Kijiji users can have the newest Ads sent to your email address. We carry a huge selection of Kawasaki & Suzuki powersports vehicles including motorcycles, ATVs, UTVs, scooters and more. Motorcycles on Autotrader has listings for new and used Kawasaki Z400 Motorcycles for sale near you. Browse cars for sale, shop the best deals near you, find current loan rates and read FAQs about financing and warranties at Cars.com. ";s:7:"keyword";s:21:"z400 for sale near me";s:5:"links";s:3456:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rig-500-pro-headset-cable-replacement'>Rig 500 Pro Headset Cable Replacement</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Jake-and-the-Never-Land-Pir...'>Jake And The Never Land Pir...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=monster-energy-supercross-ps4-2-player'>Monster Energy Supercross Ps4 2 Player</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=you-are-not-alone-mp3-song-free-download-320kbps'>You Are Not Alone Mp3 Song Free Download 320kbps</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tony-knowles-coastal-trail-map'>Tony Knowles Coastal Trail Map</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-porsche-cayenne-e-hybrid-mpg'>2019 Porsche Cayenne E-hybrid Mpg</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bhuj-earthquake-2001-relief-measures'>Bhuj Earthquake 2001 Relief Measures</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=6-metre-yacht-for-sale'>6 Metre Yacht For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=%D0%BF%D0%B5%D1%81%D0%BD%D0%B8-%D0%BE-%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC'>песни о любви на английском</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=coyote-boat-trailer-spare-tire'>Coyote Boat Trailer Spare Tire</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=does-best-buy-deliver-to-home'>Does Best Buy Deliver To Home</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2007-nissan-350z-nismo-for-sale'>2007 Nissan 350z Nismo For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=christopher-heyerdahl-movies-and-tv-shows'>Christopher Heyerdahl Movies And Tv Shows</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-jeep-wrangler-for-sale-under-6000'>Used Jeep Wrangler For Sale Under 6000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=take-me-to-the-river-al-green'>Take Me To The River Al Green</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=battery-operated-tractor-in-india'>Battery Operated Tractor In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-bike-direct-from-owner'>Used Bike Direct From Owner</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=saint-leo-university-acceptance-rate'>Saint Leo University Acceptance Rate</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=most-reliable-used-cars-under-10000'>Most Reliable Used Cars Under 10000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=national-crane-500c-parts-manual'>National Crane 500c Parts Manual</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pillai-college-of-engineering-panvel-admission'>Pillai College Of Engineering Panvel Admission</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-r125-vs-r15-v3'>Yamaha R125 Vs R15 V3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vehicle-pronunciation-in-uk-english'>Vehicle Pronunciation In Uk English</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=assault-on-wall-street-full-movie-123movies'>Assault On Wall Street Full Movie 123movies</a>,
+";s:7:"expired";i:-1;}

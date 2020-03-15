@@ -1,0 +1,683 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4364:"Spectators are encouraged to bring their own chairs and weather appropriate clothing. It was fascinating to hear the number of tanks that could be carried on the main deck and how fast they could unload them. LST 393 is one of only two LST’s (Landing Ship Tank) remaining from 1,051 built during WWII. Superstars. The LST-393 Friday Night Movies On Deck feature for Friday is “Jaws,” an all-time great thriller. Popcorn, soda and snacks will be available at the event. LST 393 is one of only two LST’s (Landing Ship Tank) remaining from 1,051 built during WWII. Each showing is free to the public, but donations are welcome. Each showing is … Friday, July 27, it’s “Rocky” starring Sylvester Stalone (1976). Hours of Operation. An “all-time best” movie line up is coming the USS LST 393 Veterans Museum deck this summer! Each showing is free to the public, but donations are welcome. The 13th annual Movies on Deck film series features great movies showing at dusk on Friday evenings on the USS LST 393! I concentrate on the engine room, but show the Tank Deck, soldiers bunks & …  Movies on Deck presents "Caddyshack" Friday Aug. 2 (parental advisory) at USS LST 393 Veterans Museum at the Mart Dock on the Muskegon waterfront. Nestled at the foot of downtown Muskegon on beautiful Muskegon Lake, LST 393 provides an outstanding backdrop for your special occasions. Spectators are encouraged to bring their own chairs and weather appropriate clothing. Spectators are encouraged to bring their own chairs and weather appropriate clothing. LST 393’s 2019 Friday Night "Movies On Deck" Sunsets. Families and businesses have sponsored individual movies but the downtown Muskegon investment and financial planning firm Waddell & Reed has underwritten the entire series. The USS LST 393 Veterans Museum is proud to open this historic warship and nationally renowned veterans museum for public tours. Movies on Deck presents "The Lion King" Friday June 8 at USS LST 393 Veterans Museum. ... We came back later in the evening for "Movies on Deck". Take a tour of LST 393 one of the only 2 remaining World War 2 Landing Ship Tank. Walk where heroes walked, right in downtown Muskegon! They’re all on deck at USS LST 393 Veterans Museum for the popular “Movies on Deck” most Friday nights this summer on Muskegon’s downtown waterfront. Each showing is free to the public, but donations are welcome. The 12th annual Movies on Deck film series features eight movies showing at dusk on Friday evenings on the LST 393. Popcorn, soda and snacks will be available at the event. Please bring your own seating, concessions are sold. LST 393 in this photo from 2008. Welcome aboard USS LST 393. The LST 393 Veterans Museum is located at 560 Mart Street in Muskegon. (Courtesy Photo | Disney Pixar) MUSKEGON, MI - Lights, camera, action. Each showing is free to the public, but donations are welcome. Each showing is free to the public, but donations are welcome. The 13th annual Movies on Deck film series features great movies showing at dusk on Friday evenings on the USS LST 393! 58547108.JPG. MUSKEGON, Mich. - This summer, catch a movie on the deck the USS LST 393 in Muskegon. Chronicle file photoPeople watch movies in a beautiful setting aboard the U.S.S. Popcorn, soda and snacks will be available at the event. USS LST 393 is a unique and historic facility ready to host your next social, corporate, or special event. USS LST 393: Movies on Deck - See 160 traveler reviews, 115 candid photos, and great deals for Muskegon, MI, at Tripadvisor. The USS LST 393 Veterans Museum is a Michigan non-profit corporation, created to restore and preserve USS LST 393. The corporation is incorporated under section 501 (c) 3 of the Internal Revenue Code. The USS LST 393 Veterans Museum is a Michigan non-profit corporation, created to restore and preserve USS LST 393. Spectators are encouraged to bring their own chairs and weather appropriate clothing. If inclement weather happens, the movie showing will be moved down inside the giant tank deck of the ship. Spectators are encouraged to bring their own chairs and weather appropriate clothing. Discover LST 393's outstanding wartime record as you tour a nationally renowned veterans museum with artifacts and displays honoring those who served America and fought for the freedoms we enjoy today. ";s:7:"keyword";s:22:"lst 393 movies on deck";s:5:"links";s:3825:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=new-rooms-at-yacht-club-disney'>New Rooms At Yacht Club Disney</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kona-tika-women%27s-mountain-bike-review'>Kona Tika Women's Mountain Bike Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=world-of-tanks-na-download'>World Of Tanks Na Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bentley-continental-flying-spur-price-in-india'>Bentley Continental Flying Spur Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-my-instagram-address'>What Is My Instagram Address</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-another-name-for-the-tower-of-david'>What Is Another Name For The Tower Of David</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=nj-car-inspection-requirements-2018'>Nj Car Inspection Requirements 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=girls-24-inch-mountain-bike'>Girls 24 Inch Mountain Bike</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=is-it-legal-to-add-seats-to-a-cargo-van'>Is It Legal To Add Seats To A Cargo Van</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1991-harley-davidson-fxr-for-sale'>1991 Harley Davidson Fxr For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=%2B-16moreCar-accessories-storesCarmagic%2C-Alpha-Digital-Systems%2C-and-more'>+ 16moreCar Accessories StoresCarmagic, Alpha Digital Systems, And More</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=everybody-loves-raymond-123movies-season-3'>Everybody Loves Raymond 123movies Season 3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=blackwater-boats-43-for-sale'>Blackwater Boats 43 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Department-of-Trade-and-Indu...'>Department Of Trade And Indu...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=it%27s-all-coming-back-to-me-now-lyrics-meatloaf'>It's All Coming Back To Me Now Lyrics Meatloaf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=denso-spark-plugs-vs-ngk'>Denso Spark Plugs Vs Ngk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=garbage-compactor-price-in-india'>Garbage Compactor Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-camping-places-near-me'>Best Camping Places Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=splashdown-water-park-ticket-prices'>Splashdown Water Park Ticket Prices</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=giant-defy-advanced-1-2020-review'>Giant Defy Advanced 1 2020 Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-write-a-camp-report'>How To Write A Camp Report</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jayco-hummingbird-10rk-near-me'>Jayco Hummingbird 10rk Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pensacola-class-cruiser-world-of-warships'>Pensacola Class Cruiser World Of Warships</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-many-inches-of-water-can-cause-hydroplaning'>How Many Inches Of Water Can Cause Hydroplaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=advance-auto-parts-hyderabad-kokapet'>Advance Auto Parts Hyderabad Kokapet</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lexus-nx-300-awd-for-sale'>Lexus Nx 300 Awd For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-hunter-call-of-the-wild-pc'>The Hunter Call Of The Wild Pc</a>,
+";s:7:"expired";i:-1;}

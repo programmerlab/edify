@@ -1,0 +1,734 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3381:"The top deck is hollow and requires Wooden structures if you want to fill it … You don’t have to worry if the lines are not straight. Gene Bodnar Bluenose Practicum -- The Bluenose Practicum was developed by modeler Gene Bodnar and outlines the process in detail of building a (museum quality) model of this famous schooner based on Philip Eisnors plans. A schooner can be separated from other sailboats by a front mast that is lower than the rear one. A few schooners have three or four masts. A ship, strictly, is a three-masted sailing vessel square rigged on all three masts. How to draw a sailboat, step-by-step. 3. A Schooner supports two decks; a bottom deck and a upper deck. the boat, everything I built and I draw up first. This boat has Other elements of a boat are ropes, windows, flags, stairs, anchors and cabin. The Schooner Bluenose Plans - Model Ship Builder. The Rigging of a Sailing Ship The sail plans of sailing vessels were many and varied. In the above close-up, note that the davits are bolted solidly to the vessel's side and braced with iron rods. Sailboats go by many names depending on their size and structure, including cutter, catboat, dinghy, ketch, schooner, sloop, and yawl. The schooner "American Team" (c. 1876) had a peculiar type of steering gear, the wheel box being forward of the wheel. After drawing the basic elements of the sailing ship, you can add the smaller details. Yacht "Rosemary"- Sailing, Seamanship and Yacht Construction, by Uffa Fox, 1941 Ten Pound Island Book Company. This is a schooner rig with a midships cockpit after the cockpit the deck comes up a little bit and continues back to the stern, that’s a quarterdeck. In the above close-up, note that the davits are bolted solidly to the vessel's side and braced with iron rods. Medium Wood Ship Deck. I think that sloppy lines make the drawing more artistic. The Schooner Bluenose Plans - Model Ship Builder . Finalize index ??? Saved from ... A Blog about building scale wooden model period ships, drawing of plans and providing information to readers. Lighter vessels ranged upward from the cutter, a single-masted schooner with as little as one cannon on the open deck, or nothing but swivel guns mounted on her railings. An ink drawing showing aa 3-masted wooden sailing ship or schooner that was often used to trade goods and carry passengers from Europe to the new American colonies. Company or website name Valkyrien a 77 foot wooden schooner drawing Describe your company and organization and target audience. Shows Bluenose layout of fishing holds, cabin, galley, forecastle bunks and mess table (also page 66)??? The drawing is be rubber cemented to the plywood for cutting on the scroll saw. All schooner drawings ship within 48 hours and include a 30-day money-back guarantee. It’s not hard to learn how to draw a sailing ship. A Medium Wood Ship Deck is required to place any Wooden Structures and the Ship's Steering Wheel . Drawing near the schooner, a crew was dispatched overside in the longboat with a squad of marines. Cut the drawing down the center line and align the center line with the edge of the plywood.  Just be sure to align the center line of the drawing with one edge of the wood when you cut the center area out on the scroll saw. Like some things I’ve maybe drawn 50 pictures before I come up with a way that would really work. ";s:7:"keyword";s:22:"How to draw a schooner";s:5:"links";s:10638:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cascada-evacuate-the-dancefloor-lyrics'>Cascada Evacuate The Dancefloor Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=car-turning-radius-online-calculator'>Car Turning Radius Online Calculator</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Transfor...-Dark-of-the-Moon'>Transfor... Dark Of The Moon</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Secret-Marvels-of-the-Worl...'>Secret Marvels Of The Worl...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=top-10-recruitment-agencies-uk-2018'>Top 10 Recruitment Agencies Uk 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-report-an-article-on-google'>How To Report An Article On Google</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-pronounce-r-o-u-g-h'>How To Pronounce R O U G H</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-motorhomes-for-sale-under-10000'>Used Motorhomes For Sale Under 10000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=south-main-auto-youtube-income'>South Main Auto Youtube Income</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ford-e350-xlt-15-passenger-van'>Ford E350 Xlt 15 Passenger Van</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rock-and-roll-is-king-bass-tab'>Rock And Roll Is King Bass Tab</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=general-manager-car-dealership-salary'>General Manager Car Dealership Salary</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kung-fu-panda-showdown-of-legendary-legends-characters'>Kung Fu Panda Showdown Of Legendary Legends Characters</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ralph-breaks-the-internet-netflix'>Ralph Breaks The Internet Netflix</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=auto-part-number-cross-reference'>Auto Part Number Cross Reference</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=klr-650-for-sale-augusta-ga'>Klr 650 For Sale Augusta Ga</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ashok-leyland-logo-hd-download'>Ashok Leyland Logo Hd Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-small-pontoon-boats-2018'>Best Small Pontoon Boats 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-ford-crown-victoria-gt7'>2020 Ford Crown Victoria Gt7</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=google-search-download-for-android'>Google Search Download For Android</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cotton-eye-joe-mp3-download'>Cotton Eye Joe Mp3 Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Frankenstein-Meets-the-Wolf-Man'>Frankenstein Meets The Wolf Man</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-6%27-box-blade-for-sale'>Used 6' Box Blade For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-full-size-truck-2020'>Best Full Size Truck 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bmw-r90%2F6-for-sale-craigslist'>Bmw R90/6 For Sale Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=benelli-leoncino-500-on-road-price-in-india'>Benelli Leoncino 500 On Road Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=which-of-the-following-act-as-examples-of-second-messengers-quizlet'>Which Of The Following Act As Examples Of Second Messengers Quizlet</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Why-I-Love-You-So-Much'>Why I Love You So Much</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=motorcycle-salvage-yards-united-states'>Motorcycle Salvage Yards United States</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-draw-an-electric-guitar'>How To Draw An Electric Guitar</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sean-paul-get-busy-lyrics'>Sean Paul Get Busy Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fundamentals-of-automotive-technology-2nd-edition-access-code'>Fundamentals Of Automotive Technology 2nd Edition Access Code</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-canvas-tents-for-winter-camping'>Best Canvas Tents For Winter Camping</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=4-wheel-drive-semi-trucks'>4 Wheel Drive Semi Trucks</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-way-to-use-car-air-conditioning'>Best Way To Use Car Air Conditioning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=6-foot-7-foot-background-lyrics'>6 Foot 7 Foot Background Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=wet-hot-american-summer-ten-days-later-cast'>Wet Hot American Summer Ten Days Later Cast</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ready-for-the-weekend-quotes'>Ready For The Weekend Quotes</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-waverunner-for-sale-ireland'>Yamaha Waverunner For Sale Ireland</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-honda-accord-2.0-top-speed'>2018 Honda Accord 2.0 Top Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kia-seltos-price-in-bangalore'>Kia Seltos Price In Bangalore</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jet-boats-for-sale-ebay'>Jet Boats For Sale Ebay</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=things-to-do-in-pensacola-beach-florida'>Things To Do In Pensacola Beach Florida</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=gattu-battu-ki-pakki-yaari'>Gattu Battu Ki Pakki Yaari</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=parker-boats-for-sale-delaware'>Parker Boats For Sale Delaware</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=campers-for-sale-in-harrisonburg-va-craigslist'>Campers For Sale In Harrisonburg Va Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=we-are-human-after-all'>We Are Human After All</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kill-them-with-kindness-quote'>Kill Them With Kindness Quote</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=effect-of-freeze-thaw-on-proteins'>Effect Of Freeze Thaw On Proteins</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=are-giant-bikes-good-reddit'>Are Giant Bikes Good Reddit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-tiffin-allegro-bus-for-sale'>2018 Tiffin Allegro Bus For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rail-tours-from-dublin-to-belfast'>Rail Tours From Dublin To Belfast</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-corvette-quarter-mile-time'>2020 Corvette Quarter Mile Time</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=does-my-car-have-gps'>Does My Car Have Gps</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=marwa-loud-bad-boy-song-mp3-download'>Marwa Loud Bad Boy Song Mp3 Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bruce-springsteen-born-to-run'>Bruce Springsteen Born To Run</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bike-blast-game-download-for-pc'>Bike Blast Game Download For Pc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-wire-a-light-switch'>How To Wire A Light Switch</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ebay-norton-field-guide-to-writing'>Ebay Norton Field Guide To Writing</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=A-Short-Film-About-Killing'>A Short Film About Killing</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=criminal-minds-season-15-episode-1'>Criminal Minds Season 15 Episode 1</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=why-was-the-tri-state-tornado-so-lethal'>Why Was The Tri State Tornado So Lethal</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=husqvarna-nuda-900r-price-philippines'>Husqvarna Nuda 900r Price Philippines</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hyundai-eon-steering-wheel-emblem'>Hyundai Eon Steering Wheel Emblem</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mat-hoffman%27s-pro-bmx-2-ps2-iso'>Mat Hoffman's Pro Bmx 2 Ps2 Iso</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pontoon-boat-seat-covers-with-snaps'>Pontoon Boat Seat Covers With Snaps</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-grey-full-movie-youtube'>The Grey Full Movie Youtube</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-tom-and-jerry-show-season-1'>The Tom And Jerry Show Season 1</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cycling-5-miles-a-day-weight-loss'>Cycling 5 Miles A Day Weight Loss</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=speed-of-sound-vs-altitude-equation'>Speed Of Sound Vs Altitude Equation</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-jayco-jay-flight-28bhs-for-sale'>2019 Jayco Jay Flight 28bhs For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fiat-ducato-2.3-engine-problems'>Fiat Ducato 2.3 Engine Problems</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=touch-me-feel-me-love-me'>Touch Me Feel Me Love Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=nissan-pathfinder-1995-for-sale'>Nissan Pathfinder 1995 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bank-of-america-offer-letter'>Bank Of America Offer Letter</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=trucks-with-manual-transmission-for-sale'>Trucks With Manual Transmission For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1981-fiat-spider-for-sale'>1981 Fiat Spider For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=los-angeles-county-fair-la-county-fair-september-14'>Los Angeles County Fair La County Fair September 14</a>,
+";s:7:"expired";i:-1;}

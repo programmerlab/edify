@@ -1,0 +1,696 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3771:"If I Wrote You A Love Song And They Were All For You lyrics. #Mind Warehouse Recommended for you. Oh, no. share. Everything changes, yes your eyes have seen. Free delivery on qualified orders. Ringo, in octo gardens he write. More About All I Want For Christmas Is You Who wrote All I Want For Christmas Is You? It happens over and over again, the little hooks. Posted by. From the ground you rise, an acorn a seed. They may think they get it, but they don’t. Be gentle. If your reference knows about the job you want, they can frame their reference to provide helpful details. Walter Afanasieff wrote many of her hit songs with her, like "Till the End of Time," "Can't Let Go," and "Hero". save hide report. You know naught of these human deeds . All I Want For Christmas Is You was written and produced by Mariah Carey and her long … Radiant, Luscious figure, the complexion of intriguing wonder, all blend together to form a glow of mystery. Sub is yellow. The earliest parts of this priestly writing were carried out in the final decades of the Kingdom of Judah, but most would be written during the exile in Babylonia, after Judah's destruction in 586 BCE.  "You've Got a Friend" is a 1971 song written by Carole King. 23. 16. A beebles poem I wrote for you all. that’s all she ˈwrote (American English, informal) used when you are stating that there is nothing more that can be said about something or that something is completely finished: And that’s all she wrote for today, folks, because it’s time for me to go. Also, provide your reference with background information on the reason you're requesting the letter. Yet you stand strong, selfless and free. Read I Wrote This All for You book reviews & author details and more at Amazon.in. Another well-known version is by James Taylor from his album Mud Slide Slim and the Blue Horizon . Anyway, it was they who wrote all those laws in Leviticus. Amazon.in - Buy I Wrote This All for You book online at best prices in India on Amazon.in. Faul, y’know, sleep tight. ♢ All you have to do is point and shoot and that’s all she wrote. Even if you’re comfortable writing about yourself, it’s hard to know where to start or what to leave out. Within two years of the band's commercial breakthrough, Wilson had taken over from his father Murry, and he was the sole producer of all their recordings between 1963 and 1967. And that's the tragedy of living.” ― pleasefindthis, I Wrote This For You It has been declared one of the state songs of Louisiana because of its association with Davis, a country music singer and governor of the state in the years 1944–1948 and 1960–1964. Walter Afanasieff actually wrote "All I Want for Christmas Is You." Find descriptive alternatives for wrote. Browse for If I Wrote You A Love Song And They Were All For You song lyrics by entered search phrase. Read honest and unbiased product reviews from our users. Who wrote Mariah Carey’s All I Want For Christmas Is You? This is the sign you’ve been looking for. It was first recorded by King, and included in her album Tapestry . Here's everything you could ever want to know about Mariah Carey's "All I Want for Christmas Is You." A mystery which is never solved, since we don’t have the guts to say. Goodbye, hello. Find helpful customer reviews and review ratings for I Wrote This All for You at Amazon.com. You know yourself better than anyone, but that only seems to make it worse. A beebles poem I wrote for you all. EVERTON SOUZA AMV 26,168 views. Posted by. Over the past 10 years, I’ve been fortunate enough to help all sorts of people get their websites into shape. Jahn, he beat the wif . You were meant to read these words. I wrote this for you. Ent. I need you to understand something. ";s:7:"keyword";s:21:"who wrote all for you";s:5:"links";s:5444:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-had-the-blues-but-i-shook-them-loose-review'>I Had The Blues But I Shook Them Loose Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tractor-farming-simulator-game-2018-download'>Tractor Farming Simulator Game 2018 Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Scooby...-Night-of-100-Frig...'>Scooby... Night Of 100 Frig...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mahindra-scorpio-4-wheel-drive-india'>Mahindra Scorpio 4 Wheel Drive India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-increase-temperature-in-grow-tent'>How To Increase Temperature In Grow Tent</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-ford-cars-have-park-assist'>What Ford Cars Have Park Assist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=end-of-days-film-review'>End Of Days Film Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=girls-24-inch-mountain-bike'>Girls 24 Inch Mountain Bike</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=in-case-you-didn%27t-know-meaning'>In Case You Didn't Know Meaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=old-car-names-and-pictures'>Old Car Names And Pictures</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-coachmen-clipper-17bhs-reviews'>2018 Coachmen Clipper 17bhs Reviews</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-story-of-god-with-morgan-freeman-episodes'>The Story Of God With Morgan Freeman Episodes</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=why-are-mitsubishi-cars-so-cheap'>Why Are Mitsubishi Cars So Cheap</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-mount-a-tall-motorcycle'>How To Mount A Tall Motorcycle</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-a-reefer-trailer'>What Is A Reefer Trailer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=new-and-used-boats-for-sale'>New And Used Boats For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-volvo-xc60-t6-momentum'>2019 Volvo Xc60 T6 Momentum</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=funny-captions-for-rafting-pictures'>Funny Captions For Rafting Pictures</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-flatbed-dump-trucks-for-sale'>Used Flatbed Dump Trucks For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=double-light-switch-wiring-diagram'>Double Light Switch Wiring Diagram</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-an-ocean-kayak'>What Is An Ocean Kayak</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=emerson-automation-solutions-fc-llc'>Emerson Automation Solutions Fc Llc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=worksaver-500-post-hole-digger'>Worksaver 500 Post Hole Digger</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1971-camaro-for-sale-craigslist'>1971 Camaro For Sale Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-sea-doo-gti-130-top-speed'>2019 Sea Doo Gti 130 Top Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ethanol-producers-association-of-india'>Ethanol Producers Association Of India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=slow-carbon-monoxide-poisoning-symptoms'>Slow Carbon Monoxide Poisoning Symptoms</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Does-My-Ring-Burn-Your-Fin...'>Does My Ring Burn Your Fin...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=discount-nissan-oem-auto-parts'>Discount Nissan Oem Auto Parts</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-sampan-style-cooking'>What Is Sampan Style Cooking</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=virtual-villagers-4-puzzle-14'>Virtual Villagers 4 Puzzle 14</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=goldilocks-and-the-three-bears-movie'>Goldilocks And The Three Bears Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=are-groupon-and-livingsocial-the-same'>Are Groupon And Livingsocial The Same</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=suzuki-gixxer-2019-price-philippines'>Suzuki Gixxer 2019 Price Philippines</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=electric-fuel-pump-how-it-works'>Electric Fuel Pump How It Works</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mx-vs-atv-alive-ps4'>Mx Vs Atv Alive Ps4</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=till-the-end-of-time-80s-song'>Till The End Of Time 80s Song</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=harley-davidson-sportster-883-price'>Harley Davidson Sportster 883 Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-type-of-essay-is-french-and-english-by-gk-chesterton'>What Type Of Essay Is French And English By Gk Chesterton</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=simon-pegg-and-nick-frost'>Simon Pegg And Nick Frost</a>,
+";s:7:"expired";i:-1;}

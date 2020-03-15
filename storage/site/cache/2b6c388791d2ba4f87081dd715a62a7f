@@ -1,0 +1,689 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2997:"Most welcome! Traveling around France is easy, whether you get there by plane, train, automobile — or even boat, in the case of Corsica. In smaller towns, such as Rouen, Arles, or Antibes, it’s easy to navigate the city center on foot. This is the most valuable travel lesson you can learn — patience isn’t just a virtue, it’s a vacation saver. Train travel in France is an easy, affordable, and sustainable way to get around and see all that the county has to offer. With patience, you can mitigate the damage. Plan your visit to France: find out where to go and what to do in France with Rough Guides. If you choose to travel to France without knowing the language, there will be times that frustration sets in. The key is to determine whether you will just buy point-to-point tickets (preferable if you will be taking few trips or short trips), European rail passes (if you plan to go country to country) or a France Rail Pass (if you will travel often and long distances, all on one country). Getting Around France by Train. As in every country, you can travel around for as cheap or as expensive as you want. You can travel France for as low as $60-90 a day with accommodations and transport usually being your largest expense. If you’re planning to visit France, getting around France couldn’t be easier than by train. If you’re planning to visit France, getting around France couldn’t be easier than by train. Happily, France has a fast and efficient train system and the French government has invested massively in high-speed trains (the TGV train or Train a Grande Vitesse), and on high-speed lines (LGV or Ligne a Grande Vitesse). If you are visiting cities with train stations, rail is convenient and can be inexpensive. There are over 1700 kilometers of high-speed train lines all over France. Travel by train, the most efficient mode of travel throughout France. France is the largest country in western Europe so train travel makes sense. Purchase tickets at the train station or at ticket agencies found in nearly any good-sized town. One of the best parts about traveling by train is the fact that there are stations in … The trains in France are fast, efficient and will get you anywhere you want to go in the country with ease as well as to or from any neighboring country. I am from the country side, based in loire Valley, not far from Sancerre! Getting Around France by Train. Home » Destinations » Europe » France » How To Get Around Paris: A Guide to All the Transport Options in Paris About the authors Laurence and Jessica Norah are the British-American travel blogging couple behind photography & adventure travel blog Finding the Universe and luxury / couples travel blog Independent Travel Cats. I have no idea how to find a compatible travel partner for a trip which has been on my "bucket list" for along time. Slower than the TGV high-speed trains, these make many more stops but are still a dependable way to get around the South of France. ";s:7:"keyword";s:27:"how to travel around france";s:5:"links";s:4763:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=The-King-of-Fighters-XI'>The King Of Fighters XI</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=biggest-crew-cab-truck-2019'>Biggest Crew Cab Truck 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-jeep-grand-cherokee-altitude-review'>2019 Jeep Grand Cherokee Altitude Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cluster-computing-advantages-and-disadvantages'>Cluster Computing Advantages And Disadvantages</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jeep-wrangler-unlimited-uae-price'>Jeep Wrangler Unlimited Uae Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=house-of-the-rising-sun-lyrics'>House Of The Rising Sun Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-can-i-print-my-flight-ticket'>How Can I Print My Flight Ticket</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=scania-concrete-mixer-for-sale'>Scania Concrete Mixer For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-politely-say-thanks-for-nothing'>How To Politely Say Thanks For Nothing</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-used-luxury-cars-under-15000'>Best Used Luxury Cars Under 15000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fifth-wheel-campers-on-craigslist'>Fifth Wheel Campers On Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2005-maserati-quattroporte-maintenance-cost'>2005 Maserati Quattroporte Maintenance Cost</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ballers-season-5-episode-8-soundtrack'>Ballers Season 5 Episode 8 Soundtrack</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=team-fortress-2-system-requirements'>Team Fortress 2 System Requirements</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=In-the-tall%2C-tall-grass'>In The Tall, Tall Grass</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=whirlpool-jet-boat-tours-melville-street-niagara-on-the-lake-on'>Whirlpool Jet Boat Tours Melville Street Niagara-on-the-lake On</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mitsubishi-mirage-g4-2018-philippines'>Mitsubishi Mirage G4 2018 Philippines</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pajero-sport-wheels-for-sale'>Pajero Sport Wheels For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=11th-hour-brian-williams-youtube'>11th Hour Brian Williams Youtube</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-avett-brothers-no-hard-feelings'>The Avett Brothers No Hard Feelings</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-honda-crf150r-top-speed'>2018 Honda Crf150r Top Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-harder-they-fall-2020'>The Harder They Fall 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1984-toyota-celica-gt-hatchback-for-sale'>1984 Toyota Celica Gt Hatchback For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kijiji-hot-rods-for-sale-ontario-st-catharines'>Kijiji Hot Rods For Sale Ontario St Catharines</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=trade-me-boats-for-sale-whangarei'>Trade Me Boats For Sale Whangarei</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=phineas-and-ferb-back-to-the-2nd-dimension-full-movie-online-free'>Phineas And Ferb Back To The 2nd Dimension Full Movie Online Free</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=which-colonies-were-known-for-shipbuilding'>Which Colonies Were Known For Shipbuilding</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-volkswagen-jetta-1.4t-s-with-sulev'>2019 Volkswagen Jetta 1.4t S With Sulev</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-much-does-heavy-equipment-insurance-cost'>How Much Does Heavy Equipment Insurance Cost</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=phantom-of-the-opera-erik-character-analysis'>Phantom Of The Opera Erik Character Analysis</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=volkswagen-golf-price-in-india-2020'>Volkswagen Golf Price In India 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=singing-hands-we%27re-going-to-the-zoo'>Singing Hands We're Going To The Zoo</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=The-Case-for-Christ%3A-A-Journa...'>The Case For Christ: A Journa...</a>,
+";s:7:"expired";i:-1;}

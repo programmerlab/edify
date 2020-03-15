@@ -240,7 +240,8 @@ class ApiController extends BaseController
     public function customerLogin(Request $request)
     {
       
-       // echo "Email:".$request->email;
+      
+       //echo "Email:".$request->email;
         $input = $request->all();
        // print_r ($input);
         $validator = Validator::make($request->all(), [
@@ -670,32 +671,6 @@ class ApiController extends BaseController
             return response()->json(["status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
         }
     }
-
-//     public function editor_portfolio( Request $request)
-//     {
-       
-//        $data = EditorPortfolio::all();
-//         $data->transform(function($item,$key){
-//         $category = Category::where('id',$item->category_name)->get();
-//         $software_editor = SoftwareEditor::where('id', $item->software_editor)->get();
-//         $item->cat_name = $category[0]['category_name'];
-//         $item->software_name = $software_editor[0]['software_name'];
-//         $item['price'] = '80';
-//          return $item;
-//         });
-// =======
-//     public function editor_portfolio()
-//     {
-//        $data = EditorPortfolio::all();
-//         foreach($data as $cat)
-//         {
-//             $cat_id = $cat['category_name'];
-//             $cat_name = Category::where('id',$cat_id)->get();   
-//             $data['new_name'] = $cat_name[0]['category_name'];
-//         }
-       
-//        return $this->sendResponse($data, 'Products retrieved successfully.');
-//      }
 
     public function editor_portfolio()
     {

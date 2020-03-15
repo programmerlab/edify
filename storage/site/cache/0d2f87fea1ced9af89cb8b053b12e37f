@@ -1,0 +1,738 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3153:"Maps. Jet boating, Funyaking and Horseriding. Combine wilderness jet boating with unique ‘Funyak’ inflatable canoes for a fun way to explore the Dart River as well as hidden side streams, rock pools and dramatic chasms. Get involved with nature. Embark on a Dart River Jet Boat Safari in Queenstown to experience an exciting blend of thrilling jet boating in shallow water, incredible sights, rich Maori culture and unforgettable adventure—a genuine foray into the heart and soul of New Zealand and what makes it such an outstanding destination. JET BOAT QUEENSTOWN Take on the mighty Shotover & Kawarau Rivers. Funyak drift trip is an amazing journey deep into the Mt Aspiring National Park. The Dart track begins 76 km from Queenstown via Glenorchy. The skill of our drivers in navigating this river – and being the only jet boat operator licensed to operate on the river – ensures that you reach hidden treasures along the way. As one of Queenstown’s most exhilarating activities, our Wilderness Jet, half day adventure takes you on a spectacular journey deep into the heart of the world-renowned Mount Aspiring National Park. Jet boats service the Dart section of the track, and buses service both tracks – contact transport operators for their schedules. Journey through Lake Wakatipu to Glenorchy and the Dart River Valley via jet boat, Funyaks, or a … What you need is a jet boat that doesnt do the tourist spins etc. Check out this exciting tour video of our adventure down the Shotover River in a high speed, cliff defying jet boat. Dart River Adventures: Dart River Jet Boat - See 2,489 traveler reviews, 1,323 candid photos, and great deals for Queenstown, New Zealand, at Tripadvisor. Just keep your "adventure" expectations in check. Stop and enjoy a delicious wilderness picnic lunch before continuing in your ‘Funyak’ downstream to ‘Paradise’. Unless someone else here has a suggestion, perhaps contact Dart River adventures, explain the back problem to them and ask if it's possible to join the funyak trip without going on the normal jet boat. Join us, the only operator on the Dart River, for a diverse adventure from Queenstown to the frontier township of Glenorchy at the head of mighty Lake Wakatipu and into the pristine Dart … Immerse yourself in an authentic New Zealand experience in some of the world’s most amazing scenery. Your Funyak journey begins with an exhilarating jet boat ride from Glenorchy up the Dart River deep into the heart of the world-renowned Mt Aspiring National Park, a UNESCO World Heritage Site. Combine wilderness jet boating with unique ‘Funyak’ inflatable canoes for a fun way to explore the Dart River as well as hidden side streams, rock pools and dramatic chasms. Jet boating, Funyaking and Horseriding. The Dart River is a dynamic and technically challenging river as it is a braided system, which changes day to day. Ideal for families to explore the truly unique Dart River. Learn more about Wilderness Jet Funyaks. Dart River Adventures. A 2WD road extends to Chinamans Bluff, however this is a fine weather road only and subject to washouts and flooded creeks. ";s:7:"keyword";s:28:"dart river jet boat trampers";s:5:"links";s:11298:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=written-on-the-wind-nominations'>Written On The Wind Nominations</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=land-cruiser-prado-price-in-india-2019'>Land Cruiser Prado Price In India 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=exercise-bike-vs-treadmill-for-toning-legs'>Exercise Bike Vs Treadmill For Toning Legs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=state-street-global-advisors-stamford-ct'>State Street Global Advisors Stamford Ct</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=come-on-boy-move-that-body-song-mp3-download'>Come On Boy Move That Body Song Mp3 Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lonely-mountains-downhill-switch-price'>Lonely Mountains Downhill Switch Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=chevrolet-convertible-car-price-in-india'>Chevrolet Convertible Car Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=thank-you-mom-quotes-from-son'>Thank You Mom Quotes From Son</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=merritt-cattle-trailers-for-sale'>Merritt Cattle Trailers For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Nigger%3A-An-Autobiography-by-Dick...'>Nigger: An Autobiography By Dick...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=4x6-low-profile-enclosed-trailer'>4x6 Low Profile Enclosed Trailer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bridesmaids-full-movie-google-drive'>Bridesmaids Full Movie Google Drive</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jobs-in-the-medical-field-that-pay-well'>Jobs In The Medical Field That Pay Well</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=700c-wheel-size-in-inches'>700c Wheel Size In Inches</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-mt-07-2019-specs'>Yamaha Mt 07 2019 Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-adore-his-smile-poem'>I Adore His Smile Poem</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=volkswagen-polo-2020-india-launch-date'>Volkswagen Polo 2020 India Launch Date</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=confessions-of-an-ugly-stepsister-netflix'>Confessions Of An Ugly Stepsister Netflix</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=take-these-chains-away-that-keep-me-loving-you'>Take These Chains Away That Keep Me Loving You</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rub-you-the-wrong-way'>Rub You The Wrong Way</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=colin-mcrae-dirt-xbox-360'>Colin Mcrae Dirt Xbox 360</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=a-coffin-for-dimitrios-pdf'>A Coffin For Dimitrios Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2009-harley-davidson-sportster-1200l'>2009 Harley Davidson Sportster 1200l</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=paris-in-the-rain-instrumental'>Paris In The Rain Instrumental</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=flights-to-bora-bora-from-atlanta'>Flights To Bora Bora From Atlanta</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=opposite-word-of-deposit-in-english'>Opposite Word Of Deposit In English</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=%2B-18moreClothing-storesCotswold-Outdoor-Kingston-Upon-Thames%2C-GO-Outdoors%2C-and-more'>+ 18moreClothing StoresCotswold Outdoor Kingston Upon Thames, GO Outdoors, And More</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=left-hand-drive-vw-campervans-for-sale-uk'>Left Hand Drive Vw Campervans For Sale Uk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=men-at-work-business-as-usual'>Men At Work Business As Usual</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-do-i-need-to-renew-my-cdl'>What Do I Need To Renew My Cdl</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pros-and-cons-of-center-console-boats'>Pros And Cons Of Center Console Boats</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=barry-white-my-everything-lyrics'>Barry White My Everything Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=%2B-2moreUsed-bicycle-shopsCity-Bicycle-Company%2C-Edible-Pedal-Bike-Shop%2C-and-more'>+ 2moreUsed Bicycle ShopsCity Bicycle Company, Edible Pedal Bike Shop, And More</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=definition-of-passive-network-in-electrical'>Definition Of Passive Network In Electrical</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-superjet-engine-for-sale'>Yamaha Superjet Engine For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=can%27t-stop-lyrics-miley-cyrus'>Can't Stop Lyrics Miley Cyrus</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mercedes-e450-wagon-for-sale'>Mercedes E450 Wagon For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=nissan-350z-modified-for-sale'>Nissan 350z Modified For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=azur-lane-eagle-union-heavy-cruisers'>Azur Lane Eagle Union Heavy Cruisers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=basketball-court-dimensions-in-meters-pdf'>Basketball Court Dimensions In Meters Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-lexus-nx-300-review'>2019 Lexus Nx 300 Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=chevy-express-van-conversion-kits'>Chevy Express Van Conversion Kits</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=seasonal-camping-sites-near-me'>Seasonal Camping Sites Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2013-kawasaki-ninja-300-hp'>2013 Kawasaki Ninja 300 Hp</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=small-bucket-truck-for-sale'>Small Bucket Truck For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=white-clutch-bag-with-chain'>White Clutch Bag With Chain</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cassette-toilet-shower-combination-unit'>Cassette Toilet Shower Combination Unit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=I-Just-Can%27t-Get-You-Out...'>I Just Can't Get You Out...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-honda-super-cub-top-speed'>2019 Honda Super Cub Top Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cdl-manual-ny-in-spanish'>Cdl Manual Ny In Spanish</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=renault-duster-2019-price-in-india'>Renault Duster 2019 Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-treat-an-infected-splinter'>How To Treat An Infected Splinter</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dear-evan-hansen-reviews-nyc'>Dear Evan Hansen Reviews Nyc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kia-ceed-2010-1.6-diesel'>Kia Ceed 2010 1.6 Diesel</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-measure-truck-volume'>How To Measure Truck Volume</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=power-catamaran-for-sale-by-owner'>Power Catamaran For Sale By Owner</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=howard-county-summer-camps-by-week'>Howard County Summer Camps By Week</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=4x4-for-sale-done-deal'>4x4 For Sale Done Deal</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=coachmen-class-b-rv-reviews'>Coachmen Class B Rv Reviews</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cop-duty-police-car-simulator-apk-download'>Cop Duty Police Car Simulator Apk Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=goodbye-brother-prince-of-egypt-lyrics'>Goodbye Brother Prince Of Egypt Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=when-do-the-new-model-year-rvs-come-out'>When Do The New Model Year Rvs Come Out</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-does-cargurus-make-money'>How Does Cargurus Make Money</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=toyota-etios-liva-gd-2015-price'>Toyota Etios Liva Gd 2015 Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=why-are-trophy-trucks-2wd'>Why Are Trophy Trucks 2wd</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=truck-driving-jobs-no-experience'>Truck Driving Jobs No Experience</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=automatic-suv-for-sale-in-ireland'>Automatic Suv For Sale In Ireland</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2000-chrysler-town-and-country-problems'>2000 Chrysler Town And Country Problems</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lner-class-a4-4464-bittern'>Lner Class A4 4464 Bittern</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-was-the-first-cell-phone-made'>How Was The First Cell Phone Made</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-dodge-ram-1500-accessories'>2019 Dodge Ram 1500 Accessories</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=is-mr-krabs-pearl%27s-sugar-daddy'>Is Mr Krabs Pearl's Sugar Daddy</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-suzuki-gsx-s1000-for-sale'>2018 Suzuki Gsx S1000 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=love-me-for-who-i-am-whoever-i-am'>Love Me For Who I Am Whoever I Am</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pictures-of-travel-trailers-for-sale'>Pictures Of Travel Trailers For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hyosung-gt650r-price-in-usa'>Hyosung Gt650r Price In Usa</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bombay-bicycle-club-album-review'>Bombay Bicycle Club Album Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bobcat-plate-compactor-for-sale'>Bobcat Plate Compactor For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=school-as-an-organisation-pdf'>School As An Organisation Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Swift-car-price-in-India-2019'>Swift Car Price In India 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Wheels-on-the-Bus-Color-So...'>Wheels On The Bus Color So...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=trailers-for-sale-mohave-county'>Trailers For Sale Mohave County</a>,
+";s:7:"expired";i:-1;}

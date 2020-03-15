@@ -1,0 +1,701 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4362:"Check out CCC's in-depth Rag Doll Kung Fu: Fists of Plastic review for the PlayStation 3 (PS3) to find out if this game is worth buying, renting, or if you should avoid it altogether. Another facet of Rag Doll Kung Fu: Fists of Plastic that will probably make it very appealing for casual gamers will be the control scheme. Rag Doll Kung Fu™: Fists of Plastic is a PSN game that can be bought off of the playstation store. Created by one of the minds behind LittleBigPlanet, Mark Healey, it shares similar visual hallmarks with Sackboy’s world. Mar 24, 2004. Fight on a String. After clicking the button it disappeared. Developed by Tarsier Studios, Rag Doll Kung Fu™: Fists of Plastic is a PS3 exclusive party-fighting game based on the original 2005 title, Rag Doll Kung Fu, created by Mark Healy (co-founder of Media Molecule). Rag Doll Kung Fu: Fists of Plastic Punches its Way to PSN April 9! A button on the Rag Doll Kung Fu Full version page appeared to "Download to PS3". The idea of recreating classic kung fu movies with action figures will have many looking wistfully back to their childhood, and that’s the central concept of Rag Doll Kung Fu: Fists of Plastic, a PlayStation Store exclusive. ... How would you feel about a Remastered Rag Doll Kung Fu? However, Rag Doll Kung Fu … It is a fun action game that you should enjoy from start to finish. Rag Doll Kung Fu. Another facet of Rag Doll Kung Fu: Fists of Plastic that will probably make it very appealing for casual gamers will be the control scheme. It has cleverly tried to get the most use out of the playstation’s sixaxis controller by giving you a lot of motion sensor based moves to try out. If you got at least Silver on all the challenges, you get the Rag-doll Expert trophy. You have beaten Rag-Doll Kung Fu: Fists of Plastic! Originally developed for the PC by Mark Healey, the co-founder of Media Molecule, Rag Doll Kung Fu is a parody of classic kung fu movies The game's combat mechanic and basic actions will feel very familiar and use buttons for various attacks. Get all the latest new about Rag Doll Kung Fu from GameSpot's industry-leading news coverage! 3:15. Fácil para "pegar e jogar" e um desafio para dominar, vais combater em deslumbrantes níveis em alta definição com uma precisão de ninja num instante. Games. Rag Doll Kung Fu PC Games Gameplay. Rag Doll Kung Fu. Rag Doll Kung Fu Demo is removed from my purchases. It is a fun action game that you should enjoy from start to finish. The game's combat mechanic and basic actions will feel very familiar and use buttons for various attacks. Il y a quelques temps, un concours était organisé sur le blog Européen concernant le jeu Rag Doll Kung Fu. I remember getting that game for free on the PS3 several years ago (I think some Sprint promotion), and it was one of the best local multiplayers I've ever played. Developed by Tarsier Studios, Rag Doll Kung Fu™: Fists of Plastic is a PS3™ system exclusive party-fighting game with an imaginative look and feel. Rag Doll Kung Fu: Fists of Plastic Punches its Way to PSN April 9! Mar 24, 2004. CONGRADULATIONS! Rag Doll Kung Fu™ focuses on fun with exaggerated physics action and charming HD visuals. The official PlayStation™Store - Buy the latest PlayStation® games for your PS4™, PS3™, and PS Vita. Il vous était demandé de créer le pantin que vous souhaiteriez voir intégré au jeu. Rag Doll Kung Fu™: Fists of Plastic is a PSN game that can be bought off of the playstation store. Rag Doll Kung Fu Officially Kicking. Rag Doll Kung Fu Officially Kicking. Sep 19, 2005. Rag Doll Kung Fu PC Games Gameplay. Mar 24, 2004. It has cleverly tried to get the most use out of the playstation’s sixaxis controller by giving you a lot of … 3:15. However, Rag Doll Kung Fu will also use the PS3's motion controls to enhance moves. Rag Doll Kung Fu Flocks to PSN Before going on to form Media Molecule and help create the award-winning Little Big Planet, Mark Healey gained notoriety for his work on Rag Doll Kung Fu. If you got at least Bronze on all of the challenges, you get the Rag-doll Apprentice trophy. Hi, I’m Joshua Miller, the U.S. producer of Rag Doll Kung Fu: Fists of Plastic.It’s been a while since Fists of Plastic made its debut at E3 last year and since its announcement, people have been asking for more details. ";s:7:"keyword";s:20:"rag doll kung fu ps4";s:5:"links";s:6025:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-ram-2500-towing-capacity-chart'>2019 Ram 2500 Towing Capacity Chart</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=phineas-and-ferb-episode-with-vanessa'>Phineas And Ferb Episode With Vanessa</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=confessions-of-an-ugly-stepsister-netflix'>Confessions Of An Ugly Stepsister Netflix</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-clean-a-jet-ski'>How To Clean A Jet Ski</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=africa%E2%80%99s-automotive-industry%3A-potential-and-challenges'>Africa’s Automotive Industry: Potential And Challenges</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=smart-fortwo-passion-for-sale'>Smart Fortwo Passion For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ancient-laws-of-china-death-penalty'>Ancient Laws Of China Death Penalty</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=knights-of-the-round-table'>Knights Of The Round Table</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=things-to-do-in-cavan-ireland'>Things To Do In Cavan Ireland</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-gmc-sierra-1500-crew-cab'>2020 Gmc Sierra 1500 Crew Cab</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=umm-al-quwain-ruler-family'>Umm Al Quwain Ruler Family</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-is-the-weather-station-in-fortnite'>Where Is The Weather Station In Fortnite</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=npr-piston-rings-catalog-2017'>Npr Piston Rings Catalog 2017</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-return-of-the-living-dead-2'>The Return Of The Living Dead 2</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mx-vs-atv-reflex-special-series'>Mx Vs Atv Reflex Special Series</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-yamaha-r6-for-sale-in-kerala'>Used Yamaha R6 For Sale In Kerala</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rapha-promo-code-free-delivery'>Rapha Promo Code Free Delivery</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=can-you-spray-paint-inflatables'>Can You Spray Paint Inflatables</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bubble-top-van-for-sale'>Bubble Top Van For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=farming-simulator-2013-mods-download'>Farming Simulator 2013 Mods Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1982-honda-nighthawk-750-specs'>1982 Honda Nighthawk 750 Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=datsun-510-for-sale-near-me'>Datsun 510 For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=soy-una-taza-mini-disco'>Soy Una Taza Mini Disco</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=royal-dutch-shell-financial-statements'>Royal Dutch Shell Financial Statements</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mv-agusta-dragster-800-rr'>Mv Agusta Dragster 800 Rr</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Way-To-Break-My-Heart'>Way To Break My Heart</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=wheel-of-fortune-spin-id-number-login'>Wheel Of Fortune Spin Id Number Login</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-commercial-boats-for-sale'>Used Commercial Boats For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Slylock-Fox-%26-Comics-f...'>Slylock Fox & Comics F...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=gear-pump-advantages-and-disadvantages'>Gear Pump Advantages And Disadvantages</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Medal-of-Honor%3A-Heroes-2'>Medal Of Honor: Heroes 2</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=white-house-down-full-movie-hindi'>White House Down Full Movie Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=electric-bike-under-500-pounds'>Electric Bike Under 500 Pounds</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-do-patent-search-in-india'>How To Do Patent Search In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=al-ghazi-tractors-price-list-2018'>Al Ghazi Tractors Price List 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-dodge-durango-seating-capacity-7'>2020 Dodge Durango Seating Capacity 7</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2017-yamaha-r6-gas-mileage'>2017 Yamaha R6 Gas Mileage</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=judas-priest-turbo-lover-lyrics'>Judas Priest Turbo Lover Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=on-the-turning-away-live'>On The Turning Away Live</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=law-abiding-citizen-2-imdb'>Law Abiding Citizen 2 Imdb</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=boats-for-lease-by-owner'>Boats For Lease By Owner</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-world%27s-largest-sailing-and-motor-a-super-yacht'>The World's Largest Sailing And Motor A Super Yacht</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=most-reliable-full-size-suv-2016'>Most Reliable Full Size Suv 2016</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=I-Always-Wanna-Die-%28So...'>I Always Wanna Die (So...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=power-battle-watch-car-toys-bluewill'>Power Battle Watch Car Toys Bluewill</a>,
+";s:7:"expired";i:-1;}

@@ -1,0 +1,686 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4338:"... Used 2014 BMW X6 for Sale Near You. Find new & used BMW X6 cars for sale on South Africa's leading car marketplace with the largest selection of BMW X6 cars for sale. Save Search. Get the best deals on Parts for 2014 BMW X6 when you shop the largest online selection at eBay.com. Description: Used 2014 BMW X6 xDrive35i AWD for sale - $21,499 - 77,129 miles with Sport Package, Leather Seats, Sunroof/Moonroof, Power Package, Navigation System, Alloy Wheels, Technology Package, Heat Package, Climate Package, Ambient Light … Research, compare and save listings, or contact sellers directly from 3 2014 X6 models nationwide. Shop millions of cars from over 21,000 dealers and find the perfect car. Check the carfax, find a low miles X6, view X6 photos and interior/exterior features. Fully loaded. White interior / black exterior. BMW X6 M 71.00. iSeeCars.com analyzes prices of 10 million used cars daily. Browse and compare Used 2014 BMW X6 for Sale. Shop BMW X6 vehicles for sale at Cars.com. Find Bmw X6 cars for sale by owner or from a trusted dealer in Kenya. Search new and used cars, research vehicle models, and compare cars, all online at carmax.com Browse BMW X6 for Sale (Used) listings on Cars.co.za, the latest BMW news, reviews and car information. The 2014 BMW X6 is available with a range of powerful engines. Free shipping on many items | Browse your favorite ... Trending at $32.50 eBay determines this price through a machine learned model of the product's sale prices within the last 90 days. 2014 BMW X6 AWD 4dr xDrive35i Up for sale 2014 BMW X6 XDrive 35i. The BMW X6 receives a few minor changes for 2014, chiefly the addition of a universal garage door opener and a rearview mirror with a compass as standard equipment on the xDrive5.0i. Find BMW X6 used cars for sale on Auto Trader, today. It's got all the bells and whistles. New search. Description: 2014 BMW X6 xDrive35i for Sale - $23,990 67,546 miles with Leather Seats, Sunroof / Moonroof, Backup Camera . Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools. ... Used 2014 BMW X6s for Sale Nationwide. Cold weather package, M package, Blind Spots, Backup camera. 2014 BMW X6 - A great German tourer. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools. Search by price, view certified pre-owned X6s, filter by color and much more. Everything you need to know on one page! Find 2014 BMW X6 M for Sale . Contact sellers today. Save Notify me. What will be your next ride? Used BMW X6 cars for sale PistonHeads have 121 used BMW X6 cars available for sale from trade and private sellers We found 121 used cars. Search 112 listings to find the best deals. Featured Listing. Used 2014 BMW X6 Performance and Interior. When you first look at it, it makes you wonder if this is an SUV or a really tall 4 door coupe. More about the BMW X6. Every used car for sale comes with a free CARFAX Report. ... Used 2014 BMW X6 xDrive35i AWD for sale - $17,900 - 108,855 miles with Performance Package, Sport Package, Leather Seats, ... After all, over 30 million shoppers use CarGurus to find great deals on used cars and new cars in their area. Research, compare and save listings, or contact sellers directly from 1067 X6 models nationwide. This car is in mint condition. Compare prices, features & photos. Used Cars; ... 2014 BMW X6. Shop 2014 BMW X6 vehicles for sale at Cars.com. Search from 70 BMW X6s for sale, including a Used 2014 BMW X6 w/ M Performance Package, a Used 2014 BMW X6 xDrive35i, and a Used 2014 BMW X6 xDrive50i. See Listings Near Me. Search from 60 Used BMW X6s for sale, including a 2014 BMW X6 xDrive35i and a 2014 BMW X6 xDrive50i ranging in price from $17,664 to $31,998. However, it's relegated to the bottom of the class due to its high predicted ownership costs and underwhelming interior space. Save up to $10,047 on one of 76 used 2014 BMW X6 MS near you. Browse BMW X6 for Sale (Used) listings on Cars.co.za, the latest BMW news, reviews and car information. Edmunds has 489 used BMW X6s for sale near you, including a 2013 X6 xDrive35i SUV and a 2019 X6 xDrive50i SUV ranging in price from $17,445 to $58,991. 2014 BMW X6 Review #17 in 2014 Luxury Midsize SUVs With its powerful engines and athletic handling, the 2014 BMW X6 offers good performance for an SUV. ";s:7:"keyword";s:20:"bmw x6 2014 for sale";s:5:"links";s:4134:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-selling-tractor-in-the-usa'>Best Selling Tractor In The Usa</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-camping-places-near-me'>Best Camping Places Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=scope-of-mechanical-engineering-in-indian-army'>Scope Of Mechanical Engineering In Indian Army</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fs-14-mod-apk-for-pc'>Fs 14 Mod Apk For Pc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=push-bike-service-near-me'>Push Bike Service Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-places-to-run-in-new-jersey'>Best Places To Run In New Jersey</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=toyota-sports-800-for-sale'>Toyota Sports 800 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=manual-vs-automatic-pros-and-cons'>Manual Vs Automatic Pros And Cons</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=atv-offroad-fury-2-iso'>Atv Offroad Fury 2 Iso</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=list-of-careers-and-salaries-and-descriptions'>List Of Careers And Salaries And Descriptions</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=when-you-taught-me-how-to-dance-composer'>When You Taught Me How To Dance Composer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hyundai-kona-electric-lease-bay-area'>Hyundai Kona Electric Lease Bay Area</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-bias-politically-is-the-atlantic-on-the-spectrum-from-liberal-to-conservative%3F'>How Bias Politically Is The Atlantic On The Spectrum From Liberal To Conservative?</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=car-repair-dubai-al-quoz'>Car Repair Dubai Al Quoz</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=custom-weld-whitewater-special-for-sale'>Custom Weld Whitewater Special For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-does-a-mechanical-push-button-work'>How Does A Mechanical Push Button Work</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sunny-beach-weather-september-2018'>Sunny Beach Weather September 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=zodiac-cadet-350-aero-review'>Zodiac Cadet 350 Aero Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jason-goes-to-hell-the-final-friday-freddy-krueger'>Jason Goes To Hell The Final Friday Freddy Krueger</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-am-a-clown-lyrics'>I Am A Clown Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-game-of-love-cover'>The Game Of Love Cover</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=murtisol-folding-mountain-bike-review'>Murtisol Folding Mountain Bike Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-want-it-that-way-instrumental-mp3'>I Want It That Way Instrumental Mp3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kc-irish-sports-horses-and-ponies'>Kc Irish Sports Horses And Ponies</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=suv-for-sale-under-15000'>Suv For Sale Under 15000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vans-for-sale-northern-ireland'>Vans For Sale Northern Ireland</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=when-is-merlin-season-6-coming-out-on-netflix'>When Is Merlin Season 6 Coming Out On Netflix</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=end-of-days-film-review'>End Of Days Film Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-cars-2020-under-30k'>Best Cars 2020 Under 30k</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vintage-bike-for-sale-in-kerala'>Vintage Bike For Sale In Kerala</a>,
+";s:7:"expired";i:-1;}

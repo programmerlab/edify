@@ -1,0 +1,695 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2904:"We daily update any news and rumors regarding Audi A3 Sedan Price In Usa/page/2. Read more to find out how the sustainable products are produced. Don’t be fooled by the compact size of the Audi A3—the turbocharged 2.0-liter TFSI® engine packs a punch. 2019 S3 Sedan Starting at $44,500. 31.99 Lakh. The number of cans conquers the 2020 Audi A3 foundation price of $31,200. The 2021 Acura ILX Redesign starts off at practically $28,000, still, the number of would most likely think about it the same as the 2020 Audi A3 with regards to overall performance or interior good quality. 2019 A4 Starting at $39,200. We’ll have to wait a little longer for cars to appear in the UK. 35.43 Lakh. Detailed trim-level price information and inventory for the 2020 Audi A3. We daily update any news and rumors regarding Audi A3 Sedan Price In Usa. Edmunds also has Audi A3 Sedan pricing, MPG, specs, pictures, safety features, consumer reviews and more. With the largest selection of cars from dealers and private sellers, Autotrader can help find the perfect A3 for you. Autotrader has 3,242 Used Audi A3s for sale, including a 2015 Audi A3 1.8T Premium Sedan, a 2016 Audi A3 1.8T Premium Sedan, and a 2016 Audi A3 2.0T Premium Plus quattro Sdn ranging in price from $1,800 to $44,090. To get further updates on Audi A3 Sedan Price In Usa, please dont hesitate to read more and subscribe. Audi A3 price in Mapusa start at Rs. 2013-2014 Trims The average list price is $27,700. Our pricing beats the national average 86% of the time with shoppers receiving average savings of $3,206 off MSRP across vehicles. We daily update any news and rumors regarding Audi A3 Sedan Price In Usa. Get the most up-to-date information on the new 2020 and 2021 Audi Redesign cars including its release date, price, and engine update. Audi has kept the classic sedan lines, with typical Audi elegance and simplicity of design. To get further updates on Audi A3 Sedan Price In Usa/page/2, please dont hesitate to read more and subscribe. Status: Coming soon. How much you pay depends on the vehicle's condition, mileage, features, and location. Nicolau 2020-01-29 Audi Q8 No Comments 2020-01-29 Audi Q8 No Comments Audi A3 Sportback 2021 Price in USA is N/A. Gamme de véhicules neufs et d’occasion, offres de financement, réseau, compétition, technologie et innovation… découvrez tout l’univers Audi, configurez le modèle de votre choix et … United States. Save $5,257 on a used Audi A3 Sportback near you. Get the latest information about Audi A3 Sedan Price In Usa here on AudiRedesign.co. 1. Check out our U.S. News Best Price Program for great savings at your local Audi dealer. How Much Does the Audi A3 Cost? Search pre-owned Audi A3 Sportback listings to find the best local deals. The BMW 2 Sequence, by using a starting price of approximately $33,000, is undoubtedly a more worthy competitor with the Audi. ";s:7:"keyword";s:20:"audi a3 price in usa";s:5:"links";s:5023:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=maths-literacy-grade-10-assignment'>Maths Literacy Grade 10 Assignment</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-does-a-radiator-do'>What Does A Radiator Do</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-love-you-like-crazy-meaning'>I Love You Like Crazy Meaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=range-rover-velar-p380-hse-price'>Range Rover Velar P380 Hse Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mini-cooper-for-sale-by-owner'>Mini Cooper For Sale By Owner</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-lexus-ux-250h-for-sale'>2019 Lexus Ux 250h For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=snap-on-pontoon-boat-covers'>Snap On Pontoon Boat Covers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2007-suzuki-boulevard-c50-parts'>2007 Suzuki Boulevard C50 Parts</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=power-tools-for-digging-soil'>Power Tools For Digging Soil</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=zeven-dagen-lang-lyrics-english'>Zeven Dagen Lang Lyrics English</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-thick-of-it-movie'>The Thick Of It Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=agoda-hotel-support-phone-number'>Agoda Hotel Support Phone Number</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=palo-alto-networks-bangalore-address'>Palo Alto Networks Bangalore Address</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=feels-like-we-only-go-backwards-key'>Feels Like We Only Go Backwards Key</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mercedes-amg-gt-4-door-coupe-price'>Mercedes Amg Gt 4 Door Coupe Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=back-in-the-ussr-album'>Back In The Ussr Album</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=martha-ford-sell-the-team'>Martha Ford Sell The Team</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=texas-cdl-handbook-2019-pdf'>Texas Cdl Handbook 2019 Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-ducati-scrambler-icon-price'>2019 Ducati Scrambler Icon Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=classic-ford-vans-for-sale'>Classic Ford Vans For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=circuit-of-the-americas-store'>Circuit Of The Americas Store</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=One-Down%2C-Two-to-Go'>One Down, Two To Go</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bmw-8-series-2018-specs'>Bmw 8 Series 2018 Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=downhill-mountain-bike-for-sale'>Downhill Mountain Bike For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-day-the-earth-stood-still-full-movie'>The Day The Earth Stood Still Full Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-jeep-grand-cherokee-lease'>2019 Jeep Grand Cherokee Lease</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-2018-ford-explorer-sport-for-sale'>Used 2018 Ford Explorer Sport For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=people-got-to-be-free'>People Got To Be Free</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-end-of-the-game-documentary'>The End Of The Game Documentary</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hearts-of-iron-4-ps4'>Hearts Of Iron 4 Ps4</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-lance-1575-for-sale'>2019 Lance 1575 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=adobe-reader-10.1-free-download'>Adobe Reader 10.1 Free Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-western-fort-wayne-indiana'>Best Western Fort Wayne Indiana</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=shine-on-you-crazy-diamond-chords'>Shine On You Crazy Diamond Chords</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=top-cities-for-beer-drinkers'>Top Cities For Beer Drinkers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2013-seat-leon-fr-spec'>2013 Seat Leon Fr Spec</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=supertramp-give-a-little-bit-lyrics'>Supertramp Give A Little Bit Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lowriders-for-sale-in-texas'>Lowriders For Sale In Texas</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=we%27re-the-millers-meme-original'>We're The Millers Meme Original</a>,
+";s:7:"expired";i:-1;}

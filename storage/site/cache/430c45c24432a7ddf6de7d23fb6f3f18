@@ -1,0 +1,748 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3524:"Reefer Pros Longer Hauls (typically) More regular freight (no 'offseason' for reefer) cons More Maintenance (cleaning) Second Gas Tank to fill Less Drop and Hook . I don't recall what is the exact price for them. ... Prime Inc Trucking: Can you take your Prime lease to another company? Prime Inc Trucking: Addressing the Haters for … I'm planning to go back OTR and trying to decide wether I want to go reefer or flatbed. Let’s talk about it!!! Resells it to the next driver switching to the Flatbed division. Prime will charge you roughly $3500 for your equipment. Both allow you to transition to flatbed later if you want. Hope you enjoy. Flatbed Pros Rarely have to back in Cons Can be slow seasons in freight More Labor securing loads. Flatbeds may be used to haul equipment or heavy building material that cannot be transported otherwise. Hope you enjoy. If you decide to flatbed at Prime, pitch a fit and demand new equipment. I also talk about short hopping freight. ... Prime Inc - What Dedicated... J.P. Flatbed vs. Reefer Discussion in 'Questions From New Drivers' started by gwhitson, May 31, 2008. Like, Share, Comment, Subscribe Join OnPoint . Millions posted Sep 8, 2019. So what does Prime do with the used equipment then? Prime Tanker division Discussion in 'Prime' started by bamamac, Mar 3 ... heard the training is longer, and the recruiters don't seem to push it very much. New & used semi trailers for sale. I don't recall what is the exact price for them. Reefer Trailer Specs Hope you enjoy. The Inside Scoop > Miles? I'm looking at two different companies to join and start a trucking career with. Maverick is probably better for the long term career option, but flatbed might not be for you. Page ... , FL 0. Maverick - Flatbed Prime - Reefer Being a company driver for the offshoots - tanker & flatbed for Prime, reefer for Maverick is not the way to go according to the concensus of opinions from drivers doing those jobs I have spoken to. I also talk about short hopping freight. Is the pay low, hometime worse than reefer or flatbed, miles low? If you’re someone who enjoys physical work and critical thinking, flatbed trucking could be a great fit for you. Prime will allow you to transition to their tanker division and if you want a home-every-night local gig, filling up gas stations daily is the single best there is. Find yours today at the competitive prices through Prime Trailer sales Flatbed trailers are for cargo that cannot be transported normally, like an inability to be transported in a dry van or being unable to fit in a standard trailer. I've been thinking about going lease op in the reefer division, but my main issue with that is how noisy that stupid reefer is. Some or even most of that equipment will be used. This may not be the norm, but it's worth mentioning. So what does Prime do with the used equipment then? I've always been curious to do flatbed, I know there's strapping, tarping, etc but that doesn't bother me. In this video I talk about little bit about flatbed Vs Reefer. They have a 2 price tags; new and used. IMO, they probably received better maintenance than most trailers. $1 Billion in Revenue ' 12 I'm currently a reefer driver at Prime. Prime replaced that tarp for me at no charge, a $200+ value. Still wrong, but nothing compared to $3,500. (with fuel) 53' length; ... PRIME INTERMODAL. Some questions on Flatbed vs Reefer Discussion in 'Questions From New Drivers' started by Woodys , Dec 5, 2017. They have a 2 price tags; new and used. ";s:7:"keyword";s:27:"prime inc flatbed vs reefer";s:5:"links";s:12580:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-do-radiator-valves-work'>How Do Radiator Valves Work</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pixy-car-price-in-india'>Pixy Car Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=car-and-bike-accessories-online-india'>Car And Bike Accessories Online India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=transformers-4-google-drive-mp3'>Transformers 4 Google Drive Mp3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kiss-and-say-goodbye-lyrics-meaning'>Kiss And Say Goodbye Lyrics Meaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=semi-trailer-inspection-form-pdf'>Semi Trailer Inspection Form Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fia-european-truck-racing-ps4'>Fia European Truck Racing Ps4</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=least-bothered-meaning-in-hindi'>Least Bothered Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-ford-transit-connect-dimensions'>2019 Ford Transit Connect Dimensions</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-honda-accord-interior-pictures'>2019 Honda Accord Interior Pictures</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-to-eat-in-kawasaki'>What To Eat In Kawasaki</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=aladdin-baltimore%2C-hippodrome-theatre%2C-november-13'>Aladdin Baltimore, Hippodrome Theatre, November 13</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=forklift-operator-job-description-for-resume'>Forklift Operator Job Description For Resume</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=royal-enfield-compact-engine-guard'>Royal Enfield Compact Engine Guard</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=moto-guzzi-v9-bobber-sport-price'>Moto Guzzi V9 Bobber Sport Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=double-cab-truck-vs-crew-cab'>Double Cab Truck Vs Crew Cab</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=love-me-for-who-i-am-whoever-i-am'>Love Me For Who I Am Whoever I Am</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2.7-ecoboost-vs-3.5-ecoboost'>2.7 Ecoboost Vs 3.5 Ecoboost</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kanye-west-love-lockdown-audio'>Kanye West Love Lockdown Audio</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-high-mileage-cars-to-buy'>Best High Mileage Cars To Buy</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=who-is-allah-in-the-bible'>Who Is Allah In The Bible</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=full-face-snorkel-mask-reviews-2018'>Full Face Snorkel Mask Reviews 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=architect-and-interior-designer-salary'>Architect And Interior Designer Salary</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1997-tiffin-allegro-bus-for-sale'>1997 Tiffin Allegro Bus For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Hansel-%26-Gretel%3A-Witch-Hu...'>Hansel & Gretel: Witch Hu...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cargo-van-upfitters-near-me'>Cargo Van Upfitters Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2017-forest-river-cascade-travel-trailer'>2017 Forest River Cascade Travel Trailer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=do-you-believe-in-love-video-download'>Do You Believe In Love Video Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=activities-in-dublin-for-adults'>Activities In Dublin For Adults</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-does-cargurus-make-money'>How Does Cargurus Make Money</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=grace-and-frankie-season-5-episode-1-cast'>Grace And Frankie Season 5 Episode 1 Cast</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=adventure-cycling-leadership-training-course'>Adventure Cycling Leadership Training Course</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=goodbye-brother-prince-of-egypt-lyrics'>Goodbye Brother Prince Of Egypt Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=gangs-of-new-york-trailer'>Gangs Of New York Trailer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=air-conditioner-filters-near-me'>Air Conditioner Filters Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=microsoft-office-2018-free-download'>Microsoft Office 2018 Free Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=flat-bottomed-boat-of-old-crossword'>Flat Bottomed Boat Of Old Crossword</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=automotive-industry-trends-2020-pdf'>Automotive Industry Trends 2020 Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1987-honda-rebel-250-parts'>1987 Honda Rebel 250 Parts</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Volkswagen-car-price-in-India'>Volkswagen Car Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=harley-trikes-for-sale-on-craigslist'>Harley Trikes For Sale On Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ebay-for-sale-rv-parts'>Ebay For Sale Rv Parts</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ladies-cycle-price-below-2000'>Ladies Cycle Price Below 2000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ralph-waldo-emerson-self-reliance'>Ralph Waldo Emerson Self Reliance</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=baby-one-more-time-chords-cm'>Baby One More Time Chords Cm</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-car-speakers-for-bass-without-subwoofer'>Best Car Speakers For Bass Without Subwoofer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=japanese-classic-motorcycles-for-sale'>Japanese Classic Motorcycles For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2017-honda-civic-lx-review'>2017 Honda Civic Lx Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-longest-ride-book-characters'>The Longest Ride Book Characters</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=royal-enfield-sound-mp3-free-download'>Royal Enfield Sound Mp3 Free Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=chevy-express-van-seat-upgrade'>Chevy Express Van Seat Upgrade</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-is-thad-matta-coaching-basketball'>Where Is Thad Matta Coaching Basketball</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-used-car-under-15000-uk'>Best Used Car Under 15000 Uk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=oni-oil-well-polluted-water'>Oni Oil Well Polluted Water</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-old-is-princess-bubblegum-from-adventure-time'>How Old Is Princess Bubblegum From Adventure Time</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bugeye-sprite-project-for-sale'>Bugeye Sprite Project For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Scooby...-Night-of-100-Frig...'>Scooby... Night Of 100 Frig...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2016-honda-pilot-printed-maintenance-schedule'>2016 Honda Pilot Printed Maintenance Schedule</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=100-hindi-sentences-you-can-use-everyday'>100 Hindi Sentences You Can Use Everyday</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=phineas-and-ferb-opening-lyrics'>Phineas And Ferb Opening Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-ice-cream-twin-cities-2019'>Best Ice Cream Twin Cities 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Na-Na-Na-Na-Re'>Na Na Na Na Re</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Only-God-Can-Save-Our-Souls'>Only God Can Save Our Souls</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Star-Wars%3A-The-Rise-of-Skywa...'>Star Wars: The Rise Of Skywa...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2pac-it-ain%27t-easy-lyrics'>2pac It Ain't Easy Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sous-le-ciel-de-paris-lyrics-zaz'>Sous Le Ciel De Paris Lyrics Zaz</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-foods-contain-the-mineral-boron'>What Foods Contain The Mineral Boron</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=versailles-tours-skip-the-line'>Versailles Tours Skip The Line</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bearded-dragons-in-the-wild'>Bearded Dragons In The Wild</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ford-sedan-meaning-in-tamil'>Ford Sedan Meaning In Tamil</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2004-honda-aquatrax-f12-specs'>2004 Honda Aquatrax F12 Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=second-hand-tool-boxes-ebay'>Second Hand Tool Boxes Ebay</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ground-floor-vs-first-floor-apartment'>Ground Floor Vs First Floor Apartment</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2004-holiday-rambler-vacationer-specs'>2004 Holiday Rambler Vacationer Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bang-bang-full-movie-download-in-hd-720p-bluray'>Bang Bang Full Movie Download In Hd 720p Bluray</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-describe-a-dragon-in-writing'>How To Describe A Dragon In Writing</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yellowstone-national-park-pictures-and-facts'>Yellowstone National Park Pictures And Facts</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=moto-x3m-pool-party-unblocked-games'>Moto X3m Pool Party Unblocked Games</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=aaa-approved-auto-repair-application'>Aaa Approved Auto Repair Application</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sam%27s-town-rv-park-las-vegas'>Sam's Town Rv Park Las Vegas</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=travel-trailers-for-rent-by-owner'>Travel Trailers For Rent By Owner</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fire-truck-toy-with-doors-that-open'>Fire Truck Toy With Doors That Open</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-royal-enfield-continental-gt-650'>2020 Royal Enfield Continental Gt 650</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-many-tomahawk-missiles-does-the-us-have'>How Many Tomahawk Missiles Does The Us Have</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=20-driving-lessons-for-200'>20 Driving Lessons For 200</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=offshore-crew-boats-for-sale'>Offshore Crew Boats For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-tiffin-allegro-bus-45opp-for-sale'>2018 Tiffin Allegro Bus 45opp For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=https-www-yachtworld-com-advanced'>Https Www Yachtworld Com Advanced</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=green-lane-maps-north-wales'>Green Lane Maps North Wales</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ocean-master-for-sale-craigslist'>Ocean Master For Sale Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=second-hand-scooty-in-mumbai-below-10000'>Second Hand Scooty In Mumbai Below 10000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=parker-boats-for-sale-delaware'>Parker Boats For Sale Delaware</a>,
+";s:7:"expired";i:-1;}
