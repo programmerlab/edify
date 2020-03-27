@@ -406,6 +406,25 @@
                 ]
         );
 
+        Route::bind('content', function ($value, $route) {
+            return Modules\Admin\Models\Page::find($value);
+        });
+        Route::resource(
+            'admin/content',
+            'Modules\Admin\Http\Controllers\PageController',
+            [
+            'names' => [
+                'edit' => 'content.edit',
+                'show' => 'content.show',
+                'destroy' => 'content.destroy',
+                'update' => 'content.update',
+                'store' => 'content.store',
+                'index' => 'content',
+                'create' => 'content.create',
+            ]
+                ]
+        );
+
 
         Route::bind('blog', function ($value, $route) {
             return Modules\Admin\Models\Blogs::find($value);
