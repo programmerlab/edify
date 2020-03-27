@@ -13,19 +13,37 @@ use Illuminate\Support\Facades\Mail;
 
 class DashboardController extends Controller
 {
+    
+    public function __construct() {
+        $this->middleware('auth');
+        $pages = \DB::table('pages')->get(['title','slug']);
+        View::share('static_page',$pages);
+
+        $editor_aproved = EditorTest::where('eid',Auth::user()->id)
+                ->where('img1_status',1)
+                ->where('img2_status',1)
+                ->where('img3_status',1)
+                ->first(); 
+        View::share('editor_aproved',$editor_aproved);
+
+    }
+
     public function index()
     {
-         if(Auth::check()){
-             
+         if(Auth::check()){ 
           $check_status = EditorTest::where('eid',Auth::user()->id)->first();
-            
+           
+
+               
+
             if ($check_status == null) {
                 return redirect(URL::to('editortest'));
 
             } 
+         return view('dashboard.editordashboard', compact('check_status'));    
+        } else{
+             return Redirect::to(url('/')); 
         } 
-            
-        return view('dashboard.editordashboard', compact('check_status'));
     }
 
     public function MyAccount()
@@ -43,6 +61,14 @@ class DashboardController extends Controller
         return view('dashboard.stories', compact('stories'));
     }
 
+    public function uploadDocument()
+    {
+        $eid = Auth::user()->id;
+        $documents = \DB::table('documents')->where('user_id', $eid)->get();
+        return view('dashboard.upload_document', compact('documents'));
+    }
+
+
     public function PostInfo()
     {
         return view('dashboard.postinfo');
@@ -59,6 +85,33 @@ class DashboardController extends Controller
         $editor_posts = \DB::table('editor_post')->where('eid', $eid)->get();
 
         return view('dashboard.posts', compact('editor_posts'));
+    }
+    
+    
+    public function DocumentDelete($id=null){  
+
+         \DB::table('documents')
+                        ->where('id', $id)
+                        ->delete();
+       
+       return redirect('upload-document')->with('flash_alert_notice', 'Upload-document Deleted successfully');
+    }
+
+    public function storyDelete($id=null){  
+
+         \DB::table('stories')
+                        ->where('id', $id)
+                        ->delete();
+       
+       return redirect('mystories')->with('flash_alert_notice', 'Post Deleted successfully');
+    }
+
+    public function PostDelete($id=null){  
+         \DB::table('editor_post')
+                        ->where('id', $id)
+                        ->delete();
+       
+       return redirect('posts')->with('flash_alert_notice', 'Post Deleted successfully');
     }
 
     public function MyOrders()
@@ -133,6 +186,29 @@ class DashboardController extends Controller
 
     }
 
+    
+    public function uploadDocuments(Request $request)
+    {
+        
+        if($request->hasFile('docUpload'))
+        {
+            $img1 = $request->file('docUpload');
+            $destinationPath = storage_path('uploads/documents');
+            $img1->move($destinationPath, time().$img1->getClientOriginalName());
+            $img_name = time().$img1->getClientOriginalName();
+
+        }
+        $url = url('storage/uploads/documents/'.$img_name);
+        $data = array('user_id'=>Auth::user()->id,'document'=>$request->document,'url'=>$url);
+        $insert = \DB::table('documents')->insert($data);
+
+        if($insert)
+        {
+            Session::put('storyuploadmsg','Document Uploaded Successffuly');
+            return redirect('upload-document');
+        }
+    }
+
     public function UploadStories(Request $request)
     {
         if($request->hasFile('storyUpload'))
@@ -155,7 +231,8 @@ class DashboardController extends Controller
 
     public function logout(Request $request)
     {
-        Session::flush();
+        Auth::logout();
+        $request->session()->forget('login_status');
         return redirect('/');
     }
 

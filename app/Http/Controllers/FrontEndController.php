@@ -13,23 +13,30 @@ use Illuminate\Support\Facades\Mail;
 
 class FrontEndController extends Controller
 {
+    public function __construct() { 
+        $pages = \DB::table('pages')->get(['title','slug']);
+        View::share('static_page',$pages);
+    }
+
     public function index()
     {
-
-        if(Auth::check()){
-             
+        if(Auth::check()){        
           $check_eid = EditorTest::where('eid',Auth::user()->id)->first();
-
                 if ($check_eid == null) {
                     return redirect(URL::to('editortest'));
-
                 }else{
-                   
                     return redirect(URL::to('editordashboard'));
                 }
         } 
-        
         return view('pages.home');
+    }
+
+    public function page(Request $request, $page = null)
+    {
+        $pages = \DB::table('pages')->where('slug', $page)->first();
+        $title = isset($pages->title)?$pages->title:'Page Not Found';
+
+        return view('dashboard.page', compact('title', 'pages'));
     }
 
     public function signup(Request $request)
@@ -48,9 +55,11 @@ class FrontEndController extends Controller
         // return view('pages.home',['msg' =>"success Thank you for registration. Login to Continue"]);
     }
 
-    public function logout(){
+    public function logout(Request $request){
 
         Auth::logout();
+        $request->session()->forget('login_status');
+
         return redirect(URL::to('/'));
     }
 
@@ -84,6 +93,7 @@ class FrontEndController extends Controller
 
         if(Auth::attempt($credential))
         {
+            Session::put('login_status',true);
             $cc = Hash::check($request['password'], $check_user->password);
             if(!$cc){
                 Session::put('message', 'Login Fail, pls check Password');

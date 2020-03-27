@@ -58,8 +58,9 @@
                         <div role="tabpanel" class="tab-pane fade" id="new">
                             <div class="orderWrapper">
                                 <div class="orderUnit m-b-15">
-                                    <h3 class="orderDate">today</h3>
+                                    <h3 class="orderDate">Today</h3>
                                     <div class="orderTimeList">
+                                        
                                         <div class="col-xs-6 col-sm-3 col-lg-2 orderGrid">
                                             <div class="orderbg" style="background-image: url(https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg);"></div>
                                             <div class="orderDetails">
@@ -69,40 +70,10 @@
                                                 <span class="oimg">https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg</span>
                                             </div>
                                         </div>
-                                        <div class="col-xs-6 col-sm-3 col-lg-2 orderGrid">
-                                            <div class="orderbg" style="background-image: url(https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg);"></div>
-                                            <div class="orderDetails">
-                                                <span class="ono">123456</span>
-                                                <span class="ocustomer">John doe</span>
-                                                <span class="odesc">retouch image</span>
-                                                <span class="oimg">https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg</span>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
-                                <div class="orderUnit m-b-15">
-                                    <h3 class="orderDate">today</h3>
-                                    <div class="orderTimeList">
-                                        <div class="col-xs-6 col-sm-3 col-lg-2 orderGrid">
-                                            <div class="orderbg" style="background-image: url(https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg);"></div>
-                                            <div class="orderDetails">
-                                                <span class="ono">123456</span>
-                                                <span class="ocustomer">John doe</span>
-                                                <span class="odesc">retouch image</span>
-                                                <span class="oimg">https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-3 col-lg-2 orderGrid">
-                                            <div class="orderbg" style="background-image: url(https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg);"></div>
-                                            <div class="orderDetails">
-                                                <span class="ono">123456</span>
-                                                <span class="ocustomer">John doe</span>
-                                                <span class="odesc">retouch image</span>
-                                                <span class="oimg">https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane fade active in" id="completed">
@@ -209,7 +180,7 @@
                     </div>
             </div>
         </div>
-    </div>
+</div>
 @include('dashboard.partials.footer_links')
     
 <script>

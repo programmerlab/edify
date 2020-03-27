@@ -19,7 +19,7 @@
         .certiName{
             display: block;
             position: relative;
-            font-size: 42px;
+            font-size: 35px;
             color: #551515;
             font-weight: bold;
             font-family: monospace;
@@ -55,9 +55,12 @@
 
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs tab-nav-right" role="tablist">
-                        <li role="presentation" class="active"><a href="#edit" data-toggle="tab" aria-expanded="false">Edit Account Details</a></li>
+                        <li role="presentation" class="active "><a href="#edit" data-toggle="tab" aria-expanded="false">Edit Account Details</a></li>
                         <li role="presentation" class=""><a href="#certificate" data-toggle="tab" aria-expanded="true">Certificate</a></li>
                         <li role="presentation" class=""><a href="#followers" data-toggle="tab" aria-expanded="true">Followers</a></li>
+                        <li role="presentation" class=""><a href="#bank_account" data-toggle="tab" aria-expanded="true">Bank Account</a></li>
+                        
+
                     </ul>
 
                     <!-- Tab panes -->
@@ -90,32 +93,33 @@
                                             <label class="form-label">Mobile</label>
                                         </div>
                                     </div>
-<div class="form-group form-float">
+                                    <div class="form-group form-float">
                                         <div class="form-line">
                                             <input type="file" id="profile_image" name="profile_image"  class="form-control" value="{{ isset($acc_details['phone']) ? $acc_details['phone'] : '' }}">
-                                            <label class="form-label">My Profile Pic</label>
+                                            <label class="form-label"> </label>
                                         </div>
-					<img src={{$profile_image}} width="10%">
-
+					                   <img src={{$profile_image}} width="10%">
+                                       <br>
+                                       <label class="form-label">Upload/Change Profile Pic </label>
                                     </div>
                                     <button type="submit" class="btn btn-primary waves-effect">Save</button>
                                 </form>
                             </div></br>
                             <?php
-                        if(Session::has('update_msg'))
-                        {
-                            ?>
-                            <p class="text-danger">
-                                <?php 
-                                echo Session::get('update_msg');
-                                Session::pull('update_msg');
-                                ?>
-                            </p>
-                        <?php }?>
+                                if(Session::has('update_msg'))
+                                {
+                                    ?>
+                                    <p class="text-danger">
+                                        <?php 
+                                        echo Session::get('update_msg');
+                                        Session::pull('update_msg');
+                                        ?>
+                                    </p>
+                                <?php }?>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="certificate">
                             <div class="certificate">
-                                <span class="certiName">Mr {{ $acc_details['first_name']}}</span> after verification of his works under our review team. <img src="assets/images_dashbaord/logo.png" />
+                                <span class="certiName">Mr {{ $acc_details['first_name'] . ' '.$acc_details['last_name']}}</span> after verification of his works under our team. <img src="{{ url('assets/images_dashboard/logo.png')}}" /> 
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane fade" id="followers">
@@ -144,6 +148,73 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+                        <div role="tabpanel" class="tab-pane fade" id="bank_account">
+                            <div class="container-fluid m-t-15 p-l-20 p-r-20">
+                                <form action="{{ url('update_editor_info')}}" method="post" enctype="multipart/form-data">
+                                {{csrf_field()}}
+                                     
+                               <div class="form-group form-float {{ $errors->first('account_name', 'has-error') }}">
+                                    <div class="form-line"> 
+                                       {!! Form::text('account_name',null, ['class' => 'form-control'])  !!} 
+                                        <span class="help-block">{{ $errors->first('account_name', ':message') }}</span>
+                                        <label class="form-label">Account Holder Name</label>
+                                    </div>
+                                </div>    
+
+
+                                <div class="form-group form-float {{ $errors->first('bank_name', 'has-error') }}">
+                                    <div class="form-line"> 
+                                       {!! Form::text('bank_name',null, ['class' => 'form-control'])  !!} 
+                                        <span class="help-block">{{ $errors->first('bank_name', ':message') }}</span>
+                                        <label class="form-label">Bank Name</label>
+                                    </div>
+                                </div> 
+
+                                 <div class="form-group form-float {{ $errors->first('account_number', 'has-error') }}">
+                                    <div class="form-line"> 
+                                       {!! Form::number('account_number',null, ['class' => 'form-control'])  !!} 
+                                        <span class="help-block">{{ $errors->first('account_number', ':message') }}</span>
+                                        <label class="form-label">Acount Number</label>
+                                    </div>
+                                </div> 
+                                <div class="form-group form-float {{ $errors->first('ifsc_code', 'has-error') }}">
+                                    <div class="form-line"> 
+                                       {!! Form::text('ifsc_code',null, ['class' => 'form-control'])  !!} 
+                                        <span class="help-block">{{ $errors->first('ifsc_code', ':message') }}</span>
+                                        <label class="form-label">IFSC Code</label>
+                                    </div>
+                                </div> 
+
+                               
+
+                                  <div class="form-group form-float ">
+                                        <div class="row">  
+                                              {!! Form::submit('Save', ['class'=>'btn save btn-primary text-white','id'=>'saveBtn']) !!} 
+
+                                               <a href="{{route('content')}}">
+                                    {!! Form::button('Back', ['class'=>'btn btn-warning text-white']) !!} </a>
+                                            </div>
+                                </div> 
+
+                                </form>
+                            </div></br>
+                            <?php
+                                if(Session::has('update_msg'))
+                                {
+                                    ?>
+                                    <p class="text-danger">
+                                        <?php 
+                                        echo Session::get('update_msg');
+                                        Session::pull('update_msg');
+                                        ?>
+                                    </p>
+                                <?php }?>
+                        </div>
+ 
+
                     </div>
                 </div>
             </div>

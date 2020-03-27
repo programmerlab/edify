@@ -21,13 +21,13 @@
                     <h2>Edify Analytics Area</h2>
                 </div>
                 <div class="body">
-                    <div class="alert alert-danger" >
+                    <div class="alert @if($editor_aproved) alert-success @else alert-danger @endif" >
                      @if($check_status->img1_status==0)
-                        Your profile Waiting for approval
+                        Your profile is Waiting for approval
                      @elseif($check_status->img2_status==0)
-                        Your profile Waiting for approval
+                        Your profile is Waiting for approval
                      @elseif($check_status->img3_status==0)
-                        Your profile Waiting for approval
+                        Your profile is Waiting for approval
                      @else
                          Congratulation! Your profile has been approved.  
                      @endif

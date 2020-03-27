@@ -25,6 +25,13 @@
                             <span>My account</span>
                         </a>
                     </li>
+@if($editor_aproved)
+                    <li>
+                        <a href="{{url('upload-document')}}">
+                            <i class="material-icons">pages</i>
+                            <span>Upload Documents</span>
+                        </a>
+                    </li>
                     <li>
                         <a href="{{url('mystories')}}">
                             <i class="material-icons">pages</i>
@@ -55,7 +62,9 @@
                             <span>My Orders</span>
                         </a>
                     </li>
-                    <li>
+@endif
+
+                   <!--  <li>
                         <a class="menu-toggle" href="#">
                             <i class="material-icons">report</i>
                             <span>Help</span>
@@ -72,13 +81,15 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
+                    @foreach($static_page as $key => $page_result)
                     <li>
-                        <a href="{{url('termscondition')}}">
-                            <i class="material-icons">image</i>
-                            <span>Terms and Conditions</span>
+                        <a href="{{url($page_result->slug)}}">
+                            <i class="material-icons">report</i>
+                            <span>{{ $page_result->title}}</span>
                         </a>
                     </li>
+                    @endforeach
                 </ul>
             </div>
             <!-- #Menu -->

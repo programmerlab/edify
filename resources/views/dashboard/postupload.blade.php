@@ -81,6 +81,8 @@
         <div class="card">
                 <div class="header">
                     <h2>Post</h2>
+                     <a href="{{url('posts')}}" class="btn btn-success pull-right" style="margin-top: -15px" > 
+                     My Post  </a>
                 </div>
                 <?php
                     if(Session::has('postuploadmsg'))
