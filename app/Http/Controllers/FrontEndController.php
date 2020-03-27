@@ -16,8 +16,8 @@ class FrontEndController extends Controller
     public function __construct() { 
         $pages = \DB::table('pages')->get(['title','slug']);
         View::share('static_page',$pages);
-
-        $editor_aproved = EditorTest::where('eid',Auth::user()->id)
+        $aid = Auth::user()->id??null;
+        $editor_aproved = EditorTest::where('eid',$aid)
                 ->where('img1_status',1)
                 ->where('img2_status',1)
                 ->where('img3_status',1)
