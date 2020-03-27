@@ -153,12 +153,12 @@
 
                         <div role="tabpanel" class="tab-pane fade" id="bank_account">
                             <div class="container-fluid m-t-15 p-l-20 p-r-20">
-                                <form action="{{ url('update_editor_info')}}" method="post" enctype="multipart/form-data">
+                                <form action="{{ url('bankAccount')}}" method="post" enctype="multipart/form-data">
                                 {{csrf_field()}}
                                      
                                <div class="form-group form-float {{ $errors->first('account_name', 'has-error') }}">
                                     <div class="form-line"> 
-                                       {!! Form::text('account_name',null, ['class' => 'form-control'])  !!} 
+                                       {!! Form::text('account_name',$bankAccount->account_name??null, ['class' => 'form-control'])  !!} 
                                         <span class="help-block">{{ $errors->first('account_name', ':message') }}</span>
                                         <label class="form-label">Account Holder Name</label>
                                     </div>
@@ -167,7 +167,7 @@
 
                                 <div class="form-group form-float {{ $errors->first('bank_name', 'has-error') }}">
                                     <div class="form-line"> 
-                                       {!! Form::text('bank_name',null, ['class' => 'form-control'])  !!} 
+                                       {!! Form::text('bank_name',$bankAccount->bank_name??null, ['class' => 'form-control'])  !!} 
                                         <span class="help-block">{{ $errors->first('bank_name', ':message') }}</span>
                                         <label class="form-label">Bank Name</label>
                                     </div>
@@ -175,16 +175,24 @@
 
                                  <div class="form-group form-float {{ $errors->first('account_number', 'has-error') }}">
                                     <div class="form-line"> 
-                                       {!! Form::number('account_number',null, ['class' => 'form-control'])  !!} 
+                                       {!! Form::number('account_number',$bankAccount->account_number??null, ['class' => 'form-control'])  !!} 
                                         <span class="help-block">{{ $errors->first('account_number', ':message') }}</span>
                                         <label class="form-label">Acount Number</label>
                                     </div>
                                 </div> 
                                 <div class="form-group form-float {{ $errors->first('ifsc_code', 'has-error') }}">
                                     <div class="form-line"> 
-                                       {!! Form::text('ifsc_code',null, ['class' => 'form-control'])  !!} 
+                                       {!! Form::text('ifsc_code',$bankAccount->ifsc_code??null, ['class' => 'form-control'])  !!} 
                                         <span class="help-block">{{ $errors->first('ifsc_code', ':message') }}</span>
                                         <label class="form-label">IFSC Code</label>
+                                    </div>
+                                </div> 
+
+                                <div class="form-group form-float {{ $errors->first('bank_branch', 'has-error') }}">
+                                    <div class="form-line"> 
+                                       {!! Form::text('bank_branch',$bankAccount->bank_branch??null, ['class' => 'form-control'])  !!} 
+                                        <span class="help-block">{{ $errors->first('bank_branch', ':message') }}</span>
+                                        <label class="form-label">Branch name</label>
                                     </div>
                                 </div> 
 

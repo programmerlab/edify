@@ -51,8 +51,27 @@ class DashboardController extends Controller
         $eid = Session::get('editor_id');
         $acc_details = User::where('id', $eid)->first();
         $profile_image =  $acc_details->profile_image??null;
-        return view('dashboard.myaccount', compact('acc_details','profile_image'));
+
+        $bankAccount = \DB::table('bank_accounts')->where('user_id', $eid)->first();
+        
+        return view('dashboard.myaccount', compact('acc_details','profile_image','bankAccount'));
     }
+
+    public function bankAccount(Request $request)
+    {
+        
+        $eid = Auth::user()->id;
+        $acc_details = User::where('id', $eid)->first();
+        $profile_image =  $acc_details->profile_image??null;
+
+        $arr = $request->only('account_name','bank_name','account_number','ifsc_code','bank_branch'); 
+
+        \DB::table('bank_accounts')->updateOrInsert([
+            'user_id' => $eid 
+        ],$arr); 
+        return redirect('myaccount');
+    }
+
 
     public function MyStories()
     {

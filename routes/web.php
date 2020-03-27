@@ -29,6 +29,7 @@ Route::get('story/delete/{id}', 'DashboardController@storyDelete');
 Route::get('document/delete/{id}', 'DashboardController@DocumentDelete');
 
 Route::get('upload-document', 'DashboardController@uploadDocument');
+Route::post('bankAccount', 'DashboardController@bankAccount');
 
 Route::get('myaccount', 'DashboardController@MyAccount');
 Route::get('postinfo', 'DashboardController@PostInfo');
