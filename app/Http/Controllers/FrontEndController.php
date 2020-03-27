@@ -94,7 +94,7 @@ class FrontEndController extends Controller
                 $check_eid = EditorTest::where('eid',$check_user->id)->first();
                     if ($check_eid == null) {
                         $test_imgs = \DB::table('editor_test_images')->get();
-                        return view('pages.editortest',['test_imgs'=>$test_imgs]);
+                        return redirect(URL::to('editortest'));
                     } else {
                         if($check_eid['img1_status'] == 1 && $check_eid['img2_status'] == 1 && $check_eid['img3_status'] == 1)
                         {
