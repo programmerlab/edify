@@ -19,12 +19,13 @@ class FrontEndController extends Controller
         if(Auth::check()){
              
           $check_eid = EditorTest::where('eid',Auth::user()->id)->first();
-           
+
                 if ($check_eid == null) {
                     return redirect(URL::to('editortest'));
 
                 }else{
-                    return redirect('editordashboard',compact('check_eid'));  
+                   
+                    return redirect(URL::to('editordashboard'));
                 }
         } 
         
