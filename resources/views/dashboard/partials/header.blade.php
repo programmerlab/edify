@@ -40,7 +40,7 @@
             <div class="" id="">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Call Search -->
-                    <li><a href="{{ url('/') }}" class="js-search" data-close="true">Logout</a></li>
+                    <li><a href="{{ url('logout') }}" class="js-search-logout" data-close="true">Logout</a></li>
                   
                 </ul>
             </div>
