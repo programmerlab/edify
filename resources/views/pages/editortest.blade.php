@@ -96,19 +96,17 @@
                                 <div class="form-group">
                                     <label for="t1" class="uploadBtn"><i class="fa fa-upload"></i> Upload</label>
                                 </div>
-                               <?php 
-                                     echo $test_imgs[0]->images;
-                               ?>
-                                <a href="{{ asset('storage/uploads/editor_test_imgs/'.$test_imgs[0]->images)  }}" class="dloadRefBtn btn" download>Download Reference #1</a>
+                                
+                                <a href="{{  url($path.'/'.$test_imgs[0]->images) }}" class="dloadRefBtn btn" download>Download Reference #1</a>
                             </div>
                     </div>
                     <div class="col-sm-7">
                         <div class="previewBox">
                             <input type="file" name="img1" class="form-upload" id='t1'>
                             <div class="preview">
-                                
+                                <?php $path1 = url($path.'/'.$test_imgs[0]->images); ?>
                             </div>
-                            <div class="previewBefore" style="background-image: url(storage/uploads/editor_test_imgs/<?php echo $test_imgs[0]->images?>);">
+                            <div class="previewBefore" style="background-image: url('<?php echo $path1; ?>')">
                             </div>
                         </div>
                     </div>
@@ -131,14 +129,15 @@
                                 <div class="form-group">
                                     <label for="t2" class="uploadBtn"><i class="fa fa-upload"></i> Upload</label>
                                 </div>
-                                <a href="{{ asset('storage/uploads/editor_test_imgs/'.$test_imgs[1]->images)  }}" class="dloadRefBtn btn" download>Download Reference #2</a>
+                                 <?php $path2 = url($path.'/'.$test_imgs[1]->images); ?>
+                                <a href="{{ $path2 }}" class="dloadRefBtn btn" download>Download Reference #2</a>
                             </div>
                     </div>
                     <div class="col-sm-7">
                         <div class="previewBox">
                             <input type="file" name="img2" class="form-upload" id='t2'>
                             <div class="preview"></div>
-                            <div class="previewBefore" style="background-image: url(storage/uploads/editor_test_imgs/<?php echo $test_imgs[1]->images?>);"></div>
+                            <div class="previewBefore" style="background-image: url('{{$path2}}')"></div>
                             
                         </div>
                     </div>
@@ -161,16 +160,15 @@
                                 <div class="form-group">
                                     <label for="t3" class="uploadBtn"><i class="fa fa-upload"></i> Upload</label>
                                 </div>
-                                <a href="{{ asset('storage/uploads/editor_test_imgs/'.$test_imgs[2]->images)  }}" class="dloadRefBtn btn" download>Download Reference #3</a>
+                              <?php $path3 = url($path.'/'.$test_imgs[2]->images); ?>
+                                <a href="{{ $path3  }}" class="dloadRefBtn btn" download>Download Reference #3</a>
                             </div>
                     </div>
                     <div class="col-sm-7">
                         <div class="previewBox">
                             <input type="file" name="img3" class="form-upload" id='t3'>
                             <div class="preview"></div>
-                            <div class="previewBefore" style="background-image: url(storage/uploads/editor_test_imgs/<?php echo $test_imgs[2]->images?>);"></div>
-                           
-                            
+                            <div class="previewBefore" style="background-image: url('{{$path3}}');"></div> 
                         </div>
                     </div>
                 </div>

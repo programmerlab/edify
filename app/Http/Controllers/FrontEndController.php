@@ -34,10 +34,41 @@ class FrontEndController extends Controller
         // return view('pages.home',['msg' =>"success Thank you for registration. Login to Continue"]);
     }
 
+    public function logout(){
+
+        Auth::logout();
+        return redirect(URL::to('/'));
+    }
+
+    public function editortest(){
+        $test_imgs = \DB::table('editor_test_images')->get();
+      
+        $path = "storage/uploads/editor_test_imgs"; 
+
+        return view('pages.editortest',  compact('test_imgs','path'));
+    }
+
     public function login(Request $request)
     {
+        if(Auth::check()){
+             
+          $check_eid = EditorTest::where('eid',Auth::user()->id)->first();
+                if ($check_eid == null) {
+                    return redirect(URL::to('editortest'));
+
+                }
+        }
+
+
         $check_user = User::where('email',$request['email'])->first();
-        if($check_user)
+        $credential = [
+                "email" => $request->email,
+                "password" => $request->password
+            ];
+
+
+
+        if(Auth::attempt($credential))
         {
             $cc = Hash::check($request['password'], $check_user->password);
             if(!$cc){

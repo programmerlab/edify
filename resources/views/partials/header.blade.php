@@ -7,7 +7,12 @@
         </div>
         <div class="col-sm-6 text-right">
             <a class="signinbtn" href="#signup">Become an editor</a>
-            <a class="signinbtn" href="#signin">sign in</a>
+            @if(Auth::check())
+                <a class="logoutbtn" href="{{url('logout')}}">Logout</a>
+            @else
+                <a class="signinbtn" href="#signin">sign in</a>
+            @endif 
+            
         </div>
     </div>
 </header>
