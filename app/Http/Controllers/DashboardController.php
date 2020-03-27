@@ -18,7 +18,7 @@ class DashboardController extends Controller
          if(Auth::check()){
              
           $check_status = EditorTest::where('eid',Auth::user()->id)->first();
-           
+            
             if ($check_status == null) {
                 return redirect(URL::to('editortest'));
 

@@ -19,11 +19,16 @@
 
     <section class="testsWrapper">
         <header>
-            <div class="container-fluid">
-                <div class="col-sm-6">
+            
+            <div class="container-fluid "  >
+                <div class="col-sm-6 col-md-6">
                     <img src="assets/img/logo.png" alt="">
                 </div>
-            </div>
+                <div class="col-sm-6 col-md-6 pull-right" style="  text-align: right;">
+                    <span style="color: #fff">Welcome :) <a style="color: #fff;display: inline-block" href="{{url('logout')}}">Logout </a> </span>
+                    
+                </div>
+            </div> 
         </header>
         <form method="POST" action="{{ url('uploadtestimage') }}" enctype="multipart/form-data">
         {{csrf_field()}}
