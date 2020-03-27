@@ -1,0 +1,690 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2448:"Accessories include a shorter saddle, which reduces seat height from the standard 31.4 inches to 30.6 inches to better suit inseam-challenged riders. Sie unterscheidet sich zu den anderen Icon Versionen durch die Farbe mattschwarz und durch die runden Spiegel. The Icon is the starting point from which to express yourself. Read Ducati Scrambler Icon Reviews and check out Specs, Features, Dimensions, Images, Colours, and other details. The Ducati Scrambler Icon will be getting a new all-black version next year as announced at the World Ducati Premiere in Rimini, Italy. Ducati unveiled its 2020 line-up on 23 October, and the list included new and updated models. Premium LED Lighting - Headlight with glass lens and DRL. Ducati Scrambler Icon Dark Price in India - Rs. Delhi ). The Ducati Scrambler Icon Dark the versions Ducati Scrambler Icon, the Full Throttle, the Café Racer, and the Desert Sled. Sie heißt Ducati Scrambler Icon Dark und ist der Einstieg in die Scrambler 800 Modellreihe. 2020 Ducati Scrambler Icon Dark Totalmotorcycle.com Features and Benefits. The model was updated for 2019, and now includes Bosch Cornering ABS and slicker styling. Unleash your creativity, express your Scrambler spirit! Ducati Scrambler Icon Price in India - Rs. ducati s scrambler line has proven popular with the masses and the factory expands its footprint further with its new icon dark. Launched during Ducati’s big lineup announcement, the new Scrambler Icon Dark is a black twist on the bright orange (or yellow) Icon the firm introduced last year.In reality, it … Elemental and stylish, the Icon Dark is the most customisable Scrambler ever. Ducati's profilation of this bike: The Scrambler Icon is the starting point from which to express yourself. Unconventional but fashionable, elemental yet juicy. The new Matt Black color gives the bike a new, intriguing, look and provides the perfect baseline for bike crafting. The renewed Ducati Scrambler is more contemporary, more comfortable and safer, ensuring even more carefree ‘Land of Joy’ fun! The new Matt Black color gives the bike a new, intriguing, look and provides the perfect baseline for bike crafting. Elemental and stylish, the Icon Dark is the most customisable Scrambler ever. Read more here. Ducati Scrambler Icon Dark (2020) Die anti-konformistische, erschwingliche und unverzichtbare Ducati Scrambler® verkörpert die perfekte Mischung aus Tradition und Moderne. ";s:7:"keyword";s:32:"ducati scrambler icon dark specs";s:5:"links";s:4580:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=you-raise-me-up-lyrics'>You Raise Me Up Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mv-agusta-rush-1000-price'>Mv Agusta Rush 1000 Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Someone-to-Call-My-Lover'>Someone To Call My Lover</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=triumph-speed-triple-rs-2020'>Triumph Speed Triple Rs 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=entry-level-environmental-engineering-jobs-in-canada'>Entry Level Environmental Engineering Jobs In Canada</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-write-a-feedback-email'>How To Write A Feedback Email</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jaguar-f-pace-cargo-space-with-seats-down'>Jaguar F Pace Cargo Space With Seats Down</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=largest-car-market-in-the-world'>Largest Car Market In The World</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=da-capo-al-fine-scp'>Da Capo Al Fine Scp</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=accepting-you-will-never-find-love'>Accepting You Will Never Find Love</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=easy-drawing-tutorials-for-beginners'>Easy Drawing Tutorials For Beginners</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-logical-song-chords-ukulele'>The Logical Song Chords Ukulele</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=14-ft-klamath-aluminum-boat-for-sale'>14 Ft Klamath Aluminum Boat For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=buying-a-bike-from-evo'>Buying A Bike From Evo</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-winner-takes-it-all-chords'>The Winner Takes It All Chords</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=megatron-and-optimus-prime-fusion'>Megatron And Optimus Prime Fusion</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ralph-breaks-the-internet-netflix'>Ralph Breaks The Internet Netflix</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Pictures-of-2019-Nissan-P...'>Pictures Of 2019 Nissan P...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=flay-vs-symon-who-won'>Flay Vs Symon Who Won</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jet-ski-second-hand-germania'>Jet Ski Second Hand Germania</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=scania-truck-driving-simulator-mod-apk-download'>Scania Truck Driving Simulator Mod Apk Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=splinter-full-movie-in-hindi-download-300mb'>Splinter Full Movie In Hindi Download 300mb</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=queen-let-me-in-your-heart-again'>Queen Let Me In Your Heart Again</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mariano-rivera-cutter-breaking-bats'>Mariano Rivera Cutter Breaking Bats</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bike-mayhem-unlimited-stars-apk'>Bike Mayhem Unlimited Stars Apk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=luxury-motorhome-hire-new-zealand'>Luxury Motorhome Hire New Zealand</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=when-the-love-is-gone-in-a-marriage'>When The Love Is Gone In A Marriage</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=life-on-a-submarine-video'>Life On A Submarine Video</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-cars-or-suvs-for-snow-2019'>Best Cars Or Suvs For Snow 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-siel-power-products-ltd-chennai'>Honda Siel Power Products Ltd Chennai</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bmw-k100-for-sale-ebay'>Bmw K100 For Sale Ebay</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-make-your-account-private-on-instagram'>How To Make Your Account Private On Instagram</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=aaa-rv-roadside-assistance-reviews'>Aaa Rv Roadside Assistance Reviews</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=out-of-state-boat-registration'>Out Of State Boat Registration</a>,
+";s:7:"expired";i:-1;}

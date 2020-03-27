@@ -1,0 +1,688 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3981:"Mad Day - Truck Distance Game cheats tips and tricks added by pro players, testers and other users like you. The description of Mad Day – Truck Distance Game hack game. You buy a vehicle you want in the game, and then you equip it with weapons as you like. People tried to fight, but most of them were destroyed. Mad Day – Truck Distance Game Hack Mod Apk About Mad Day – Truck Distance Game Battle the oncoming Alien Invasion of Earth in this epic racer to rescue your beloved pet Octopus Fluffy and escape. Team up with ex-Marine Bob to battle evil aliens who have invaded the planet. drive your cool car, charge the gun and get ready to destroy bad guys. Mad Day – Truck Distance Game (MOD, unlimited money/fuel) – Battle of oncoming alien invasion of Earth in this epic rider to save your favorite furry animal Octopus and run. Upgrade your Car, Guns, Armor, Clothing and … Mad Day 2 Hack Gameplay Flash Games Show. To make things even worse, they’ve kidnapped his beloved pet … Arcade Car Shooting. Install MOD2. WALKTHROUGH . Free Download Mad Day - Truck Distance Game v 1.4.3 Hack MOD APK (money) For android mobiles, Samsung HTC Nexus LG Sony Nokia Tablets and More. Use big guns, jumps and brand new gadgets to win in the battle. Mad Day 2 is the right choice for you if you are looking for a game that is never lacking in action brothers. ... What if we hacek Mad Day 2. 在 dailymotion 上觀看 Mad Day 2 (Android & iOS) - Game Trailer─影片 Dailymotion - Tiseburope Free Download Mad Day 2 v1.0 Mod Mod APK - Download Mad Day 2 v1.0 Mod. To download Mad Day 2 + MOD, click on the proper Download button above this paragraph: the [Google Play] button will redirect you to the Play Store, the official source of Mad Day 2 + MOD,(just without the mod) while the other button(s) will redirect you to the destination page to download Mad Day 2 + MOD directly on your Upgrade your Car, Guns, Armor, Clothing… play all unblocked games and hacked games on your site, we add 5 best unblocked games every day.Enjoy our site MAD DAY 3 - hacked unblocked games 500 ardaayenotbozebo Leads the most fun and get ready for more action than ever vehicles. … Description: Ride, shoot, jump and smash your way to victory in this addictive runner. Category People & Blogs; Show more Show less. Mad Day is a combination of an awesome racing and alien shooting game. Loading... Unsubscribe from Flash Games Show? Mad Day 2 Shoot the Aliens Testimonial/Review [Hack] I have seen people complaining like this is Fake or that does not work. Team up with ex-Marine Bob to battle evil aliens who have invaded the planet. Mad Day 2: Shoot the Aliens cheats tips and tricks added by pro players, testers and other users like you. You will have a gun to your hand during your running and shoot at zombies at the same time. Upgrade armor, wheels, firepower, and as you gain … Mad Day 2: Shoot the Aliens Hack Mod Apk About Mad Day 2: Shoot the Aliens Ride, shoot, jump and smash your way to victory in this addictive runner. Opponents have long enslaved all of humanity and turned the previously thriving metropolitan areas into wastelands. Mad Day 2: Shoot the Aliens hack hints guides reviews promo codes easter eggs and more for android application. Shoot, crush and blow aliens up to save the world in this crazy cool runner Tải Game Mad Day - Truck Distance Game v1.4.2 bản Hack full miễn phí phiên bản cập nhật đầy đủ. Play one of the best online … Download last version of Mad Day 2: Shoot the Aliens + Data + MOD Money for android from APK4PLAY with direct link. Keep in touch for fun. Các bạn vào đây tải game và cùng trải nghiệm nhé! Crazy Day is a combination of an amazing race and alien shooting game. Berbagi Mad Day 2: Shoot the Aliens v1.0 MOD APK (Mod Money) for Android Terbaru dan Terlengkap 2017 Download Mad Day 2: Shoot the Aliens v1.0 MOD APK (Mod Money) Mad Day 2: Shoot the Aliens is a Racing Game for Android. ";s:7:"keyword";s:23:"mad day 2 hack download";s:5:"links";s:4364:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-state-parks-along-highway-1'>Best State Parks Along Highway 1</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bmw-x3-hybrid-release-date-uk'>Bmw X3 Hybrid Release Date Uk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1970-camaro-z28-1%2F4-mile-time'>1970 Camaro Z28 1/4 Mile Time</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kz-sportster-toy-hauler-reviews'>Kz Sportster Toy Hauler Reviews</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=%27im-as-happy-as%27-sayings'>'im As Happy As' Sayings</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=suzuki-gixxer-250-seat-height'>Suzuki Gixxer 250 Seat Height</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=someone-who-is-on-top-of-their-game'>Someone Who Is On Top Of Their Game</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=great-smoky-mountains-things-to-do'>Great Smoky Mountains Things To Do</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jual-suzuki-bandit-650-cc'>Jual Suzuki Bandit 650 Cc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=literature-review-of-shock-absorber'>Literature Review Of Shock Absorber</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-draw-a-bear-walking'>How To Draw A Bear Walking</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=can-you-jumpstart-a-car-with-a-bad-alternator'>Can You Jumpstart A Car With A Bad Alternator</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ngk-iridium-spark-plugs-gap'>Ngk Iridium Spark Plugs Gap</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=http-hmnswh-hyundai-mnsoft-com-pm-linkdown-htm-lid-5b2079fe14b2702da401'>Http Hmnswh Hyundai Mnsoft Com Pm Linkdown Htm Lid 5b2079fe14b2702da401</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=gateway-classic-cars-houston-texas'>Gateway Classic Cars Houston Texas</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bow-of-a-boat-pronunciation'>Bow Of A Boat Pronunciation</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=negative-feedback-mechanism-in-hindi'>Negative Feedback Mechanism In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=summit-racing-phone-number-ohio'>Summit Racing Phone Number Ohio</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2012-triumph-tiger-800-specs'>2012 Triumph Tiger 800 Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rollins-pass-road-conditions-2019'>Rollins Pass Road Conditions 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fountain-boats-for-sale-for-under-%2435000'>Fountain Boats For Sale For Under $35000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=part-number-search-by-vin'>Part Number Search By Vin</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=toyota-land-cruiser-2018-uk'>Toyota Land Cruiser 2018 Uk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mopar-muscle-cars-for-sale-on-ebay'>Mopar Muscle Cars For Sale On Ebay</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-aerox-155-singapore-price'>Yamaha Aerox 155 Singapore Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-get-into-an-inflatable-kayak'>How To Get Into An Inflatable Kayak</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=success-kid-know-your-meme'>Success Kid Know Your Meme</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hard-truck-road-to-victory'>Hard Truck Road To Victory</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=attention-grabber-examples-for-presentation'>Attention Grabber Examples For Presentation</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=npr-piston-rings-catalog-2017'>Npr Piston Rings Catalog 2017</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=coachmen-class-b-rv-reviews'>Coachmen Class B Rv Reviews</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-say-have-a-good-day-in-russian'>How To Say Have A Good Day In Russian</a>,
+";s:7:"expired";i:-1;}

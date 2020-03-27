@@ -22,7 +22,8 @@ class DashboardController extends Controller
     {
         $eid = Session::get('editor_id');
         $acc_details = User::where('id', $eid)->first();
-        return view('dashboard.myaccount', compact('acc_details'));
+        $profile_image =  $acc_details->profile_image??null;
+        return view('dashboard.myaccount', compact('acc_details','profile_image'));
     }
 
     public function MyStories()
@@ -73,12 +74,23 @@ class DashboardController extends Controller
     public function UpdateEditorInfo(Request $request)
     {
         $data = array('first_name'=>$request['first_name'],'last_name'=>$request['last_name'],'email'=>$request['email_address'],'phone'=>$request['mob']);
+        
+        if ($request->file('profile_image')) {
+            $photo = $request->file('profile_image');
+            $destinationPath = storage_path('uploads/profile/');
+            $photo->move($destinationPath, time().$photo->getClientOriginalName());
+            $photo_name = time().$photo->getClientOriginalName();
+            $request->merge(['profile_image'=>$photo_name]);  
+            $data['profile_image']  = url::to(asset('storage/uploads/profile/'.$photo_name));
+        } 
+
         $update = User::where('id',Session::get('editor_id'))->update($data);
         if($update)
         {
             Session::put('update_msg','Details Update Succesffuly');
-            return redirect('myaccount');
+            return redirect('myaccount'); 
         }
+
     }
 
     public function UploadPost(Request $request)
@@ -135,5 +147,30 @@ class DashboardController extends Controller
     {
         Session::flush();
         return redirect('/');
+    }
+
+     public function createImage($base64)
+    {
+        try{
+            $img  = explode(',',$base64);
+            if(is_array($img) && isset($img[1])){
+                $image = base64_decode($img[1]);
+                $image_name= time().'.jpg';
+                $path = storage_path() . "/image/" . $image_name;
+              
+                file_put_contents($path, $image); 
+                return url::to(asset('storage/image/'.$image_name));
+            }else{
+                if(starts_with($base64,'http')){
+                    return $base64;
+                }
+                return false; 
+            }
+
+            
+        }catch(Exception $e){
+            return false;
+        }
+        
     }
 }

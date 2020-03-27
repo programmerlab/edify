@@ -2,7 +2,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="assets/img/logo.png" alt="">
+                    <a href="https://play.google.com/store/apps/details?id=com.edify.atrist" target="_blank">
+                           <img src="assets/img/play_icon.png" />
+                     </a>
                 </div>
                 <div class="col-sm-4">
                     <h3>Social</h3>

@@ -1,0 +1,701 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2631:"The line repeated in the chorus of the Brit song—”Robert De Niro’s waiting, talking Italian”—becomes, in the Russian song, “Alain Delon is speaking French” (Alen Delon govorit po Frantsuzkiy). Robert De Niro left fans stunned on Monday as he visited an Italian restaurant in Halifax, West Yorkshire. " Robert De Niro's Waiting... " is a song written by Steve Jolley, Tony Swain, and recorded by English girl group Bananarama. Produced by Jolley & Swain, it is the second single released from their self-titled second album in 1984, it namechecks American actor Robert De Niro . See more ideas about Robert de niro, Actor and Movie stars. The appeal of this material to Scorsese, the master of the mob movie since Mean Streets in 1973, is obvious — and he has made from it an absolute summation of the form, with a classic cast. Legendary actor Robert De Niro has revealed he has Irish ancestry and is desperate to find some of his relatives. Produced by Jolley & Swain, it is the second single released from their self-titled second album in 1984, it namechecks American actor Robert De Niro. Brando won Best Actor for The Godfather (1972) and De Niro won Best Actor in a Supporting Role for The Godfather: Part II (1974), both in the role of Vito Corleone. The 76-year-old star was speaking ahead of the release of his latest gangster movie The Irishman, based on the true-life story of Mafia hitman Frank Sheeran. That's because Steve Jolley, who wrote and produced the song with his partner Tony Swain, thought that Italian was a more romantic language, and that De Niro speaking it would make him even more appealing to the girl. Bananarama . 8.  You realize, of course, that De Niro is of Irish and Italian descent on his father’s side, Dutch, English, French, and German on his mother’s and doesn’t speak Italian. Marlon Brando and Robert De Niro are the only two actors to ever win separate Oscars for playing the exact same character. If you had to change your name, what would your new name be, and why would you choose it? Robert De Niro is an American actor, producer and director.. His full name is Robert Anthony De Niro.. Robert De Niro (born August 17, 1943) is an American actor and producer who has starred in over 90 films. Sep 10, 2015 - Explore shereenaslan's board "Robert De niro" on Pinterest. His first major film roles were in the sports drama Bang the Drum Slowly (1973) and Martin Scorsese's crime film Mean Streets (1973). (Coincidentally, neither actor was present to accept the award.) Why is De Niro "Talking Italian"? ... Did robert de niro speak italian before The Godfather? ";s:7:"keyword";s:36:"robert de niro speaking italian song";s:5:"links";s:6235:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=michi-craft-canoe-t-15'>Michi Craft Canoe T 15</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Aids-to-the-devout-study-of...'>Aids To The Devout Study Of...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-much-does-it-cost-for-a-tow-truck-to-pull-you-out'>How Much Does It Cost For A Tow Truck To Pull You Out</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mini-pajero-price-in-pakistan-2019'>Mini Pajero Price In Pakistan 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-the-most-reliable-touring-motorcycle'>What Is The Most Reliable Touring Motorcycle</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jeep-wrangler-unlimited-uae-price'>Jeep Wrangler Unlimited Uae Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=norton-field-guide-to-writing-chapter-summaries'>Norton Field Guide To Writing Chapter Summaries</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=craigslist-michigan-boats-port-huron'>Craigslist Michigan Boats Port Huron</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=boston-post-hole-digger-for-sale'>Boston Post Hole Digger For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rocky-mountain-growler-20-2018'>Rocky Mountain Growler 20 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=morning-joe-emailing-the-show'>Morning Joe Emailing The Show</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=practical-classics-price-guide-2019-pdf'>Practical Classics Price Guide 2019 Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kawasaki-w800-for-sale-ebay'>Kawasaki W800 For Sale Ebay</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=star-trek-into-darkness-trailer'>Star Trek Into Darkness Trailer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=snap-on-pontoon-boat-covers'>Snap On Pontoon Boat Covers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-toyota-camry-hybrid-for-sale-near-me'>2018 Toyota Camry Hybrid For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-bicycle-rims-for-sale-near-me'>Used Bicycle Rims For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bruce-auto-parts-mechanicsville-va'>Bruce Auto Parts Mechanicsville Va</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=savage-garden-i-knew-i-loved-you-mp3'>Savage Garden I Knew I Loved You Mp3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=go-to-the-legal-help-page-to-request-content-changes-for-legal-reasons'>Go To The Legal Help Page To Request Content Changes For Legal Reasons</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=god-save-the-rave-tour'>God Save The Rave Tour</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-ninja-400-abs-for-sale'>Used Ninja 400 Abs For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2005-toyota-corolla-s-engine-specs'>2005 Toyota Corolla S Engine Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=husqvarna-450-chainsaw-for-sale'>Husqvarna 450 Chainsaw For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-want-it-that-way-instrumental-mp3'>I Want It That Way Instrumental Mp3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=black-desert-off-road-training'>Black Desert Off Road Training</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=is-ac-delco-oil-good'>Is Ac Delco Oil Good</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=iphone-7-plus-price-philippines-2018'>Iphone 7 Plus Price Philippines 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tie-your-mother-down-live'>Tie Your Mother Down Live</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-toyota-camry-hybrid-mpg'>2020 Toyota Camry Hybrid Mpg</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-toyota-highlander-hybrid-for-sale'>2018 Toyota Highlander Hybrid For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=stealth-ship-of-indian-navy'>Stealth Ship Of Indian Navy</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=4x4-in-schools-national-finals-2019'>4x4 In Schools National Finals 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2013-toyota-prius-c-for-sale'>2013 Toyota Prius C For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-full-size-truck-2020'>Best Full Size Truck 2020</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mission-impossible-ghost-protocol-720p-download'>Mission Impossible Ghost Protocol 720p Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sword-of-the-berserk-ps2'>Sword Of The Berserk Ps2</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=life-is-a-race-quotes-3-idiots'>Life Is A Race Quotes 3 Idiots</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=entry-level-software-engineer-salary-california'>Entry Level Software Engineer Salary California</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1998-semi-truck-for-sale'>1998 Semi Truck For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=why-do-jet-skis-sink'>Why Do Jet Skis Sink</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mazda-miata-for-sale-craigslist-san-diego'>Mazda Miata For Sale Craigslist San Diego</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=peer-feedback-in-the-classroom-examples'>Peer Feedback In The Classroom Examples</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pittsburg-state-university-ranking-forbes'>Pittsburg State University Ranking Forbes</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=can-you-add-navigation-to-honda-civic'>Can You Add Navigation To Honda Civic</a>,
+";s:7:"expired";i:-1;}

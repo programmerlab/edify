@@ -33,7 +33,7 @@ class ApiController extends BaseController
         $input['last_name']     = $request->input('last_name'); 
         $input['email']         = $request->input('email'); 
         $input['password']      = Hash::make($request->input('password'));
-        $input['role_type']     = $request->input('role_type'); ;
+        $input['role_type']     = $request->input('role_type'); 
         $input['user_type']     = $request->input('user_type');
         $input['provider_id']   = $request->input('provider_id'); 
 
@@ -107,72 +107,72 @@ class ApiController extends BaseController
     }
 
 
-    public function updateProfile(Request $request,$userId)
-    {      
-
-        $user = User::find($userId); 
-
-        if((User::find($userId))==null)
-        {
-            return Response::json(array(
-                'status' => 0,
-                'code' => 201,
-                'message' => 'Invalid user Id!',
-                'data'  =>  ''
-                )
-            );
-        } 
-         
-        $table_cname = \Schema::getColumnListing('users');
-        $except = ['id','created_at','updated_at','profile_image','modeOfreach'];
-        
-        foreach ($table_cname as $key => $value) {
-           
-           if(in_array($value, $except )){
-                continue;
-           } 
-            if($request->get($value)){
-                $user->$value = $request->get($value);
-           }
-        }
-       
-        
-        if($request->get('profile_image')){ 
-            $profile_image = $this->createImage($request->get('profile_image')); 
-            if($profile_image==false){
-                return Response::json(array(
-                    'status' => 0,
-                     'code' => 201,
-                    'message' => 'Invalid Image format!',
-                    'data'  =>  $request->all()
-                    )
-                );
-            }
-            $user->profile_image  = $profile_image;       
-        }        
-           
-
-        try{
-            $user->save();
-            $status = 1;
-            $code  = 200;
-            $message ="Profile updated successfully";
-        }catch(\Exception $e){
-            $status = 0;
-            $code  = 201;
-            $message =$e->getMessage();
-        }
-         
-        return response()->json(
-                            [ 
-                            "status" =>$status,
-                            'code'   => $code,
-                            "message"=> $message,
-                            'data'=>isset($user)?$user:[]
-                            ]
-                        );
-         
-    }
+//     public function updateProfile(Request $request,$userId)
+//     {      
+// 
+//         $user = User::find($userId); 
+// 
+//         if((User::find($userId))==null)
+//         {
+//             return Response::json(array(
+//                 'status' => 0,
+//                 'code' => 201,
+//                 'message' => 'Invalid user Id!',
+//                 'data'  =>  ''
+//                 )
+//             );
+//         } 
+//          
+//         $table_cname = \Schema::getColumnListing('users');
+//         $except = ['id','created_at','updated_at','profile_image','modeOfreach'];
+//         
+//         foreach ($table_cname as $key => $value) {
+//            
+//            if(in_array($value, $except )){
+//                 continue;
+//            } 
+//             if($request->get($value)){
+//                 $user->$value = $request->get($value);
+//            }
+//         }
+//        
+//         
+//         if($request->get('profile_image')){ 
+//             $profile_image = $this->createImage($request->get('profile_image')); 
+//             if($profile_image==false){
+//                 return Response::json(array(
+//                     'status' => 0,
+//                      'code' => 201,
+//                     'message' => 'Invalid Image format!',
+//                     'data'  =>  $request->all()
+//                     )
+//                 );
+//             }
+//             $user->profile_image  = $profile_image;       
+//         }        
+//            
+// 
+//         try{
+//             $user->save();
+//             $status = 1;
+//             $code  = 200;
+//             $message ="Profile updated successfully";
+//         }catch(\Exception $e){
+//             $status = 0;
+//             $code  = 201;
+//             $message =$e->getMessage();
+//         }
+//          
+//         return response()->json(
+//                             [ 
+//                             "status" =>$status,
+//                             'code'   => $code,
+//                             "message"=> $message,
+//                             'data'=>isset($user)?$user:[]
+//                             ]
+//                         );
+//          
+//     }
 
     // Image upload
 
@@ -318,9 +318,7 @@ class ApiController extends BaseController
             case 'googleAuth':
                 
                $credentials = [
-                        'email'=>$request->get('email'),
-                        'provider_id'=>$request->get('provider_id'),
-                        'user_type' => 'googleAuth'
+                        'email'=>$request->get('email')
                     ];
 
                  if (User::where($credentials)->first() ){
@@ -415,7 +413,7 @@ class ApiController extends BaseController
       
         
     }
-	/**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -518,18 +516,16 @@ class ApiController extends BaseController
     public function getAllPosts(Request $request)
     {
         $page_number    =   $request->get('page_num');
-
+     
         if($page_number){
             $page_num   =   ($request->get('page_num'))?$request->get('page_num'):1;
-            $page_size  =   ($request->get('page_size'))?$request->get('page_size'):10; 
+            $page_size  =   ($request->get('page_size'))?$request->get('page_size'):50; 
         }else{
             $page_num = 1;
-            $page_size = 10;
+            $page_size = 50;
         }
-
-       // echo "Email:".$request->email;
+  
         $input = $request->all();
-        //print_r ($input);
         $validator = Validator::make($request->all(), [
                  //   'per_page' => 'required',
                 //     'page' => 'required'
@@ -548,32 +544,84 @@ class ApiController extends BaseController
                 );
             }
         }
-      
-        $editorsList  = EditorPortfolio::with('editor','softwareEditor','category')
-                        ->select('id','title','price','description',\DB::raw('CONCAT(image_base_url, "",image_name) AS image_path'),'category_name','software_editor','image_name','image_base_url','editor_id','total_likes','updated_at') ;
-                        
-        $toal_record = $editorsList->count();
         
+        $allEditors = array();
+         $usermodel  = \DB::table('users')
+                            ->where('role_type' , 5)
+                            ->get();
+         
+        if($usermodel){
+             foreach($usermodel as $editors){
+                     $stsl  = \DB::table('stories')
+                            ->where('eid' , $editors->id)
+                            ->get();
+                      if(sizeof($stsl)>0){
+                             $listofstories = array();
+                          foreach($stsl as $strsObj){
+                                        $listofstories[] = "https://edifyartist.com/storage/uploads/editor_stories_imgs/".$strsObj->story_img; 
+                              }
+                              
+                           $allEditors[] = array('id' => $editors->id,'avatar' => $editors->profile_image,'first_name' => $editors->first_name,'last_name' => $editors->last_name,'stories_list'=>$listofstories ); 
+                      }      
+             }
+        }
+        
+        $allBanners = array();
+        
+         $bannerModel  = \DB::table('banners')
+                            ->where('status' , 1)
+                            ->get();
+         
+       $bannersList=  array();
+        if($bannerModel){
+             foreach($bannerModel as $ban){
+                    $bannersList[] = array('id' => $ban->id,'avatar' => $ban->photo,'banner_title' => $ban->title); 
+             }
+        }
 
        if($page_number>1){
-                  $offset = $page_size*($page_num-1);
+                  $offset = $page_size*($page_num);
         }else{
               $offset = 0;
         }  
-
-        $allPosts =  $editorsList->orderBy('created_at', 'desc')
-                        ->skip($offset)
-                        ->take($page_size)
-                        ->get()
-                        ->toArray();
+// 
+//         $allPosts =  $editorsList->orderBy('created_at', 'desc')
+//                         ->skip($offset)
+//                         ->take($page_size)
+//                         ->get()
+//                         ->toArray();
 
          // order by desc
+         
+          //AllPosts
+        $allPosts = array();
+        
+         $allPostsModel  = \DB::table('editor_post')
+                            ->orderBy('created_at' , 'desc')
+                            ->skip($offset)
+                             ->take($page_size)
+                            ->get();
+                                   
+        if($allPostsModel){
+             foreach($allPostsModel as $postModels){
+                 $editorInfoModel  = \DB::table('users')
+                            ->where('id' , $postModels ->eid)
+                            ->first();
+                    $likes = 0;
+                    $allPosts[] = array('id' => $postModels->id,
+                                 'image_name_after' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels ->after_img,
+                                 'image_name_before' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels-> before_img,
+                                 'likes' => $likes,
+                                 'editor_details'=>$editorInfoModel
+                              ); 
+             }
+        }
       
         if($allPosts){ 
             
-            return response()->json(['toal_record'=>$toal_record,"status" => true, "code" => 200, "message" => "record found", 'data' => $allPosts]);
+            return response()->json(["status" => true, "code" => 200, "message" => "record found",'all_editors' => $allEditors,'all_banners' => $bannersList, 'all_post' => $allPosts]);
         }else{   
-            return response()->json(['toal_record'=>0,"status" => false, "code" => 404, "message" => "Record not found", 'data' => $input]);  
+            return response()->json(["status" => false, "code" => 404, "message" => "Record not found", 'all_editors' => $allEditors,'all_banners' => $allBanners,'all_post' => $input]);  
         }
     }
 
@@ -625,52 +673,7 @@ class ApiController extends BaseController
     }
 
 
-    public function getMyOrders(Request $request)
-    {
-      
-       // echo "Email:".$request->email;
-        $input = $request->all();
-        //print_r ($input);
-        $validator = Validator::make($request->all(), [
-                    'per_page' => 'required',
-                     'page' => 'required'
-                ]);
-        if ($validator->fails()) {
-            $error_msg = [];
-            foreach ($validator->messages()->all() as $key => $value) {
-                array_push($error_msg, $value);
-            }
-            if ($error_msg) {
-                return array(
-                    'status' => false,
-                    'code' => 201,
-                    'msg' => $error_msg[0],
-                    'user_data' => $request->all()
-                );
-            }
-        }
-      
-             $usermodel  = \DB::table('editor_profiles')
-                            ->get();
-         
-      
-        if($usermodel){
-            $editorsList =  array();
-    
-             foreach($usermodel as $editors){
-                   $imageUrl = "https://edifyartist.com/storage/uploads/editorPortfolio/".$editors->image_name;
-                   $autherName = "Photoshop"; //SoftName
-                    $subTitle = "Best Kalpanic image 4ever";  // Category Name 
-                    $editorImage = "https://edifyartist.com/storage/uploads/banners/manoj_profile.png";  //Editor Image 
-                    
-                    $editorsList[] = array('id' => $editors->id,'avatar' =>  $imageUrl,'post_title' => $editors->title,'total_likes' => $editors->total_likes,"auther_name"=>$autherName,"sub_title"=>$subTitle,"profile_image"=>$editorImage ); 
-             }
-            
-            return response()->json(["status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
-        }else{   
-            return response()->json(["status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'user_data' => $input]);  
-        }
-    }
+  
 
     public function editor_portfolio()
     {
@@ -861,13 +864,6 @@ class ApiController extends BaseController
          $id = $request->portfolio_id;
          $user_id = $request->user_id;
          $islike = $request->islike;
-        //query 1
-        //  $update_likes = EditorPortfolio::where('id',$id)->update([
-        //     'total_likes' => \DB::raw('total_likes+1'),
-        // ]);
-
-        //query 2
-
         if($islike == "0")
         {
             $query = EditorPortfolio::find($id)->increment('total_likes');
@@ -892,5 +888,252 @@ class ApiController extends BaseController
         }
 
 
+    }
+    
+    
+
+
+     public function getAllCategories(Request $request)
+    {
+        $usermodel  = \DB::table('categories')
+                            ->where('status' , 1)
+                            ->get();
+        $categoryList =  array();
+        if($usermodel){
+             foreach($usermodel as $categories){
+                   $editorsPostList =  array();
+                    $etpostlst = \DB::table('editor_profiles') ->where('category_name' , $categories->id)->get();
+                    if($etpostlst){
+                          foreach($etpostlst as $editorPosts){
+                             $image_url =  $editorPosts->image_base_url.$editorPosts->image_name;
+                             $editorsPostList[] = array('id'=>$editorPosts->id,'title'=>$editorPosts->title,'image_url'=>"https://edifyartist.com/storage/uploads/editorPortfolio/".$image_url);
+                        }
+                    }
+                 
+                 $categoryList[] = array('id' => $categories->id,'category_name' => $categories->category_name,'editors_post' =>$editorsPostList); 
+             }
+            return response()->json(["status" => true, "code" => 200, "msg" => "Successfully logged in.", 'categories_list' => $categoryList]);
+        }
+      
+        return response()
+        ->json([
+            'status' => false
+        ]);
+    }
+
+
+  public function uploadImages(Request $request)
+    {
+    	if ($request->file('imagefile')) {        
+
+            $photo = $request->file('imagefile');
+            $destinationPath = storage_path('uploads');
+            $photo->move($destinationPath, time().$photo->getClientOriginalName());
+            $photo_name = time().$photo->getClientOriginalName();
+            
+            $data = [
+                    "success"=>"1", 
+                    "msg"=>"Image uplaoded successfully",
+                    "imageurl"=>url('storage/uploads/'. $photo_name)
+                ];
+                
+        }  
+        else
+        {
+            $data=array("success"=>"0", "msg"=>"Image Type Not Right");
+        }
+        return $data;
+	}
+
+
+// Place Orders 
+    public function place_order(Request $request){
+        
+        $validator = Validator::make($request->all(), [
+                'user_id' => 'required',
+                'deposit_amount' => 'required',
+                'transaction_id' => 'required', 
+                'payment_mode' => 'required',
+                'payment_status' => 'required'
+            ]); 
+        
+       
+        // Return Error Message
+        if ($validator->fails()) {
+                    $error_msg  =   [];
+            foreach ( $validator->messages()->all() as $key => $value) {
+                        array_push($error_msg, $value);     
+                    }
+                            
+            return Response::json(array(
+                'code' => 201,
+                'status' => false,
+                'message' => $error_msg
+                )
+            );
+        }
+
+        $orderId = mt_rand(100000000, 999999999);
+        $data['user_id'] = $request->user_id;
+        $data['editor_id'] = $request->editor_id;
+        $data['editor_status'] = 1; //1="pending" , 2="confirmed", 3="completed" , 4= "Approved by Edify" , 5 =. Accepted by customer""
+        $data['customer_original_image'] = $request->original_customer_image;
+        $data['customer_reference_image'] = $request->original_customer_ref_image;
+        $data['editor_after_work_image'] = "";
+        $data['payment_mode'] = $request->payment_mode;
+        $data['status'] = 1;
+        $data['total_price'] = $request->deposit_amount;
+        $data['discount_price'] = $request->deposit_amount;
+        $data['order_id'] = $orderId;
+       $data['order_details'] = $request->customer_notes;
+       $data['created_at'] = date('Y-m-d');
+       $data['updated_at'] = date('Y-m-d');
+          
+        \DB::table('orders')->insert($data);
+      return response()->json(
+                        [ 
+                            "status"=>true,
+                            "code"=>200,
+                            "message" => "Transaction success, will get in touch with you"
+                        ]
+                    );
+       
+  }
+
+     public function getMyOrders(Request $request)
+    {
+      
+       // echo "Email:".$request->email;
+        $input = $request->all();
+        //print_r ($input);
+        $validator = Validator::make($request->all(), [
+                    'user_id' => 'required'
+                ]);
+        if ($validator->fails()) {
+            $error_msg = [];
+            foreach ($validator->messages()->all() as $key => $value) {
+                array_push($error_msg, $value);
+            }
+            if ($error_msg) {
+                return array(
+                    'status' => false,
+                    'code' => 201,
+                    'msg' => $error_msg[0],
+                    'user_data' => $request->all()
+                );
+            }
+        }
+      
+             $usermodel  = \DB::table('orders')
+                            ->where('user_id' , $request->user_id)
+                            ->get();
+         
+      $editorsList =  array();
+        if($usermodel){
+            
+             foreach($usermodel as $editors){
+                   $imageUrl = $editors->customer_original_image;
+                   $totalPrice = $editors->total_price; 
+                   $orderId = $editors->order_id;
+                   $editorStatus = $editors->editor_status; 
+                   $orderDetails = $editors->order_details; 
+                   $createdDate = $editors->created_at; 
+                    $udpatedDate = $editors->updated_at; 
+                    $editorsList[] = array(
+                                      'id' => $orderId,
+                                      'avatar' =>  $imageUrl,
+                                      'total_price' => $totalPrice,
+                                     'order_status' => $editorStatus,
+                                     'orderDetails'=>$orderDetails,
+                                     'created_at'=>$createdDate,
+                                    'udpated_at'=>$udpatedDate); 
+             }
+            
+            return response()->json(["status" => true, "code" => 200, "msg" => "Successfully logged in.", 'data' => $editorsList]);
+        }else{   
+            return response()->json(["status" => false, "code" => 401, "msg" => "User doesn't exsist.", 'data' => $editorsList]);  
+        }
+    }
+
+     
+
+  //ALL Editor Post
+  
+   public function getEditorPosts(Request $request){
+
+         $validator = Validator::make($request->all(), [
+                    'editor_id' => 'required' 
+                ]);
+        if ($validator->fails()) {
+            $error_msg = [];
+            foreach ($validator->messages()->all() as $key => $value) {
+                array_push($error_msg, $value);
+            }
+            if ($error_msg) {
+                return array(
+                    'status' => false,
+                    'code' => 201,
+                    'message' => $error_msg[0],
+                    'data' => $request->all()
+                );
+            }
+        }
+
+         $allPosts = array();
+         $allPostsModel  = \DB::table('editor_post')
+                            ->where('eid',$request->editor_id)
+                            ->orderBy('created_at' , 'desc')
+                            ->get();
+    
+        if($allPostsModel){
+             foreach($allPostsModel as $postModels){
+                 $editorInfoModel  = \DB::table('users')
+                            ->where('id' , $postModels ->eid)
+                            ->first();
+                    $likes = 0;
+                    $allPosts[] = array('id' => $postModels->id,
+                                 'image_name_after' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels ->after_img,
+                                 'image_name_before' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels-> before_img,
+                                 'likes' => $likes,
+                                 'editor_details'=>$editorInfoModel
+                              ); 
+             }
+       }
+        if($allPosts){ 
+            return response()->json(["status" => true, "code" => 200, "message" => "record found", 'all_post' => $allPosts]);
+        }else{   
+            return response()->json(["status" => false, "code" => 404, "message" => "Record not found", 'all_post' => $allPosts]);  
+        }
+       
+    }
+   
+   
+     //Update profile
+      public function updateProfile(Request $request){
+
+         $validator = Validator::make($request->all(), [
+                    'user_id' => 'required' 
+                ]);
+        if ($validator->fails()) {
+            $error_msg = [];
+            foreach ($validator->messages()->all() as $key => $value) {
+                array_push($error_msg, $value);
+            }
+            if ($error_msg) {
+                return array(
+                    'status' => false,
+                    'code' => 201,
+                    'message' => $error_msg[0],
+                    'data' => $request->all()
+                );
+            }
+        
+        }
+        
+           return array(
+                    'status' => true,
+                    'code' => 200,
+                    'message' => "Profile updated successfully"  
+                    );
     }
 }

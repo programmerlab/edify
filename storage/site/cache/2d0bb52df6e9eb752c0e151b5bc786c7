@@ -1,0 +1,701 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2300:"GTI [2016-2019] price in Kochi; Volkswagen GTI [2016-2019] Price in Kochi ... Kochi, Kerala 682034. Volkswagen Polo GTI Engine Specifications & Transmission The meaty 1.8 litre TSI, four cylinder in-line petrol engine develops towering power of 189bhp between 5400 to 6200rpm. Volkswagen Polo Price in Kochi. Volkswagen Polo - Kochi, Kerala - Diesel - 2010 - 145,000 kms. 8 March 2020: Check Latest Used Volkswagen Polo GTI Cars in India (9 results). Volkswagen Polo Price in Kochi. Reduced price 0. Polo Gt for sale in Kerala. Publication date. Everything you need to know on one page! Polo for sale in Kerala. 5.83 … Volkswagen Polo on road price in Pathanamthitta starts at ₹ 6.72 Lakh and goes upto ₹ 11.03 Lakh. Volkswagen Polo GTI Price in India starts at ₹ 25,99,000 - ₹ 25,99,000 - Check Volkswagen Polo GTI on road price, reviews variants, specifications, features, colors, photos & videos . Petrol Polo price in Kochi starts at ₹ 6.62 Lakhs. Read GTI Reviews, view Mileage, Images, Specifications, Variants Details & get GTI latest news. Volkswagen GTI was available at Rs 20.68 Lakh in New Delhi (ex-showroom). Check Volkswagen dealers list in Kochi with EMI options, running and maintenance cost at ZigWheels.com Second hand Volkswagen Polo for sale in Kerala. Business listings of Polo T Shirt manufacturers, suppliers and exporters in Kochi, Kerala along with their contact details & address. On the other hand, Volkswagen Polo GT TDI is the top-end version that costs you ₹ 11.03 Lakh.  OLX Kerala offers online local classified ads for Cars in Kerala. Check out Polo GT Variants Images Mileage Interior Colours at AutoPortal.com For Volkswagen Polo offers in Kozhikode, please contact your closest dealership. Find the widest range of used volkswagen polo price kerala. OLX Kerala offers online local classified ads in Kerala. Check Volkswagen Polo on road price at all Volkswagen dealers in Kochi, Kerala. Volkswagen Polo price in Kochi is 5.82 Lakhs on 8 March 2020. 5.82 Lakh. Sell your used auto, used bikes, used car, used motorcycles and other good condition vehicles with OLX Kerala. As for the new Volkswagen Polo GTI, India gets the three-door version priced at Rs 25.65 lakh (ex-showroom, Thane). Volkswagen Polo - Kochi, Kerala - Diesel - 2010 - 145,000 kms. ";s:7:"keyword";s:24:"polo gti price in kerala";s:5:"links";s:6155:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-nightclubs-in-dubai-2019'>Best Nightclubs In Dubai 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=commercial-tuna-fishing-boats-for-sale'>Commercial Tuna Fishing Boats For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-ford-dealer-in-nj'>Best Ford Dealer In Nj</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=radio-flyer-classic-red-dual-deck-tricycle-walmart'>Radio Flyer Classic Red Dual Deck Tricycle Walmart</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ridge-racer-unbounded-system-requirements'>Ridge Racer Unbounded System Requirements</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tonka-dump-truck-ride-on'>Tonka Dump Truck Ride On</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-become-an-owner-operator'>How To Become An Owner Operator</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=where-was-david-bushnell-born'>Where Was David Bushnell Born</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=who-sang-gloria-in-the-70%27s'>Who Sang Gloria In The 70's</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=davita-pre-employment-assessment-answers'>Davita Pre Employment Assessment Answers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2002-to-2005-ford-thunderbird-specs'>2002 To 2005 Ford Thunderbird Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-chevy-2500-release-date'>2020 Chevy 2500 Release Date</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=destination-america-renewed-shows-2018'>Destination America Renewed Shows 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-the-spiritual-meaning-of-joy'>What Is The Spiritual Meaning Of Joy</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=car-next-door-baby-seat'>Car Next Door Baby Seat</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-am-legend-2-release-date'>I Am Legend 2 Release Date</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=exide-battery-12v-70ah-price'>Exide Battery 12v 70ah Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=la-crosse-wi-upcoming-events'>La Crosse Wi Upcoming Events</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=What%27s-in-My-Toy-Box%3F-A...'>What's In My Toy Box? A...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=barrier-nursing-meaning-in-hindi'>Barrier Nursing Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-make-a-redstone-repeater-work'>How To Make A Redstone Repeater Work</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=box-truck-for-sale-in-jefferson-ga'>Box Truck For Sale In Jefferson Ga</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2009-suzuki-boulevard-m50-gas-mileage'>2009 Suzuki Boulevard M50 Gas Mileage</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Someone-to-Call-My-Lover'>Someone To Call My Lover</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=construction-simulator-2-ps4-release-date'>Construction Simulator 2 Ps4 Release Date</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=schwinn-occ-stingray-rear-tire'>Schwinn Occ Stingray Rear Tire</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bmw-x5-vs-mercedes-glc'>Bmw X5 Vs Mercedes Glc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=host-plant-meaning-in-hindi'>Host Plant Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=florida-tracks-and-trails-phone-number'>Florida Tracks And Trails Phone Number</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=liev-schreiber-movies-and-tv-shows'>Liev Schreiber Movies And Tv Shows</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=basshunter-now-you%27re-gone-cast'>Basshunter Now You're Gone Cast</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-bmw-i8-roadster-for-sale'>2018 Bmw I8 Roadster For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mile-ho-tum-humko-song-download-mp4'>Mile Ho Tum Humko Song Download Mp4</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=keeway-cafe-racer-152-philippines-review'>Keeway Cafe Racer 152 Philippines Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-morgan-4%2F4-for-sale-uk'>Used Morgan 4/4 For Sale Uk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=isolation-quotes-in-heart-of-darkness'>Isolation Quotes In Heart Of Darkness</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=st-augustine-alligator-farm-sloths'>St Augustine Alligator Farm Sloths</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1967-chrysler-station-wagon-for-sale'>1967 Chrysler Station Wagon For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=gattu-battu-ki-pakki-yaari'>Gattu Battu Ki Pakki Yaari</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sous-le-ciel-de-paris-lyrics-zaz'>Sous Le Ciel De Paris Lyrics Zaz</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Star-Wars%3A-The-Force-Unleash...'>Star Wars: The Force Unleash...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-police-outlandos-d%27amour-songs'>The Police Outlandos D'amour Songs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-storm-is-over-now-kirk-franklin-lyrics'>The Storm Is Over Now Kirk Franklin Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=networking-all-in-one-for-dummies-7th-edition-pdf-download'>Networking All-in-one For Dummies 7th Edition Pdf Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tractor-parts-name-list-pdf'>Tractor Parts Name List Pdf</a>,
+";s:7:"expired";i:-1;}

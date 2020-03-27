@@ -96,6 +96,9 @@
                                 <div class="form-group">
                                     <label for="t1" class="uploadBtn"><i class="fa fa-upload"></i> Upload</label>
                                 </div>
+                               <?php 
+                                     echo $test_imgs[0]->images;
+                               ?>
                                 <a href="{{ asset('storage/uploads/editor_test_imgs/'.$test_imgs[0]->images)  }}" class="dloadRefBtn btn" download>Download Reference #1</a>
                             </div>
                     </div>

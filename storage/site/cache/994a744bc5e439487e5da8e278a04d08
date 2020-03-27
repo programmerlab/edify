@@ -1,0 +1,677 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4247:"German car repairs Dubai Al Quoz. ABOUT RCCR MOTORS . PAB Auto service center al Quoz Dubai is one of the best auto repair service in uae Dubai provides service like air conditioning repair, best car service RCCR Motors is a full-service garage in Dubai specializing in German and British cars ranging from BMW, Audi, and Volkswagen to everything in between. High Range Garage is the best auto garage in Al Quoz, Dubai. Get car service, car repair, vehicle maintenance, auto repair, vehicle repair in low price. bodyrepair.ae. Bright Spark the Best Auto maintenance Garage & service Center in Dubai, UAE, especially for car repair , We servicing automotive needs since 1993 with a vision to be the biggest multi-brand automotive services provider in the UAE. To mention all the services is a little bit difficult as there is no work which can not be done by Dubai Repairs. BELOW ARE SOME OF THE MANY AUTO REPAIR SERVICES WE OFFER: General Auto Repair & Maintenance Deutsches Auto Service Centre is one of the most well equipped European car specialist located in Dubai, Al Quoz 3, We offer high level servicing & maintenance on all top-end European models, such as Mercedes Benz, Ferrari, Lamborghini , Maserati, Range Rover, BMW, Porsche, Rolls-Royce, Bentley, Mini and VAG-Group. Claas Parts Dubai UAE Welcome to Bespoke Autocare, Dubai's leading vehicle cosmetic repair centre Please Select A Website. High Range Garage best auto reapir Dubai is certified in all European, American & Japanese Cars repairing. Bespoke Auto Care is a leading automotive body repair workshop based in Dubai. We provide a complete range of car servicing and repair services for all makes and models of car and suv’s. PAB Auto service center al Quoz Dubai is one of the best auto repair service in uae Dubai provides service like air conditioning repair, best car service We have a big number of manpower who are serving Dubai with us for many years. Mechanic Auto Shop Theme. Based in Mussafah, Abu Dhabi and a partnership with Cell Auto Workshop LLC, ARS will be delivering the full range of SMART Repair services 6-days a week, […] Our car mechanics are trained in the most up to date technology, making them able to diagnose the issue and provide you with affordable solutions. We are equipped with the latest tools and technology and offer the best car repair in al quoz. Get cheapest car repair and the best car garage in Al Quoz, Dubai from Rapido Garage. Phone: 04 347 0400. info@aaadubai.com. Listings of companies providing garage services, auto garage services, car garage services in AL QUOZ at Yellowpages.ae. ABOUT US. Car Air Condition Repair in Dubai The car air conditioning system is highly important to the car owner’s comfort, especially in Dubai where it’s steamy hot. Book your service and save 80% on car repair Dubai,UAE Get the location, contact details and opening hours for Al Tayer Motors Ford in Dubai. We recommend vehicle owners complete a climate installation diagnostics test at least twice a year with our team of experts. German car garage for european cars in UAE Dubai . Our modern car service centre in Al Quoz, Dubai also provides a broad range of general car repair and maintenance services for Italian, American, Japanese, Korean and French cars, as well as hybrid and electric cars. AAA Service Center 4th Street, Industrial Area 3 Al Quoz, Dubai, U.A.E. Car Repair In Al Quoz Superior Performance provides general car repair services in Dubai for all major car brands. Dubai Repairs is operating in many different sectors of maintenance work in Dubai.  Our services range from small dent removal to full body repaints. Services by Dubai Repairs in Al Quoz Dubai. WAGEN KENNER state of the art workshop in Al Quoz, Dubai, houses the technical acumen and diagnostic equipment to deliver unrivalled levels of professionalism and quality at significantly lower costs than those of a main dealer. Car Service, Mebar Auto, Spare Parts, Spare Parts in Dubai, Car Repair Workshop in Al Quoz Industrial 2, Car Repair Workshops in Dubai, Dubai Workshps, Car repairs in Dubai, Workhsops near me, Car Service Center in in Al Quoz Industrial 2 Dubai, Mechanic Near me, Mechanic in Dubai, Car Body Shop in, Car Repair Workshops. ";s:7:"keyword";s:24:"car repair dubai al quoz";s:5:"links";s:3039:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-accord-hybrid-driving-tips'>Honda Accord Hybrid Driving Tips</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sister-hazel-somewhere-more-familiar'>Sister Hazel Somewhere More Familiar</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=is-badminton-good-for-heart'>Is Badminton Good For Heart</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bandit-queen-meaning-in-marathi'>Bandit Queen Meaning In Marathi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=separate-crossword-clue-4-7'>Separate Crossword Clue 4 7</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=roadmaster-sleeper-truck-for-sale'>Roadmaster Sleeper Truck For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=farming-simulator-17-multiplayer-setup-xbox-one'>Farming Simulator 17 Multiplayer Setup Xbox One</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lexus-rx-350-premium-package-vs-luxury-package'>Lexus Rx 350 Premium Package Vs Luxury Package</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=splinter-full-movie-in-hindi-dubbed-download'>Splinter Full Movie In Hindi Dubbed Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-draw-a-canoe-easy-step-by-step'>How To Draw A Canoe Easy Step By Step</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-2018-indian-scout-bobber-for-sale'>Used 2018 Indian Scout Bobber For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=aeon-flux-full-movie-download-in-hindi-480p'>Aeon Flux Full Movie Download In Hindi 480p</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Pigeon-3-Burner-Gas-Stov...'>Pigeon 3 Burner Gas Stov...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=george-washington-university-admissions-officers'>George Washington University Admissions Officers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-vx-deluxe-performance-upgrades'>Yamaha Vx Deluxe Performance Upgrades</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=different-types-of-workflow-patterns'>Different Types Of Workflow Patterns</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=funny-animated-short-films-youtube'>Funny Animated Short Films Youtube</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vir-the-robot-boy-part-3'>Vir The Robot Boy Part 3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hyundai-creta-7-seater-2019-price-in-india'>Hyundai Creta 7 Seater 2019 Price In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-old-was-leonardo-dicaprio-in-this-boy%27s-life'>How Old Was Leonardo Dicaprio In This Boy's Life</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=glenn-miller-in-the-mood-sheet-music'>Glenn Miller In The Mood Sheet Music</a>,
+";s:7:"expired";i:-1;}

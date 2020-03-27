@@ -2,7 +2,11 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="assets/images_dashboard/user.png" width="48" height="48" alt="User" />
+	@if($profile_image ?? ' ')
+                    <img src="{{ $profile_image ?? ' ' }}" width="48" height="48" alt="User" />
+	@else
+	<img src="assets/images_dashboard/user.png" width="48" height="48" alt="User" />
+	@endif
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo Session::get('name'); ?></div>

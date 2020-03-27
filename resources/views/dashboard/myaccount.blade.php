@@ -15,7 +15,7 @@
     box-shadow: 0px 0px 35px -15px #551515;
     position: relative;
     text-align: center;
-        }
+        } 
         .certiName{
             display: block;
             position: relative;
@@ -64,7 +64,7 @@
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active in" id="edit">
                             <div class="container-fluid m-t-15 p-l-20 p-r-20">
-                                <form action="{{ url('update_editor_info')}}" method="post">
+                                <form action="{{ url('update_editor_info')}}" method="post" enctype="multipart/form-data">
                                 {{csrf_field()}}
                                     <div class="form-group form-float">
                                         <div class="form-line">
@@ -89,6 +89,14 @@
                                             <input type="text" id="mob" name="mob" class="form-control" value="{{ isset($acc_details['phone']) ? $acc_details['phone'] : '' }}">
                                             <label class="form-label">Mobile</label>
                                         </div>
+                                    </div>
+<div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="file" id="profile_image" name="profile_image"  class="form-control" value="{{ isset($acc_details['phone']) ? $acc_details['phone'] : '' }}">
+                                            <label class="form-label">My Profile Pic</label>
+                                        </div>
+					<img src={{$profile_image}} width="10%">
+
                                     </div>
                                     <button type="submit" class="btn btn-primary waves-effect">Save</button>
                                 </form>

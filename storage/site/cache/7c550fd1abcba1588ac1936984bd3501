@@ -1,0 +1,686 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4144:"The number of grains in a bat is a much debated issue (a grain is regarded as a year in the life of a tree) and there was a school of thought that 8 straight grains on the face produced the perfect bat. 0. the lines on the cricket bat handle shows what level of ball it can play with. These stunning, contemporary cricket bats are built for the modern, stylish batsman who likes to hit big. Provision is made for cricket, football and other games in a number of the parks. Cricket Bat Willow Grading: In the previous post, I wrote about the whole Bat Manufacturing process of the Cricket Bat. 0. I made the scoreboard, cricket bat, stumps, bails and pads all out of fondant a few days before so that they had time to dry. Ashleigh Barty. How to Play Cricket. Top 10 Cricket Bats of 2019. Cricket is one of the most popular games in the world, with billions of fans in the Subcontinent, the U.K., Australia, New Zealand and many other countries. 53. how many grains should there be in cricket bat? 181. 47. I left the pads to dry on a piece of kitchen paper on a cardboard tube so that they would dry with a curve to them. The company owns a park with football and cricket grounds. ... A remedy for a hard bat can be the application of some linseed oil on to the face and giving the bat a few days to absorb it or you might like to get back to the manufacturer and get some professional advice. It is recommended that you use a lighter bat when you are starting out. Find out how to choose the right size cricket bat for your child. As a batsman in cricket, it's your job to use the bat to defend the wicket from being hit by the ball. Learn how to pick the right length, test the weight and explode a few bat buying myths! The bat is the stick used to hit the ball to score runs. Looking to climb the batting averages in 2020? At cricket he was equally good as a bat and as a wicket-keeper. The Grain width. But when my master grasps me and makes me hit a cricket ball, all the people cheer and clap because he is a skilful batsman. Share this on WhatsAppCricket: Cricket is the most famous International Game Cricket is a bat and ball game which has three aspects: Batting, Bowling and Fielding Cricket is played between 2 teams with 11 players in each team The game is an outdoor game being referred by three Umpires Cricket … Here is the Sussex county cricket ground. Few best cricket bat grip texture follows: (1) Ripple/Wave/Aqua Actually this is been used by Both SS and GM for their bats and we have no complaints whatsoever. I am nothing much to look at. Find out how to choose the right size cricket bat for your child. If you play cricket for India, money is bound to come, and with IPL in and match money of the Ranjhi trophy, I think money is there. Few Lines on Cricket in English • Cricket is one of the most famous loved games in the world. I just think it's great in cricket to come into a team environment. The ICC Cricket World Cup is the international championship of One Day International (ODI) cricket.The event is organised by the sport's governing body, the International Cricket Council (ICC), every four years, with first qualification rounds leading up to a semifinals and then finals tournament. It's the first time I've ever experienced it. By Charbel Coorey. Size 6, size 5 and Harrow cricket bats are by far the most common junior cricket bat sizes, as these befit the age that most aspiring cricketers start to take up the game at school or youth level. 62. ... and not just on cricket bats and groin protectors. 1) Cricket is a bat and ball game played between two teams with 11 players each. ... Roy tells Sid that her presence at a few cricket matches might just persuade Kevin the bowler to join Ambridge next season. In cricket two team comprising of 11 players each play agains the lines on the cricket bat handle shows what level of ball it can play with. How to Bat in Cricket. It’s not so hard on the gloves as well and gives a good gripping feel to the bat. There are few things more exciting for cricket lovers than selecting a brand new bat, or finding out what the top sticks are for the year! ";s:7:"keyword";s:24:"few lines on cricket bat";s:5:"links";s:4138:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2018-ford-edge-trim-levels'>2018 Ford Edge Trim Levels</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1992-bayliner-capri-for-sale'>1992 Bayliner Capri For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=yamaha-boats-for-sale-in-indiana'>Yamaha Boats For Sale In Indiana</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=blackwoods-campground-acadia-national-park'>Blackwoods Campground Acadia National Park</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=english-to-telugu-meaning-translation'>English To Telugu Meaning Translation</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=freightliner-m2-box-truck-specs'>Freightliner M2 Box Truck Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=https-book-princess-com-cruisepersonalizer-summary-page-mm-active'>Https Book Princess Com Cruisepersonalizer Summary Page Mm Active</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Secret-Marvels-of-the-Worl...'>Secret Marvels Of The Worl...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Phineas-and-Ferb-Get-Bust...'>Phineas And Ferb Get Bust...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=3-ton-mitsubishi-canter-used-for-sale'>3 Ton Mitsubishi Canter Used For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=shop-kelsey-co-uk-ships'>Shop Kelsey Co Uk Ships</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=indian-ftr-1200-aftermarket-exhaust'>Indian Ftr 1200 Aftermarket Exhaust</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=construction-simulator-2-ps4-release-date'>Construction Simulator 2 Ps4 Release Date</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-writings-on-the-wall-lyrics-ok-go'>The Writings On The Wall Lyrics Ok Go</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=when-was-biscayne-national-park-established'>When Was Biscayne National Park Established</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-a-straight-truck-driver'>What Is A Straight Truck Driver</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=coco-full-movie-in-english-youtube'>Coco Full Movie In English Youtube</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-yamaha-fx-waverunner-for-sale'>Used Yamaha Fx Waverunner For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=senior-rv-parks-near-me'>Senior Rv Parks Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=farming-simulator-19-cheats-xbox-one'>Farming Simulator 19 Cheats Xbox One</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=engine-block-repair-near-me'>Engine Block Repair Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=birds-on-branch-silhouette-tattoo'>Birds On Branch Silhouette Tattoo</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=schwinn-loop-folding-bike-manual'>Schwinn Loop Folding Bike Manual</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=strings-of-life-soul-central'>Strings Of Life Soul Central</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=animal-vegetable-miracle-pumpkin-soup'>Animal Vegetable Miracle Pumpkin Soup</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-prince-of-egypt-musical'>The Prince Of Egypt Musical</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2002-to-2004-thunderbirds-for-sale'>2002 To 2004 Thunderbirds For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=is-breezer-good-for-health-in-telugu'>Is Breezer Good For Health In Telugu</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=virtual-villagers-4-puzzle-14'>Virtual Villagers 4 Puzzle 14</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=inside-a-klingon-bird-of-prey'>Inside A Klingon Bird Of Prey</a>,
+";s:7:"expired";i:-1;}

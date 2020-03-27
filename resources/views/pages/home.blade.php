@@ -99,34 +99,34 @@
             <h2 class="sectiontitle">Sample works</h2>
             <div class="flexi">
                 <div class="items">
-                    <img src="assets/img/11.jpg" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/1.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/12.jpg" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/2.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/13.png" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/3.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/11.jpg" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/4.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/12.jpg" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/5.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/13.png" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/6.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/11.jpg" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/7.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/12.jpg" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/8.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/13.png" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/9.jpg" alt="">
                 </div>
                 <div class="items">
-                    <img src="assets/img/12.jpg" alt="">
+                    <img width="220" height="250" border="0" align="center" src="assets/img/sample_work/final_10.jpg" alt="">
                 </div>
             </div>
         </div>

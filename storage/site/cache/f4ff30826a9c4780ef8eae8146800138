@@ -1,0 +1,680 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4558:"Antonio Banderas Cast. If you need a cast for a broken arm, to mend after knee surgery, or for another injury, you may wear it for several weeks or months. Cast definition is - to cause to move or send forth by throwing. Skin ist ein Filmdrama von Guy Nattiv, das am 8.September 2018 beim Toronto International Film Festival seine Premiere feierte und im Februar 2019 bei den Internationalen Filmfestspielen Berlin gezeigt wurde. Marisa Paredes Cast. Formulated to be entirely skin safe mold materials (both are certified skin safe), these products are used for; The film was produced through El Deseo for a … How to use cast in a sentence. Toggle navigation A brilliant plastic surgeon creates a synthetic skin that withstands any kind of damage. The Skin I Live In was the first film Almodóvar and Banderas made together in 21 years, after having been regular collaborators in the 1980s. Search. Garth Franklin - Monday, August 23rd 2010 11:17 am. The Skin I Live In on DVD March 6, 2012 starring Antonio Banderas, Elena Anaya, Marisa Paredes, Jan Cornet. Skin is a dynamic organ, with new growth constantly replacing dead skin cells. We want to know what your #DBLTake is on the story. With Antonio Banderas, Elena Anaya, Jan Cornet, Marisa Paredes. Check out the latest photos and bios of the cast and filmmakers of The Skin I Live In. YouTube Live - Watch great live streams, such as live gaming, live music, live sports, live news, and Google Hangouts. Bringing the latest in trending news directly to your social feeds. Rest of cast listed alphabetically: Guillermo Carbajo ... Amigos (uncredited) David Claudio ... Amigos (uncredited) Violaine Estérez ... Colega del Dr. Ledgard (uncredited) Sheyla Fariña Roberto Álamo Cast. YouTube Live - Watch great live streams, such as live gaming, live music, live sports, live news, and Google Hangouts. Thierry Jonquet Screenplay. His guinea pig: a mysterious and volatile woman who holds the key to his obsession. Film critic Chris Stuckmann reviews The Skin I Live In, starring Antonio Banderas and Elena Anaya. The Skin I Live In (2011) Cast. The cast keeps your bone or joint from moving so it can heal. Live About; Home Trending History Get YouTube Premium His guinea pig: a mysterious and volatile woman who holds the key to his obsession. Smooth-On Alja-Safe® alginate and Body Double® silicone rubber have become Hollywood favorites and industry standards for capturing / reproducing detail from the human body. By. 37,481 talking about this. In fact, your body may get rid of as many as 40,000 skin cells every day. The Skin I Live In Trailer 2011 Official Cast: Antonio Banderas, Elena Anaya, Marisa Paredes, Blanca Suarez, Jan Cornet, Roberto Alamo, Eduard … A plastic surgeon hunts down the man who raped his daughter. But when you wear a cast, this dead skin doesn't get a chance to flake off, and after cast removal, there is usually an abundance of rough, scaly, itchy and often smelly skin. The Skin I Live In. Elena Anaya Cast. Roberto Alamo as Zeca; Antonio Banderas as Robert; Marisa Paredes as Marilia; Elena Anaya as Vera; Blanca Suarez as Norma; Jan Cornet as Vicente; Directed by Pedro Almodvar; Written by Almodovar; Drama, Foreign, Horror, Mystery, Thriller The Skin I Live In 2011 16+ 2h Cannes Film Festival Award-winning Movies A plastic surgeon seeks to overcome the grief of his late wife's disfigurement in a fiery car crash by inventing skin … Directed by Pedro Almodóvar. Directed by Pedro Almodovar. His guinea pig: a mysterious and volatile woman who holds the key to his obsession. Jan Cornet Cast. Synonym Discussion of cast.  Cast & Crew. A brilliant plastic surgeon creates a synthetic skin that withstands any kind of damage. The Skin I Live In Cast & Crew Credits: Pedro Almodovar Antonio Banderas Elena Anaya Marisa Paredes Jan Cornet Roberto Alamo Sort by: Pedro Almodóvar Director, Screenplay Producer. His latest effort (as usual in Spanish with English subtitles) is no exception, even tho he gives most of the screen time to his most accomplished discovery and frequent star, Antonio Banderas (seemingly one of the few Hispanic … Cast Antonio Banderas Elena Anaya Marisa Paredes Jan Cornet Roberto Álamo Eduard Fernández José Gómez Blanca Suárez Susi Sánchez Bárbara Lennie Fernando Cayo Chema Ruiz Buika Ana Mena Teresa Manresa Fernando Iglesias Agustín Almodóvar Miguel Almodóvar Marta R. Mahou Carmen Machi A brilliant plastic surgeon, haunted by past tragedies, creates a type of synthetic skin that withstands any kind of damage. ";s:7:"keyword";s:23:"the skin i live in cast";s:5:"links";s:3358:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-causes-automatic-transmission-to-fail'>What Causes Automatic Transmission To Fail</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-compact-cars-2015-europe'>Best Compact Cars 2015 Europe</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=let-my-love-open-the-door-lyrics-genius'>Let My Love Open The Door Lyrics Genius</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-class-a-motorhome-under-35-feet'>Best Class A Motorhome Under 35 Feet</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=society-of-automotive-engineers-automation-levels'>Society Of Automotive Engineers Automation Levels</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=case-310-dozer-for-sale'>Case 310 Dozer For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-car-for-traveling-long-distances'>Best Car For Traveling Long Distances</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Zach-Galifianakis-Live-at-th...'>Zach Galifianakis Live At Th...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=scr950-for-sale-near-me'>Scr950 For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=avicii-sky-full-of-stars-live'>Avicii Sky Full Of Stars Live</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=explorer-of-the-seas-rooms'>Explorer Of The Seas Rooms</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=beyonce-best-thing-i-never-had-video-download'>Beyonce Best Thing I Never Had Video Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mercury-marauder-engine-for-sale'>Mercury Marauder Engine For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=when-was-the-uss-triton-built'>When Was The Uss Triton Built</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-girl-with-the-dragon-tattoo'>The Girl With The Dragon Tattoo</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=waiting-for-godot-summary-act-1'>Waiting For Godot Summary Act 1</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rock-region-metro-bus-schedules'>Rock Region Metro Bus Schedules</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=most-reliable-luxury-cars-under-20k'>Most Reliable Luxury Cars Under 20k</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=working-of-hydrogen-fuel-cell'>Working Of Hydrogen Fuel Cell</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fiat-india-automobiles-private-limited-pune%2C-maharashtra'>Fiat India Automobiles Private Limited Pune, Maharashtra</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2006-honda-aquatrax-for-sale'>2006 Honda Aquatrax For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=e85-fuel-advantages-and-disadvantages'>E85 Fuel Advantages And Disadvantages</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-respond-to-negative-comments-on-facebook-examples'>How To Respond To Negative Comments On Facebook Examples</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rv-lots-for-sale-texas'>Rv Lots For Sale Texas</a>,
+";s:7:"expired";i:-1;}

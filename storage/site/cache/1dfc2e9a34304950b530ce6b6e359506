@@ -1,0 +1,681 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4977:"The NEW gantry cranes below crane can be supplied with either a 415v chain or wire rope hoist. 50 ton bridge crane is widely used in many industries for loading items safely and efficiently, such as the manufacturing industry, assembly, and maintenance industry, etc. There are many ways that you can locate o Demag’s overhead crane portfolio includes single and double-girder overhead traveling cranes and suspension cranes. 5 ton Overhead Crane 5 ton overhead crane price 5 ton overhead crane for Sale Price is $3,700 and above, mainly determined by crane span and lifting height. make offer - kone overhead bridge crane 10-ton 47' wide "remote controlled" 10 Ton x 36' Span Kone Top Running Single Girder Bridge Crane HOIST NOT INCLUDED $10,750.00 New overhead gantry crane builders and manufacturers new crane for sale uk built, 2015 crane price list. As a heavy duty crane, it is generally designed as double girder overhead crane, which has large loading capacity. You currently must purchase an Ellsen 50 ton bridge crane for sale? 50 ton gantry crane is a type of large hoist equipment. It is widely applied for loading, unloading and moving heavy materials in the manufacturing, construction, installation, inspection, and … Buy or sell machinery & equipment quickly & easily - MachineSales.com The top countries of suppliers are Malaysia, China, and Philippines, from which the percentage of 50 ton mobile crane supply is … GUIDE ONLY... For the 2020 price list, please see our new website! Of course, not all factory have busy and frequently work to do by 50 tons dual girder eot crane or double beam bridge crane 50 ton in European type. We offer various styles of overhead bridge cranes, available in different configurations and designs to suit varied job sites and lifting requirements. Aimed at the usually and regular work conditiion, we also design several types common 50 ton overhead crane for sale for our customers. Make Offer - Street Crane Complete 5-Ton Overhead Crane Kit - Up to 40 foot Span VFD Controls Wright 3 Ton 41' 3" Single Girder Overhead Bridge Crane Underhung $6,500.00 Material Handling Items - Bridge & Overhead Cranes for sale listings - We have 41 listings for Bridge & Overhead Cranes listed below. This kind of crane system mainly includes lifting mechanism, travelling mechanism, metal structure and electric parts. In addition, as the manufacturer, we can provide the customers various gantry cranes. 50 ton overhead crane has a highly strong loading capacity from us. Get contact details & address of companies manufacturing and supplying Overhead Crane, Overhead Bridge Cranes across India. Find here Overhead Crane, Overhead Bridge Cranes manufacturers, suppliers & exporters in India. It is a piece of material handling lifting equipment. 50 ton gantry crane has strong structure and low nooise. You can also click on the column heading to sort through the listings. It is generally designed as double girder overhead crane. 50 Ton Overhead Crane. Common 50 ton overhead crane for sale. For more information on an item, contact the seller directly. The # 1 place to find new & used bridge & overhead cranes for sale.  AG Cranes Manufacturer and Build NEW Single Girder Overhead Gantry Cranes. New Overhead Gantry Crane Prices 2019 Price List. 2. Reduced wheel loads combined with very low headroom standard hoists provide outstanding value.By utilizing our structural and box girder technology, EMH can also provide single girder cranes with capacities up to 15 tons and span up to 120 ft. Hot sale overhead bridge cranes with different capacities are as follows just for your reference: 1-ton cranes, 2-ton bridge crane, 5-ton cranes, 10t overhead crane, 20t cranes or cranes above 500 t capacities are all available to you in Ellsen Overhead Bridge Crane factory. In addition, as the manufacturer, we can provide the customers various gantry cranes. 50 ton overhead crane is perfect choice for heavy lifting work. Every crane and crane component reflects our vast engineering expertise and industry experience. Single girder cranes are the most cost effective purchase for capacities up to 20 tons and 60 or 80 ft. spans. Our overhead cranes for sale drive quality, efficiency and reliability for your facility. Find items by using the following search options. As heavy duty crane, 50 ton travelling crane has large loading capacity and high working efficiency, which is widely used in construction site, warehouse, etc. A wide variety of 50 ton mobile crane options are available to you, There are 6,784 suppliers who sells 50 ton mobile crane on Alibaba.com, mainly located in Asia. You can rely on Aicrane overhead crane equipment. The NEW gantry cranes below crane can be supplied with either a 415v chain or wire rope hoist. Ex works. AG Cranes Manufacturer and Build NEW Single Girder Overhead Gantry Cranes. Do you need to get it at factory price? Looking for quality 50 ton overhead crane at reasonable price? ";s:7:"keyword";s:27:"50 ton overhead crane price";s:5:"links";s:3335:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lambretta-scooters-for-sale-in-italy'>Lambretta Scooters For Sale In Italy</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tamron-hall-show-episode-1'>Tamron Hall Show Episode 1</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ebay-for-sale-rv-parts'>Ebay For Sale Rv Parts</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-summer-camp-shoes-for-kids'>Best Summer Camp Shoes For Kids</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cliffs-of-moher-from-galway'>Cliffs Of Moher From Galway</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=working-of-hydrogen-fuel-cell'>Working Of Hydrogen Fuel Cell</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=transformers-4-google-drive-mp3'>Transformers 4 Google Drive Mp3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mazda-cx-9-2020-release-date'>Mazda Cx 9 2020 Release Date</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fishing-places-near-me-without-license'>Fishing Places Near Me Without License</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=craigslist-battle-creek-michigan-rvs-for-sale-by-owner'>Craigslist Battle Creek Michigan Rvs For Sale By Owner</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=post-hole-digger-tractor-supply'>Post Hole Digger Tractor Supply</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=funny-captions-for-rafting-pictures'>Funny Captions For Rafting Pictures</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=euro-truck-simulator-2-addons'>Euro Truck Simulator 2 Addons</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dirt-bike-trails-northern-ireland'>Dirt Bike Trails Northern Ireland</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-sailing-yachts-for-sale-california'>Used Sailing Yachts For Sale California</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=armstrong-siddeley-for-sale-usa'>Armstrong Siddeley For Sale Usa</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=just-a-little-bit-meaning'>Just A Little Bit Meaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=build-a-bear-baby-yoda'>Build A Bear Baby Yoda</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tire-chain-cross-reference-chart'>Tire Chain Cross Reference Chart</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2005-sea-ray-520-sundancer'>2005 Sea Ray 520 Sundancer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sea-ray-accessories-on-ebay'>Sea Ray Accessories On Ebay</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-maximize-regenerative-braking'>How To Maximize Regenerative Braking</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-dangerous-is-crab-fishing'>How Dangerous Is Crab Fishing</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cannondale-jekyll-2012-for-sale'>Cannondale Jekyll 2012 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=derbi-150-price-in-pakistan-2017'>Derbi 150 Price In Pakistan 2017</a>,
+";s:7:"expired";i:-1;}

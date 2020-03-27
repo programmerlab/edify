@@ -49,14 +49,22 @@ Route::group([
         Route::match(['post','get'],'member/customerLogin', 'Api\ApiController@customerLogin');
         Route::match(['post','get'],'member/registration', 'Api\ApiController@registration');
         
-        Route::match(['post','get'],'member/getActiveEditors', 'Api\ApiController@getActiveEditors');
-        Route::match(['post','get'],'member/getBanners', 'Api\ApiController@getBanners');
+        //Route::match(['post','get'],'member/getActiveEditors', 'Api\ApiController@getActiveEditors');
+        //Route::match(['post','get'],'member/getBanners', 'Api\ApiController@getBanners');
         Route::match(['post','get'],'member/getAllPosts', 'Api\ApiController@getAllPosts');
         Route::match(['post','get'],'member/getAllMyLikes', 'Api\ApiController@getAllMyLikes');
-        Route::match(['post','get'],'member/postLikes', 'Api\ApiController@postLikes');
+        Route::match(['post'],'member/postLikes', 'Api\ApiController@postLikes');
         
         Route::match(['post','get'],'member/getMyOrders', 'Api\ApiController@getMyOrders');
+
+        Route::match(['post','get'],'member/getAllCategories', 'Api\ApiController@getAllCategories');
+        Route::match(['post','get'],'member/uploadImages', 'Api\ApiController@uploadImages');
+        Route::match(['post','get'],'member/place_order', 'Api\ApiController@place_order');
+        Route::match(['post','get'],'member/getEditorPosts', 'Api\ApiController@getEditorPosts');
         
+         Route::match(['post','get'],'member/updateProfile', 'Api\ApiController@updateProfile');
+        
+                
         
 		
 		 // if route not found

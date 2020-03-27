@@ -1,0 +1,681 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3935:"Watch. 2018 Kawasaki Ninja® 1000 ABS $12,199.00 2018 Kawasaki Ninja® 400 $4,999.00 2018 Kawasaki Ninja® 400 ABS $5,299.00 2018 Kawasaki Ninja® 400 ABS - Pearl Solar Yellow/Storm Gray $5,499.00 2018 Kawasaki Ninja® 400 KRT Edition $5,499.00 2018 Kawasaki Ninja® 650 … now save $2200,,kawasaki ninja 1000 abs ready for the streets and its priced to sell,,hurry wont last long,,call today we have easy financing to get you riding !!!!! $139.95. Find 8 used 2018 Kawasaki Ninja as low as $9,499 on Carsforsale.com®. Find the best deals today! Guaranteed by Fri, Jan 3. Official info for the 2018 NINJA® ZX™-14R ABS SE - specs, photos, videos, brochure & reviews. NEW 2011 - 2018 GENUINE KAWASAKI NINJA 1000 BLACK TANK BAG K57003-113 (Fits: 2018 Kawasaki Ninja 1000) 5 out of 5 stars . The MY18 Ninja 1000 ABS rolls for $12,199, which is a straight-up carry-over from last year — with a 12-month limited warranty, but you can buy that up with up to 48 months of additional protection. For 2018, the Ninja 1000 ABS will be available in two color options: Metallic Spark Black/Metallic Graphite Gray and Metallic Matte Fusion Silver Metallic Flat Spark Black. View our full range of Kawasaki Ninja 1000 ABS Motorcycles online at bikesales.com.au – Australia’s number 1 motorbike classified website. See prices, photos and find dealers near you. Classics on Autotrader › Motorcycles on Autotrader › RVs on Autotrader › 1 product rating 1 product ratings - NEW 2011 - 2018 … Review latest price & specifications of New bikes for sale today at Moorooka Kawasaki Mainland Cycle Center is located in La Marque, TX just outside of Houston, TX. See prices, photos and find dealers near you. Guaranteed by Fri, Jan 3. $8.30 shipping. Free shipping on many items | Browse your favorite brands | affordable prices. 2018 Kawasaki Ninja 1000 ABS Totalmotorcycle.com Features and Benefits . $139.95. Shop millions of cars from over 21,000 dealers and find the perfect car. You will love this 2018 Kawasaki Ninja 1000 . Featuring: - Clock - Tachometer - Fuel Injected - Disc Brakes - ABS This bike has a few blemishes but has super low miles and a great price! Find a Honda, Yamaha, Triumph, Kawasaki motorbike, chopper or cruiser for sale near you and honk others off. NEW 2011 - 2018 GENUINE KAWASAKI NINJA 1000 BLACK TANK BAG K57003-113 (Fits: 2018 Kawasaki Ninja 1000)  2018 Kawasaki Ninja 1000 ABS Totalmotorcycle.com Key Features . 8 new & refurbished from $134.95. Find dealer inventory, schedule a test ride & get a quote. Fitment Notes Universal Fit Parts can be installed on various motorcycles and may require modification. | 2018 kawasaki ninja® 1000 ab... more info › 4 cylindres, Système de refroidissement: Refroidi au liquide. Motorcycles on Autotrader has listings for new and used 2019 Kawasaki Ninja 1000 Motorcycles for sale near you. Exact Fit Parts(61) Universal Fit Parts(1622) … CycleTrader.com always has the largest selection of New Or Used Motorcycles for sale anywhere. Find the best deals today! What is a Kawasaki NINJA? From the daily urban commute to back roads and 2-up touring, the Ninja 1000 ABS offers open-class thrills, everyday comfort and enhanced touring performance. No freight and setup, practically new! 2018 Kawasaki Ninja 1000 For Sale in San Francisco, CA on Cycle Trader. Browse Kawasaki NINJA 1000 ABS Motorcycles for sale on CycleTrader.com. Used 2018 Kawasaki Ninja 1000 for sale in San Francisco - 2018 Kawasaki Ninja 1000 posted by SF Moto in San Francisco. Official info for the 2018 NINJA® 1000 ABS - specs, photos, videos, brochure & reviews. View our entire inventory of New Or Used Kawasaki Motorcycles. The ultimate sport tourer infused with superbike technology makes it the Ninja 1000 ABS motorcycle. 2017 Kawasaki Ninja 1000 ABS, 616-432-6262 CONTACT VILLAGE MOTORSPORTS OF GRAND RAPIDS TODAY FOR FACTORY PROGRAMS. See prices, photos and find dealers near you. ";s:7:"keyword";s:24:"2018 ninja 1000 for sale";s:5:"links";s:3353:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=history-of-socially-responsible-investing'>History Of Socially Responsible Investing</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=build-a-dinghy-from-plywood'>Build A Dinghy From Plywood</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jumbo-heavy-lift-crane-vessel'>Jumbo Heavy Lift Crane Vessel</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-love-lyrics-cash-cash'>How To Love Lyrics Cash Cash</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=When-She-Was-My-Girl'>When She Was My Girl</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=happy-camper-sign-hobby-lobby'>Happy Camper Sign Hobby Lobby</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Micro-Machines-1-and-2...'>Micro Machines 1 And 2...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=animal-vegetable-miracle-pumpkin-soup'>Animal Vegetable Miracle Pumpkin Soup</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2007-sea-doo-gtx-155-review'>2007 Sea Doo Gtx 155 Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1967-shelby-gt500-super-snake-0-60'>1967 Shelby Gt500 Super Snake 0-60</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=goliyon-ki-raasleela-ram-leela-full-movie'>Goliyon Ki Raasleela Ram-leela Full Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-subaru-forester-exterior-colors'>2020 Subaru Forester Exterior Colors</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=royal-enfield-classic-350-crankshaft'>Royal Enfield Classic 350 Crankshaft</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=klr-650-for-sale-augusta-ga'>Klr 650 For Sale Augusta Ga</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pictures-of-fireballs-in-the-sky'>Pictures Of Fireballs In The Sky</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rv-for-sale-long-island'>Rv For Sale Long Island</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=The-systems-view-of-t...'>The Systems View Of T...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-base-layer-for-cold-weather-hunting'>Best Base Layer For Cold Weather Hunting</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=point-break-2015-full-movie-in-hindi-download'>Point Break 2015 Full Movie In Hindi Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=california-boating-license-test-answers'>California Boating License Test Answers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=northern-lite-import-camper-for-sale'>Northern Lite Import Camper For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-suv-in-india-under-10-lakhs'>Best Suv In India Under 10 Lakhs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2012-Kia-Sportage-for-sale'>2012 Kia Sportage For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=electric-cars-pros-and-cons'>Electric Cars Pros And Cons</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=first-self-driving-car-tesla'>First Self Driving Car Tesla</a>,
+";s:7:"expired";i:-1;}

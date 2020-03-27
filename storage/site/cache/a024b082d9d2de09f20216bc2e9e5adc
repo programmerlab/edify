@@ -1,0 +1,685 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3341:"So is the 12v charging outlet in the center console. The base trim level of the 2019 Atlas (S) is equipped with a 2.0-liter turbo engine while all of the other trim models are equipped with a 3.6-liter V6 engine that provides 276 horsepower. Compare the 2019 Volkswagen Golf Trim Levels. Get the latest information for2019 Vw Golf Gti Trim Levels 2019 2020 2021 2019 Vw Golf Gti Trim Levels, Price and Release Date 2019 Vw Golf Gti Trim Levels Specs Redesign Changes What is the difference between them? What configuration of this model is best for you? Browse through our 2019 Golf GTI trim comparison to see how each model stands out, and then get in touch with the team at our Fort Wayne, IN auto dealership online or by calling (260) 213-4181. See a breakdown of which features you’ll get at each price point. What is the difference between them? The base S comes nicely equipped, offers most of what you need and comes in a 4Motion version with all-wheel drive. Get the latest information for2019 Vw Golf Gti Trim Levels 2019 2020 2021 2019 Vw Golf Gti Trim Levels, Price and Release Date 2019 Vw Golf Gti Trim Levels Specs Redesign Changes Genuine 2019 Volkswagen Golf Body Kit Accessories let you add your own individual touch and achieve fully-personalized utility - all with the attention to detail and fit and finish you expect from Volkswagen. If you’re getting ready to start a Volkswagen Jetta lease or financing plan, you’ll need to know how to pick the perfect trim level. Volkswagen's sporty compact hatch, the Golf, sees some small but significant changes for 2019. Volkswagen is seeing out the current Golf ahead of the Mk8 model's unveiling by replacing three current trim levels – Match, GT, R-Line – with variants providing £1900-worth of additional kit See a breakdown of which features you’ll get at each price point. Check out the differences at Karen Radley Volkswagen in the Washington D.C. area. The 2019 Volkswagen Jetta has been completely redesigned for the new year, and drivers from Santa Monica to Los Angeles are taking notice! Compare 2019 Volkswagen Golf Alltrack trim levels, with prices, features & options. No other Body Kit Accessories suit your Volkswagen and your needs more perfectly, and they’re all here, in the VW Lookbook. See the price, trims, and specs overview. Learn about the available features. VW says the changes "strengthen the Golf's appeal" as the current-generation car nears the end of its life. A comparison of the 2019 Volkswagen Jetta trim levels allows shoppers to get a better feel for the features available. Volkswagen says the value-derived Edition versions are part of Volkswagen UK tradition when a car is nearing the end of its generation. Check out new 2019 Volkswagen e-Golf test drive review.  The aux-input that lets you use a headphone cable to listen to your tunes is gone this year. Compare the 2019 Volkswagen Tiguan Trim Levels. The eighth-generation Golf will debut later this year, but the new trim levels are designed to strengthen the appeal of the current seventh-generation car … Compare 2019 Volkswagen Golf GTI trim levels, with prices, features & options. If you're looking to plug in your MP3 player to the Golf, you might be out of luck. The four new Volkswagen Golf GTI trim levels include: S, Rabbit Edition, SE, and the Autobahn. ";s:7:"keyword";s:24:"2019 vw golf trim levels";s:5:"links";s:3975:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=places-to-eat-in-versailles-france'>Places To Eat In Versailles France</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rabies-vaccine-cost-for-cats'>Rabies Vaccine Cost For Cats</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-last-laugh-1924-imdb'>The Last Laugh 1924 Imdb</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=internal-combustion-engine-fundamentals-2e-pdf'>Internal Combustion Engine Fundamentals 2e Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sza-go-gina-stripped-lyrics'>Sza Go Gina Stripped Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=friday-the-13th-a-new-beginning-full-movie'>Friday The 13th A New Beginning Full Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=supernatural-story-of-the-impala'>Supernatural Story Of The Impala</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-chevrolet-silverado-2500hd-crew-cab'>2020 Chevrolet Silverado 2500hd Crew Cab</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-made-the-caravel-a-good-ship-for-exploration'>What Made The Caravel A Good Ship For Exploration</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-much-to-spend-on-first-bike'>How Much To Spend On First Bike</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Cars-3%3A-Driven-to-Win'>Cars 3: Driven To Win</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-nighthawk-450-cafe-racer'>Honda Nighthawk 450 Cafe Racer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=3-phase-igbt-inverter-circuit-diagram'>3 Phase Igbt Inverter Circuit Diagram</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dallas-buyers-club-true-story'>Dallas Buyers Club True Story</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2004-crf-150-for-sale'>2004 Crf 150 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=real-culture-in-a-sentence'>Real Culture In A Sentence</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=flight-trampoline-park-springfield-va-coupon'>Flight Trampoline Park Springfield Va Coupon</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=que-enfermedades-no-protege-el-preservativo'>Que Enfermedades No Protege El Preservativo</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jeep-yj-soft-top-bestop'>Jeep Yj Soft Top Bestop</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tata-motors-3118-truck-price'>Tata Motors 3118 Truck Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-jayco-jay-flight-28bhs-for-sale'>2019 Jayco Jay Flight 28bhs For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-trumpet-of-the-swan-audiobook'>The Trumpet Of The Swan Audiobook</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-campers-for-sale-by-owner-near-me'>Used Campers For Sale By Owner Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jeep-wrangler-for-sale-ct-under-10000'>Jeep Wrangler For Sale Ct Under 10000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bmw-s1000rr-price-in-india-2018'>Bmw S1000rr Price In India 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dollar-tree-canada-head-office'>Dollar Tree Canada Head Office</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i-don%27t-like-to-ski-in-spanish'>I Don't Like To Ski In Spanish</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rope-tow-ski-lift-for-sale'>Rope Tow Ski Lift For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=chevrolet-convertible-car-price-in-india'>Chevrolet Convertible Car Price In India</a>,
+";s:7:"expired";i:-1;}

@@ -1,0 +1,699 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2422:"Most popular models for Indian includes Roadmaster (Rs 42.15 Lakh), Scout Bobber (Rs 13.15 Lakh), Springfield (Rs 33.50 Lakh). MotoBike.in is India's Bike & Scooter Review, Price, Colour, Mileage, Compare & Latest or Upcoming Bike Information Website Find here online price details of companies selling DIRT Bike. Indian bikes price in India starts at Rs 12.55 Lakh for Indian Scout Sixty, which is the cheapest model. Moto Guzzi bikes price in India starts at Rs 13.60 Lakh for Moto Guzzi V9, which is the cheapest model. CF Moto is a pioneer in the bike manufacturing segment. Some of its bikes have gained a lot of attention in the Indian market and this … For the Indian market, CF Moto has tied up with AMW Motorcycles, a Bangalore-based private company, to assemble and sell motorcycles. For its initial product portfolio, CF Moto has four motorcycles to offer - the 300NK, 650NK, 650MT and the 650GT. The most expensive Moto Guzzi bike is MGX-21 priced at Rs 27.78 Lakh. Get info of suppliers, manufacturers, exporters, traders of DIRT Bike for buying in India. Market Segment For CF Moto Bikes. These consist of 4 CFMoto upcoming bikes and new CFMoto bikes in India.. Also checkout Latest bike models, prices, current news, bike comparisons and our expert reviews and ratings on top selling Best in India Get contact details & address of companies manufacturing and supplying Pocket Bike, Mini Bikes, Mini Motorcycles across India. See full specifications, expert reviews, user ratings, and more. Find here Pocket Bike, Mini Bikes manufacturers, suppliers & exporters in India. CF Moto 650 MT is the advanced version of CF Moto 650 NK with a more stable engine, more streamlined designed and finish. Check on-road price, mileage, colours, reviews & upcoming Moto Guzzi models 13.60 lakh to Rs. Compare Moto G5S prices before buying online. 14,999 as on 9th March 2020. These consist of 0 Moto Guzzi upcoming bikes and 5 new Moto Guzzi bikes. While the 300NK and 650NK are street bike offerings, the 650MT and 650GT are touring models. CF Moto 650 MT. Most popular models for Moto Guzzi includes Eldorado (Rs 21.16 Lakh), Audace (Rs 19.94 Lakh), V9 (Rs 13.60 Lakh). CF 650 MT is more popular for its efficient handling and safety. Latest Bike, Scooter, & Car News, Reviews, Comparisons, and New Launches In India. Ltd. presents YZF R3, Fazer 25, FZ 25, YZF R15, FAZER FI, FZ FI, FZS FI, and SZ RR Bikes in India. ";s:7:"keyword";s:24:"moto bike price in india";s:5:"links";s:5895:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hybrid-ford-escape-for-sale'>Hybrid Ford Escape For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=most-reliable-used-cars-under-2000'>Most Reliable Used Cars Under 2000</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=nike-air-max-270-womens-white'>Nike Air Max 270 Womens White</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=embry-riddle-aeronautical-university-address'>Embry Riddle Aeronautical University Address</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cost-of-living-in-oregon-vs-california'>Cost Of Living In Oregon Vs California</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=second-hand-cars-for-sale-in-munich-germany'>Second Hand Cars For Sale In Munich Germany</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=owner-operator-profit-and-loss-statement-template'>Owner Operator Profit And Loss Statement Template</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=zen-and-the-art-of-motorcycle-maintenance-philosophy-reddit'>Zen And The Art Of Motorcycle Maintenance Philosophy Reddit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-many-subways-in-the-world'>How Many Subways In The World</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=voltage-series-feedback-amplifier-problems'>Voltage Series Feedback Amplifier Problems</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=project-cars-2-steam-key'>Project Cars 2 Steam Key</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=full-size-car-vs-midsize-suv'>Full Size Car Vs Midsize Suv</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-tall-is-ferb-from-phineas-and-ferb'>How Tall Is Ferb From Phineas And Ferb</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=uss-harry-s-truman-crew-list'>Uss Harry S Truman Crew List</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mobile-lawn-mower-repair-near-me'>Mobile Lawn Mower Repair Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=giant-defy-advanced-1-2020-review'>Giant Defy Advanced 1 2020 Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=moto-traffic-race-2-mod-apk'>Moto Traffic Race 2 Mod Apk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=chart-of-terrain-crossword-clue'>Chart Of Terrain Crossword Clue</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=How-to-live-the-van-life'>How To Live The Van Life</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-change-your-life-in-7-days'>How To Change Your Life In 7 Days</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-buick-encore-gx-colors'>2020 Buick Encore Gx Colors</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=triumph-rocket-3-r-specs'>Triumph Rocket 3 R Specs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=most-reliable-car-brands-in-india'>Most Reliable Car Brands In India</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hg-barbatos-long-distance-transport'>Hg Barbatos Long Distance Transport</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=5-seater-commercial-vehicles-for-sale'>5 Seater Commercial Vehicles For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=herald-of-free-enterprise-case-law'>Herald Of Free Enterprise Case Law</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sza-go-gina-stripped-lyrics'>Sza Go Gina Stripped Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-liveaboard-sailboat-under-30-feet'>Best Liveaboard Sailboat Under 30 Feet</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Five-on-the-Black-Hand-Side'>Five On The Black Hand Side</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=gsx-s750-on-road-price'>Gsx S750 On Road Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mazda-cx-5-forum-singapore'>Mazda Cx 5 Forum Singapore</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=little-big-planet-psp-zip-download'>Little Big Planet Psp Zip Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=john-pennekamp-snorkeling-from-shore'>John Pennekamp Snorkeling From Shore</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=associates-in-mechanical-engineering-technology-reddit'>Associates In Mechanical Engineering Technology Reddit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=goo-goo-dolls-name-music-video-actress'>Goo Goo Dolls Name Music Video Actress</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-honda-shadow-phantom-for-sale'>2019 Honda Shadow Phantom For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tan-toyota-tacoma-for-sale'>Tan Toyota Tacoma For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=street-fighter-the-legend-of-chun-li-cast'>Street Fighter The Legend Of Chun-li Cast</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=contending-for-the-faith-pdf'>Contending For The Faith Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Na-Na-Hey-Hey-Kiss-Him...'>Na Na Hey Hey Kiss Him...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=casa-grande-class-dock-landing-ship'>Casa Grande Class Dock Landing Ship</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-boy-is-mine-lyrics'>The Boy Is Mine Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ducati-l-twin-engine-sound'>Ducati L Twin Engine Sound</a>,
+";s:7:"expired";i:-1;}

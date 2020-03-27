@@ -1,0 +1,701 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2539:"Usually used mainly for starting the vehicle. The structural difference between deep-cycle and cranking lead-acid batteries is in the lead battery plates. Can't find any mention of this in the manual or on the forums. When adverse weather conditions are present such as ice, snow, or rain, vehicle tires can lose traction and drivers may lose control of … The TCS automatically senses when a wheel loses traction at any time and can be triggered automatically as soon as this is detected. does it requires the wheels to be rolling? To accomplish this, a deep cycle battery uses thicker plates. If not, putting it in "Park" is actually safer for you. SERVICE TRACTION CONTROL / SERVICE ABS / SERVICE ACTIVE HANDLING ???? How does the conveyor belt move your Prius. Cycle life is estimated for specific charge and discharge conditions. The Traction battery is the high voltage battery inside a hybrid vehicle that supplies power to drive the vehicle. The Hybrid Battery Status indicator on the display is usually yellow. The traction control system (TCS) helps a driver maintain control and stability of the vehicle if it loses grip and starts to skid or slide. A deep cycle battery is also designed to be deeply discharged over and over again (something that would ruin a car battery very quickly). Hybrid Battery Angel - Mobile Repair is a CT based mobile company serving hybrid owners all over NY, MA, RI, CT, NJ and since 2016. hybridbatteryangel@gmail.com . A battery with a capacity of 1 amp-hour should be able to continuously supply current of 1 amp to a load for exactly 1 hour, or 2 amps for 1/2 hour, or 1/3 amp for 3 hours, etc., before becoming completely discharged. The battery is designed such that it can absorb energy during recharge in a limited manner. It is used to treat fractures, dislocations, and long-duration muscle spasms, and to prevent or correct deformities. Semi Traction Batteries Sort By Position Product name Price - Low To High Price - High To Low Set Descending Direction Items 1 - 33 of 91 What does tract mean? The higher the DOD, the lower the cycle life. Meaning of tract. The 100 Ah mentioned on a lead-acid battery is the capacity of the battery in Ah.Let us take the case of a Normal Discharge Performance. Traction definition is - the adhesive friction of a body on a surface on which it moves. I assumed that yellow was the correct color but after reading some posts here it seems that they should be blue. Hey, Im sure this is an easy one, and Junkman probably has a whole write up about it. ";s:7:"keyword";s:31:"what does traction battery mean";s:5:"links";s:6157:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=paine-14-daysailer-for-sale'>Paine 14 Daysailer For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=beach-clip-art-black-and-white'>Beach Clip Art Black And White</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=standing-in-the-way-of-control-live'>Standing In The Way Of Control Live</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=crooked-river-campground-withlacoochee-state-forest-florida'>Crooked River Campground Withlacoochee State Forest Florida</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=deaf-day-henry-ford-museum'>Deaf Day Henry Ford Museum</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mercedes-cla-price-in-india-2019'>Mercedes Cla Price In India 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=death-of-a-bachelor-meaning'>Death Of A Bachelor Meaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=piano-man-billy-joel-release-date'>Piano Man Billy Joel Release Date</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=global-village-dubai-opening-date-2019'>Global Village Dubai Opening Date 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=spec-ops-the-line-white-phosphorus'>Spec Ops The Line White Phosphorus</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=that%27s-my-boy-full-movie-download'>That's My Boy Full Movie Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2008-nissan-rogue-subframe-bushings'>2008 Nissan Rogue Subframe Bushings</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-4-door-coupe-2019'>Best 4 Door Coupe 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-suv-to-drive-in-nigeria'>Best Suv To Drive In Nigeria</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=transformers-4-google-drive-mp3'>Transformers 4 Google Drive Mp3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-to-look-for-when-buying-a-used-audi-q7'>What To Look For When Buying A Used Audi Q7</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=do-all-cars-have-gps-navigation'>Do All Cars Have Gps Navigation</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=wooden-boats-for-sale-lake-tahoe'>Wooden Boats For Sale Lake Tahoe</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-make-cheese-youtube'>How To Make Cheese Youtube</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bank-of-america-diversity-internship'>Bank Of America Diversity Internship</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=extreme-car-driving-simulator-apk-download'>Extreme Car Driving Simulator Apk Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=harley-davidson-production-numbers-2017'>Harley Davidson Production Numbers 2017</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-150-price-in-pakistan'>Honda 150 Price In Pakistan</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2020-r-pod-195-for-sale-near-me'>2020 R Pod 195 For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=garbage-cherry-lips-lyrics-meaning'>Garbage Cherry Lips Lyrics Meaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=new-rooms-at-yacht-club-disney'>New Rooms At Yacht Club Disney</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-jayco-12sc-for-sale'>Used Jayco 12sc For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=knoxville-craigslist-campers-for-sale-by-owner'>Knoxville Craigslist Campers For Sale By Owner</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=amor-como-el-nuestro-letra-jose-jose'>Amor Como El Nuestro Letra Jose Jose</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=brought-out-meaning-in-hindi'>Brought Out Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-complete-idiot%27s-guide-to-psychology'>The Complete Idiot's Guide To Psychology</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-was-a-modest-proposal-received-in-1729'>How Was A Modest Proposal Received In 1729</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=What-I-Like-About-Me%21-Tea...'>What I Like About Me! Tea...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=krypton-green-camaro-ss-for-sale'>Krypton Green Camaro Ss For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=datsun-510-for-sale-near-me'>Datsun 510 For Sale Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-carbon-used-for'>What Is Carbon Used For</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dj-snake-let-me-love-you-other-recordings-of-this-song'>Dj Snake Let Me Love You Other Recordings Of This Song</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-adv-150-off-road'>Honda Adv 150 Off Road</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=are-champion-car-batteries-good'>Are Champion Car Batteries Good</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kia-mifa-meaning-in-hindi'>Kia Mifa Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jobs-for-mechanical-engineering-students'>Jobs For Mechanical Engineering Students</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mazda-cx-3-dimensions-2019'>Mazda Cx 3 Dimensions 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=esright-electric-bicycle-conversion-kit'>Esright Electric Bicycle Conversion Kit</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-use-bike-cargo-rack'>How To Use Bike Cargo Rack</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=watch-how-the-universe-works'>Watch How The Universe Works</a>,
+";s:7:"expired";i:-1;}

@@ -1,0 +1,689 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3104:"The sum of Spec Ops’ unexpected story is an army shooter that makes killing people mean something. Sure, it plays like the bastard child of Call of Duty and Gears of War, but the style and story could not be any more different. Instead, Spec Ops’s choices serve to shape what shade of monster Walker will turn out to be in the eyes of the people forcing him to make the choices to begin with. Following the story of Captain Martin Walker, you’ll endure the horrors of war in ways you have never experienced in video games and be forced to question every action you make. For a start, it’s played from a third-person viewpoint, and cover is a major issue. Enemies in Spec Ops: The Line never actually throw grenades, and other game design secrets By Wes Fenlon GDC 2018 Find out why you can survive bullets in BioShock that should kill you. In the game's fiction, the once-opulent city of Dubai lays in ruins, stripped and wrecked by the wrath of nature. It wraps this message in a story of duty. Spec Ops: The Line is war shooter in all the right ways, from showing the dead as horrific nightmares that will haunt you until the end of time, to exotic locations with impending doom. Spec Ops: The Line is a provocative third-person modern military shooter that challenges players' morality by putting them in the middle of unspeakable situations where unimaginable choices affecting human life must be made. Find helpful customer reviews and review ratings for Spec Ops: The Line - Xbox 360 at Amazon.com. Read our review. Spec Ops lets you control three Delta-squad members. Nolan North-voiced protagonist Captain Martin Walker arrives in a sandstorm-ravaged Dubai to rescue U.S. Army Colonel John Konrad, a war hero sent in with a battalion of soldiers to aid in the evacuation of the sand-swallowed city. Through the entire game morale choices and shooting enemies become a morale dilemma. Set in Dubai after huge sand storms destroy the city, America has drafted half of its own population to help with relief efforts. Spec Ops began in the late 90s as a third/first person military shooter series, part of the boom of the 'realistic' shooter genre that sprang up with the release of Tom Clancy's Rainbow Six. Spec Ops: The Line takes place beneath a sea of sand, deep within the Arabian Desert. After a long development time, 'Spec Ops: The Line' is finally available. In fact, The Line accomplishes something most shooters don’t bother with: It makes violence meaningful. Spec Ops: The Line starts six months after the worst sandstorm in memory wiped out the Emirate of Dubai. Spec Ops: The Line unfolds within the destroyed opulence of Dubai. Spec Ops: The Line All Discussions Screenshots Broadcasts Videos News Guides Reviews All Discussions Screenshots Broadcasts Videos News Guides Reviews Spec-Ops: The Line is not your ordinary military shooter. Spec Ops: The Line is a step towards maturity for war games. Spec Ops: The Line may just be the sleeper hit of this year. In the game's fiction, the once-opulent city of Dubai lays in ruins, stripped and wrecked by the wrath of nature. ";s:7:"keyword";s:24:"spec ops the line review";s:5:"links";s:4607:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kia-telluride-trim-level-comparison'>Kia Telluride Trim Level Comparison</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-royal-enfield-continental-gt-650-for-sale'>2019 Royal Enfield Continental Gt 650 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-start-a-carbureted-boat'>How To Start A Carbureted Boat</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=sell-motorcycle-parts-for-cash-near-me'>Sell Motorcycle Parts For Cash Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-make-an-egyptian-boat'>How To Make An Egyptian Boat</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=honda-fury-for-sale-ebay-uk'>Honda Fury For Sale Ebay Uk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-4x4-fire-trucks-for-sale'>Used 4x4 Fire Trucks For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=royal-enfield-classic-350-vs-ktm-duke-390'>Royal Enfield Classic 350 Vs Ktm Duke 390</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=fleet-management-and-logistics-pdf'>Fleet Management And Logistics Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-percent-of-electricity-in-the-united-states-is-generated-by-nuclear-power-plants%3F'>What Percent Of Electricity In The United States Is Generated By Nuclear Power Plants?</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-does-a-mechanical-push-button-work'>How Does A Mechanical Push Button Work</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=park-model-homes-for-sale-in-campgrounds'>Park Model Homes For Sale In Campgrounds</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-computer-towers-for-sale'>Used Computer Towers For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=now-im-in-it-lyrics-meaning'>Now Im In It Lyrics Meaning</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=write-a-short-essay-on-ms-dhoni'>Write A Short Essay On Ms Dhoni</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=270-sundancer-for-sale-in-canada'>270 Sundancer For Sale In Canada</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=rv-parts-store-near-me'>Rv Parts Store Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-32-to-33-sailboats-for-sale-by-owners'>Used 32 To 33 Sailboats For Sale By Owners</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=is-it-gonna-be-me-and-you-song-download'>Is It Gonna Be Me And You Song Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=airboats-for-sale-in-illinois'>Airboats For Sale In Illinois</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=quotes-about-steering-your-life'>Quotes About Steering Your Life</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=How-to-make-a-Pirate-ship'>How To Make A Pirate Ship</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dexe-black-hair-shampoo-website'>Dexe Black Hair Shampoo Website</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=german-battleship-tirpitz-german-battleships'>German Battleship Tirpitz German Battleships</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-use-a-fire-extinguisher-video'>How To Use A Fire Extinguisher Video</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=life-is-a-highway-chris-ledoux'>Life Is A Highway Chris Ledoux</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=offshore-crew-boats-for-sale'>Offshore Crew Boats For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=jeep-price-in-india-2019'>Jeep Price In India 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2014-nismo-370z-for-sale'>2014 Nismo 370z For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=vagabond-12-day-giant-irish-tour'>Vagabond 12 Day Giant Irish Tour</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=let%27s-go-hiking-in-spanish'>Let's Go Hiking In Spanish</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=alaska-native-medical-center-mission-statement'>Alaska Native Medical Center Mission Statement</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=olx-car-pune-swift-diesel-2015'>Olx Car Pune Swift Diesel 2015</a>,
+";s:7:"expired";i:-1;}

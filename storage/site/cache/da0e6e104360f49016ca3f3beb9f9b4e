@@ -1,0 +1,683 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:2344:"... First Known Use of off-road. You can translate english words or sentences or paragraphs into urdu at English to Urdu Translation website. See more. Off-road definition: (of a motor vehicle) designed or built for use away from public roads , esp on rough... | Meaning, pronunciation, translations and examples Log In Dictionary Learn more. Learn More about off-road. An off-highway vehicle (OHV) is a type of vehicle designed specifically for off-road use. Share off-road. Off-roading is the activity of driving or riding a vehicle on unsurfaced roads or tracks, made of materials such as sand, gravel, riverbeds, mud, snow, rocks, and other natural terrain. The bird veered off and missed hitting the post. off-road definition: designed for use, occurring, done, etc. Video shows what off-road means. You can find translation in Urdu and Roman Urdu that is - - for the word Rubicons. Some can be driven on the road, but the vast majority of drivers reserve their OHVs for recreating in places that regular vehicles cannot go. Share off-road. Find translations for the word 'off-road' at wordhippo.com! Existing, taking place, or designed for use off paved or public roads or in rugged terrain: off-road sports such as snowmobiling. Off-road Meaning… off public roads, esp. But there are some commonalities. Off-road definition is - of, relating to, done with, or being a vehicle designed especially to operate away from public roads. veer off (from someone or something)  to turn or steer sharply away from someone or something. Off-road definition is - of, relating to, done with, or being a vehicle designed especially to operate away from public roads. Cloak Meaning in Urdu You are seeing urdu meaning of english word Cloak at Dictionary English to Urdu. Types of off-roading range in intensity, from leisure drives with unmodified vehicles to competitions with customized vehicles and professional drivers. off′-road′, off′road′ adv. road (ôf′rōd′, ŏf′-) adj. Keep scrolling for more . Learn More about off-road. Off-road definition, designed, built, or used for traveling off public roads, especially on unpaved roads, trails, beaches, or rough terrain: an off-road vehicle. ... Each manufacturer can hang a couple of letters on the back of a model name, and those letters can mean whatever they want them to mean. ";s:7:"keyword";s:24:"off road meaning in urdu";s:5:"links";s:3749:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=qantas-aircraft-maintenance-engineer-salary'>Qantas Aircraft Maintenance Engineer Salary</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-center-console-boat-under-100k'>Best Center Console Boat Under 100k</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=electric-light-orchestra-turn-to-stone-audio'>Electric Light Orchestra Turn To Stone Audio</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mad-day-2-hack-download'>Mad Day 2 Hack Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=joy-touch-by-touch-mp3-download'>Joy Touch By Touch Mp3 Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=can-i-sue-my-health-insurance-company-for-taking-too-long'>Can I Sue My Health Insurance Company For Taking Too Long</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-writings-on-the-wall-lyrics-ok-go'>The Writings On The Wall Lyrics Ok Go</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=new-country-song-about-fishing'>New Country Song About Fishing</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=free-things-to-do-in-richmond-va'>Free Things To Do In Richmond Va</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-cars-2020-under-30k'>Best Cars 2020 Under 30k</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=oligopoly-in-indian-automobile-industry'>Oligopoly In Indian Automobile Industry</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=first-time-jeep-off-road'>First Time Jeep Off Road</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=gm-motors-india-latest-news'>Gm Motors India Latest News</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=power-of-making-a-vow'>Power Of Making A Vow</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=pessimistic-person-meaning-in-hindi'>Pessimistic Person Meaning In Hindi</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=difference-between-optimistic-and-realistic'>Difference Between Optimistic And Realistic</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-beat-syobon-action-level-1'>How To Beat Syobon Action Level 1</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-enter-cheat-codes-in-offroad-outlaws'>How To Enter Cheat Codes In Offroad Outlaws</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tank-cleaning-guide-for-chemical-tankers'>Tank Cleaning Guide For Chemical Tankers</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=blind-melon-blind-melon-songs'>Blind Melon Blind Melon Songs</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=white-clutch-bag-with-chain'>White Clutch Bag With Chain</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-paradine-case-full-movie'>The Paradine Case Full Movie</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=first-self-driving-car-tesla'>First Self Driving Car Tesla</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=baja-edge-of-control-hd-cheats-ps4'>Baja Edge Of Control Hd Cheats Ps4</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-report-an-article-on-google'>How To Report An Article On Google</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=we-will-rock-you-musical-review-2019'>We Will Rock You Musical Review 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=impact-of-roads-on-economic-development'>Impact Of Roads On Economic Development</a>,
+";s:7:"expired";i:-1;}

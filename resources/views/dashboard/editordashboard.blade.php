@@ -18,7 +18,7 @@
 
             <div class="card">
                 <div class="header">
-                    <h2>Dashboard Area</h2>
+                    <h2>Edify Analytics Area</h2>
                 </div>
                 <div class="body">
 

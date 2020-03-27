@@ -115,8 +115,8 @@ class AdminController extends Controller {
     $test_result->transform(function($item,$key){
         
         $editor_data = User::where('id',$item->eid)->get();
-        $item->fname = $editor_data[0]->first_name;
-        $item->email = $editor_data[0]->email;
+        $item->fname = $editor_data[0]->first_name??null;
+        $item->email = $editor_data[0]->email??null;
         return $item;
     });
     // print_r($test_result); exit;

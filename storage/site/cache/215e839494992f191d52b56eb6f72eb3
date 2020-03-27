@@ -1,0 +1,694 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:3333:"The India-spec new BMW X3 is powered by a 2.0-litre 4-cylinder TwinPower Turbo diesel engine that churns out a maximum power output of 190bhp and a peak torque of 400Nm between 1,750rpm and 2,500rpm.  The SUV will be offered in two diesel variants xDrive30 Sport which will be … BMW X3 prices start at Rs. BMW X3 Price (Rs. From the very first glance, it impresses with its athletic appearance and fascinates with an exciting driving experience. That said, the BMW X3 price in India … Changes to the popular BMW model are mostly cosmetic with some new features on the inside. 59.30 lakh. With these additions, the BMW X3 price hasn’t seen much change. 60.50 lakh for petrol and goes upto Rs. 49,99,000 for the xDrive 20d Expedition and Rs. Check out BMW X1 Colours, Review, Images and X1 Variants On Road Price at Carwale.com. But though the drive is comfortable in the city, the larger 3.0-litre diesel would have made it effortless. Thanks to the intelligent all-wheel drive system BMW xDrive, it offers supreme ride comfort both on and off the road. There is a link to other BMWs on the inside too and cabin quality is up there with the 5 Series. … Beyond its aspirational badge and German pedigree, the 2019 X3 is a real-deal BMW. for BMW X3 on 11-Mar-2019 by Cruxx India I bought it past 1 yrs ago at a attractive price of 65,09,100 (including all taxes)..But the service is below average in bhubaneswar. Calculations for the BMW X3 xDrive20d xLine is for a specific tenure, mileage and finance amount. Find BMW X3 Reviews, Features, Colors, Images at CarTrade. To know the best BMW X3 offers in your city, please contact your nearest BMW car dealers. Our BMW price lists contain the full specification for each model and variant, as well as pricing for optional equipment and the cost of your BMW Individual choices. See the 2019 BMW X3 price range, expert review, consumer reviews, safety ratings, and listings near you. BMW X1 2020 Price (GST Rates) in India starts at ₹ 35.9 Lakhs. BMW X3 price in India starts at Rs. 16.0 Lakh onwards. 56 to 60.5 lakhs) in India. Once you've chosen your new BMW, you can download the price list and browse it at your leisure. X3 is available in both petrol and diesel . Price: Rs 56.7 Lakh (Ex-showroom, pan India) The new BMW X3 is a good-looking SUV and has strong road presence. Research the 2019 BMW X3 with our expert reviews and ratings. BMW has currently 13 car models on sale in India, get a complete price list of BMW cars, read expert reviews, specs, see images, & dealers at CarDekho. BMW cars in India. Know everything you want to know about BMW car models. Visit your nearest BMW X3 showroom … In the 2019 BMW 7 series, the entry-level model acquired blind spot monitoring and lane departure warning as now standard. 7. BMW Car Price BMW cars price starts at Rs. 2018 BMW X3 India Price: Rs. 1.17 Crore. The least-expensive 2019 BMW X3 is the 2019 BMW X3 sDrive30i 4dr SUV (2.0L 4cyl Turbo 8A). BMW X3 Overview. View specs, features, colours, images, mileage and videos. 56.00 lakh in April 2018 by BMW in India. View specs, features, colours, images, mileage and videos. 49,99,000 for Expedition trim and Rs. BMW X3 diesel is priced at 49.99 Lakh while petrol variant comes with a price tag of 58.80 Lakh. 56.0 Lakh. The prices of X3 diesel variants start at Rs. ";s:7:"keyword";s:26:"bmw x3 price in india 2019";s:5:"links";s:5044:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cities-skylines-ps4-vs-pc'>Cities Skylines Ps4 Vs Pc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2009-gsxr-600-for-sale'>2009 Gsxr 600 For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2019-range-rover-evoque-convertible-review'>2019 Range Rover Evoque Convertible Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=%27im-as-happy-as%27-sayings'>'im As Happy As' Sayings</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-used-cars-under-15000-2018'>Best Used Cars Under 15000 2018</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=ford-excursion-for-sale-craigslist'>Ford Excursion For Sale Craigslist</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=i20-active-vs-i20-elite'>I20 Active Vs I20 Elite</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=tall-ships-2019-schedule-canada'>Tall Ships 2019 Schedule Canada</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=eye-of-the-beholder-nurse'>Eye Of The Beholder Nurse</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1957-lincoln-continental-mark-ii-convertible-for-sale'>1957 Lincoln Continental Mark Ii Convertible For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=types-of-switches-used-in-homes'>Types Of Switches Used In Homes</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=phineas-and-ferb-season-2-episode-6'>Phineas And Ferb Season 2 Episode 6</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=list-of-channels-on-dstv-compact'>List Of Channels On Dstv Compact</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=1980-harley-davidson-sportster-for-sale'>1980 Harley Davidson Sportster For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kill-them-with-kindness-quote'>Kill Them With Kindness Quote</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-drive-on-sand-with-trailer'>How To Drive On Sand With Trailer</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-draw-a-narrow-boat'>How To Draw A Narrow Boat</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=hyundai-campervan-for-sale-scotland'>Hyundai Campervan For Sale Scotland</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=custom-triumph-bobber-for-sale'>Custom Triumph Bobber For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=is-ac-delco-oil-good'>Is Ac Delco Oil Good</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=dry-tortugas-national-park-map'>Dry Tortugas National Park Map</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cat-793-haul-truck-price'>Cat 793 Haul Truck Price</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mercedes-e-class-convertible-2014'>Mercedes E Class Convertible 2014</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2017-honda-civic-lx-review'>2017 Honda Civic Lx Review</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=craigslist-camper-van-for-sale'>Craigslist Camper Van For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2006-honda-foreman-500-carburetor'>2006 Honda Foreman 500 Carburetor</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2016-infiniti-qx50-trim-levels'>2016 Infiniti Qx50 Trim Levels</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=He-Gets-That-From-Me'>He Gets That From Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=butterfly-host-plants-north-carolina'>Butterfly Host Plants North Carolina</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=who-sings-all-mixed-up-by-the-cars'>Who Sings All Mixed Up By The Cars</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=global-automotive-industry-2019-pdf'>Global Automotive Industry 2019 Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=bullet-bass-boats-top-speed'>Bullet Bass Boats Top Speed</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=2013-hyundai-elantra-clock-spring-recall'>2013 Hyundai Elantra Clock Spring Recall</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=friend-or-foe-spongebob-game'>Friend Or Foe Spongebob Game</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=breakfast-in-vienna-near-me'>Breakfast In Vienna Near Me</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=curt-5th-wheel-hitch-reviews'>Curt 5th Wheel Hitch Reviews</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=heavy-recovery-truck-for-sale-uk'>Heavy Recovery Truck For Sale Uk</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-is-the-climax-of-popular-mechanics'>What Is The Climax Of Popular Mechanics</a>,
+";s:7:"expired";i:-1;}

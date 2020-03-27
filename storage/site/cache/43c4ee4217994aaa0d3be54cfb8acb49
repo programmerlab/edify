@@ -1,0 +1,679 @@
+a:5:{s:8:"template";s:10061:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible"/>
+<title>{{ keyword }}</title>
+
+<style media="screen" rel="stylesheet" type="text/css">
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#art-main
+{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+
+#art-page-background-simple-gradient
+{
+	position: absolute;
+	background-image: url();
+	background-repeat: repeat-x;
+	top:0;
+	width: 100%;
+	height: 1px;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+/* end Page */
+
+/* begin Box, Sheet */
+.art-Sheet
+{
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	width: 1052px;
+	min-width:33px;
+	min-height:33px;
+}
+
+.art-Sheet-body
+{
+	position: relative;
+	z-index: 1;
+	padding: 1px;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl, .art-Sheet-tc, .art-Sheet-bc, .art-Sheet-cr, .art-Sheet-cl
+{
+	position:absolute;
+	z-index:-1;
+}
+
+.art-Sheet-tr, .art-Sheet-tl, .art-Sheet-br, .art-Sheet-bl
+{
+	width: 32px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tl
+{
+	top:0;
+	left:0;
+	clip: rect(auto, 16px, 16px, auto);
+}
+
+.art-Sheet-tr
+{
+	top: 0;
+	right: 0;
+	clip: rect(auto, auto, 16px, 16px);
+}
+
+.art-Sheet-bl
+{
+	bottom: 0;
+	left: 0;
+	clip: rect(16px, 16px, auto, auto);
+}
+
+.art-Sheet-br
+{
+	bottom: 0;
+	right: 0;
+	clip: rect(16px, auto, auto, 16px);
+}
+
+.art-Sheet-tc, .art-Sheet-bc
+{
+	left: 16px;
+	right: 16px;
+	height: 32px;
+	background-image: url();
+}
+
+.art-Sheet-tc
+{
+	top: 0;
+	clip: rect(auto, auto, 16px, auto);
+}
+
+.art-Sheet-bc
+{
+	bottom: 0;
+	clip: rect(16px, auto, auto, auto);
+}
+
+.art-Sheet-cr, .art-Sheet-cl
+{
+	top: 16px;
+	bottom: 16px;
+	width: 32px;
+	background-image: url();
+}
+
+.art-Sheet-cr
+{
+	right:0;
+	clip: rect(auto, auto, auto, 16px);
+}
+
+.art-Sheet-cl
+{
+	left:0;
+	clip: rect(auto, 16px, auto, auto);
+}
+
+.art-Sheet-cc
+{
+	position:absolute;
+	z-index:-1;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+	background-color: #FFFFFF;
+}
+
+
+.art-Sheet
+{
+	margin-top: -1px !important;
+}
+
+#art-page-background-simple-gradient
+{
+	min-width:1052px;
+}
+
+/* end Box, Sheet */
+
+/* begin Header */
+div.art-Header
+{
+	margin: 0 auto;
+	position: relative;
+	z-index:0;
+	width: 1050px;
+	height: 120px;
+}
+
+
+div.art-Header-jpeg
+{
+	position: absolute;
+	z-index:-1;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 120px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+/* end Header */
+
+/* begin Logo */
+.art-Logo
+{
+	display : block;
+	position: absolute;
+	left: 818px;
+	top: 16px;
+	width: 232px;
+}
+
+h1.art-Logo-name
+{
+	display: block;
+	text-align: left;
+}
+
+h1.art-Logo-name, h1.art-Logo-name a, h1.art-Logo-name a:link, h1.art-Logo-name a:visited, h1.art-Logo-name a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+.art-Logo-text
+{
+	display: block;
+	text-align: left;
+}
+
+.art-Logo-text
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+	padding:0;
+	margin:0;
+	color: #808080 !important;
+}
+
+
+.art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover
+{
+	text-align:left;
+	text-decoration:none;
+	outline:none;
+	letter-spacing:normal;
+	word-spacing:normal;
+}
+
+.art-menu
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	display: block;
+}
+
+.art-menu li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background:none;
+}
+
+.art-menu li:hover
+{
+	z-index: 10000;
+	white-space: normal;
+}
+
+.art-menu:after
+{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.art-menu
+{
+	min-height: 0;
+}
+
+
+
+
+
+/* menu structure */
+
+.art-menu
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.art-nav
+{
+	position: relative;
+	height: 26px;
+	z-index: 100;
+}
+
+.art-nav .l, .art-nav .r
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	height: 26px;
+	background-image: url();
+}
+
+.art-nav .l
+{
+	left: 0;
+	right:0px;
+}
+
+.art-nav .r
+{
+	right: 0;
+	width: 1050px;
+	clip: rect(auto, auto, auto, 1050px);
+}
+
+
+/* end Menu */
+
+/* begin MenuItem */
+
+.art-menu a
+{
+	position:relative;
+	display: block;
+	overflow:hidden;
+	height: 26px;
+	cursor: pointer;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.art-menu a .r, .art-menu a .l
+{
+	position:absolute;
+	display: block;
+	top:0;
+	z-index:-1;
+	height: 78px;
+	background-image: url();
+}
+
+.art-menu a .l
+{
+	left:0;
+	right:0px;
+}
+
+.art-menu a .r
+{
+	width:400px;
+	right:0;
+	clip: rect(auto, auto, auto, 400px);
+}
+
+.art-menu a .t 
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+	color: #B9DBF0;
+	padding: 0 22px;
+	margin: 0 0px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.art-menu a:hover .l, .art-menu a:hover .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover>a .l, .art-menu li:hover>a .r
+{
+	top:-26px;
+}
+
+.art-menu li:hover a .l, .art-menu li:hover a .r
+{
+	top:-26px;
+}
+.art-menu a:hover .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover a .t
+{
+	color: #484E46;
+}
+
+.art-menu li:hover>a .t
+{
+	color: #484E46;
+}
+
+
+body
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+  color: #000000;
+}
+
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+
+a:visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #14568A;
+}
+
+a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #14568A;
+}
+
+h1, h1 a
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: normal;
+text-align: left;
+  color: #14568A;
+}
+
+ul
+{
+	color: #000000;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 1050px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url();
+	width: 1050px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url();
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 30px;
+    cursor: default;
+}
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#14578A;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-page-footer
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+</style>
+
+
+<style rel="stylesheet" type="text/css">.easyChartBuilder {
+margin:0 5px 10px;
+}
+
+.easyChartBuilder .easyChartDataTable 
+{margin:1px;padding:2px;border:1px;outline:5px;font-size:100%;vertical-align:baseline;
+border-collapse:separate; border-spacing:1px; border-color:#AAAAAA; border-style:solid;
+margin-left:auto; margin-right:auto;
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border-bottom: 1px solid #ddd;
+border-right: 1px solid #aaa;
+border-left: 1px solid #ccc;
+border-top: 1px solid #e4e4e4;}
+
+
+</style>
+
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+</div>
+<div id="art-main">
+<div class="art-Sheet">
+<div class="art-Sheet-tl"></div>
+<div class="art-Sheet-tr"></div>
+<div class="art-Sheet-bl"></div>
+<div class="art-Sheet-br"></div>
+<div class="art-Sheet-tc"></div>
+<div class="art-Sheet-bc"></div>
+<div class="art-Sheet-cl"></div>
+<div class="art-Sheet-cr"></div>
+<div class="art-Sheet-cc"></div>
+<div class="art-Sheet-body">
+<div class="art-Header">
+<div class="art-Header-jpeg"></div>
+<div class="art-Logo">
+<h1 class="art-Logo-name" id="name-text">
+<a href="#">{{ keyword }}</a></h1>
+<div class="art-Logo-text" id="slogan-text">
+        Let's get started…</div>
+</div>
+</div>
+<div class="art-nav">
+<div class="l"></div>
+<div class="r"></div>
+<ul class="art-menu">
+<li><a href="#"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li><li class="page_item page-item-2"><a href="#"><span class="l"></span><span class="r"></span><span class="t">About</span></a></li>
+<li class="page_item page-item-5"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
+<li class="page_item page-item-8"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Sitemap</span></a></li>
+<li class="page_item page-item-10"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Privacy</span></a></li>
+<li class="page_item page-item-235"><a href="#"><span class="l"></span><span class="r"></span><span class="t">Products</span></a></li>
+</ul>
+</div>
+{{ text }}
+<div class="art-Footer">
+<div class="art-Footer-inner">
+<a class="art-rss-tag-icon" href="#" title="RSS"></a>
+<div class="art-Footer-text">
+<p>
+{{ links }}
+</p>
+</div>
+</div>
+<div class="art-Footer-background">
+</div>
+</div>
+<div class="cleared"></div>
+</div>
+</div>
+<div class="cleared"></div>
+<p class="art-page-footer"></p>
+</div>
+
+<div>
+
+</div>
+</body>
+</html>";s:4:"text";s:4817:"Bungie.net is the Internet home for Bungie, the developer of Destiny, Halo, Myth, Oni, and Marathon, and the only place with official Bungie info straight from the developers. Sega Fall 2002--For those of you wondering, yes, Sega GT 2002 plays better than the original Dreamcast game. Archived. The game was originally intended to be released for the Dreamcast, but when the Dreamcast was discontinued in 2001, the game was reprogrammed for the Xbox. [WSIB] PC/PS3 Racing game similar to SEGA GT 2002 [PC] It was one of my favorite racing games, haven't played it in years though. Discussion. Avoiding Damage to Discs or the Disc Drive To avoid damage to discs or the disc drive: Insert only Xbox-compatible discs into the disc drive. Sega GT 2002 is the sequel to Sega GT, which was released for the Dreamcast in February 2000. Download the Sega GT 2002 ROM for XBox . Never use oddly shaped discs, such as star-shaped or heart-shaped discs. … Sega GT 2002 is the sequel to Wow Entertainment's Racing Game Sega GT, released in 2002 as a competitor to the PlayStation 2's highly successful Gran Turismo 3. u/jj03max01. Sega Rally Championship is a 1994 racing video game developed and published by Sega, Originally released for arcades using the Sega Model 2 board, it was ported over to the Sega Saturn in 1995 and Microsoft Windows in 1997. Download Free ROMs for over 110 retro gaming systems! This game doesn't have thousands of cars, or the most customizable ones. Is there like an emulator available or something? yea go download an xbox emulator and find the Sega GT 2002 ROM. It was initially planned as a DreamCast release as well, but with the Dreamcast being discontinued in 2001, this led to it becoming an original Xbox release. Posted by. 1 year ago. 2. 9 years ago. Play on Windows, Mac OS X, Linux, Windows Phone, and Android Devices. SEGA GT 2002 Xbox walkthrough and guide at GameSpy - Check out the latest walkthroughs and guides for Xbox ... Sega GT doesn't do a good job of naming tracks, and in fact when you go into a Special Event, it gives you the map and not the NAME of the track. Discussion. Sega GT 2002 game Close. Relevance. While Sega GT was met with positive reception, sales were only modest, and the Dreamcast was given little traction against its competition. What it does have is whatever u want. Star Wars: Knights of the Old Republic AKA Star Wars KOTOR Tested and Working: Mod-chipped Xbox v1.2 Info: This game has been MIX region patched by kami knows what (probably DVD2XBOX) so I am unsure of it's original origin (I'm guessing NTSC … Bungie.net is the Internet home for Bungie, the developer of Destiny, Halo, Myth, Oni, and Marathon, and the only place with official Bungie info straight from the developers. Can I play Sega GT 2002 on PC? u/jj03max01. Answer Save. Relevance. 7 comments. Sega GT 2002 is the sequel to Wow Entertainment's Racing Game Sega GT, released in 2002 as a competitor to the PlayStation 2's highly successful Gran Turismo 3. Best answer. Sega GT 2002 and Jet Set Radio Future were merged into one disc and sold bundled with specially marked Xbox packages. Archived. yea go download an xbox emulator and find the Sega GT 2002 ROM. share. Despite this, Sega would continue the series on the Xbox with a sequel titled, Sega GT 2002 following the demise of the Dreamcast console. … It doesn't have the greatest graphics, or the the most addicting gameplay. Is there any way possible to be able to play this game on PC? SEGA GT MODE: this is the main chunk of the game and what you will hopefully be spending a great deal of your time on; QUICK RACE: this is if you just want to have a race with a group of friends after a night out; chronically, this is a rather odd mode that makes use of the older cars. Can I play Sega GT 2002 on PC? It doesn't have the greatest graphics, or the the most addicting gameplay. 0 0 0. cassin. Now that we've gotten our hands on it, we can really appreciate the cool, classic cars you can use and a couple of really keen features. This game doesn't have thousands of cars, or the most customizable ones. Is there any way possible to be able to play this game on PC? 10 years ago. 2. By Amer Ajami on September 4, 2002 at 3:39PM PDT For Sega GT 2002 on the Xbox, GameFAQs has 2 cheat codes and secrets. Sega GT 2002 .  about using Xbox Controller to play sega GT 2002. The soundtrack is also given an expansion with new songs being added that make the game even more of a blast to play … Favorite Answer. 7 comments. 0 0 0. SEGA GT MODE: this is the main chunk of the game and what you will hopefully be spending a great deal of your time on; QUICK RACE: this is if you just want to have a race with a group of friends after a night out; chronically, this is a rather odd mode that makes use of the older cars. ";s:7:"keyword";s:23:"play sega gt 2002 on pc";s:5:"links";s:3351:"<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=buying-a-boat-in-germany'>Buying A Boat In Germany</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=used-school-bus-parts-florida'>Used School Bus Parts Florida</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=advance-auto-parts-hyderabad-kokapet'>Advance Auto Parts Hyderabad Kokapet</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=cambridge-dictionary-download-for-mobile'>Cambridge Dictionary Download For Mobile</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=the-blue-lagoon-the-awakening-netflix'>The Blue Lagoon The Awakening Netflix</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=kawasaki-ultra-310-engine-for-sale'>Kawasaki Ultra 310 Engine For Sale</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=one-piece-pirate-warriors-ps3'>One Piece Pirate Warriors Ps3</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=euro-truck-simulator-highly-compressed-download-for-pc'>Euro Truck Simulator Highly Compressed Download For Pc</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=how-to-get-fit-for-mountain-biking'>How To Get Fit For Mountain Biking</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=retractable-car-window-curtains-and-sun-shades'>Retractable Car Window Curtains And Sun Shades</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=luck-by-chance-full-movie-download-khatrimaza'>Luck By Chance Full Movie Download Khatrimaza</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Yesterday%2C-When-I-Was-You...'>Yesterday, When I Was You...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=military-sea-transportation-service-ships'>Military Sea Transportation Service Ships</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=eyes-without-a-face-marsheaux'>Eyes Without A Face Marsheaux</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=best-off-road-games-for-android-2019'>Best Off Road Games For Android 2019</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=she-cried-andi-mack-lyrics'>She Cried Andi Mack Lyrics</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=lego-dc-comics-super-heroes%3A-justice-league-%E2%80%93-attack-of-the-legion-of-doom'>Lego Dc Comics Super Heroes: Justice League – Attack Of The Legion Of Doom</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=suzuki-gixxer-parts-catalogue-pdf'>Suzuki Gixxer Parts Catalogue Pdf</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=Aguri-Suzuki-F%E2%80%911-Super-Dr...'>Aguri Suzuki F‑1 Super Dr...</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=what-causes-a-power-cut-at-home'>What Causes A Power Cut At Home</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=scania-truck-driving-simulator-mod-apk-download'>Scania Truck Driving Simulator Mod Apk Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=travelling-songs-mp3-free-download'>Travelling Songs Mp3 Free Download</a>,
+<a href='http://edifyartist.com/storage/site/bfrvp8.php?2ba73a=mitsubishi-lancer-price-in-india'>Mitsubishi Lancer Price In India</a>,
+";s:7:"expired";i:-1;}
