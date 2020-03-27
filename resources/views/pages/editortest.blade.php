@@ -54,6 +54,9 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <h2 class="testTitle">Online Portfolio</h2>
+                        @if($errors->all())
+                        {{ $errors->all() }}
+                        @endif
                         <p>Do you keep your work online ? we'd like to take a peek into your soceial media for your
                             skils. you can provide link to your profiles in the fields. </p>
                         <ul class="list">
@@ -67,13 +70,13 @@
                     <div class="col-sm-6">
                     <div class="testOp">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder='Instagram ID' name="fb_id" id="fb_id" required>
+                            <input type="text" class="form-control" placeholder='Instagram ID' name="fb_id" id="fb_id"  value="{{old('fb_id')}}">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="insta_id" id="insta_id" placeholder='Facebook ID' required>
+                            <input type="text" value="{{old('insta_id')}}" class="form-control" name="insta_id" id="insta_id" placeholder='Facebook ID' >
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="other_id" id="other_id" placeholder='Other ID'  required>
+                            <input type="text" class="form-control" name="other_id" id="other_id" placeholder='Other ID'   value="{{old('other_id')}}">
                         </div>
                     </div>
                     </div>

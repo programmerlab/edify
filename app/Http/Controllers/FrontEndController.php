@@ -153,6 +153,23 @@ class FrontEndController extends Controller
             $img3_name = time().$img3->getClientOriginalName();
 
         }
+
+            $validator = Validator::make($request->all(), [
+                'img1' => 'required',
+                'img2' => 'required',
+                'img3' => 'required' 
+            ]); 
+ 
+
+        // Return Error Message
+        if ($validator->fails()) {
+ 
+            return redirect()
+                        ->back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }  
+
         $data = array('eid'=>$eid, 'img1' => $img1_name, 'img2' => $img2_name, 'img3'=>$img3_name, 'img1_status'=>0, 'img2_status'=>0, 'img3_status'=>0 , 'insta_id'=>$request->get('insta_id') , 'fb_id'=>$request->get('fb_id') , 'other_id'=>$request->get('other_id'));
         $insert = EditorTest::insert($data);
         
