@@ -2,7 +2,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-	@if($profile_image ?? ' ')
+	@if(isset($profile_image))
                     <img src="{{ $profile_image ?? ' ' }}" width="48" height="48" alt="User" />
 	@else
 	<img src="assets/images_dashboard/user.png" width="48" height="48" alt="User" />

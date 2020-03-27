@@ -15,7 +15,17 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('dashboard.editordashboard');
+         if(Auth::check()){
+             
+          $check_status = EditorTest::where('eid',Auth::user()->id)->first();
+           
+            if ($check_status == null) {
+                return redirect(URL::to('editortest'));
+
+            } 
+        } 
+            
+        return view('dashboard.editordashboard', compact('check_status'));
     }
 
     public function MyAccount()

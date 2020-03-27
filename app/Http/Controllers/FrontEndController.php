@@ -19,11 +19,12 @@ class FrontEndController extends Controller
         if(Auth::check()){
              
           $check_eid = EditorTest::where('eid',Auth::user()->id)->first();
+           
                 if ($check_eid == null) {
                     return redirect(URL::to('editortest'));
 
                 }else{
-                    return redirect('editordashboard');  
+                    return redirect('editordashboard',compact('check_eid'));  
                 }
         } 
         
@@ -136,6 +137,10 @@ class FrontEndController extends Controller
             $img1->move($destinationPath, time().$img1->getClientOriginalName());
             $img1_name = time().$img1->getClientOriginalName();
 
+        }else{
+             $request->validate([
+                'img1' => 'required' 
+            ]);
         }
         if($request->hasFile('img2'))
         {
@@ -145,6 +150,12 @@ class FrontEndController extends Controller
             $img2_name = time().$img2->getClientOriginalName();
 
         }
+        else
+        {
+             $request->validate([
+                'img2' => 'required' 
+            ]);
+        }
         if($request->hasFile('img3'))
         {
             $img3 = $request->file('img3');
@@ -152,23 +163,13 @@ class FrontEndController extends Controller
             $img3->move($destinationPath, time().$img3->getClientOriginalName());
             $img3_name = time().$img3->getClientOriginalName();
 
-        }
-
-            $validator = Validator::make($request->all(), [
-                'img1' => 'required',
-                'img2' => 'required',
+        }else{
+            $request->validate([
                 'img3' => 'required' 
-            ]); 
- 
+            ]);
+        } 
 
-        // Return Error Message
-        if ($validator->fails()) {
- 
-            return redirect()
-                        ->back()
-                        ->withErrors($validator)
-                        ->withInput();
-        }  
+
 
         $data = array('eid'=>$eid, 'img1' => $img1_name, 'img2' => $img2_name, 'img3'=>$img3_name, 'img1_status'=>0, 'img2_status'=>0, 'img3_status'=>0 , 'insta_id'=>$request->get('insta_id') , 'fb_id'=>$request->get('fb_id') , 'other_id'=>$request->get('other_id'));
         $insert = EditorTest::insert($data);
