@@ -402,10 +402,10 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="" width="100%"  height="400px" id="orginal_img" alt="Original Image" />
+                                    <img src="" width="100%"  height="400px" id="orginal_img" alt="Original Image" id="origin_img"  />
                                 </div>
                                 <div class="item">
-                                    <img class="oimg" height="400px" width="100%" src="#" alt="Reference Image" />
+                                    <img class="oimg" height="400px" width="100%" src="#" alt="Reference Image" id="ref_img" />
                                 </div>
                             </div>
 
@@ -431,8 +431,10 @@
                                     <div class="col-xs-12 col-sm-6 text-right">
                                         <h4 class="m-t-0 m-b-0">Downloads</h4>
                                         <hr class="m-t-5 m-b-10">
-                                        <a href="#" target="_blank" class="btn bg-deep-orange download" download="download" data-toggle="tooltip" title="Download!">Original Image</a> 
-                                         <a href="#" target="_blank" class="btn bg-deep-orange download" download="download" data-toggle="tooltip" title="Download!">Reference Image</a> 
+                                        <a href="#" target="_blank" class="btn bg-deep-orange download origin_img" download="download" data-toggle="tooltip" title="Download Original Image" 
+                                        
+                                        >Original Image</a> 
+                                         <a href="#" target="_blank" class="btn bg-deep-orange download ref_img" download="download" data-toggle="tooltip" title="Download Reference Image">Reference Image</a> 
                                     </div>
                                     <div class="col-xs-12">
                                         <hr>
@@ -497,8 +499,10 @@
 <script>
     var url = "<?php echo url('/'); ?>";
     function getImgUrl(imgUrl){
-         $('#orginal_img').attr('src',imgUrl);
-         $('.download').attr('href',imgUrl);
+            $('#orginal_img').attr('src',imgUrl);
+            $('.origin_img').attr('href',imgUrl);
+
+          
     }
 
     function changeStatus(status,imgId){
@@ -516,7 +520,9 @@
 
           var img =  $(this).attr('data-img'); 
           var title =  $(this).attr('data-title'); 
-          $('#showImage').attr('src',img);
+          $('#showImage').attr('src',img); 
+          
+
           if(img.length==0){
             title = '<p class="btn-warning">Edited Image not Available!.Kindly Upload.</p>';
           }
@@ -534,6 +540,11 @@
             $("#orderDetails .oCustomer").text(customer);
             $("#orderDetails .oDesc").text(desc);
             $("#orderDetails .oimg").attr('src',editmg);
+        
+
+              $('.ref_img').attr('href',$('#ref_img').attr('src'));
+
+
             if($(this).hasClass('completed')){
                 $("#orderDetails form").hide()
             }
@@ -544,6 +555,26 @@
             $("#orderDetails").modal('show');
         })
     })
+
+    forceDownload();
+    function forceDownload( ){
+         url = "https://edifyartist.com/storage/uploads/1585401153images%20(1).jpeg";
+         fileName = "kroy.jpg";
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.responseType = "blob";
+        xhr.onload = function(){
+            var urlCreator = window.URL || window.webkitURL;
+            var imageUrl = urlCreator.createObjectURL(this.response);
+            var tag = document.createElement('a');
+            tag.href = imageUrl;
+            tag.download = fileName;
+            document.body.appendChild(tag);
+            tag.click();
+            document.body.removeChild(tag);
+        }
+        xhr.send();
+}
 </script>
 </body>
 
