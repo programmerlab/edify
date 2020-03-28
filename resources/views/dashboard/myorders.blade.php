@@ -570,7 +570,7 @@
                 var imageUrl = urlCreator.createObjectURL(this.response);
                 var tag = document.createElement('a');
                 tag.href = imageUrl;
-                tag.download = imageUrl;
+                tag.download = url;
                 document.body.appendChild(tag);
                 tag.click();
                 document.body.removeChild(tag);
@@ -589,7 +589,7 @@
                 var imageUrl = urlCreator.createObjectURL(this.response);
                 var tag = document.createElement('a');
                 tag.href = imageUrl;
-                tag.download = imageUrl;
+                tag.download = url;
                 document.body.appendChild(tag);
                 tag.click();
                 document.body.removeChild(tag);
