@@ -611,6 +611,7 @@ class ApiController extends BaseController
                     $allPosts[] = array('id' => $postModels->id,
                                  'image_name_after' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels ->after_img,
                                  'image_name_before' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels-> before_img,
+                                 'editor_id' => $postModels ->eid,
                                  'likes' => $likes,
                                  'editor_details'=>$editorInfoModel
                               ); 
