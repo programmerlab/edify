@@ -28,13 +28,16 @@ class DashboardController extends Controller
 
     }
 
+    public function downloadFile(Request $request){
+
+        $path  =$request->download;
+        return Response::download($path);
+    }
+
     public function index()
     {
          if(Auth::check()){ 
-          $check_status = EditorTest::where('eid',Auth::user()->id)->first();
-           
-
-               
+          $check_status = EditorTest::where('eid',Auth::user()->id)->first();           
 
             if ($check_status == null) {
                 return redirect(URL::to('editortest'));
@@ -128,14 +131,68 @@ class DashboardController extends Controller
     public function PostDelete($id=null){  
          \DB::table('editor_post')
                         ->where('id', $id)
-                        ->delete();
-       
+                        ->delete();       
        return redirect('posts')->with('flash_alert_notice', 'Post Deleted successfully');
     }
 
+    public function uploadEditedImage(Request $request){
+        
+        if ($request->file('editedImage')) {
+            $photo = $request->file('editedImage');
+            $destinationPath = storage_path('uploads/editedImage/');
+            $photo->move($destinationPath, time().$photo->getClientOriginalName());
+            $photo_name = time().$photo->getClientOriginalName();
+            $request->merge(['editor_after_work_image'=>$photo_name]);  
+            $data['editor_after_work_image']  = url::to(asset('storage/uploads/editedImage/'.$photo_name));
+        } 
+
+        $data['editor_status'] = $request->editor_status;
+        $data['editor_remarks'] = $request->editor_remarks;
+
+        if($request->image_id){
+            \DB::table('orders')
+                    ->where('id', trim($request->image_id))
+                    ->update($data);    
+        }  
+
+        $order = \DB::table('orders')
+                    ->where('editor_id',Auth::user()->id)
+                    ->get();           
+        return view('dashboard.myorders',compact('order'));
+
+    }
+    public function changeOrderStatus(Request $request){ 
+        $request_url = URL::previous();
+
+        if (strpos($request_url, 'myorders') !== false) {
+           if($request->image_id){
+            \DB::table('orders') 
+                    ->where('id',$request->image_id)
+                    ->where('editor_id', Auth::user()->id)
+                    ->update(['editor_status' => $request->status]);    
+            }  
+        }
+
+        elseif (strpos($request_url, 'uploadEditedImage') !== false) {
+           if($request->image_id){
+            \DB::table('orders') 
+                    ->where('id',$request->image_id)
+                    ->where('editor_id', Auth::user()->id)
+                    ->update(['editor_status' => $request->status]);    
+            }  
+        }
+
+
+
+        return redirect($request_url);
+    }
     public function MyOrders()
-    {
-        return view('dashboard.myorders');
+    { 
+        $order = \DB::table('orders')
+                    ->where('editor_id',Auth::user()->id)
+                    ->get();  
+
+        return view('dashboard.myorders',compact('order'));
     }
 
     public function HowItWorks()

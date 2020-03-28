@@ -28,8 +28,13 @@ Route::get('mystories', 'DashboardController@MyStories');
 Route::get('story/delete/{id}', 'DashboardController@storyDelete');
 Route::get('document/delete/{id}', 'DashboardController@DocumentDelete');
 
+Route::get('downloadFile', 'DashboardController@downloadFile');
+
 Route::get('upload-document', 'DashboardController@uploadDocument');
 Route::post('bankAccount', 'DashboardController@bankAccount');
+Route::post('uploadEditedImage', 'DashboardController@uploadEditedImage');
+Route::get('uploadEditedImage', 'DashboardController@uploadEditedImage');
+Route::get('changeOrderStatus', 'DashboardController@changeOrderStatus');
 
 Route::get('myaccount', 'DashboardController@MyAccount');
 Route::get('postinfo', 'DashboardController@PostInfo');
