@@ -19,10 +19,8 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-settings font-red"></i>
-                                        <span class="caption-subject font-red sbold uppercase">{{ $heading }}</span>
-                                    </div>
-                                     
-                                     
+                                        <span class="caption-subject font-red sbold uppercase">All Orders</span>
+                                    </div> 
                                 </div>
                                   
                                     @if(Session::has('flash_alert_notice'))
@@ -38,7 +36,22 @@
                                             <form action="{{route('postTask')}}" method="get" id="filter_data">
                                              
                                             <div class="col-md-3">
-                                                <input value="{{ (isset($_REQUEST['search']))?$_REQUEST['search']:''}}" placeholder="Task Title" type="text" name="search" id="search" class="form-control" >
+                                                 <select name="search" class="form-control">
+                                                     <option>Select Status
+                                                     </option>
+                                                     <option value="1">
+                                                         Pending
+                                                     </option>
+                                                     <option value="2">
+                                                         In Progress
+                                                     </option>
+                                                     <option value="3">
+                                                         Completed
+                                                     </option>
+                                                     <option value="4">
+                                                         Rejected
+                                                     </option>
+                                                 </select>
                                             </div>
                                              <div class="col-md-3">
                                                 {!! Form::text('taskdate',null, ['id'=>'taskdate','class' => 'form-control taskdate','data-required'=>1,"size"=>"16","data-date-format"=>"yyyy-mm-dd","placeholder"=>'Task post date'])  !!} 
@@ -59,29 +72,54 @@
                                         <thead>
                                             <tr>
                                                 <th> Sno</th>
-                                                <th> Title  dfdf</th>
-                                                <th> Description </th>  
-                                                <th>Total Amount</th> 
-                                                <th>Hourly Rate</th> 
-                                                 <th>Status</th> 
-                                                <th>Created Date</th> 
-                                                 <th></th> 
-                                                 <th>Action</th>
+                                                <th> Customer</th>
+                                                <th> Editor </th>  
+                                                <th>Status</th> 
+                                                <th>Total Price</th> 
+                                                 <th>Order Id</th> 
+                                                <th>Original Pic</th> 
+                                                <th>Ref Pic</th>
+                                                <th>Edited Pic</th>
+                                                <th>Last Modified</th>  
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         @foreach($postTasks as $key => $result)
                                             <tr>
                                             <td> {{ (($postTasks->currentpage()-1)*15)+(++$key) }}</td>
-                                                <td>{{ $result->title}}</td>
-                                                <td>{{ substr($result->description,0,20)   }}</td>
-                                                <td>{{ $result->totalAmount}}
-                                                    {{$currency->field_value ?? ''}}
+                                           
+                                                <td>{{ $result->user->first_name.' '.$result->user->last_name}}</td>
+                                                
+                                                <td>{{ $result->editor->first_name.' '.$result->editor->last_name}}
                                                 </td>
-                                                <td>{{ $result->hourlyRate}} {{$currency->field_value ?? ''}}</td>
-                                                <td>{{ $result->status}}</td>
-                                                <td>{{ $result->created_at}}</td>
-                                                <td><a href="{{route('postTask.show',$result->id)}}"> View Details </a></td>
+                                                <td>
+                                                    @if($result->status==1)
+                                                    <span class=" btn alert-warning"> Pending
+                                                    </span>    
+                                                    @elseif($result->status==2)
+                                                    <span class="btn  alert-info"> In Progress
+                                                    </span> 
+                                                    @elseif($result->status==3)
+                                                    <span class="  alert-success"> Completed
+                                                    </span> 
+                                                    @elseif($result->status==4)
+                                                    <span class="  alert-danger"> Rejected
+                                                    </span> 
+                                                    @endif
+                                                </td>
+                                                
+
+                                                <td>{{ $result->total_price}} INR</td>
+                                                <td><a href="{{route('postTask.show',$result->id)}}">
+                                                    {{ $result->order_id}} </a></td>
+                                                
+                                                <td><a href="{{url($result->customer_original_image)}}"> View  </a></td>
+
+                                                <td><a href="{{url($result->customer_reference_image)}}"> View  </a></td>
+                                                 <td><a href="{{url($result->editor_after_work_image)}}"> View  </a></td>
+
+                                                <td>{{ $result->updated_at}}</td>
                                                 <td> 
                                                     {!! Form::open(array('class' => 'form-inline pull-left deletion-form', 'method' => 'DELETE',  'id'=>'deleteForm_'.$result->id, 'route' => array('postTask.destroy', $result->id))) !!}
                                                         <button class='delbtn btn btn-danger btn-xs' type="submit" name="remove_levels" value="delete" id="{{$result->id}}"><i class="fa fa-fw fa-trash" title="Delete"></i></button>

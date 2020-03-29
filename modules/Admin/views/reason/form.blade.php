@@ -2,10 +2,7 @@
 
 <div class="form-body">
     <div class="alert alert-danger display-hide">
-        <button class="close" data-close="alert"></button> Please fill the required field! </div>
-  <!--   <div class="alert alert-success display-hide">
-        <button class="close" data-close="alert"></button> Your form validation is successful! </div>
---> 
+        <button class="close" data-close="alert"></button> Please fill the required field! </div> 
 
          <div class="form-group {{ $errors->first('reasonType', ' has-error') }}  @if(session('field_errors')) {{ 'has-group' }} @endif">
             <label class="col-md-3 control-label">Reason Type
@@ -27,10 +24,7 @@
                 
                 <span class="help-block">{{ $errors->first('reasonDescription', ':message') }}</span>
             </div>
-        </div> 
-
-
-        
+        </div>  
         
     </div>
     <div class="form-actions">

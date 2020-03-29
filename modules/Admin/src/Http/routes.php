@@ -8,6 +8,7 @@
 
     Route::post('admin/blog/ajax', 'Modules\Admin\Http\Controllers\BlogController@ajax');
 
+    Route::post('admin/postTask/addRemarks', 'Modules\Admin\Http\Controllers\PostTaskController@addRemarks');
       
 
     Route::post('admin/login', function (App\Admin $user) {

@@ -22,8 +22,7 @@
                     <!-- END PAGE BREADCRUMB -->
                     <!-- BEGIN PAGE BASE CONTENT -->
                       <div class="row">
-                        <div class="col-md-12">
-                            <!-- BEGIN VALIDATION STATES-->
+                        <div class="col-md-12"> 
                             <div class="portlet light portlet-fit portlet-form bordered">
                                 <div class="portlet-title">
                                     <div class="caption">

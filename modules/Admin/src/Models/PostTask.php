@@ -14,7 +14,7 @@ class PostTask extends Eloquent {
      *
      * @var string
      */
-    protected $table = 'post_tasks';
+    protected $table = 'orders';
     /**
      * The attributes that are mass assignable.
      *
@@ -40,22 +40,12 @@ class PostTask extends Eloquent {
     
     public function user()
     {
-        return $this->hasOne('Modules\Admin\Models\User','id','userId');
-    }
-
-    public function customer()
-    {
-        return $this->hasOne('Modules\Admin\Models\User', 'taskOwnerId','id');
-    }
-
-     public function category()
-    {
-        return $this->hasOne('Modules\Admin\Models\Category', 'categoryId','id');
-    }
+        return $this->hasOne('Modules\Admin\Models\User','id','user_id');
+    } 
 
    public function editor()
     {
-        return $this->hasOne('Modules\Admin\Models\User', 'taskDoerId','id');
+        return $this->hasOne('Modules\Admin\Models\User', 'id','editor_id');
     }
 
 }

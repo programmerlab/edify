@@ -218,8 +218,17 @@ class DashboardController extends Controller
 
     public function UpdateEditorInfo(Request $request)
     {
-        $data = array('first_name'=>$request['first_name'],'last_name'=>$request['last_name'],'email'=>$request['email_address'],'phone'=>$request['mob']);
-        
+        $data = array(
+            'first_name'    =>  $request->first_name,
+            'last_name'     =>  $request->last_name,
+            'email'         =>  $request->email_address,
+            'phone'         =>  $request->mob,
+            'skills'        =>  $request->skills,
+            'qualification' =>  $request->qualification,
+            'workExperience'=>  $request->workExperience
+
+        ); 
+
         if ($request->file('profile_image')) {
             $photo = $request->file('profile_image');
             $destinationPath = storage_path('uploads/profile/');
@@ -232,7 +241,7 @@ class DashboardController extends Controller
         $update = User::where('id',Session::get('editor_id'))->update($data);
         if($update)
         {
-            Session::put('update_msg','Details Update Succesffuly');
+            Session::put('update_msg','Details Update Successfully');
             return redirect('myaccount'); 
         }
 

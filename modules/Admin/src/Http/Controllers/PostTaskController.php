@@ -34,6 +34,7 @@ use Response;
 use Maatwebsite\Excel\Facades\Excel as Excel;
 use PDF;
 use Modules\Admin\Models\PostTask;
+use Modules\Admin\Models\Comments;
 
 /**
  * Class AdminController
@@ -84,6 +85,71 @@ class PostTaskController extends Controller {
         $this->record_per_page = Config::get('app.record_per_page'); 
     }
 
+    public function addRemarks(Request $request){
+
+        $order  = PostTask::find($request->order_id);
+
+        
+
+        if($order){
+            $user_email = User::find($order->user_id);
+            $editor_email = User::find($order->editor_id);
+            
+            $comments = \DB::table('comments')
+                        ->insert([
+                            'userId' => $order->user_id,
+                            'taskId' => $order->id,
+                            'commentDescription' => $request->admin_remarks,
+                            'editor_id' => $order->editor_id
+                        ]); 
+            $order->editor_status   =   $request->status;
+            $order->status          =   $request->status;
+            $order->admin_remarks   =   $request->admin_remarks; 
+            $order->save();
+
+            if($request->status==1){
+                $s = "Pending";
+            }if($request->status==2){
+                $s = "In Progress";
+            }if($request->status==3){
+                $s = "Completed";
+            }if($request->status==4){
+                $s = "Rejected";
+            }
+
+        $email_content1 = [
+                'receipent_email'=> $editor_email->email,
+                'subject'=> 'Order Status : '.$s,
+                'receipent_name'=>$editor_email->first_name,
+                'sender_name'=>'Edify Team',
+                'data' => 'This is to notify you that your current work status for order id:'.$order->order_id.' is '.$s
+            ];
+        
+        $helper = new Helper;
+        $helper->sendMail($email_content1, 'testmail');
+
+        $email_content2 = [
+                'receipent_email'=> $editor_email->email,
+                'subject'=> 'Order Status : '.$s,
+                'receipent_name'=>$editor_email->first_name,
+                'sender_name'=>'Edify Team',
+                'data' => 'This is to notify you that your current order status for order id:'.$order->order_id.' is '.$s
+            ];
+        
+        $helper = new Helper;
+        $helper->sendMail($email_content2, 'testmail');
+
+
+        return Redirect::to(url('admin/postTask/6#remarks'))
+                        ->with('flash_alert_notice', 'Remarks  successfully updated.');
+        }else{
+
+            return Redirect::to(url('admin/postTask/6#remarks'))
+                        ->with('flash_alert_notice', 'Remarks  not updated.');
+            
+        } 
+        
+    }
    
     /*
      * Dashboard
@@ -110,9 +176,9 @@ class PostTaskController extends Controller {
         if ((isset($search) && !empty($search)) || (isset($taskdate) && !empty($taskdate)) ) {
             $search = isset($search) ? Input::get('search') : null; 
             $taskdate = isset($taskdate) ? $taskdate : null; 
-            $postTasks = PostTask::with('user')->where(function($query) use($search,$taskdate) {
+            $postTasks = PostTask::with('user','editor')->where(function($query) use($search,$taskdate) {
                 if (!empty($search)) {
-                    $query->Where('title', 'LIKE', "%$search%"); 
+                    $query->Where('editor_status', 'LIKE', "%$search%"); 
                 }
                if($taskdate){
                      $query->Where('created_at', 'LIKE', "%$taskdate%");
@@ -120,7 +186,7 @@ class PostTaskController extends Controller {
 
             })->Paginate($this->record_per_page);
         } else {
-            $postTasks = PostTask::with('user')->orderBy('id','desc')->Paginate($this->record_per_page);
+            $postTasks = PostTask::with('user','editor')->orderBy('id','desc')->Paginate(15);
         }
            
         return view('packages::postTask.index', compact('postTasks', 'page_title', 'page_action','sub_page_title','currency'));
@@ -343,24 +409,30 @@ class PostTaskController extends Controller {
 
     public function show( $id) {
         $postTask = PostTask::find($id);
-        $page_title = 'Post Task Detail';
-        $sub_page_title = 'View Post Task Detail';
-        $page_action = 'View Post Task Detail'; 
+        $page_title = 'Order Details';
+        $sub_page_title = 'View Order Detail';
+        $page_action = 'View Order Detail'; 
 
-        $postTasks = PostTask::with('user')->where('id',$postTask->id)->first(); 
+        $postTasks = PostTask::with(['user' => function($q){
+            $q->select('id','first_name','last_name','email','phone','profile_image');
+        }],['editor' => function($q){
+            $q->select('id','first_name','last_name','email','phone','profile_image','current_balance','total_balance','skills','qualification','workExperience');
+        }])->where('id',$postTask->id)->first(); 
 
-        $table_cname = \Schema::getColumnListing('post_tasks');
+        $table_cname = \Schema::getColumnListing('orders');
          
             //echo Carbon::createFromFormat('Y-m-d H', '1975-05-21 22')->toDateTimeString();
         $postBy = \Carbon\Carbon::parse($postTasks->created_at)->format('d M,Y');
 
         $taskPostDate = \Carbon\Carbon::parse($postTasks->created_at)->format('d M,Y');
-        $taskdueDate = \Carbon\Carbon::parse($postTasks->dueDate)->format('d M,Y');
+        $taskdueDate = '';// \Carbon\Carbon::parse($postTasks->dueDate)->format('d M,Y');
         
-        $comments =  \App\Models\Comments::with('userDetail')->where('taskId',$postTask->id)->get();
+        $comments =  Comments::with('editor','userDetail')->where('taskId',$postTask->id)->get();
+        
+        $doer =  User::select('id','first_name','last_name','email','phone','profile_image','current_balance','total_balance','skills','qualification','workExperience')
+            ->where('id',$postTask->editor_id)->first();
 
-        $doer =  User::find($postTask->taskDoerId);
-
+        
         if($doer){
             $doer = $doer->toArray();
         }else{
@@ -373,6 +445,7 @@ class PostTaskController extends Controller {
         
         $posterUser = ($postTasks->user)->toArray(); 
 
+        
 
         return view('packages::postTask.main', compact('comments','postBy','postTasks','offers','doer', 'page_title', 'page_action','sub_page_title','table_cname','taskPostDate','taskdueDate','currency','posterUser'));
        

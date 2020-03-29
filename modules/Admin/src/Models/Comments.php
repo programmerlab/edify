@@ -57,9 +57,13 @@ class Comments extends Eloquent {
         return $this->hasOne('App\User','id','userId') ;
     }
 
+    public  function editor()
+    {
+        return $this->hasOne('App\User','id','editor_id') ;
+    }
+
     public  function commentReply()
     {
         return $this->hasMany('App\Models\Comments','commentId')->with('userDetail') ;
-    }
-
+    }    
 }

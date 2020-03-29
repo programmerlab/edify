@@ -93,6 +93,27 @@
                                             <label class="form-label">Mobile</label>
                                         </div>
                                     </div>
+
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="text" id="skills" name="skills" class="form-control" value="{{ isset($acc_details['skills']) ? $acc_details['phone'] : '' }}">
+                                            <label class="form-label">My Skills Set</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="text" id="qualification" name="qualification" class="form-control" value="{{ isset($acc_details['qualification']) ? $acc_details['qualification'] : '' }}">
+                                            <label class="form-label">My Qualification</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="text" id="workExperience" name="workExperience" class="form-control" value="{{ isset($acc_details['qualification']) ? $acc_details['workExperience'] : '' }}">
+                                            <label class="form-label">My Work  Experience</label>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group form-float">
                                         <div class="form-line">
                                             <input type="file" id="profile_image" name="profile_image"  class="form-control" value="{{ isset($acc_details['phone']) ? $acc_details['phone'] : '' }}">
