@@ -21,7 +21,11 @@ Route::get('logout', 'FrontEndController@logout');
 Route::get('editortest', 'FrontEndController@editortest');	
 Route::get('/', 'FrontEndController@index');
 Route::get('emailVerification', function(){
-	echo "Email Verified";
+	echo "Thank you!.Your email has verified";
+});
+
+Route::get('kroy', function(){
+	 return view('pages.page');
 });
 
 Route::post('signup', 'FrontEndController@signup')->name('custom.register');
@@ -64,3 +68,25 @@ Route::match(
         'uses' => 'FrontEndController@page',
     ]
     );
+Route::match(
+    ['post','get'],
+    'page/{name}',
+    [
+        'as'   => 'content',
+        'uses' => 'FrontEndController@pageContent',
+    ]
+    );
+
+// if URL not found
+ 	 
+	 // if route not found
+    Route::any('{any}', function(){ 
+			$data = [
+						'status'=>0,
+						'code'=>400,
+						'message' => 'Bad request'
+					];
+			return \Response::json($data);
+	});  
+     
+    

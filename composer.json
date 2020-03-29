@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "barryvdh/laravel-dompdf": "^0.8.2",
         "fideloper/proxy": "^4.0",
         "illuminate/support": "^6.8",
         "laravel/framework": "^6.2",
@@ -16,6 +17,7 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^6.0",
         "mailgun/mailgun-php": "^3.0",
+        "oscarafdev/migrations-generator": "2.0.17",
         "phpmailer/phpmailer": "^5.2"
     },
     "require-dev": {
@@ -23,7 +25,8 @@
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.0",
+        "symfony/css-selector": "2.8.*|3.0.*"
     },
     "config": {
         "optimize-autoloader": true,

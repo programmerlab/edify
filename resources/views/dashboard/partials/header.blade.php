@@ -40,8 +40,9 @@
             <div class="" id="">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Call Search -->
+                    @if(Auth::check())
                     <li><a href="{{ url('logout') }}" class="js-search-logout" data-close="true">Logout</a></li>
-                  
+                    @endif
                 </ul>
             </div>
         </div>

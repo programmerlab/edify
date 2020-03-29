@@ -1,3 +1,15 @@
+ <div class="row" style="background: beige; line-height: 35px">
+            <div class="col-sm-4"> </div>
+             <div class="col-sm-8"> 
+                <ul class="list-inline">
+                   @foreach($page as $result)
+                    <li>
+                        <a href="{{url('page/'.$result->slug)}}">{{$result->title}}</a>
+                    </li> |
+                    @endforeach
+                </ul> 
+            </div>
+        </div>
 <footer>
         <div class="container">
             <div class="row">
@@ -31,9 +43,12 @@
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </div>
-        <p class="text-center bg-default">copyright &copy; edify 2020.</p>
+
+        <p class="text-center bg-default">copyright &copy; edify {{date('Y')}}.</p>
+
     </footer>
 
     

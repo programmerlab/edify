@@ -25,7 +25,18 @@ class FrontEndController extends Controller
                 ->first(); 
         View::share('editor_aproved',$editor_aproved);
     }
+    public function pageContent($name=null){
+        $content = \DB::table('pages')
+                ->where('slug',$name)
+                ->first();
 
+         $page = \DB::table('pages')
+                ->orderBy('title','asc')
+                ->get(['title','slug']);
+ 
+        return view('pages.page',compact('page','content'));
+
+    }
     public function index()
     {
         if(Auth::check()){        
@@ -36,7 +47,12 @@ class FrontEndController extends Controller
                     return redirect(URL::to('editordashboard'));
                 }
         } 
-        return view('pages.home');
+
+        $page = \DB::table('pages')
+                ->orderBy('title','asc')
+                ->get(['title','slug']);
+ 
+        return view('pages.home',compact('page'));
     }
 
     public function page(Request $request, $page = null)

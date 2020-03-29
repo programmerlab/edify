@@ -82,17 +82,18 @@ class ApiController extends BaseController
         /** --Create USER-- **/
         $user = User::create($input); 
 
-        $subject = "Welcome to edify! Verify your email address to get started";
+        $subject = "Welcome to edify!";
+        $link = '<a href='.url("emailVerification").'>Click here to verify</a>';
         $email_content = [
                 'receipent_email'=> $request->input('email'),
-                'subject'=>$subject,
-                'greeting'=> 'Yellotasker',
-                'first_name'=> $request->input('first_name')
-                ];
-
-      //  $verification_email = $helper->sendMailFrontEnd($email_content,'verification_link');
+                'subject'=> $subject,
+                'receipent_name'=> $request->input('first_name'),
+                'sender_name'=>'EdifyArtist',
+                'data' => 'Verify your email address to get started.'.$link
+            ];
         
-        //dd($verification_email);
+        $helper = new Helper;
+        $helper->sendMail($email_content, 'testmail');
 
         $notification = new Notification;
         $notification->addNotification('user_register',$user->id,$user->id,'User register','');
@@ -1030,9 +1031,30 @@ class ApiController extends BaseController
         $data['total_price'] = $request->deposit_amount;
         $data['discount_price'] = $request->deposit_amount;
         $data['order_id'] = $orderId;
-       $data['order_details'] = $request->customer_notes;
-       $data['created_at'] = date('Y-m-d');
-       $data['updated_at'] = date('Y-m-d');
+        $data['order_details'] = $request->customer_notes; 
+
+
+        $user = User::find($request->user_id);
+        $editor = User::find($request->editor_id);
+
+        $email_content1 = [
+                'receipent_email'=> $user->email,
+                'subject'=> 'Order Placed successfully',
+                'receipent_name'=>$user->first_name,
+                'sender_name'=>'EdifyArtist',
+                'data' => 'Thank you!. You have successfully placed the order. You have made payment of '.$request->deposit_amount.' and your orderID is '.$orderId
+            ];
+        $email_content2 = [
+                'receipent_email'=> $editor->email,
+                'subject'=> 'New Order Recieved',
+                'receipent_name'=>$editor->first_name,
+                'sender_name'=>'EdifyArtist',
+                'data' => 'Congratulation!. You have new order.'
+            ];
+        
+        $helper = new Helper;
+        $helper->sendMail($email_content1, 'testmail');
+        $helper->sendMail($email_content2, 'testmail');
           
         \DB::table('orders')->insert($data);
       return response()->json(
