@@ -48,18 +48,32 @@ class FrontEndController extends Controller
     }
 
     public function signup(Request $request)
-    {
-        $user[] = [
-            'name' => $request->input('first_name'),
-            'email' => $request->input('email'),
-        ];
+    { 
+
         $request['password'] = Hash::make($request['password']);
-        User::create($request->all())->id;
 
-        // Mail::to('ayush.pwalab@gmail.com')->send(new WelcomeMail($user));
+        $validator = Validator::make($request->all(), [
+            'first_name'=>'required',
+            'last_name'=>'required',
+            'phone'=>'required',
+            'email' => 'required|email|unique:users',
+            'password'=>'required',
+        ]);  
+        // Return Error Message
+        if ($validator->fails()) {
+                    $error_msg  =   []; 
+                    $tag = '<ul style="list-style:square">';
 
-        Session::put('signup_msg', 'Verify your email to get start!');
-        
+            foreach ( $validator->messages()->all() as $key => $value) {
+                        array_push($error_msg, $value); 
+                        $tag = $tag ."<li>".$value."</li>"; 
+                    } 
+            
+            Session::put('signup_msg', $tag.'</ul>'); 
+            return Redirect::back()->withInput()->withErrors($validator);
+        }
+        User::create($request->all())->id; 
+        Session::put('signup_msg', 'Verify your email to get start!'); 
 
         $link = '<a href='.url("emailVerification").'>Click here to verify</a>';
         $email_content = [
@@ -73,8 +87,7 @@ class FrontEndController extends Controller
         $helper = new Helper;
         $helper->sendMail($email_content, 'testmail');
 
-        return redirect(URL::to('/'));
-        // return view('pages.home',['msg' =>"success Thank you for registration. Login to Continue"]);
+        return redirect(URL::to('/')); 
     }
 
     public function logout(Request $request){

@@ -2,6 +2,25 @@
 <html lang="en">
 @include('partials.head')
 
+<script type="text/javascript">
+   $(document).ready(function(){
+     $('.login').click(function(){
+         $('form').submit();
+         $(this).html('Please Wait..')
+     });
+
+     $('.forget-password').click(function(){
+         $('form').submit();
+         $('.forget-password').html('Please Wait..')
+     });
+
+     $('.signup').click(function(){
+         $('form').submit();
+         $('.signup').html('Please Wait..')
+     });
+   
+   });
+</script>
 <body>
 @include('partials.header')
 
@@ -170,11 +189,12 @@
                             <input type="text" class="form-control" placeholder="Username" name="email" id="login-email">
                         </div>
                         <div class="form-group passField">
-                            <span tabindex="0">Show</span>
+                            
                             <input type="password" class="form-control" placeholder="Password" name="password" id="login-password">
+                            <span tabindex="0">Show</span>
                         </div>
                         
-                        <button class="btn btn-success btn-block" type='submit'>Submit</button>
+                        <button class="btn btn-success btn-block login " onclick="return false" type='submit'>Submit</button>
                     </form>
                     <form method="POST" action="{{ url('forgotpassword') }}">
                     {{csrf_field()}}
@@ -183,8 +203,9 @@
                             <a href="#" class="pointer forgot-password" id="forgotpassword"> forgot Password ? </a>
                             </div>
                             <div class="form-group forgot-password-div" id="forgot_password_div" style="display:none;">
-                                <input type="text" class="form-control" placeholder="Email" name="forgot-email" id="forgot-email">
-                                <input type="submit" value="submit" class="btn btn-success btn-block">
+                                <input type="text" class="form-control" placeholder="Email" name="forgot-email" id="forgot-email"> 
+
+                                <button class="btn btn-success btn-block forget-password " onclick="return false" type='submit'>Submit</button>
                             </div>
                         </div>
                     </form>
@@ -193,23 +214,29 @@
                     <?php
                         if(Session::has('signup_msg'))
                         {   ?>
-                            <p class="text-success">
+                            <div class="alert alert-danger">
                                   <?php 
                            echo Session::get('signup_msg');
                            Session::pull('signup_msg');
                            ?>
-                           </p>
+                           </div>
                         <script>
                         $('#signup .nav-tabs li:nth-child(1) a').tab('show');
                         $('#signup').modal('show');   
                         </script>
+                         {{ $errors->first('email')  }}
                         <?php
+
                          }
                          ?>
                         <form method="POST" action="{{ route('custom.register') }}">
                             {{csrf_field()}}
                             <div class="form-group">
-                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name" required>
+                                <input type="text" class="form-control" name="first_name" id="first_name" 
+                                placeholder="First Name"
+                                value="{{ old('first_name') }}" 
+                                required>
+                                 <span class="help-block">{{ $errors->first('first_name', ':message') }}</span>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name" required>
@@ -227,10 +254,12 @@
                                 <input type="text" class="form-control" name="insta_id" id="" placeholder="Instagram ID">
                             </div> -->
                             <div class="form-group passField">
-                                <span tabindex="0">Show</span>
+                               
                                 <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                                 <span tabindex="0">Show</span>
                             </div>
-                            <button class="btn btn-success btn-block" type='submit'>Submit</button>
+                             
+                             <button class="btn btn-success btn-block signup " onclick="return false" type='submit'>Submit</button>
                         </form>
                     </div>
                   </div>

@@ -6,10 +6,10 @@
 
 <body>
 
- <h>Hi {{$content['sender_name']??''}},</p>
+ <h>Hi {{$content['receipent_name']??''}},</p>
  <p> {!! $content['data']??'' !!}</p>
  <h5><b>Regards </b></h5>
- <p>Edify</p>
+ <p>{{$content['sender_name']??'EdifyArtist'}}</p>
 </body>
 
 </html>
