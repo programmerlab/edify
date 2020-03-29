@@ -116,7 +116,7 @@
                                             <input type="hidden" id="imgId2" name="imgId2" value="{{$result->id}}">
 
                                             <select name="editor_status" id="sw" class="form-control" onchange="changeStatus(this,{{$result->id}})" >
-                                                    <option>Update Status</option>
+                                                    <option value="0">Update Status</option>
                                                     <option value="1" @if($result->editor_status==1) selected @endif >Pending</option>
                                                     <option value="2" @if($result->editor_status==2) selected @endif>In Progress</option>
                                                     <option value="3" @if($result->editor_status==4) selected @endif>Completed</option>
@@ -199,7 +199,7 @@
                                             <select name="editor_status" id="editor_status_inprogress" class="form-control"
                                             onchange="changeStatus(this,{{$result->id}})"
                                              >
-                                                    <option>Update Status</option>
+                                                    <option value="0">Update Status</option>
                                                     <option value="1" @if($result->editor_status==1) selected @endif >Pending</option>
                                                     <option value="2" @if($result->editor_status==2) selected @endif>In Progress</option>
                                                     <option value="3" @if($result->editor_status==4) selected @endif>Completed</option>
@@ -277,7 +277,7 @@
                                        <span class="glyphicon glyphicon-ok" ></span> View Edited  Image </p> 
                                         <div class="form-line" >
                                                 <select name="editor_status" id="sw" class="form-control" onchange="changeStatus(this,{{$result->id}})">
-                                                    <option>Update Status</option>
+                                                    <option value="0">Update Status</option>
                                                     <option value="1" @if($result->editor_status==1) selected @endif >Pending</option>
                                                     <option value="2" @if($result->editor_status==2) selected @endif>In Progress</option>
                                                     <option value="3" @if($result->editor_status==4) selected @endif>Completed</option>
@@ -356,7 +356,7 @@
                                        <span class="glyphicon glyphicon-ok" ></span> View Edited  Image </p> 
                                         <div class="form-line" >
                                                 <select name="editor_status" id="sw" class="form-control" onchange="changeStatus(this,{{$result->id}})" disabled="">
-                                                    <option>Update Status</option>
+                                                    <option value="0">Update Status</option>
                                                     <option value="1" @if($result->editor_status==1) selected @endif >Pending</option>
                                                     <option value="2" @if($result->editor_status==2) selected @endif>In Progress</option>
                                                     <option value="3" @if($result->editor_status==3) selected @endif>Completed</option>
@@ -506,7 +506,9 @@
     }
 
     function changeStatus(status,imgId){
-     
+       if(status.value==0){
+        return false;
+       } 
        window.location.replace(url+'/changeOrderStatus?image_id='+imgId+'&status='+status.value ); 
     }
     

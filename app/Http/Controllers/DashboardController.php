@@ -176,7 +176,37 @@ class DashboardController extends Controller
                     ->where('id',$request->image_id)
                     ->where('editor_id', Auth::user()->id)
                     ->update(['editor_status' => $request->status]);    
-            }  
+            } 
+
+            $oid    =  \DB::table('orders')
+                            ->where('id',$request->image_id)
+                            ->first();
+
+            $user   =   User::find($oid->user_id);  
+
+            if($oid->editor_status==1){
+                $s = "Pending";
+            }elseif($oid->editor_status==2){
+                $s = "In Progress";
+            }elseif($oid->editor_status==3){
+                $s = "Completed";
+            }elseif($oid->editor_status==4){
+                $s = "Rejected";
+            }elseif($oid->editor_status==5){
+                $s = "Cancel";
+            }               
+
+            $email_content = [
+                'receipent_email'=> $user->email??null,
+                'subject'=> 'Order status '.$s,
+                'receipent_name'=>$user->first_name??null,
+                'sender_name'=>'Edify team',
+                'data' => 'Your current order status is '.$s.'.We will keep updating you.'
+            ];
+         
+            $helper = new Helper;
+            $mail = $helper->sendMail($email_content, 'testmail');
+            
         }
 
         elseif (strpos($request_url, 'uploadEditedImage') !== false) {
@@ -185,9 +215,37 @@ class DashboardController extends Controller
                     ->where('id',$request->image_id)
                     ->where('editor_id', Auth::user()->id)
                     ->update(['editor_status' => $request->status]);    
+            }
+
+            if($request->status){
+
+                $oid    =  \DB::table('orders')
+                            ->where('id',$request->image_id)
+                            ->first();
+                $user   =   User::find($oid->user_id);  
+
+                if($oid->editor_status==1){
+                    $s = "Pending";
+                }elseif($oid->editor_status==2){
+                    $s = "In Progress";
+                }elseif($oid->editor_status==3){
+                    $s = "Completed";
+                }elseif($oid->editor_status==4){
+                    $s = "Rejected";
+                
+                }elseif($oid->editor_status==5){
+                    $s = "Cancel";
+                }               
+
+                $email_content = [
+                    'receipent_email'=> $user->email??null,
+                    'subject'=> 'Order status '.$s,
+                    'receipent_name'=>$user->first_name??null,
+                    'sender_name'=>'Edify team',
+                    'data' => 'Your current order status is '.$s.'.We will keep updating you.'
+                ];
             }  
         }
-
 
 
         return redirect($request_url);
