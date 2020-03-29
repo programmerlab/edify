@@ -72,7 +72,7 @@ Route::match(
     ['post','get'],
     'page/{name}',
     [
-        'as'   => 'content',
+        'as'   => 'contents',
         'uses' => 'FrontEndController@pageContent',
     ]
     );
