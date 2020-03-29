@@ -10,6 +10,7 @@ use App\User;
 use Modules\Admin\Models\EditorTest;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
+use App\Helpers\Helper;
 
 class FrontEndController extends Controller
 {
@@ -57,7 +58,22 @@ class FrontEndController extends Controller
 
         // Mail::to('ayush.pwalab@gmail.com')->send(new WelcomeMail($user));
 
-        Session::put('signup_msg', 'Thank you for registration. Login to Continue');
+        Session::put('signup_msg', 'Verify your email to get start!');
+        
+
+        $link = '<a href='.url("emailVerification").'>Click here to verify</a>';
+
+        $email_content = [
+                'receipent_email'=> $request->input('email'),
+                'subject'=> 'Verify your account',
+                'receipent_name'=>$request->input('first_name'),
+                'sender_name'=>'Edify',
+                'data' => 'Thank you for registration kindly Verify you email.'.$link
+            ];
+        
+        $helper = new Helper;
+        $helper->sendNotificationMail($email_content, 'testmail');
+
         return redirect(URL::to('/'));
         // return view('pages.home',['msg' =>"success Thank you for registration. Login to Continue"]);
     }

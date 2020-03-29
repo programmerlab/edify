@@ -20,6 +20,10 @@ Route::post('login', [ 'as' => 'login', 'uses' => 'FrontEndController@login']);
 Route::get('logout', 'FrontEndController@logout');
 Route::get('editortest', 'FrontEndController@editortest');	
 Route::get('/', 'FrontEndController@index');
+Route::get('emailVerification', function(){
+	echo "Email Verified";
+});
+
 Route::post('signup', 'FrontEndController@signup')->name('custom.register');
 Route::post('uploadtestimage', 'FrontEndController@UploadTestImages');
 Route::post('forgotpassword', 'FrontEndController@ForgotPassword');

@@ -319,8 +319,8 @@ class Helper {
         
         return  Mail::send('emails.'.$template, array('content' => $email_content), function($message) use($email_content)
           {
-            $name = $_SERVER['SERVER_NAME'];
-            $message->from('no-reply@abc.com',$name);  
+            $name = $email_content['sender_name']??$_SERVER['SERVER_NAME'];
+            $message->from('no-reply@edifyartist.com',$name);  
             $message->to($email_content['receipent_email'])->subject($email_content['subject']);
             
           });
