@@ -216,10 +216,29 @@ class FrontEndController extends Controller
         {
             $email = $request['forgot-email'];
             $check_user = User::where('email',$email)->first();
-            // print_r($check_user);exit;
+
+            $helper = new Helper; 
+
             if($check_user)
-            {
-                    return view('pages.forgotpassword');
+            {    
+                $password = strtoupper($helper->generateRandomString(6));
+                $user = User::find($check_user->id);
+                $user->password = Hash::make($password);
+                $user->save();
+
+                $email_content = [
+                    'receipent_email'=> $user->email,
+                    'subject'=> 'Temporary password',
+                    'receipent_name'=>$user->first_name,
+                    'sender_name'=>'Edify',
+                    'data' => 'Your Temporary Password is: <b>'.$password.'</b>'
+                ];
+                
+                Session::put('message', 'Temporary password sent to your register email id. Kindly check your email.');
+                
+                $helper->sendMail($email_content, 'testmail');
+
+                return redirect('/');
             }
             else{
                 Session::put('message', 'Email Does not exist !! Please check and try again later');

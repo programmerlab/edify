@@ -276,7 +276,6 @@ class Helper {
         try {
             $mail->isSMTP(); // tell to use smtp
             $mail->CharSet = "utf-8"; // set charset to utf8
-             
 
             $mail->SMTPAuth   = true;                  // enable SMTP authentication
             $mail->Host       = getenv('MAIL_HOST'); // sets the SMTP server
@@ -285,10 +284,10 @@ class Helper {
             $mail->Username   = getenv('MAIL_USERNAME'); // SMTP account username
             $mail->Password   = getenv('MAIL_PASSWORD');
 
-            $mail->setFrom("support@edifyartist.com", "Edifyartist");
+            $mail->setFrom("no-reply@edifyartist.com", "Edifyartist");
             $mail->Subject = $subject;
             $mail->MsgHTML($html);
-            $mail->addAddress($email_content['receipent_email'], "admin");
+            $mail->addAddress($email_content['receipent_email'],$email_content['receipent_name']);
             
            // $mail->addReplyTo("kroy.iips@mailinator.com","admin");
             //$mail->addBCC(‘examle@examle.net’);
