@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use Modules\Admin\Models\EditorPortfolio;
+use Modules\Admin\Models\EditorPosts;
 use Modules\Admin\Models\SoftwareEditor;
 use Modules\Admin\Models\Category;
 use App\Http\Controllers\Controller;
@@ -604,17 +605,28 @@ class ApiController extends BaseController
                                    
         if($allPostsModel){
              foreach($allPostsModel as $postModels){
-                 $editorInfoModel  = \DB::table('users')
+                    
+                     $likeTableCnt  = \DB::table('portfolio_likes_count')
+                           ->where('portfolio_id' ,$postModels->id)
+                           ->where('user_id' ,$request->user_id)
+                            ->get();
+                            
+                        $count = count($likeTableCnt );
+                        $likes = false;
+                        if( $count>0){
+                             $likes = true;
+                        }   
+                            
+                    $editorInfoModel  = \DB::table('users')
                             ->where('id' , $postModels ->eid)
                             ->first();
-                    $likes = 0;
+                    
                     $allPosts[] = array('id' => $postModels->id,
                                  'image_name_after' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels ->after_img,
                                  'image_name_before' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels-> before_img,
                                  'editor_id' => $postModels ->eid,
-                                 'likes' => $likes,
-                                 'editor_details'=>$editorInfoModel
-                              ); 
+                                 'isliked_by_user' => $likes,
+                                 'editor_details'=>$editorInfoModel); 
              }
         }
       
@@ -749,19 +761,28 @@ class ApiController extends BaseController
 
         $portfolio_id = \DB::table('portfolio_likes_count')
                     ->where('user_id',$request->user_id) 
-                   
                     ->pluck('portfolio_id');
-
-                    
+    
         $portfolio = [];
         if(count($portfolio_id)){ 
-        
-            $portfolio =  EditorPortfolio::with('editor','softwareEditor','category')
-                        ->whereIn('id',$portfolio_id)
+                  $portfolioModel  = \DB::table('editor_post')
+                                             ->whereIn('id',$portfolio_id)
+                                             -> get();
+                          
+                          
+                   foreach($portfolioModel as $portfolioList ){
                          
-                        ->select('id','title','price','description',\DB::raw('CONCAT(image_base_url, "",image_name) AS image_path'),'category_name','software_editor','image_name','image_base_url','editor_id','total_likes','updated_at') 
-                        ->orderBy('updated_at','desc')
-                        ->get();
+                          $editorInfoModel  = \DB::table('users')
+                            ->where('id' , $portfolioList->eid)
+                            ->first();
+                            
+                           $portfolio[] = array('id' => $portfolioList->id,
+                                 'image_name_after' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$portfolioList ->after_img,
+                                 'image_name_before' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$portfolioList-> before_img,
+                                 'likes' => true,
+                                 'editor_details'=>$editorInfoModel
+                              ); 
+                   }       
         }
         
         return response()
@@ -769,7 +790,7 @@ class ApiController extends BaseController
                 'status' => true,
                 'code' => 200,
                 'message' => 'My likes portfolio',
-                'data' => $portfolio
+                'all_post' => $portfolio
             ]);
 
     }
@@ -780,7 +801,7 @@ class ApiController extends BaseController
         $validator = Validator::make($request->all(), [
                     'user_id' => 'required',
                     'portfolio_id' => 'required',
-                    'like_count' => 'required'
+                    'is_liked_byuser' => 'required'
                 ]);
         if ($validator->fails()) {
             $error_msg = [];
@@ -805,7 +826,7 @@ class ApiController extends BaseController
                     'data' => $request->all()
                 ); 
         }
-        if(!EditorPortfolio::find($request->portfolio_id)){
+        if(!EditorPosts::find($request->portfolio_id)){
                 return array(
                     'status' => false,
                     'code' => 201,
@@ -816,28 +837,33 @@ class ApiController extends BaseController
 
         \DB::beginTransaction();
 
+        
         $data['user_id'] = $request->user_id;
         $data['portfolio_id'] = $request->portfolio_id;
 
-        $portfolio = EditorPortfolio::find($request->portfolio_id);
-
-        if($request->like_count==1){
-            $result = \DB::table('portfolio_likes_count')->insert($data);
-            $portfolio->total_likes = (int)$portfolio->total_likes+1;    
-        }else{
-            $result = \DB::table('portfolio_likes_count')->where($data)->delete();
-
-            $portfolio->total_likes = (int)$portfolio->total_likes-1;
+       // $portfolio = EditorPosts::find($request->portfolio_id);
+   
+    //print_r( $portfolio);
+     //echo "is liked by users".$request->is_liked_byuser;
+     
+          $portfolioliske = \DB::table('portfolio_likes_count')
+                          ->where('user_id',$request->user_id)
+                           ->where('portfolio_id',$request->portfolio_id)
+                          -> get();
+            
+            $count =  count($portfolioliske);        
+          if($count >0){
+                   \DB::table('portfolio_likes_count')->where($data)->delete();
+          } else {               
+            \DB::table('portfolio_likes_count')->insert($data);
         }
         
-        $portfolio->save();
 
         \DB::commit();
          return array(
                     'status' => true,
                     'code' => 200,
-                    'message' => 'Likes updated',
-                    'data' => $request->all()
+                    'message' => 'Likes updated'
                 );
 
 
@@ -905,13 +931,31 @@ class ApiController extends BaseController
                    $editorsPostList =  array();
                     $etpostlst = \DB::table('editor_profiles') ->where('category_name' , $categories->id)->get();
                     if($etpostlst){
+                       
+                         $editorInfoModel  = \DB::table('users')
+                            ->where('id' , '246')
+                            ->first();
+                    
+                        
+
                           foreach($etpostlst as $editorPosts){
-                             $image_url =  $editorPosts->image_base_url.$editorPosts->image_name;
-                             $editorsPostList[] = array('id'=>$editorPosts->id,'title'=>$editorPosts->title,'image_url'=>"https://edifyartist.com/storage/uploads/editorPortfolio/".$image_url);
-                        }
+                                 $image_url = "https://edifyartist.com/storage/uploads/editorPortfolio/".$editorPosts->image_name;
+                                 $editorsPostList[] = array('id' => $editorPosts->id,
+                                 'image_name_after' =>$image_url,
+                                 'image_name_before' => $image_url,
+                                 'editor_id' => '246',
+                                 'isliked_by_user' => false,
+                                 'editor_details'=>$editorInfoModel); 
+                           }
+                        
+                        
                     }
                  
                  $categoryList[] = array('id' => $categories->id,'category_name' => $categories->category_name,'editors_post' =>$editorsPostList); 
+                 
+                 
+                 
+                 
              }
             return response()->json(["status" => true, "code" => 200, "msg" => "Successfully logged in.", 'categories_list' => $categoryList]);
         }
