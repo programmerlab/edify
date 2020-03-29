@@ -1203,4 +1203,25 @@ class ApiController extends BaseController
                     'message' => "Profile updated successfully"  
                     );
     }
+
+    public function getPageUrl(){
+
+        $pages = \DB::table('pages')
+                ->orderBy('title','asc')
+                ->get(['title','slug']);
+        $data = null;
+        foreach ($pages as $key => $page) {
+                     
+                     $data[] = [
+                        'page_name' => $page->title,
+                        'page_url' => url('page/'.$page->slug),
+                     ] ;
+                } 
+           return array(
+                    'status' => true,
+                    'code' => 200,
+                    'message' => "Profile updated successfully"  ,
+                    'data' => $data
+                    );              
+    }
 }

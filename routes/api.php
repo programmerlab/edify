@@ -45,6 +45,8 @@ Route::group([
 	], function()
     {
 
+
+          Route::match(['post','get'],'getPageUrl' , 'Api\ApiController@getPageUrl')  ;  
         //Apis used in customer application  
         Route::match(['post','get'],'member/customerLogin', 'Api\ApiController@customerLogin');
         Route::match(['post','get'],'member/registration', 'Api\ApiController@registration');
