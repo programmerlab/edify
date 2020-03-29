@@ -285,7 +285,7 @@ class Helper {
             $mail->Username   = getenv('MAIL_USERNAME'); // SMTP account username
             $mail->Password   = getenv('MAIL_PASSWORD');
 
-            $mail->setFrom("support@krsdata.net", "Yellotasker");
+            $mail->setFrom("support@edifyartist.com", "Edifyartist");
             $mail->Subject = $subject;
             $mail->MsgHTML($html);
             $mail->addAddress($email_content['receipent_email'], "admin");

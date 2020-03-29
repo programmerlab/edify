@@ -62,7 +62,6 @@ class FrontEndController extends Controller
         
 
         $link = '<a href='.url("emailVerification").'>Click here to verify</a>';
-
         $email_content = [
                 'receipent_email'=> $request->input('email'),
                 'subject'=> 'Verify your account',
@@ -72,7 +71,7 @@ class FrontEndController extends Controller
             ];
         
         $helper = new Helper;
-        $helper->sendNotificationMail($email_content, 'testmail');
+        $helper->sendMail($email_content, 'testmail');
 
         return redirect(URL::to('/'));
         // return view('pages.home',['msg' =>"success Thank you for registration. Login to Continue"]);

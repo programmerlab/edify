@@ -11,12 +11,14 @@ use Modules\Admin\Models\EditorTest;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
 use App\Helpers\Helper;
+use PHPMailerAutoload;
+use PHPMailer;
 
 class DashboardController extends Controller
 {
     
     public function __construct() {
-        $this->middleware('auth');  
+        $this->middleware('auth'); 
 
         $pages = \DB::table('pages')->get(['title','slug']);
         View::share('static_page',$pages);
