@@ -9,7 +9,7 @@
 	@endif
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo Session::get('name'); ?></div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php  echo Auth::user()->first_name.' '.Auth::user()->last_name;  ?></div>
                     <div class="email"><?php echo Session::get('email'); ?></div>
                 </div>
             </div>

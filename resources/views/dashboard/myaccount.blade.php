@@ -98,9 +98,9 @@
                                             <input type="file" id="profile_image" name="profile_image"  class="form-control" value="{{ isset($acc_details['phone']) ? $acc_details['phone'] : '' }}">
                                             <label class="form-label"> </label>
                                         </div>
-					                   <img src={{$profile_image}} width="10%">
-                                       <br>
-                                       <label class="form-label">Upload/Change Profile Pic </label>
+                                         <label class="form-label">Upload/Change Profile Pic <br>
+					                   <img src="{{ $profile_image ?? ' ' }}" width="200" height="200" alt="User" />
+                                       </label>
                                     </div>
                                     <button type="submit" class="btn btn-primary waves-effect">Save</button>
                                 </form>

@@ -19,7 +19,9 @@ class DashboardController extends Controller
         $pages = \DB::table('pages')->get(['title','slug']);
         View::share('static_page',$pages);
 
-        $editor_aproved = EditorTest::where('eid',Auth::user()->id)
+        $eid = (Auth::user()->id)??null;
+
+        $editor_aproved = EditorTest::where('eid',$eid)
                 ->where('img1_status',1)
                 ->where('img2_status',1)
                 ->where('img3_status',1)
