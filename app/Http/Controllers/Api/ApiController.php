@@ -37,6 +37,9 @@ class ApiController extends BaseController
         $input['role_type']     = $request->input('role_type'); 
         $input['user_type']     = $request->input('user_type');
         $input['provider_id']   = $request->input('provider_id'); 
+         $input['profile_image']   = $request->input('profile_image'); 
+        
+        
 
         $user = User::firstOrNew(['provider_id'=>$request->input('provider_id')]);
        
@@ -100,7 +103,7 @@ class ApiController extends BaseController
        
         return response()->json(
                             [ 
-                                "status"=>1,
+                                "status"=>true,
                                 "code"=>200,
                                 "message"=>"Thank you for registration",
                                 'data'=>$user
@@ -398,6 +401,7 @@ class ApiController extends BaseController
             $data['first_name'] = $usermodel->first_name;
             $data['last_name'] = $usermodel->last_name;
             $data['user_email'] = $usermodel->email;
+            $data['profile_image'] = $usermodel->profile_image;
             $data['user_id'] = $usermodel->id;
             $data['mobile_number'] = $usermodel->phone;
      
@@ -563,7 +567,7 @@ class ApiController extends BaseController
                                         $listofstories[] = "https://edifyartist.com/storage/uploads/editor_stories_imgs/".$strsObj->story_img; 
                               }
                               
-                           $allEditors[] = array('id' => $editors->id,'avatar' => $editors->profile_image,'first_name' => $editors->first_name,'last_name' => $editors->last_name,'stories_list'=>$listofstories ); 
+                           $allEditors[] = array('id' => $editors->id,'profile_image' => $editors->profile_image,'first_name' => $editors->first_name,'last_name' => $editors->last_name,'stories_list'=>$listofstories ); 
                       }      
              }
         }
@@ -605,6 +609,10 @@ class ApiController extends BaseController
                             ->get();
                                    
         if($allPostsModel){
+             $settingsValue  = \DB::table('settings')
+                            ->where('field_key' , 'service_charge')
+                            ->first();
+                            
              foreach($allPostsModel as $postModels){
                     
                      $likeTableCnt  = \DB::table('portfolio_likes_count')
@@ -626,6 +634,7 @@ class ApiController extends BaseController
                                  'image_name_after' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels ->after_img,
                                  'image_name_before' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$postModels-> before_img,
                                  'editor_id' => $postModels ->eid,
+                                 'making_charges' => $settingsValue ->field_value,
                                  'isliked_by_user' => $likes,
                                  'editor_details'=>$editorInfoModel); 
              }
@@ -770,7 +779,10 @@ class ApiController extends BaseController
                                              ->whereIn('id',$portfolio_id)
                                              -> get();
                           
-                          
+                    $settingsValue  = \DB::table('settings')
+                            ->where('field_key' , 'service_charge')
+                            ->first();
+                                  
                    foreach($portfolioModel as $portfolioList ){
                          
                           $editorInfoModel  = \DB::table('users')
@@ -780,6 +792,7 @@ class ApiController extends BaseController
                            $portfolio[] = array('id' => $portfolioList->id,
                                  'image_name_after' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$portfolioList ->after_img,
                                  'image_name_before' => "https://edifyartist.com/storage/uploads/editor_test_imgs/".$portfolioList-> before_img,
+                                  'making_charges' => $settingsValue ->field_value,
                                  'likes' => true,
                                  'editor_details'=>$editorInfoModel
                               ); 
@@ -928,13 +941,16 @@ class ApiController extends BaseController
                             ->get();
         $categoryList =  array();
         if($usermodel){
+             $settingsValue  = \DB::table('settings')
+                            ->where('field_key' , 'service_charge')
+                            ->first();
              foreach($usermodel as $categories){
                    $editorsPostList =  array();
                     $etpostlst = \DB::table('editor_profiles') ->where('category_name' , $categories->id)->get();
                     if($etpostlst){
                        
                          $editorInfoModel  = \DB::table('users')
-                            ->where('id' , '246')
+                            ->where('id' , '267')
                             ->first();
                     
                         
@@ -944,7 +960,8 @@ class ApiController extends BaseController
                                  $editorsPostList[] = array('id' => $editorPosts->id,
                                  'image_name_after' =>$image_url,
                                  'image_name_before' => $image_url,
-                                 'editor_id' => '246',
+                                 'editor_id' => '267',
+                                  'making_charges' => $settingsValue ->field_value,
                                  'isliked_by_user' => false,
                                  'editor_details'=>$editorInfoModel); 
                            }
@@ -1110,7 +1127,7 @@ class ApiController extends BaseController
                                       'id' => $orderId,
                                       'avatar' =>  $imageUrl,
                                       'total_price' => $totalPrice,
-                                     'order_status' => $editorStatus,
+                                     'order_status' => (int)$editorStatus,
                                      'orderDetails'=>$orderDetails,
                                      'created_at'=>$createdDate,
                                     'udpated_at'=>$udpatedDate); 
@@ -1196,6 +1213,23 @@ class ApiController extends BaseController
             }
         
         }
+        
+        //$data['user_id'] = $request->user_id;
+        $data['profile_image'] = $request->profile_image;
+        $data['first_name'] = $request->first_name;
+        $data['last_name'] = $request->last_name;
+        $data['phone'] = $request->phoneNumber;
+    
+       \DB::table('users')
+              ->where('id',$request->user_id)
+             ->update(
+                             [
+                                'profile_image'=>$request->profile_image,
+                                'first_name'=>$request->first_name,
+                                'last_name'=>$request->last_name,
+                                'phone'=>$request->phoneNumber
+                              ]
+                          );
         
            return array(
                     'status' => true,

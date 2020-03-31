@@ -49,7 +49,7 @@ Route::group([
           Route::match(['post','get'],'getPageUrl' , 'Api\ApiController@getPageUrl')  ;  
         //Apis used in customer application  
         Route::match(['post','get'],'member/customerLogin', 'Api\ApiController@customerLogin');
-        Route::match(['post','get'],'member/registration', 'Api\ApiController@registration');
+        Route::match(['post','get'],'member/customerRegister', 'Api\ApiController@registration');
         
         //Route::match(['post','get'],'member/getActiveEditors', 'Api\ApiController@getActiveEditors');
         //Route::match(['post','get'],'member/getBanners', 'Api\ApiController@getBanners');

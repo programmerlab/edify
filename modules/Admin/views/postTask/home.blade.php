@@ -85,13 +85,14 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+{{ $postTasks }}
                                         @foreach($postTasks as $key => $result)
                                             <tr>
                                             <td> {{ (($postTasks->currentpage()-1)*15)+(++$key) }}</td>
                                            
-                                                <td>{{ $result->user->first_name.' '.$result->user->last_name}}</td>
-                                                
-                                                <td>{{ $result->editor->first_name.' '.$result->editor->last_name}}
+                                                <td>{{ $result->user->first_name??null.' '.$result->user->last_name??null}}</td>
+                                    					            
+                                                <td>{{ $result->editor->first_name??null.' '.$result->editor->last_name??null}}
                                                 </td>
                                                 <td>
                                                     @if($result->status==1)
