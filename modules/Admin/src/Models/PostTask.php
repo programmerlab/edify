@@ -40,12 +40,14 @@ class PostTask extends Eloquent {
     
     public function user()
     {
-        return $this->hasOne('Modules\Admin\Models\User','id','user_id');
+        return $this->hasOne('Modules\Admin\Models\User','id','user_id')
+                    ->whereNotNull('id');
     } 
 
    public function editor()
     {
-        return $this->hasOne('Modules\Admin\Models\User', 'id','editor_id');
+        return $this->hasOne('Modules\Admin\Models\User', 'id','editor_id')
+                        ->whereNotNull('id');
     }
 
 }

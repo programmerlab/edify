@@ -87,9 +87,7 @@ class PostTaskController extends Controller {
 
     public function addRemarks(Request $request){
 
-        $order  = PostTask::find($request->order_id);
-
-        
+        $order  = PostTask::find($request->order_id); 
 
         if($order){
             $user_email = User::find($order->user_id);
@@ -140,11 +138,10 @@ class PostTaskController extends Controller {
         $helper->sendMail($email_content2, 'testmail');
 
 
-        return Redirect::to(url('admin/postTask/6#remarks'))
+        return Redirect::to(url('admin/postTask/'.$request->order_id.'#remarks'))
                         ->with('flash_alert_notice', 'Remarks  successfully updated.');
         }else{
-
-            return Redirect::to(url('admin/postTask/6#remarks'))
+            return Redirect::to(url('admin/postTask/'.$request->order_id.'#remarks'))
                         ->with('flash_alert_notice', 'Remarks  not updated.');
             
         } 
@@ -188,7 +185,7 @@ class PostTaskController extends Controller {
         } else {
             $postTasks = PostTask::with('user','editor')->orderBy('id','desc')->Paginate(15);
         }
-           
+
         return view('packages::postTask.index', compact('postTasks', 'page_title', 'page_action','sub_page_title','currency'));
     }
 

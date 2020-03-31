@@ -146,8 +146,8 @@ class DashboardController extends Controller
         if ($request->file('editedImage')) {
             $photo = $request->file('editedImage');
             $destinationPath = storage_path('uploads/editedImage/');
-            $photo->move($destinationPath, time().$photo->getClientOriginalName());
-            $photo_name = time().$photo->getClientOriginalName();
+            $photo_name = time().'.'.$photo->getClientOriginalExtension();
+            $photo->move($destinationPath, $photo_name); 
             $request->merge(['editor_after_work_image'=>$photo_name]);  
             $data['editor_after_work_image']  = url::to(asset('storage/uploads/editedImage/'.$photo_name));
         } 
@@ -290,8 +290,9 @@ class DashboardController extends Controller
         if ($request->file('profile_image')) {
             $photo = $request->file('profile_image');
             $destinationPath = storage_path('uploads/profile/');
-            $photo->move($destinationPath, time().$photo->getClientOriginalName());
-            $photo_name = time().$photo->getClientOriginalName();
+            $photo_name = time().'.'.$photo->getClientOriginalExtension();
+            $photo->move($destinationPath,  $photo_name);
+
             $request->merge(['profile_image'=>$photo_name]);  
             $data['profile_image']  = url::to(asset('storage/uploads/profile/'.$photo_name));
         } 
@@ -312,16 +313,16 @@ class DashboardController extends Controller
         {
             $img1 = $request->file('postbefore');
             $destinationPath = storage_path('uploads/editor_test_imgs');
-            $img1->move($destinationPath, time().$img1->getClientOriginalName());
-            $img1_name = time().$img1->getClientOriginalName();
-
+            $img1_name = time().'.'.$img1->getClientOriginalExtension();
+            $img1->move($destinationPath,  $img1_name);
         }
         if($request->hasFile('postafter'))
         {
             $img2 = $request->file('postafter');
             $destinationPath = storage_path('uploads/editor_test_imgs');
-            $img2->move($destinationPath, time().$img2->getClientOriginalName());
-            $img2_name = time().$img2->getClientOriginalName();
+            
+            $img2_name = time().'.'.$img2->getClientOriginalExtension();
+            $img2->move($destinationPath,  $img2_name);
 
         }
         $data = array('eid'=>Session::get('editor_id'),'before_img'=>$img1_name,'after_img'=>$img2_name,'software'=>$request['sw'],'comment'=>$request['comment']);
@@ -343,8 +344,9 @@ class DashboardController extends Controller
         {
             $img1 = $request->file('docUpload');
             $destinationPath = storage_path('uploads/documents');
-            $img1->move($destinationPath, time().$img1->getClientOriginalName());
-            $img_name = time().$img1->getClientOriginalName();
+
+            $img_name = time().'.'.$img1->getClientOriginalExtension();
+            $img1->move($destinationPath, $img_name);
 
         }
         $url = url('storage/uploads/documents/'.$img_name);
@@ -364,9 +366,9 @@ class DashboardController extends Controller
         {
             $img1 = $request->file('storyUpload');
             $destinationPath = storage_path('uploads/editor_stories_imgs');
-            $img1->move($destinationPath, time().$img1->getClientOriginalName());
-            $img_name = time().$img1->getClientOriginalName();
-
+           
+            $img_name = time().'.'.$img1->getClientOriginalExtension();
+            $img1->move($destinationPath, $img_name);
         }
         $data = array('eid'=>Session::get('editor_id'),'story_img'=>$img_name);
         $insert = \DB::table('stories')->insert($data);

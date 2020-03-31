@@ -85,8 +85,11 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-{{ $postTasks }}
+ 
                                         @foreach($postTasks as $key => $result)
+                                            @if(!isset($result->editor))
+                                             <?php continue; ?>
+                                            @endif
                                             <tr>
                                             <td> {{ (($postTasks->currentpage()-1)*15)+(++$key) }}</td>
                                            
