@@ -16,6 +16,7 @@ use Illuminate\Contracts\Encryption\DecryptException;
 use Config,Mail,View,Redirect,Validator,Response; 
 use Crypt,okie,Hash,Lang,JWTAuth,Input,Closure,URL; 
 use App\Helpers\Helper as Helper;
+use App\Helpers\FCMHelper as FCMHelper;
 
 
 class ApiController extends BaseController
@@ -1039,12 +1040,16 @@ class ApiController extends BaseController
         $orderId = mt_rand(100000000, 999999999);
         $data['user_id'] = $request->user_id;
         $data['editor_id'] = $request->editor_id;
-        $data['editor_status'] = 1; //1="pending" , 2="confirmed", 3="completed" , 4= "Approved by Edify" , 5 =. Accepted by customer""
+        $data['status'] = 1; //1="pending" , 2="confirmed", 3="completed" , 4= "Approved by Edify" , 5 =. Accepted by customer""
         $data['customer_original_image'] = $request->original_customer_image;
         $data['customer_reference_image'] = $request->original_customer_ref_image;
         $data['editor_after_work_image'] = "";
         $data['payment_mode'] = $request->payment_mode;
-        $data['status'] = 1;
+        if($request->payment_mode == 'phonepay'){
+            $data['order_status'] = 1;
+        }else {
+            $data['order_status'] = 2;
+        }
         $data['total_price'] = $request->deposit_amount;
         $data['discount_price'] = $request->deposit_amount;
         $data['order_id'] = $orderId;
@@ -1053,7 +1058,7 @@ class ApiController extends BaseController
 
         $user = User::find($request->user_id);
         $editor = User::find($request->editor_id);
-
+         
         $email_content1 = [
                 'receipent_email'=> $user->email,
                 'subject'=> 'Order Placed successfully',
@@ -1069,9 +1074,20 @@ class ApiController extends BaseController
                 'data' => 'Congratulation!. You have new order.'
             ];
         
+      
         $helper = new Helper;
         $helper->sendMail($email_content1, 'testmail');
         $helper->sendMail($email_content2, 'testmail');
+          
+        $registatoin_ids=array();
+        $registatoin_ids[]= $user->notification_id;
+        $registatoin_ids[]= $editor->notification_id;
+        $type = "Android";
+        $message["title"] = "Order Received ";
+        $message["action"] = "notify";
+        $message["message"] = "New order placed successfully. Edify team will contact you shortly";
+        $fcmHelper = new FCMHelper;
+        $fcmHelper->send_notification($registatoin_ids,$message,$type);
           
         \DB::table('orders')->insert($data);
       return response()->json(
@@ -1083,6 +1099,38 @@ class ApiController extends BaseController
                     );
        
   }
+
+     public function deviceNotification(Request $request){
+            $usersInfo =  User::find($request->user_id);
+           $device_id = $request->notification_id;
+           $validator = Validator::make($request->all(), [
+               'user_id' => 'required',
+               'notification_id' => 'required'
+           ]);
+         /** Return Error Message **/
+          if ($validator->fails()) {
+               $error_msg      =   [];
+                   foreach ( $validator->messages()->all() as $key => $value) {
+                        array_push($error_msg, $value);     
+                    }
+                    
+             return Response::json(array(
+                   'status' => false,
+                   'code'=>201,
+                   'message' => $error_msg[0]
+                )
+            );
+        } 
+
+        if($usersInfo){
+            $usersInfo->notification_id = $device_id;
+            $usersInfo->save();
+            return response()->json([ "status"=>true,'code'=>200,"message"=>"notification updated"]);
+        }else{
+            return response()->json([ "status"=>false,'code'=>201,"message"=>"something went wrong"]); 
+        }
+    }
+
 
      public function getMyOrders(Request $request)
     {
@@ -1110,6 +1158,7 @@ class ApiController extends BaseController
       
              $usermodel  = \DB::table('orders')
                             ->where('user_id' , $request->user_id)
+                            ->orderBy('updated_at','DESC')
                             ->get();
          
       $editorsList =  array();
@@ -1119,7 +1168,7 @@ class ApiController extends BaseController
                    $imageUrl = $editors->customer_original_image;
                    $totalPrice = $editors->total_price; 
                    $orderId = $editors->order_id;
-                   $editorStatus = $editors->editor_status; 
+                   $editorStatus = $editors->order_status; 
                    $orderDetails = $editors->order_details; 
                    $createdDate = $editors->created_at; 
                     $udpatedDate = $editors->updated_at; 

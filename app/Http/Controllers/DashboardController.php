@@ -11,6 +11,7 @@ use Modules\Admin\Models\EditorTest;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
 use App\Helpers\Helper;
+use App\Helpers\Helper;
 use PHPMailerAutoload;
 use PHPMailer;
 
@@ -204,8 +205,16 @@ class DashboardController extends Controller
                 'data' => 'Your current order status is '.$s.'.We will keep updating you.'
             ];
          
-            $helper = new Helper;
-            $mail = $helper->sendMail($email_content, 'testmail');
+        $helper = new Helper;
+        $mail = $helper->sendMail($email_content, 'testmail');
+            
+        $registatoin_ids=array();
+        $registatoin_ids[]= $user->notification_id;
+        $type = "Android";
+        $message["title"] = 'Order status '.$s;
+        $message["action"] = "notify";
+        $message["message"] =  'Your current order status is '.$s.'.We will keep updating you.';        $fcmHelper = new FCMHelper;
+        $fcmHelper->send_notification($registatoin_ids,$message,$type);
             
         }
 

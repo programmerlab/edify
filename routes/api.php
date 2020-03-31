@@ -64,8 +64,8 @@ Route::group([
         Route::match(['post','get'],'member/place_order', 'Api\ApiController@place_order');
         Route::match(['post','get'],'member/getEditorPosts', 'Api\ApiController@getEditorPosts');
         
-         Route::match(['post','get'],'member/updateProfile', 'Api\ApiController@updateProfile');
-        
+        Route::match(['post','get'],'member/updateProfile', 'Api\ApiController@updateProfile');
+        Route::match(['post','get'],'deviceNotification', 'Api\ApiController@deviceNotification');
                 
         
 		
