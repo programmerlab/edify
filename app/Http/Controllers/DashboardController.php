@@ -11,7 +11,7 @@ use Modules\Admin\Models\EditorTest;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
 use App\Helpers\Helper;
-use App\Helpers\Helper;
+use App\Helpers\FCMHelper;
 use PHPMailerAutoload;
 use PHPMailer;
 
